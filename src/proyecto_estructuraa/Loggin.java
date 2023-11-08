@@ -395,6 +395,132 @@ public class Loggin extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        Menu_Maestro = new javax.swing.JPanel();
+        Panel_Bitacora2 = new javax.swing.JPanel();
+        jLabel117 = new javax.swing.JLabel();
+        jScrollPane25 = new javax.swing.JScrollPane();
+        ta_Bitacora2 = new javax.swing.JTextArea();
+        Panel_Menu_Izquierda2 = new javax.swing.JPanel();
+        Icono_Tienda2 = new javax.swing.JLabel();
+        Icono_Producto2 = new javax.swing.JLabel();
+        Icono_Vendedor2 = new javax.swing.JLabel();
+        Icono_Cliente2 = new javax.swing.JLabel();
+        Panel_Informes2 = new javax.swing.JPanel();
+        jLabel41 = new javax.swing.JLabel();
+        ComboReportes2 = new javax.swing.JComboBox<>();
+        jScrollPane26 = new javax.swing.JScrollPane();
+        tableReportes2 = new javax.swing.JTable();
+        Panel_Cliente2 = new javax.swing.JPanel();
+        jLabel46 = new javax.swing.JLabel();
+        jLabel49 = new javax.swing.JLabel();
+        jLabel118 = new javax.swing.JLabel();
+        jLabel119 = new javax.swing.JLabel();
+        tf_idCliente2 = new javax.swing.JTextField();
+        tf_nombreCliente2 = new javax.swing.JTextField();
+        tf_correoCliente2 = new javax.swing.JTextField();
+        btn_deleteCliente2 = new javax.swing.JButton();
+        btn_createCliente2 = new javax.swing.JButton();
+        btn_updateCliente2 = new javax.swing.JButton();
+        jScrollPane27 = new javax.swing.JScrollPane();
+        table_Clientes2 = new javax.swing.JTable();
+        Panel_Productos2 = new javax.swing.JPanel();
+        jLabel120 = new javax.swing.JLabel();
+        jLabel121 = new javax.swing.JLabel();
+        jLabel122 = new javax.swing.JLabel();
+        jLabel123 = new javax.swing.JLabel();
+        jLabel124 = new javax.swing.JLabel();
+        jLabel125 = new javax.swing.JLabel();
+        tf_embalajeProducto2 = new javax.swing.JTextField();
+        tf_UPC2 = new javax.swing.JTextField();
+        tf_nombreProducto2 = new javax.swing.JTextField();
+        tf_tamanoProducto2 = new javax.swing.JTextField();
+        btn_deleteProducto2 = new javax.swing.JButton();
+        jScrollPane28 = new javax.swing.JScrollPane();
+        table_Productos2 = new javax.swing.JTable();
+        btn_createProducto2 = new javax.swing.JButton();
+        btn_updateProducto2 = new javax.swing.JButton();
+        tf_marcaProducto2 = new javax.swing.JTextField();
+        jLabel126 = new javax.swing.JLabel();
+        tf_tipoProducto2 = new javax.swing.JTextField();
+        Panel_vendedores2 = new javax.swing.JTabbedPane();
+        Panel_Vendedorsitos2 = new javax.swing.JPanel();
+        jLabel127 = new javax.swing.JLabel();
+        jLabel128 = new javax.swing.JLabel();
+        jLabel129 = new javax.swing.JLabel();
+        tf_nombreVendedor2 = new javax.swing.JTextField();
+        tf_idVendedor2 = new javax.swing.JTextField();
+        btn_updateVendedor2 = new javax.swing.JButton();
+        btn_deleteVendedor2 = new javax.swing.JButton();
+        btn_createVendedor2 = new javax.swing.JButton();
+        jScrollPane29 = new javax.swing.JScrollPane();
+        table_Vendedores2 = new javax.swing.JTable();
+        jPanel7 = new javax.swing.JPanel();
+        jLabel130 = new javax.swing.JLabel();
+        cbox_ListaVendedores2 = new javax.swing.JComboBox<>();
+        jScrollPane30 = new javax.swing.JScrollPane();
+        table_ProductosparaVendedor2 = new javax.swing.JTable();
+        jScrollPane31 = new javax.swing.JScrollPane();
+        jTable14 = new javax.swing.JTable();
+        jButton16 = new javax.swing.JButton();
+        jLabel131 = new javax.swing.JLabel();
+        jLabel132 = new javax.swing.JLabel();
+        jButton17 = new javax.swing.JButton();
+        Panel_menu_abajo2 = new javax.swing.JPanel();
+        jLabel133 = new javax.swing.JLabel();
+        Panel_Factura2 = new javax.swing.JPanel();
+        jLabel134 = new javax.swing.JLabel();
+        jLabel135 = new javax.swing.JLabel();
+        jLabel136 = new javax.swing.JLabel();
+        jLabel137 = new javax.swing.JLabel();
+        jLabel138 = new javax.swing.JLabel();
+        jLabel139 = new javax.swing.JLabel();
+        jLabel140 = new javax.swing.JLabel();
+        jLabel141 = new javax.swing.JLabel();
+        jTextField15 = new javax.swing.JTextField();
+        jFormattedTextField3 = new javax.swing.JFormattedTextField();
+        jTextField16 = new javax.swing.JTextField();
+        jTextField17 = new javax.swing.JTextField();
+        jTextField18 = new javax.swing.JTextField();
+        jComboBox4 = new javax.swing.JComboBox<>();
+        jComboBox6 = new javax.swing.JComboBox<>();
+        jScrollPane32 = new javax.swing.JScrollPane();
+        jTable5 = new javax.swing.JTable();
+        jToggleButton10 = new javax.swing.JToggleButton();
+        jToggleButton11 = new javax.swing.JToggleButton();
+        jToggleButton12 = new javax.swing.JToggleButton();
+        Panel_Tienda2 = new javax.swing.JTabbedPane();
+        Panel_Tiendita2 = new javax.swing.JPanel();
+        jLabel142 = new javax.swing.JLabel();
+        tf_idTienda2 = new javax.swing.JTextField();
+        jLabel143 = new javax.swing.JLabel();
+        tf_nombreTienda2 = new javax.swing.JTextField();
+        jLabel144 = new javax.swing.JLabel();
+        tf_horarioTienda2 = new javax.swing.JTextField();
+        jScrollPane33 = new javax.swing.JScrollPane();
+        table_Tiendas2 = new javax.swing.JTable();
+        btn_modificarTienda2 = new javax.swing.JToggleButton();
+        btn_eliminarTienda2 = new javax.swing.JToggleButton();
+        btn_crearTienda2 = new javax.swing.JToggleButton();
+        jLabel145 = new javax.swing.JLabel();
+        tf_ubicacionTienda2 = new javax.swing.JTextField();
+        jLabel146 = new javax.swing.JLabel();
+        jPanel8 = new javax.swing.JPanel();
+        jLabel147 = new javax.swing.JLabel();
+        cbox_NombreTiendas2 = new javax.swing.JComboBox<>();
+        jScrollPane34 = new javax.swing.JScrollPane();
+        table_TodosProductos2 = new javax.swing.JTable();
+        jScrollPane35 = new javax.swing.JScrollPane();
+        table_ProductosXTienda2 = new javax.swing.JTable();
+        btn_agregarProductoTienda2 = new javax.swing.JButton();
+        tf_precio2 = new javax.swing.JTextField();
+        tf_cantidad2 = new javax.swing.JTextField();
+        tf_reorden2 = new javax.swing.JTextField();
+        jLabel148 = new javax.swing.JLabel();
+        jLabel149 = new javax.swing.JLabel();
+        jLabel150 = new javax.swing.JLabel();
+        btn_eliminarInventario2 = new javax.swing.JToggleButton();
+        btn_modifyInventario2 = new javax.swing.JToggleButton();
+        Fondo7 = new javax.swing.JLabel();
         Menu_Admin = new javax.swing.JPanel();
         Panel_vendedores = new javax.swing.JTabbedPane();
         Panel_Vendedorsitos = new javax.swing.JPanel();
@@ -536,8 +662,6 @@ public class Loggin extends javax.swing.JFrame {
         Icono_Vendedor1 = new javax.swing.JLabel();
         Icono_Factura1 = new javax.swing.JLabel();
         Icono_Cliente1 = new javax.swing.JLabel();
-        jLabel39 = new javax.swing.JLabel();
-        lbl_Bitacora1 = new javax.swing.JLabel();
         Panel_Informes1 = new javax.swing.JPanel();
         jLabel40 = new javax.swing.JLabel();
         ComboReportes1 = new javax.swing.JComboBox<>();
@@ -687,6 +811,975 @@ public class Loggin extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(null);
+
+        Menu_Maestro.setLayout(null);
+
+        Panel_Bitacora2.setBackground(new java.awt.Color(0, 0, 0,150));
+        Panel_Bitacora2.setLayout(null);
+
+        jLabel117.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N
+        jLabel117.setForeground(new java.awt.Color(137, 250, 230));
+        jLabel117.setText("Bitacora");
+        Panel_Bitacora2.add(jLabel117);
+        jLabel117.setBounds(480, 0, 150, 50);
+
+        ta_Bitacora2.setColumns(20);
+        ta_Bitacora2.setRows(5);
+        jScrollPane25.setViewportView(ta_Bitacora2);
+
+        Panel_Bitacora2.add(jScrollPane25);
+        jScrollPane25.setBounds(50, 70, 1000, 510);
+
+        Menu_Maestro.add(Panel_Bitacora2);
+        Panel_Bitacora2.setBounds(1230, 0, 1080, 610);
+
+        Panel_Menu_Izquierda2.setBackground(new java.awt.Color(67, 122, 227,170));
+
+        Icono_Tienda2.setText("Usuario Ico");
+        Icono_Tienda2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                Icono_Tienda2MouseClicked(evt);
+            }
+        });
+
+        Icono_Producto2.setText("Clases Ico");
+        Icono_Producto2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                Icono_Producto2MouseClicked(evt);
+            }
+        });
+
+        Icono_Vendedor2.setText("Examen ico");
+        Icono_Vendedor2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                Icono_Vendedor2MouseClicked(evt);
+            }
+        });
+
+        Icono_Cliente2.setText("Calificacion ico");
+        Icono_Cliente2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                Icono_Cliente2MouseClicked(evt);
+            }
+        });
+
+        javax.swing.GroupLayout Panel_Menu_Izquierda2Layout = new javax.swing.GroupLayout(Panel_Menu_Izquierda2);
+        Panel_Menu_Izquierda2.setLayout(Panel_Menu_Izquierda2Layout);
+        Panel_Menu_Izquierda2Layout.setHorizontalGroup(
+            Panel_Menu_Izquierda2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(Panel_Menu_Izquierda2Layout.createSequentialGroup()
+                .addGroup(Panel_Menu_Izquierda2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(Panel_Menu_Izquierda2Layout.createSequentialGroup()
+                        .addComponent(Icono_Cliente2)
+                        .addGap(0, 0, Short.MAX_VALUE))
+                    .addGroup(Panel_Menu_Izquierda2Layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addGroup(Panel_Menu_Izquierda2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(Panel_Menu_Izquierda2Layout.createSequentialGroup()
+                                .addGroup(Panel_Menu_Izquierda2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(Icono_Tienda2, javax.swing.GroupLayout.PREFERRED_SIZE, 81, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(Icono_Producto2, javax.swing.GroupLayout.PREFERRED_SIZE, 81, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGap(0, 0, Short.MAX_VALUE))
+                            .addComponent(Icono_Vendedor2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+                .addContainerGap())
+        );
+        Panel_Menu_Izquierda2Layout.setVerticalGroup(
+            Panel_Menu_Izquierda2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(Panel_Menu_Izquierda2Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(Icono_Tienda2, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(Icono_Producto2, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(Icono_Vendedor2, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(Icono_Cliente2, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(350, Short.MAX_VALUE))
+        );
+
+        Menu_Maestro.add(Panel_Menu_Izquierda2);
+        Panel_Menu_Izquierda2.setBounds(0, 0, 80, 650);
+
+        Panel_Informes2.setBackground(new java.awt.Color(0, 0, 0,150));
+        Panel_Informes2.setPreferredSize(new java.awt.Dimension(1070, 610));
+        Panel_Informes2.setLayout(null);
+
+        jLabel41.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N
+        jLabel41.setForeground(new java.awt.Color(137, 250, 230));
+        jLabel41.setText("Informes");
+        Panel_Informes2.add(jLabel41);
+        jLabel41.setBounds(470, 0, 170, 60);
+
+        ComboReportes2.setForeground(new java.awt.Color(102, 102, 102));
+        ComboReportes2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Vista 1", "Vista 2", "Vista 3", "Vista 4", "Vista 5", "Vista 6", "Vista 7", "Vista 8" }));
+        ComboReportes2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ComboReportes2ActionPerformed(evt);
+            }
+        });
+        Panel_Informes2.add(ComboReportes2);
+        ComboReportes2.setBounds(470, 60, 170, 40);
+
+        tableReportes2.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+
+            },
+            new String [] {
+
+            }
+        ));
+        jScrollPane26.setViewportView(tableReportes2);
+
+        Panel_Informes2.add(jScrollPane26);
+        jScrollPane26.setBounds(30, 110, 960, 430);
+
+        Menu_Maestro.add(Panel_Informes2);
+        Panel_Informes2.setBounds(1220, 0, 1080, 610);
+
+        Panel_Cliente2.setBackground(new java.awt.Color(0, 0, 0,150));
+        Panel_Cliente2.setForeground(new java.awt.Color(255, 255, 255));
+        Panel_Cliente2.setPreferredSize(new java.awt.Dimension(1070, 610));
+        Panel_Cliente2.setLayout(null);
+
+        jLabel46.setFont(new java.awt.Font("Segoe UI", 0, 48)); // NOI18N
+        jLabel46.setForeground(new java.awt.Color(137, 250, 230));
+        jLabel46.setText("Clientes");
+        Panel_Cliente2.add(jLabel46);
+        jLabel46.setBounds(420, 10, 270, 70);
+
+        jLabel49.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        jLabel49.setForeground(new java.awt.Color(137, 250, 230));
+        jLabel49.setText("Nombre");
+        Panel_Cliente2.add(jLabel49);
+        jLabel49.setBounds(50, 130, 110, 30);
+
+        jLabel118.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        jLabel118.setForeground(new java.awt.Color(137, 250, 230));
+        jLabel118.setText("Correo");
+        Panel_Cliente2.add(jLabel118);
+        jLabel118.setBounds(50, 210, 60, 30);
+
+        jLabel119.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        jLabel119.setForeground(new java.awt.Color(137, 250, 230));
+        jLabel119.setText("ID");
+        Panel_Cliente2.add(jLabel119);
+        jLabel119.setBounds(50, 50, 60, 30);
+
+        tf_idCliente2.setBackground(new java.awt.Color(102, 102, 102));
+        tf_idCliente2.setForeground(new java.awt.Color(255, 255, 255));
+        Panel_Cliente2.add(tf_idCliente2);
+        tf_idCliente2.setBounds(50, 80, 210, 30);
+
+        tf_nombreCliente2.setBackground(new java.awt.Color(102, 102, 102));
+        tf_nombreCliente2.setForeground(new java.awt.Color(255, 255, 255));
+        Panel_Cliente2.add(tf_nombreCliente2);
+        tf_nombreCliente2.setBounds(50, 160, 210, 30);
+
+        tf_correoCliente2.setBackground(new java.awt.Color(102, 102, 102));
+        tf_correoCliente2.setForeground(new java.awt.Color(255, 255, 255));
+        Panel_Cliente2.add(tf_correoCliente2);
+        tf_correoCliente2.setBounds(50, 240, 210, 30);
+
+        btn_deleteCliente2.setBackground(new java.awt.Color(204, 204, 204));
+        btn_deleteCliente2.setForeground(new java.awt.Color(0, 0, 0));
+        btn_deleteCliente2.setText("Eliminar");
+        btn_deleteCliente2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btn_deleteCliente2MouseClicked(evt);
+            }
+        });
+        Panel_Cliente2.add(btn_deleteCliente2);
+        btn_deleteCliente2.setBounds(60, 450, 160, 40);
+
+        btn_createCliente2.setBackground(new java.awt.Color(204, 204, 204));
+        btn_createCliente2.setForeground(new java.awt.Color(0, 0, 0));
+        btn_createCliente2.setText("Añadir");
+        btn_createCliente2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btn_createCliente2MouseClicked(evt);
+            }
+        });
+        Panel_Cliente2.add(btn_createCliente2);
+        btn_createCliente2.setBounds(60, 310, 160, 40);
+
+        btn_updateCliente2.setBackground(new java.awt.Color(204, 204, 204));
+        btn_updateCliente2.setForeground(new java.awt.Color(0, 0, 0));
+        btn_updateCliente2.setText("Modificar");
+        btn_updateCliente2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btn_updateCliente2MouseClicked(evt);
+            }
+        });
+        Panel_Cliente2.add(btn_updateCliente2);
+        btn_updateCliente2.setBounds(60, 380, 160, 40);
+
+        table_Clientes2.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null}
+            },
+            new String [] {
+                "ID Cliente", "Nombre Cliente", "Correo Cliente"
+            }
+        ));
+        jScrollPane27.setViewportView(table_Clientes2);
+
+        Panel_Cliente2.add(jScrollPane27);
+        jScrollPane27.setBounds(330, 90, 670, 450);
+
+        Menu_Maestro.add(Panel_Cliente2);
+        Panel_Cliente2.setBounds(1230, 0, 1080, 610);
+
+        Panel_Productos2.setBackground(new java.awt.Color(0, 0, 0,150));
+        Panel_Productos2.setForeground(new java.awt.Color(255, 255, 255));
+        Panel_Productos2.setPreferredSize(new java.awt.Dimension(1070, 610));
+        Panel_Productos2.setLayout(null);
+
+        jLabel120.setFont(new java.awt.Font("Segoe UI", 0, 48)); // NOI18N
+        jLabel120.setForeground(new java.awt.Color(137, 250, 230));
+        jLabel120.setText("Productos");
+        Panel_Productos2.add(jLabel120);
+        jLabel120.setBounds(500, 10, 270, 70);
+
+        jLabel121.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabel121.setForeground(new java.awt.Color(137, 250, 230));
+        jLabel121.setText("UPC");
+        Panel_Productos2.add(jLabel121);
+        jLabel121.setBounds(70, 50, 37, 20);
+
+        jLabel122.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabel122.setForeground(new java.awt.Color(137, 250, 230));
+        jLabel122.setText("Nombre");
+        Panel_Productos2.add(jLabel122);
+        jLabel122.setBounds(70, 100, 80, 20);
+
+        jLabel123.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabel123.setForeground(new java.awt.Color(137, 250, 230));
+        jLabel123.setText("Tamaño");
+        Panel_Productos2.add(jLabel123);
+        jLabel123.setBounds(70, 150, 80, 20);
+
+        jLabel124.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabel124.setForeground(new java.awt.Color(137, 250, 230));
+        jLabel124.setText("Embalaje");
+        Panel_Productos2.add(jLabel124);
+        jLabel124.setBounds(70, 200, 80, 30);
+
+        jLabel125.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabel125.setForeground(new java.awt.Color(137, 250, 230));
+        jLabel125.setText("Marca");
+        Panel_Productos2.add(jLabel125);
+        jLabel125.setBounds(70, 260, 80, 20);
+
+        tf_embalajeProducto2.setBackground(new java.awt.Color(102, 102, 102));
+        tf_embalajeProducto2.setForeground(new java.awt.Color(255, 255, 255));
+        Panel_Productos2.add(tf_embalajeProducto2);
+        tf_embalajeProducto2.setBounds(70, 230, 220, 30);
+
+        tf_UPC2.setBackground(new java.awt.Color(102, 102, 102));
+        tf_UPC2.setForeground(new java.awt.Color(255, 255, 255));
+        Panel_Productos2.add(tf_UPC2);
+        tf_UPC2.setBounds(70, 70, 220, 30);
+
+        tf_nombreProducto2.setBackground(new java.awt.Color(102, 102, 102));
+        tf_nombreProducto2.setForeground(new java.awt.Color(255, 255, 255));
+        Panel_Productos2.add(tf_nombreProducto2);
+        tf_nombreProducto2.setBounds(70, 120, 220, 30);
+
+        tf_tamanoProducto2.setBackground(new java.awt.Color(102, 102, 102));
+        tf_tamanoProducto2.setForeground(new java.awt.Color(255, 255, 255));
+        Panel_Productos2.add(tf_tamanoProducto2);
+        tf_tamanoProducto2.setBounds(70, 170, 220, 30);
+
+        btn_deleteProducto2.setBackground(new java.awt.Color(204, 204, 204));
+        btn_deleteProducto2.setForeground(new java.awt.Color(0, 0, 0));
+        btn_deleteProducto2.setText("Eliminar");
+        btn_deleteProducto2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btn_deleteProducto2MouseClicked(evt);
+            }
+        });
+        Panel_Productos2.add(btn_deleteProducto2);
+        btn_deleteProducto2.setBounds(110, 510, 170, 40);
+
+        table_Productos2.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null}
+            },
+            new String [] {
+                "UPC", "Nombre Producto", "Tamaño", "Embalaje", "Marca", "Tipo"
+            }
+        ));
+        jScrollPane28.setViewportView(table_Productos2);
+
+        Panel_Productos2.add(jScrollPane28);
+        jScrollPane28.setBounds(350, 100, 670, 450);
+
+        btn_createProducto2.setBackground(new java.awt.Color(204, 204, 204));
+        btn_createProducto2.setForeground(new java.awt.Color(0, 0, 0));
+        btn_createProducto2.setText("Agregar");
+        btn_createProducto2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btn_createProducto2MouseClicked(evt);
+            }
+        });
+        Panel_Productos2.add(btn_createProducto2);
+        btn_createProducto2.setBounds(110, 390, 170, 40);
+
+        btn_updateProducto2.setBackground(new java.awt.Color(204, 204, 204));
+        btn_updateProducto2.setForeground(new java.awt.Color(0, 0, 0));
+        btn_updateProducto2.setText("Editar");
+        btn_updateProducto2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btn_updateProducto2MouseClicked(evt);
+            }
+        });
+        Panel_Productos2.add(btn_updateProducto2);
+        btn_updateProducto2.setBounds(110, 450, 170, 40);
+
+        tf_marcaProducto2.setBackground(new java.awt.Color(102, 102, 102));
+        tf_marcaProducto2.setForeground(new java.awt.Color(255, 255, 255));
+        Panel_Productos2.add(tf_marcaProducto2);
+        tf_marcaProducto2.setBounds(70, 280, 220, 30);
+
+        jLabel126.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabel126.setForeground(new java.awt.Color(137, 250, 230));
+        jLabel126.setText("Tipo Producto");
+        Panel_Productos2.add(jLabel126);
+        jLabel126.setBounds(70, 310, 120, 30);
+
+        tf_tipoProducto2.setBackground(new java.awt.Color(102, 102, 102));
+        tf_tipoProducto2.setForeground(new java.awt.Color(255, 255, 255));
+        Panel_Productos2.add(tf_tipoProducto2);
+        tf_tipoProducto2.setBounds(70, 340, 220, 30);
+
+        Menu_Maestro.add(Panel_Productos2);
+        Panel_Productos2.setBounds(1230, 0, 1080, 610);
+
+        Panel_Vendedorsitos2.setBackground(new java.awt.Color(0, 0, 0,150));
+        Panel_Vendedorsitos2.setForeground(new java.awt.Color(255, 255, 255));
+        Panel_Vendedorsitos2.setPreferredSize(new java.awt.Dimension(1070, 610));
+        Panel_Vendedorsitos2.setLayout(null);
+
+        jLabel127.setFont(new java.awt.Font("Segoe UI", 0, 48)); // NOI18N
+        jLabel127.setForeground(new java.awt.Color(137, 250, 230));
+        jLabel127.setText("Vendedores");
+        Panel_Vendedorsitos2.add(jLabel127);
+        jLabel127.setBounds(400, 0, 270, 70);
+
+        jLabel128.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        jLabel128.setForeground(new java.awt.Color(137, 250, 230));
+        jLabel128.setText("ID");
+        Panel_Vendedorsitos2.add(jLabel128);
+        jLabel128.setBounds(40, 120, 130, 25);
+
+        jLabel129.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        jLabel129.setForeground(new java.awt.Color(137, 250, 230));
+        jLabel129.setText("Nombre");
+        Panel_Vendedorsitos2.add(jLabel129);
+        jLabel129.setBounds(40, 200, 130, 25);
+
+        tf_nombreVendedor2.setBackground(new java.awt.Color(102, 102, 102));
+        tf_nombreVendedor2.setForeground(new java.awt.Color(255, 255, 255));
+        Panel_Vendedorsitos2.add(tf_nombreVendedor2);
+        tf_nombreVendedor2.setBounds(40, 230, 260, 30);
+
+        tf_idVendedor2.setBackground(new java.awt.Color(102, 102, 102));
+        tf_idVendedor2.setForeground(new java.awt.Color(255, 255, 255));
+        Panel_Vendedorsitos2.add(tf_idVendedor2);
+        tf_idVendedor2.setBounds(40, 150, 260, 30);
+
+        btn_updateVendedor2.setBackground(new java.awt.Color(204, 204, 204));
+        btn_updateVendedor2.setForeground(new java.awt.Color(0, 0, 0));
+        btn_updateVendedor2.setText("Modificar");
+        btn_updateVendedor2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btn_updateVendedor2MouseClicked(evt);
+            }
+        });
+        Panel_Vendedorsitos2.add(btn_updateVendedor2);
+        btn_updateVendedor2.setBounds(110, 380, 120, 40);
+
+        btn_deleteVendedor2.setBackground(new java.awt.Color(204, 204, 204));
+        btn_deleteVendedor2.setForeground(new java.awt.Color(0, 0, 0));
+        btn_deleteVendedor2.setText("Eliminar");
+        btn_deleteVendedor2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btn_deleteVendedor2MouseClicked(evt);
+            }
+        });
+        Panel_Vendedorsitos2.add(btn_deleteVendedor2);
+        btn_deleteVendedor2.setBounds(110, 450, 120, 40);
+
+        btn_createVendedor2.setBackground(new java.awt.Color(204, 204, 204));
+        btn_createVendedor2.setForeground(new java.awt.Color(0, 0, 0));
+        btn_createVendedor2.setText("Añadir");
+        btn_createVendedor2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btn_createVendedor2MouseClicked(evt);
+            }
+        });
+        Panel_Vendedorsitos2.add(btn_createVendedor2);
+        btn_createVendedor2.setBounds(110, 310, 120, 40);
+
+        table_Vendedores2.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {null, null},
+                {null, null},
+                {null, null},
+                {null, null}
+            },
+            new String [] {
+                "Id Vendedor", "Nombre Vendedor"
+            }
+        ) {
+            boolean[] canEdit = new boolean [] {
+                false, false
+            };
+
+            public boolean isCellEditable(int rowIndex, int columnIndex) {
+                return canEdit [columnIndex];
+            }
+        });
+        jScrollPane29.setViewportView(table_Vendedores2);
+
+        Panel_Vendedorsitos2.add(jScrollPane29);
+        jScrollPane29.setBounds(340, 100, 680, 440);
+
+        Panel_vendedores2.addTab("Vendedores", Panel_Vendedorsitos2);
+
+        jPanel7.setBackground(new java.awt.Color(0,0,0,200));
+        jPanel7.setForeground(new java.awt.Color(0, 0, 0));
+        jPanel7.setLayout(null);
+
+        jLabel130.setBackground(new java.awt.Color(137, 250, 230));
+        jLabel130.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N
+        jLabel130.setForeground(new java.awt.Color(137, 250, 230));
+        jLabel130.setText("Vendedor");
+        jPanel7.add(jLabel130);
+        jLabel130.setBounds(40, 10, 180, 70);
+
+        cbox_ListaVendedores2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        cbox_ListaVendedores2.addItemListener(new java.awt.event.ItemListener() {
+            public void itemStateChanged(java.awt.event.ItemEvent evt) {
+                cbox_ListaVendedores2ItemStateChanged(evt);
+            }
+        });
+        cbox_ListaVendedores2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                cbox_ListaVendedores2MouseClicked(evt);
+            }
+        });
+        jPanel7.add(cbox_ListaVendedores2);
+        cbox_ListaVendedores2.setBounds(220, 30, 310, 40);
+
+        table_ProductosparaVendedor2.setBackground(new java.awt.Color(153, 153, 153));
+        table_ProductosparaVendedor2.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null}
+            },
+            new String [] {
+                "Title 1", "Title 2", "Title 3", "Title 4"
+            }
+        ));
+        jScrollPane30.setViewportView(table_ProductosparaVendedor2);
+
+        jPanel7.add(jScrollPane30);
+        jScrollPane30.setBounds(30, 120, 430, 440);
+
+        jTable14.setBackground(new java.awt.Color(153, 153, 153));
+        jTable14.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+
+            },
+            new String [] {
+
+            }
+        ));
+        jScrollPane31.setViewportView(jTable14);
+
+        jPanel7.add(jScrollPane31);
+        jScrollPane31.setBounds(610, 120, 430, 440);
+
+        jButton16.setBackground(new java.awt.Color(204, 204, 204));
+        jButton16.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jButton16.setForeground(new java.awt.Color(0, 0, 0));
+        jButton16.setText("<-");
+        jButton16.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButton16MouseClicked(evt);
+            }
+        });
+        jPanel7.add(jButton16);
+        jButton16.setBounds(500, 340, 80, 50);
+
+        jLabel131.setBackground(new java.awt.Color(137, 250, 230));
+        jLabel131.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        jLabel131.setForeground(new java.awt.Color(137, 250, 230));
+        jLabel131.setText("Productos");
+        jPanel7.add(jLabel131);
+        jLabel131.setBounds(190, 90, 100, 20);
+
+        jLabel132.setBackground(new java.awt.Color(137, 250, 230));
+        jLabel132.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        jLabel132.setForeground(new java.awt.Color(137, 250, 230));
+        jLabel132.setText("Productos Que Vende");
+        jPanel7.add(jLabel132);
+        jLabel132.setBounds(730, 90, 210, 20);
+
+        jButton17.setBackground(new java.awt.Color(204, 204, 204));
+        jButton17.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jButton17.setForeground(new java.awt.Color(0, 0, 0));
+        jButton17.setText("->");
+        jButton17.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButton17MouseClicked(evt);
+            }
+        });
+        jPanel7.add(jButton17);
+        jButton17.setBounds(500, 270, 80, 50);
+
+        Panel_vendedores2.addTab("Inventario", jPanel7);
+
+        Menu_Maestro.add(Panel_vendedores2);
+        Panel_vendedores2.setBounds(1230, 0, 1080, 610);
+
+        Panel_menu_abajo2.setBackground(new java.awt.Color(67, 122, 227,200));
+        Panel_menu_abajo2.setLayout(null);
+
+        jLabel133.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jLabel133.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Media/cerrar-sesion (1).png"))); // NOI18N
+        jLabel133.setText("Salir");
+        jLabel133.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel133MouseClicked(evt);
+            }
+        });
+        Panel_menu_abajo2.add(jLabel133);
+        jLabel133.setBounds(960, 0, 70, 32);
+
+        Menu_Maestro.add(Panel_menu_abajo2);
+        Panel_menu_abajo2.setBounds(80, 610, 1080, 40);
+
+        Panel_Factura2.setBackground(new java.awt.Color(0, 0, 0,150));
+        Panel_Factura2.setForeground(new java.awt.Color(255, 255, 255));
+        Panel_Factura2.setPreferredSize(new java.awt.Dimension(1070, 610));
+        Panel_Factura2.setLayout(null);
+
+        jLabel134.setFont(new java.awt.Font("Segoe UI", 0, 48)); // NOI18N
+        jLabel134.setForeground(new java.awt.Color(137, 250, 230));
+        jLabel134.setText("Facturas");
+        Panel_Factura2.add(jLabel134);
+        jLabel134.setBounds(470, 0, 270, 70);
+
+        jLabel135.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        jLabel135.setForeground(new java.awt.Color(137, 250, 230));
+        jLabel135.setText("Fecha");
+        Panel_Factura2.add(jLabel135);
+        jLabel135.setBounds(30, 90, 100, 30);
+
+        jLabel136.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        jLabel136.setForeground(new java.awt.Color(137, 250, 230));
+        jLabel136.setText("ID Tienda");
+        Panel_Factura2.add(jLabel136);
+        jLabel136.setBounds(30, 440, 100, 30);
+
+        jLabel137.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        jLabel137.setForeground(new java.awt.Color(137, 250, 230));
+        jLabel137.setText("Subtotal");
+        Panel_Factura2.add(jLabel137);
+        jLabel137.setBounds(30, 230, 100, 30);
+
+        jLabel138.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        jLabel138.setForeground(new java.awt.Color(137, 250, 230));
+        jLabel138.setText("Total");
+        Panel_Factura2.add(jLabel138);
+        jLabel138.setBounds(30, 300, 100, 30);
+
+        jLabel139.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        jLabel139.setForeground(new java.awt.Color(137, 250, 230));
+        jLabel139.setText("ISV");
+        Panel_Factura2.add(jLabel139);
+        jLabel139.setBounds(30, 160, 100, 30);
+
+        jLabel140.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        jLabel140.setForeground(new java.awt.Color(137, 250, 230));
+        jLabel140.setText("ID Cliente");
+        Panel_Factura2.add(jLabel140);
+        jLabel140.setBounds(30, 370, 100, 30);
+
+        jLabel141.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        jLabel141.setForeground(new java.awt.Color(137, 250, 230));
+        jLabel141.setText("Numero");
+        Panel_Factura2.add(jLabel141);
+        jLabel141.setBounds(30, 20, 100, 30);
+
+        jTextField15.setBackground(new java.awt.Color(102, 102, 102));
+        jTextField15.setForeground(new java.awt.Color(255, 255, 255));
+        jTextField15.setText("jTextField7");
+        Panel_Factura2.add(jTextField15);
+        jTextField15.setBounds(30, 50, 190, 30);
+
+        jFormattedTextField3.setText("jFormattedTextField1");
+        Panel_Factura2.add(jFormattedTextField3);
+        jFormattedTextField3.setBounds(30, 120, 190, 30);
+
+        jTextField16.setBackground(new java.awt.Color(102, 102, 102));
+        jTextField16.setForeground(new java.awt.Color(255, 255, 255));
+        jTextField16.setText("jTextField8");
+        Panel_Factura2.add(jTextField16);
+        jTextField16.setBounds(30, 190, 190, 30);
+
+        jTextField17.setBackground(new java.awt.Color(102, 102, 102));
+        jTextField17.setForeground(new java.awt.Color(255, 255, 255));
+        jTextField17.setText("jTextField9");
+        Panel_Factura2.add(jTextField17);
+        jTextField17.setBounds(30, 260, 190, 30);
+
+        jTextField18.setBackground(new java.awt.Color(102, 102, 102));
+        jTextField18.setForeground(new java.awt.Color(102, 102, 102));
+        jTextField18.setText("jTextField10");
+        Panel_Factura2.add(jTextField18);
+        jTextField18.setBounds(30, 330, 190, 30);
+
+        jComboBox4.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        Panel_Factura2.add(jComboBox4);
+        jComboBox4.setBounds(30, 400, 190, 30);
+
+        jComboBox6.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        Panel_Factura2.add(jComboBox6);
+        jComboBox6.setBounds(30, 470, 190, 30);
+
+        jTable5.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null}
+            },
+            new String [] {
+                "Title 1", "Title 2", "Title 3", "Title 4"
+            }
+        ));
+        jScrollPane32.setViewportView(jTable5);
+
+        Panel_Factura2.add(jScrollPane32);
+        jScrollPane32.setBounds(280, 90, 710, 460);
+
+        jToggleButton10.setBackground(new java.awt.Color(204, 204, 204));
+        jToggleButton10.setForeground(new java.awt.Color(0, 0, 0));
+        jToggleButton10.setText("Agregar");
+        Panel_Factura2.add(jToggleButton10);
+        jToggleButton10.setBounds(20, 520, 72, 23);
+
+        jToggleButton11.setBackground(new java.awt.Color(204, 204, 204));
+        jToggleButton11.setForeground(new java.awt.Color(0, 0, 0));
+        jToggleButton11.setText("Eliminar");
+        Panel_Factura2.add(jToggleButton11);
+        jToggleButton11.setBounds(20, 560, 73, 23);
+
+        jToggleButton12.setBackground(new java.awt.Color(204, 204, 204));
+        jToggleButton12.setForeground(new java.awt.Color(0, 0, 0));
+        jToggleButton12.setText("Modificar");
+        Panel_Factura2.add(jToggleButton12);
+        jToggleButton12.setBounds(150, 540, 81, 23);
+
+        Menu_Maestro.add(Panel_Factura2);
+        Panel_Factura2.setBounds(1230, 0, 1080, 610);
+
+        Panel_Tienda2.setBackground(new java.awt.Color(153, 153, 153));
+        Panel_Tienda2.setForeground(new java.awt.Color(0, 0, 0));
+
+        Panel_Tiendita2.setBackground(new java.awt.Color(0, 0, 0,200));
+        Panel_Tiendita2.setForeground(new java.awt.Color(0, 0, 0));
+        Panel_Tiendita2.setPreferredSize(new java.awt.Dimension(1070, 610));
+        Panel_Tiendita2.setLayout(null);
+
+        jLabel142.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        jLabel142.setForeground(new java.awt.Color(137, 250, 230));
+        jLabel142.setText("Horario");
+        Panel_Tiendita2.add(jLabel142);
+        jLabel142.setBounds(110, 200, 100, 30);
+
+        tf_idTienda2.setBackground(new java.awt.Color(102, 102, 102));
+        tf_idTienda2.setForeground(new java.awt.Color(255, 255, 255));
+        Panel_Tiendita2.add(tf_idTienda2);
+        tf_idTienda2.setBounds(40, 70, 200, 30);
+
+        jLabel143.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        jLabel143.setForeground(new java.awt.Color(137, 250, 230));
+        jLabel143.setText("ID");
+        Panel_Tiendita2.add(jLabel143);
+        jLabel143.setBounds(130, 40, 100, 30);
+
+        tf_nombreTienda2.setBackground(new java.awt.Color(102, 102, 102));
+        tf_nombreTienda2.setForeground(new java.awt.Color(255, 255, 255));
+        Panel_Tiendita2.add(tf_nombreTienda2);
+        tf_nombreTienda2.setBounds(40, 150, 200, 30);
+
+        jLabel144.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        jLabel144.setForeground(new java.awt.Color(137, 250, 230));
+        jLabel144.setText("Nombre");
+        Panel_Tiendita2.add(jLabel144);
+        jLabel144.setBounds(110, 120, 100, 30);
+
+        tf_horarioTienda2.setBackground(new java.awt.Color(102, 102, 102));
+        tf_horarioTienda2.setForeground(new java.awt.Color(255, 255, 255));
+        Panel_Tiendita2.add(tf_horarioTienda2);
+        tf_horarioTienda2.setBounds(40, 230, 200, 30);
+
+        table_Tiendas2.setBackground(new java.awt.Color(153, 153, 153));
+        table_Tiendas2.setForeground(new java.awt.Color(0, 0, 0));
+        table_Tiendas2.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null}
+            },
+            new String [] {
+                "Id Tienda", "Nombre Tienda", "Horario", "Ubicacion"
+            }
+        ));
+        table_Tiendas2.setGridColor(new java.awt.Color(153, 153, 153));
+        table_Tiendas2.setSelectionForeground(new java.awt.Color(0, 0, 0));
+        table_Tiendas2.setShowGrid(false);
+        jScrollPane33.setViewportView(table_Tiendas2);
+
+        Panel_Tiendita2.add(jScrollPane33);
+        jScrollPane33.setBounds(260, 90, 770, 470);
+
+        btn_modificarTienda2.setBackground(new java.awt.Color(204, 204, 204));
+        btn_modificarTienda2.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        btn_modificarTienda2.setForeground(new java.awt.Color(0, 0, 0));
+        btn_modificarTienda2.setText("Modificar");
+        btn_modificarTienda2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btn_modificarTienda2MouseClicked(evt);
+            }
+        });
+        Panel_Tiendita2.add(btn_modificarTienda2);
+        btn_modificarTienda2.setBounds(60, 450, 150, 40);
+
+        btn_eliminarTienda2.setBackground(new java.awt.Color(204, 204, 204));
+        btn_eliminarTienda2.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        btn_eliminarTienda2.setForeground(new java.awt.Color(0, 0, 0));
+        btn_eliminarTienda2.setText("Eliminar");
+        btn_eliminarTienda2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btn_eliminarTienda2MouseClicked(evt);
+            }
+        });
+        Panel_Tiendita2.add(btn_eliminarTienda2);
+        btn_eliminarTienda2.setBounds(60, 520, 150, 40);
+
+        btn_crearTienda2.setBackground(new java.awt.Color(204, 204, 204));
+        btn_crearTienda2.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        btn_crearTienda2.setForeground(new java.awt.Color(0, 0, 0));
+        btn_crearTienda2.setText("Añadir");
+        btn_crearTienda2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btn_crearTienda2MouseClicked(evt);
+            }
+        });
+        Panel_Tiendita2.add(btn_crearTienda2);
+        btn_crearTienda2.setBounds(60, 380, 150, 40);
+
+        jLabel145.setFont(new java.awt.Font("Segoe UI", 1, 48)); // NOI18N
+        jLabel145.setForeground(new java.awt.Color(137, 250, 230));
+        jLabel145.setText("Tiendas");
+        Panel_Tiendita2.add(jLabel145);
+        jLabel145.setBounds(550, 10, 180, 64);
+
+        tf_ubicacionTienda2.setBackground(new java.awt.Color(102, 102, 102));
+        tf_ubicacionTienda2.setForeground(new java.awt.Color(255, 255, 255));
+        Panel_Tiendita2.add(tf_ubicacionTienda2);
+        tf_ubicacionTienda2.setBounds(40, 310, 200, 30);
+
+        jLabel146.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        jLabel146.setForeground(new java.awt.Color(137, 250, 230));
+        jLabel146.setText("Ubicacion");
+        Panel_Tiendita2.add(jLabel146);
+        jLabel146.setBounds(100, 280, 100, 30);
+
+        Panel_Tienda2.addTab("Tiendas", Panel_Tiendita2);
+
+        jPanel8.setBackground(new java.awt.Color(0,0,0,200));
+        jPanel8.setForeground(new java.awt.Color(0, 0, 0));
+        jPanel8.setLayout(null);
+
+        jLabel147.setBackground(new java.awt.Color(137, 250, 230));
+        jLabel147.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N
+        jLabel147.setForeground(new java.awt.Color(137, 250, 230));
+        jLabel147.setText("Tienda");
+        jPanel8.add(jLabel147);
+        jLabel147.setBounds(40, 10, 130, 70);
+
+        cbox_NombreTiendas2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        cbox_NombreTiendas2.addItemListener(new java.awt.event.ItemListener() {
+            public void itemStateChanged(java.awt.event.ItemEvent evt) {
+                cbox_NombreTiendas2ItemStateChanged(evt);
+            }
+        });
+        jPanel8.add(cbox_NombreTiendas2);
+        cbox_NombreTiendas2.setBounds(170, 30, 310, 40);
+
+        table_TodosProductos2.setBackground(new java.awt.Color(153, 153, 153));
+        table_TodosProductos2.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null}
+            },
+            new String [] {
+                "UPC", "Nombre Producto", "Tamano Producto", "Embalaje", "Marca", "Tipo"
+            }
+        ));
+        jScrollPane34.setViewportView(table_TodosProductos2);
+
+        jPanel8.add(jScrollPane34);
+        jScrollPane34.setBounds(50, 100, 400, 300);
+
+        table_ProductosXTienda2.setBackground(new java.awt.Color(153, 153, 153));
+        table_ProductosXTienda2.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null}
+            },
+            new String [] {
+                "idTienda", "UPC", "Precio", "Cantidad", "Reorden"
+            }
+        ));
+        jScrollPane35.setViewportView(table_ProductosXTienda2);
+
+        jPanel8.add(jScrollPane35);
+        jScrollPane35.setBounds(560, 100, 400, 300);
+
+        btn_agregarProductoTienda2.setBackground(new java.awt.Color(204, 204, 204));
+        btn_agregarProductoTienda2.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        btn_agregarProductoTienda2.setForeground(new java.awt.Color(0, 0, 0));
+        btn_agregarProductoTienda2.setText("->");
+        btn_agregarProductoTienda2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btn_agregarProductoTienda2MouseClicked(evt);
+            }
+        });
+        jPanel8.add(btn_agregarProductoTienda2);
+        btn_agregarProductoTienda2.setBounds(480, 230, 50, 27);
+
+        tf_precio2.setBackground(new java.awt.Color(102, 102, 102));
+        tf_precio2.setForeground(new java.awt.Color(255, 255, 255));
+        jPanel8.add(tf_precio2);
+        tf_precio2.setBounds(40, 440, 220, 40);
+
+        tf_cantidad2.setBackground(new java.awt.Color(102, 102, 102));
+        tf_cantidad2.setForeground(new java.awt.Color(255, 255, 255));
+        jPanel8.add(tf_cantidad2);
+        tf_cantidad2.setBounds(40, 520, 220, 40);
+
+        tf_reorden2.setBackground(new java.awt.Color(102, 102, 102));
+        tf_reorden2.setForeground(new java.awt.Color(255, 255, 255));
+        jPanel8.add(tf_reorden2);
+        tf_reorden2.setBounds(280, 480, 220, 40);
+
+        jLabel148.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        jLabel148.setForeground(new java.awt.Color(137, 250, 230));
+        jLabel148.setText("Cantidad");
+        jPanel8.add(jLabel148);
+        jLabel148.setBounds(110, 490, 80, 25);
+
+        jLabel149.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        jLabel149.setForeground(new java.awt.Color(137, 250, 230));
+        jLabel149.setText("Reorder");
+        jPanel8.add(jLabel149);
+        jLabel149.setBounds(350, 450, 90, 25);
+
+        jLabel150.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        jLabel150.setForeground(new java.awt.Color(137, 250, 230));
+        jLabel150.setText("Precio");
+        jPanel8.add(jLabel150);
+        jLabel150.setBounds(120, 410, 60, 20);
+
+        btn_eliminarInventario2.setBackground(new java.awt.Color(204, 204, 204));
+        btn_eliminarInventario2.setForeground(new java.awt.Color(0, 0, 0));
+        btn_eliminarInventario2.setText("Eliminar");
+        btn_eliminarInventario2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btn_eliminarInventario2MouseClicked(evt);
+            }
+        });
+        jPanel8.add(btn_eliminarInventario2);
+        btn_eliminarInventario2.setBounds(590, 430, 140, 40);
+
+        btn_modifyInventario2.setBackground(new java.awt.Color(204, 204, 204));
+        btn_modifyInventario2.setForeground(new java.awt.Color(0, 0, 0));
+        btn_modifyInventario2.setText("Modificar");
+        btn_modifyInventario2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btn_modifyInventario2MouseClicked(evt);
+            }
+        });
+        jPanel8.add(btn_modifyInventario2);
+        btn_modifyInventario2.setBounds(590, 490, 140, 40);
+
+        Panel_Tienda2.addTab("Inventario", jPanel8);
+
+        Menu_Maestro.add(Panel_Tienda2);
+        Panel_Tienda2.setBounds(1230, 0, 1080, 610);
+
+        Fondo7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Media/frame menu.png"))); // NOI18N
+        Menu_Maestro.add(Fondo7);
+        Fondo7.setBounds(0, 0, 1150, 650);
+
+        getContentPane().add(Menu_Maestro);
+        Menu_Maestro.setBounds(0, 0, 2300, 650);
 
         Menu_Admin.setLayout(null);
 
@@ -1585,42 +2678,42 @@ public class Loggin extends javax.swing.JFrame {
 
         Panel_Menu_Izquierda.setBackground(new java.awt.Color(67, 122, 227,170));
 
-        Icono_Tienda.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Media/Tienda.png"))); // NOI18N
+        Icono_Tienda.setText("Clases ico");
         Icono_Tienda.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 Icono_TiendaMouseClicked(evt);
             }
         });
 
-        Icono_Producto.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Media/Productos 2.png"))); // NOI18N
+        Icono_Producto.setText("Carros Ico");
         Icono_Producto.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 Icono_ProductoMouseClicked(evt);
             }
         });
 
-        Icono_Vendedor.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Media/Vendedor.png"))); // NOI18N
+        Icono_Vendedor.setText("Maestro ico");
         Icono_Vendedor.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 Icono_VendedorMouseClicked(evt);
             }
         });
 
-        Icono_Factura.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Media/Factura_1.png"))); // NOI18N
+        Icono_Factura.setText("Alumnos Ico");
         Icono_Factura.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 Icono_FacturaMouseClicked(evt);
             }
         });
 
-        Icono_Cliente.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Media/Cliente_1.png"))); // NOI18N
+        Icono_Cliente.setText("Examen Ico");
         Icono_Cliente.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 Icono_ClienteMouseClicked(evt);
             }
         });
 
-        jLabel29.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Media/Informe_1.png"))); // NOI18N
+        jLabel29.setText("Financiero Ico");
         jLabel29.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jLabel29MouseClicked(evt);
@@ -1628,7 +2721,7 @@ public class Loggin extends javax.swing.JFrame {
         });
 
         lbl_Bitacora.setFont(new java.awt.Font("Segoe UI", 0, 10)); // NOI18N
-        lbl_Bitacora.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Media/Bitacora.png"))); // NOI18N
+        lbl_Bitacora.setText("Informe ico");
         lbl_Bitacora.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 lbl_BitacoraMouseClicked(evt);
@@ -1641,22 +2734,22 @@ public class Loggin extends javax.swing.JFrame {
             Panel_Menu_IzquierdaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(Panel_Menu_IzquierdaLayout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(Panel_Menu_IzquierdaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(Panel_Menu_IzquierdaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(Icono_Tienda, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(Icono_Vendedor, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(lbl_Bitacora)
                     .addComponent(jLabel29)
                     .addComponent(Icono_Cliente)
                     .addComponent(Icono_Factura)
-                    .addComponent(Icono_Producto, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(Icono_Tienda))
+                    .addComponent(Icono_Producto, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(lbl_Bitacora, javax.swing.GroupLayout.PREFERRED_SIZE, 62, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap())
         );
         Panel_Menu_IzquierdaLayout.setVerticalGroup(
             Panel_Menu_IzquierdaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(Panel_Menu_IzquierdaLayout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(Icono_Tienda)
-                .addGap(18, 18, 18)
+                .addComponent(Icono_Tienda, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(Icono_Producto, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(Icono_Vendedor, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -1668,7 +2761,7 @@ public class Loggin extends javax.swing.JFrame {
                 .addComponent(jLabel29, javax.swing.GroupLayout.PREFERRED_SIZE, 81, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(lbl_Bitacora, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(23, Short.MAX_VALUE))
+                .addContainerGap(54, Short.MAX_VALUE))
         );
 
         Menu_Admin.add(Panel_Menu_Izquierda);
@@ -1706,53 +2799,38 @@ public class Loggin extends javax.swing.JFrame {
 
         Panel_Menu_Izquierda1.setBackground(new java.awt.Color(67, 122, 227,170));
 
-        Icono_Tienda1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Media/Tienda.png"))); // NOI18N
+        Icono_Tienda1.setText("Usuario Ico");
         Icono_Tienda1.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 Icono_Tienda1MouseClicked(evt);
             }
         });
 
-        Icono_Producto1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Media/Productos 2.png"))); // NOI18N
+        Icono_Producto1.setText("Clases Ico");
         Icono_Producto1.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 Icono_Producto1MouseClicked(evt);
             }
         });
 
-        Icono_Vendedor1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Media/Vendedor.png"))); // NOI18N
+        Icono_Vendedor1.setText("Examen ico");
         Icono_Vendedor1.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 Icono_Vendedor1MouseClicked(evt);
             }
         });
 
-        Icono_Factura1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Media/Factura_1.png"))); // NOI18N
+        Icono_Factura1.setText("Financiero ico");
         Icono_Factura1.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 Icono_Factura1MouseClicked(evt);
             }
         });
 
-        Icono_Cliente1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Media/Cliente_1.png"))); // NOI18N
+        Icono_Cliente1.setText("Calificacion ico");
         Icono_Cliente1.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 Icono_Cliente1MouseClicked(evt);
-            }
-        });
-
-        jLabel39.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Media/Informe_1.png"))); // NOI18N
-        jLabel39.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jLabel39MouseClicked(evt);
-            }
-        });
-
-        lbl_Bitacora1.setFont(new java.awt.Font("Segoe UI", 0, 10)); // NOI18N
-        lbl_Bitacora1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Media/Bitacora.png"))); // NOI18N
-        lbl_Bitacora1.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                lbl_Bitacora1MouseClicked(evt);
             }
         });
 
@@ -1763,21 +2841,23 @@ public class Loggin extends javax.swing.JFrame {
             .addGroup(Panel_Menu_Izquierda1Layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(Panel_Menu_Izquierda1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(Icono_Vendedor1, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(lbl_Bitacora1)
-                    .addComponent(jLabel39)
-                    .addComponent(Icono_Cliente1)
-                    .addComponent(Icono_Factura1)
-                    .addComponent(Icono_Producto1, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(Icono_Tienda1))
-                .addContainerGap())
+                    .addGroup(Panel_Menu_Izquierda1Layout.createSequentialGroup()
+                        .addComponent(Icono_Vendedor1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addContainerGap())
+                    .addGroup(Panel_Menu_Izquierda1Layout.createSequentialGroup()
+                        .addGroup(Panel_Menu_Izquierda1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(Icono_Cliente1)
+                            .addComponent(Icono_Factura1)
+                            .addComponent(Icono_Producto1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(Icono_Tienda1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
         );
         Panel_Menu_Izquierda1Layout.setVerticalGroup(
             Panel_Menu_Izquierda1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(Panel_Menu_Izquierda1Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(Icono_Tienda1)
-                .addGap(18, 18, 18)
+                .addComponent(Icono_Tienda1, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(Icono_Producto1, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(Icono_Vendedor1, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -1785,11 +2865,7 @@ public class Loggin extends javax.swing.JFrame {
                 .addComponent(Icono_Factura1, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(Icono_Cliente1, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(jLabel39, javax.swing.GroupLayout.PREFERRED_SIZE, 81, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(lbl_Bitacora1, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(23, Short.MAX_VALUE))
+                .addContainerGap(274, Short.MAX_VALUE))
         );
 
         Menu_Customer.add(Panel_Menu_Izquierda1);
@@ -3502,14 +4578,6 @@ public class Loggin extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_Icono_Cliente1MouseClicked
 
-    private void jLabel39MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel39MouseClicked
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jLabel39MouseClicked
-
-    private void lbl_Bitacora1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lbl_Bitacora1MouseClicked
-        // TODO add your handling code here:
-    }//GEN-LAST:event_lbl_Bitacora1MouseClicked
-
     private void ComboReportes1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ComboReportes1ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_ComboReportes1ActionPerformed
@@ -3597,6 +4665,110 @@ public class Loggin extends javax.swing.JFrame {
     private void btn_modifyInventario1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_modifyInventario1MouseClicked
         // TODO add your handling code here:
     }//GEN-LAST:event_btn_modifyInventario1MouseClicked
+
+    private void Icono_Tienda2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Icono_Tienda2MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_Icono_Tienda2MouseClicked
+
+    private void Icono_Producto2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Icono_Producto2MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_Icono_Producto2MouseClicked
+
+    private void Icono_Vendedor2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Icono_Vendedor2MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_Icono_Vendedor2MouseClicked
+
+    private void Icono_Cliente2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Icono_Cliente2MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_Icono_Cliente2MouseClicked
+
+    private void ComboReportes2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ComboReportes2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_ComboReportes2ActionPerformed
+
+    private void btn_deleteCliente2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_deleteCliente2MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btn_deleteCliente2MouseClicked
+
+    private void btn_createCliente2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_createCliente2MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btn_createCliente2MouseClicked
+
+    private void btn_updateCliente2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_updateCliente2MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btn_updateCliente2MouseClicked
+
+    private void btn_deleteProducto2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_deleteProducto2MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btn_deleteProducto2MouseClicked
+
+    private void btn_createProducto2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_createProducto2MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btn_createProducto2MouseClicked
+
+    private void btn_updateProducto2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_updateProducto2MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btn_updateProducto2MouseClicked
+
+    private void btn_updateVendedor2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_updateVendedor2MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btn_updateVendedor2MouseClicked
+
+    private void btn_deleteVendedor2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_deleteVendedor2MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btn_deleteVendedor2MouseClicked
+
+    private void btn_createVendedor2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_createVendedor2MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btn_createVendedor2MouseClicked
+
+    private void cbox_ListaVendedores2ItemStateChanged(java.awt.event.ItemEvent evt) {//GEN-FIRST:event_cbox_ListaVendedores2ItemStateChanged
+        // TODO add your handling code here:
+    }//GEN-LAST:event_cbox_ListaVendedores2ItemStateChanged
+
+    private void cbox_ListaVendedores2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_cbox_ListaVendedores2MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_cbox_ListaVendedores2MouseClicked
+
+    private void jButton16MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton16MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton16MouseClicked
+
+    private void jButton17MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton17MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton17MouseClicked
+
+    private void jLabel133MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel133MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jLabel133MouseClicked
+
+    private void btn_modificarTienda2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_modificarTienda2MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btn_modificarTienda2MouseClicked
+
+    private void btn_eliminarTienda2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_eliminarTienda2MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btn_eliminarTienda2MouseClicked
+
+    private void btn_crearTienda2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_crearTienda2MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btn_crearTienda2MouseClicked
+
+    private void cbox_NombreTiendas2ItemStateChanged(java.awt.event.ItemEvent evt) {//GEN-FIRST:event_cbox_NombreTiendas2ItemStateChanged
+        // TODO add your handling code here:
+    }//GEN-LAST:event_cbox_NombreTiendas2ItemStateChanged
+
+    private void btn_agregarProductoTienda2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_agregarProductoTienda2MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btn_agregarProductoTienda2MouseClicked
+
+    private void btn_eliminarInventario2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_eliminarInventario2MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btn_eliminarInventario2MouseClicked
+
+    private void btn_modifyInventario2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_modifyInventario2MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btn_modifyInventario2MouseClicked
     private void listarVendedores(JTable tablaVendedores){
         Statement st;
         ResultSet rs;
@@ -3894,6 +5066,7 @@ public class Loggin extends javax.swing.JFrame {
     private javax.swing.JButton Boton_Ingreso3;
     private javax.swing.JComboBox<String> ComboReportes;
     private javax.swing.JComboBox<String> ComboReportes1;
+    private javax.swing.JComboBox<String> ComboReportes2;
     private javax.swing.JPasswordField Contra;
     private javax.swing.JPasswordField Contra1;
     private javax.swing.JTextField Correo;
@@ -3901,92 +5074,131 @@ public class Loggin extends javax.swing.JFrame {
     private javax.swing.JLabel Fondo4;
     private javax.swing.JLabel Fondo5;
     private javax.swing.JLabel Fondo6;
+    private javax.swing.JLabel Fondo7;
     private javax.swing.JLabel Fondo_Cambio;
     private javax.swing.JLabel Fondo_Login;
     private javax.swing.JLabel Icono_Cliente;
     private javax.swing.JLabel Icono_Cliente1;
+    private javax.swing.JLabel Icono_Cliente2;
     private javax.swing.JLabel Icono_Factura;
     private javax.swing.JLabel Icono_Factura1;
     private javax.swing.JLabel Icono_Producto;
     private javax.swing.JLabel Icono_Producto1;
+    private javax.swing.JLabel Icono_Producto2;
     private javax.swing.JLabel Icono_Tienda;
     private javax.swing.JLabel Icono_Tienda1;
+    private javax.swing.JLabel Icono_Tienda2;
     private javax.swing.JLabel Icono_Vendedor;
     private javax.swing.JLabel Icono_Vendedor1;
+    private javax.swing.JLabel Icono_Vendedor2;
     private javax.swing.JLabel Label_Incorrecto;
     private javax.swing.JLabel Label_Incorrecto1;
     private javax.swing.JPanel Menu_Admin;
     private javax.swing.JPanel Menu_Customer;
+    private javax.swing.JPanel Menu_Maestro;
     private javax.swing.JPanel Panel_Bitacora;
     private javax.swing.JPanel Panel_Bitacora1;
+    private javax.swing.JPanel Panel_Bitacora2;
     private javax.swing.JPanel Panel_Cliente;
     private javax.swing.JPanel Panel_Cliente1;
+    private javax.swing.JPanel Panel_Cliente2;
     private javax.swing.JPanel Panel_Factura;
     private javax.swing.JPanel Panel_Factura1;
+    private javax.swing.JPanel Panel_Factura2;
     private javax.swing.JPanel Panel_Informes;
     private javax.swing.JPanel Panel_Informes1;
+    private javax.swing.JPanel Panel_Informes2;
     private javax.swing.JPanel Panel_Menu_Izquierda;
     private javax.swing.JPanel Panel_Menu_Izquierda1;
+    private javax.swing.JPanel Panel_Menu_Izquierda2;
     private javax.swing.JPanel Panel_Productos;
     private javax.swing.JPanel Panel_Productos1;
+    private javax.swing.JPanel Panel_Productos2;
     private javax.swing.JTabbedPane Panel_Tienda;
     private javax.swing.JTabbedPane Panel_Tienda1;
+    private javax.swing.JTabbedPane Panel_Tienda2;
     private javax.swing.JPanel Panel_Tiendita;
     private javax.swing.JPanel Panel_Tiendita1;
+    private javax.swing.JPanel Panel_Tiendita2;
     private javax.swing.JPanel Panel_Vendedorsitos;
     private javax.swing.JPanel Panel_Vendedorsitos1;
+    private javax.swing.JPanel Panel_Vendedorsitos2;
     private javax.swing.JPanel Panel_menu_abajo;
     private javax.swing.JPanel Panel_menu_abajo1;
+    private javax.swing.JPanel Panel_menu_abajo2;
     private javax.swing.JTabbedPane Panel_vendedores;
     private javax.swing.JTabbedPane Panel_vendedores1;
+    private javax.swing.JTabbedPane Panel_vendedores2;
     private javax.swing.JTextField Usuario;
     private javax.swing.JTextField Usuario1;
     private javax.swing.JTextField Usuario2;
     private javax.swing.JButton btn_agregarProductoTienda;
     private javax.swing.JButton btn_agregarProductoTienda1;
+    private javax.swing.JButton btn_agregarProductoTienda2;
     private javax.swing.JToggleButton btn_crearTienda;
     private javax.swing.JToggleButton btn_crearTienda1;
+    private javax.swing.JToggleButton btn_crearTienda2;
     private javax.swing.JButton btn_createCliente;
     private javax.swing.JButton btn_createCliente1;
+    private javax.swing.JButton btn_createCliente2;
     private javax.swing.JButton btn_createProducto;
     private javax.swing.JButton btn_createProducto1;
+    private javax.swing.JButton btn_createProducto2;
     private javax.swing.JButton btn_createVendedor;
     private javax.swing.JButton btn_createVendedor1;
+    private javax.swing.JButton btn_createVendedor2;
     private javax.swing.JButton btn_deleteCliente;
     private javax.swing.JButton btn_deleteCliente1;
+    private javax.swing.JButton btn_deleteCliente2;
     private javax.swing.JButton btn_deleteProducto;
     private javax.swing.JButton btn_deleteProducto1;
+    private javax.swing.JButton btn_deleteProducto2;
     private javax.swing.JButton btn_deleteVendedor;
     private javax.swing.JButton btn_deleteVendedor1;
+    private javax.swing.JButton btn_deleteVendedor2;
     private javax.swing.JToggleButton btn_eliminarInventario;
     private javax.swing.JToggleButton btn_eliminarInventario1;
+    private javax.swing.JToggleButton btn_eliminarInventario2;
     private javax.swing.JToggleButton btn_eliminarTienda;
     private javax.swing.JToggleButton btn_eliminarTienda1;
+    private javax.swing.JToggleButton btn_eliminarTienda2;
     private javax.swing.JToggleButton btn_modificarTienda;
     private javax.swing.JToggleButton btn_modificarTienda1;
+    private javax.swing.JToggleButton btn_modificarTienda2;
     private javax.swing.JToggleButton btn_modifyInventario;
     private javax.swing.JToggleButton btn_modifyInventario1;
+    private javax.swing.JToggleButton btn_modifyInventario2;
     private javax.swing.JButton btn_updateCliente;
     private javax.swing.JButton btn_updateCliente1;
+    private javax.swing.JButton btn_updateCliente2;
     private javax.swing.JButton btn_updateProducto;
     private javax.swing.JButton btn_updateProducto1;
+    private javax.swing.JButton btn_updateProducto2;
     private javax.swing.JButton btn_updateVendedor;
     private javax.swing.JButton btn_updateVendedor1;
+    private javax.swing.JButton btn_updateVendedor2;
     private javax.swing.JComboBox<String> cbox_ListaVendedores;
     private javax.swing.JComboBox<String> cbox_ListaVendedores1;
+    private javax.swing.JComboBox<String> cbox_ListaVendedores2;
     private javax.swing.JComboBox<String> cbox_NombreTiendas;
     private javax.swing.JComboBox<String> cbox_NombreTiendas1;
+    private javax.swing.JComboBox<String> cbox_NombreTiendas2;
     private javax.swing.JTextField contra;
     private javax.swing.JButton jButton12;
     private javax.swing.JButton jButton13;
     private javax.swing.JButton jButton14;
     private javax.swing.JButton jButton15;
+    private javax.swing.JButton jButton16;
+    private javax.swing.JButton jButton17;
     private javax.swing.JComboBox<String> jComboBox1;
     private javax.swing.JComboBox<String> jComboBox2;
     private javax.swing.JComboBox<String> jComboBox3;
+    private javax.swing.JComboBox<String> jComboBox4;
     private javax.swing.JComboBox<String> jComboBox5;
+    private javax.swing.JComboBox<String> jComboBox6;
     private javax.swing.JFormattedTextField jFormattedTextField1;
     private javax.swing.JFormattedTextField jFormattedTextField2;
+    private javax.swing.JFormattedTextField jFormattedTextField3;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel100;
@@ -4007,10 +5219,44 @@ public class Loggin extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel114;
     private javax.swing.JLabel jLabel115;
     private javax.swing.JLabel jLabel116;
+    private javax.swing.JLabel jLabel117;
+    private javax.swing.JLabel jLabel118;
+    private javax.swing.JLabel jLabel119;
     private javax.swing.JLabel jLabel12;
+    private javax.swing.JLabel jLabel120;
+    private javax.swing.JLabel jLabel121;
+    private javax.swing.JLabel jLabel122;
+    private javax.swing.JLabel jLabel123;
+    private javax.swing.JLabel jLabel124;
+    private javax.swing.JLabel jLabel125;
+    private javax.swing.JLabel jLabel126;
+    private javax.swing.JLabel jLabel127;
+    private javax.swing.JLabel jLabel128;
+    private javax.swing.JLabel jLabel129;
     private javax.swing.JLabel jLabel13;
+    private javax.swing.JLabel jLabel130;
+    private javax.swing.JLabel jLabel131;
+    private javax.swing.JLabel jLabel132;
+    private javax.swing.JLabel jLabel133;
+    private javax.swing.JLabel jLabel134;
+    private javax.swing.JLabel jLabel135;
+    private javax.swing.JLabel jLabel136;
+    private javax.swing.JLabel jLabel137;
+    private javax.swing.JLabel jLabel138;
+    private javax.swing.JLabel jLabel139;
     private javax.swing.JLabel jLabel14;
+    private javax.swing.JLabel jLabel140;
+    private javax.swing.JLabel jLabel141;
+    private javax.swing.JLabel jLabel142;
+    private javax.swing.JLabel jLabel143;
+    private javax.swing.JLabel jLabel144;
+    private javax.swing.JLabel jLabel145;
+    private javax.swing.JLabel jLabel146;
+    private javax.swing.JLabel jLabel147;
+    private javax.swing.JLabel jLabel148;
+    private javax.swing.JLabel jLabel149;
     private javax.swing.JLabel jLabel15;
+    private javax.swing.JLabel jLabel150;
     private javax.swing.JLabel jLabel16;
     private javax.swing.JLabel jLabel17;
     private javax.swing.JLabel jLabel18;
@@ -4029,12 +5275,14 @@ public class Loggin extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel30;
     private javax.swing.JLabel jLabel31;
-    private javax.swing.JLabel jLabel39;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel40;
+    private javax.swing.JLabel jLabel41;
     private javax.swing.JLabel jLabel45;
+    private javax.swing.JLabel jLabel46;
     private javax.swing.JLabel jLabel47;
     private javax.swing.JLabel jLabel48;
+    private javax.swing.JLabel jLabel49;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel50;
     private javax.swing.JLabel jLabel51;
@@ -4081,6 +5329,8 @@ public class Loggin extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel4;
     private javax.swing.JPanel jPanel5;
     private javax.swing.JPanel jPanel6;
+    private javax.swing.JPanel jPanel7;
+    private javax.swing.JPanel jPanel8;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane10;
     private javax.swing.JScrollPane jScrollPane11;
@@ -4097,7 +5347,18 @@ public class Loggin extends javax.swing.JFrame {
     private javax.swing.JScrollPane jScrollPane22;
     private javax.swing.JScrollPane jScrollPane23;
     private javax.swing.JScrollPane jScrollPane24;
+    private javax.swing.JScrollPane jScrollPane25;
+    private javax.swing.JScrollPane jScrollPane26;
+    private javax.swing.JScrollPane jScrollPane27;
+    private javax.swing.JScrollPane jScrollPane28;
+    private javax.swing.JScrollPane jScrollPane29;
     private javax.swing.JScrollPane jScrollPane3;
+    private javax.swing.JScrollPane jScrollPane30;
+    private javax.swing.JScrollPane jScrollPane31;
+    private javax.swing.JScrollPane jScrollPane32;
+    private javax.swing.JScrollPane jScrollPane33;
+    private javax.swing.JScrollPane jScrollPane34;
+    private javax.swing.JScrollPane jScrollPane35;
     private javax.swing.JScrollPane jScrollPane4;
     private javax.swing.JScrollPane jScrollPane5;
     private javax.swing.JScrollPane jScrollPane6;
@@ -4105,16 +5366,25 @@ public class Loggin extends javax.swing.JFrame {
     private javax.swing.JScrollPane jScrollPane9;
     private javax.swing.JTable jTable11;
     private javax.swing.JTable jTable13;
+    private javax.swing.JTable jTable14;
     private javax.swing.JTable jTable3;
     private javax.swing.JTable jTable4;
+    private javax.swing.JTable jTable5;
     private javax.swing.JTextField jTextField10;
     private javax.swing.JTextField jTextField11;
     private javax.swing.JTextField jTextField12;
     private javax.swing.JTextField jTextField13;
     private javax.swing.JTextField jTextField14;
+    private javax.swing.JTextField jTextField15;
+    private javax.swing.JTextField jTextField16;
+    private javax.swing.JTextField jTextField17;
+    private javax.swing.JTextField jTextField18;
     private javax.swing.JTextField jTextField7;
     private javax.swing.JTextField jTextField8;
     private javax.swing.JTextField jTextField9;
+    private javax.swing.JToggleButton jToggleButton10;
+    private javax.swing.JToggleButton jToggleButton11;
+    private javax.swing.JToggleButton jToggleButton12;
     private javax.swing.JToggleButton jToggleButton4;
     private javax.swing.JToggleButton jToggleButton5;
     private javax.swing.JToggleButton jToggleButton6;
@@ -4122,62 +5392,88 @@ public class Loggin extends javax.swing.JFrame {
     private javax.swing.JToggleButton jToggleButton8;
     private javax.swing.JToggleButton jToggleButton9;
     private javax.swing.JLabel lbl_Bitacora;
-    private javax.swing.JLabel lbl_Bitacora1;
     private javax.swing.JPanel panel_Registro;
     private javax.swing.JPanel panel_ingreso;
     private javax.swing.JTextArea ta_Bitacora;
     private javax.swing.JTextArea ta_Bitacora1;
+    private javax.swing.JTextArea ta_Bitacora2;
     private javax.swing.JTable tableReportes;
     private javax.swing.JTable tableReportes1;
+    private javax.swing.JTable tableReportes2;
     private javax.swing.JTable table_Clientes;
     private javax.swing.JTable table_Clientes1;
+    private javax.swing.JTable table_Clientes2;
     private javax.swing.JTable table_Productos;
     private javax.swing.JTable table_Productos1;
+    private javax.swing.JTable table_Productos2;
     private javax.swing.JTable table_ProductosXTienda;
     private javax.swing.JTable table_ProductosXTienda1;
+    private javax.swing.JTable table_ProductosXTienda2;
     private javax.swing.JTable table_ProductosparaVendedor;
     private javax.swing.JTable table_ProductosparaVendedor1;
+    private javax.swing.JTable table_ProductosparaVendedor2;
     private javax.swing.JTable table_Tiendas;
     private javax.swing.JTable table_Tiendas1;
+    private javax.swing.JTable table_Tiendas2;
     private javax.swing.JTable table_TodosProductos;
     private javax.swing.JTable table_TodosProductos1;
+    private javax.swing.JTable table_TodosProductos2;
     private javax.swing.JTable table_Vendedores;
     private javax.swing.JTable table_Vendedores1;
+    private javax.swing.JTable table_Vendedores2;
     private javax.swing.JTextField tf_UPC;
     private javax.swing.JTextField tf_UPC1;
+    private javax.swing.JTextField tf_UPC2;
     private javax.swing.JTextField tf_cantidad;
     private javax.swing.JTextField tf_cantidad1;
+    private javax.swing.JTextField tf_cantidad2;
     private javax.swing.JTextField tf_correoCliente;
     private javax.swing.JTextField tf_correoCliente1;
+    private javax.swing.JTextField tf_correoCliente2;
     private javax.swing.JTextField tf_embalajeProducto;
     private javax.swing.JTextField tf_embalajeProducto1;
+    private javax.swing.JTextField tf_embalajeProducto2;
     private javax.swing.JTextField tf_horarioTienda;
     private javax.swing.JTextField tf_horarioTienda1;
+    private javax.swing.JTextField tf_horarioTienda2;
     private javax.swing.JTextField tf_idCliente;
     private javax.swing.JTextField tf_idCliente1;
+    private javax.swing.JTextField tf_idCliente2;
     private javax.swing.JTextField tf_idTienda;
     private javax.swing.JTextField tf_idTienda1;
+    private javax.swing.JTextField tf_idTienda2;
     private javax.swing.JTextField tf_idVendedor;
     private javax.swing.JTextField tf_idVendedor1;
+    private javax.swing.JTextField tf_idVendedor2;
     private javax.swing.JTextField tf_marcaProducto;
     private javax.swing.JTextField tf_marcaProducto1;
+    private javax.swing.JTextField tf_marcaProducto2;
     private javax.swing.JTextField tf_nombreCliente;
     private javax.swing.JTextField tf_nombreCliente1;
+    private javax.swing.JTextField tf_nombreCliente2;
     private javax.swing.JTextField tf_nombreProducto;
     private javax.swing.JTextField tf_nombreProducto1;
+    private javax.swing.JTextField tf_nombreProducto2;
     private javax.swing.JTextField tf_nombreTienda;
     private javax.swing.JTextField tf_nombreTienda1;
+    private javax.swing.JTextField tf_nombreTienda2;
     private javax.swing.JTextField tf_nombreVendedor;
     private javax.swing.JTextField tf_nombreVendedor1;
+    private javax.swing.JTextField tf_nombreVendedor2;
     private javax.swing.JTextField tf_precio;
     private javax.swing.JTextField tf_precio1;
+    private javax.swing.JTextField tf_precio2;
     private javax.swing.JTextField tf_reorden;
     private javax.swing.JTextField tf_reorden1;
+    private javax.swing.JTextField tf_reorden2;
     private javax.swing.JTextField tf_tamanoProducto;
     private javax.swing.JTextField tf_tamanoProducto1;
+    private javax.swing.JTextField tf_tamanoProducto2;
     private javax.swing.JTextField tf_tipoProducto;
     private javax.swing.JTextField tf_tipoProducto1;
+    private javax.swing.JTextField tf_tipoProducto2;
     private javax.swing.JTextField tf_ubicacionTienda;
     private javax.swing.JTextField tf_ubicacionTienda1;
+    private javax.swing.JTextField tf_ubicacionTienda2;
     // End of variables declaration//GEN-END:variables
 }
