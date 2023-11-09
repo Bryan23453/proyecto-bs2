@@ -521,7 +521,7 @@ public class Loggin extends javax.swing.JFrame {
         Panel_Menu_Izquierda = new javax.swing.JPanel();
         Icono_Clase = new javax.swing.JLabel();
         Icono_Carro = new javax.swing.JLabel();
-        Icono_Vendedor = new javax.swing.JLabel();
+        Icono_Maestra = new javax.swing.JLabel();
         Icono_Alumno = new javax.swing.JLabel();
         Icono_Cliente = new javax.swing.JLabel();
         jLabel29 = new javax.swing.JLabel();
@@ -1743,15 +1743,21 @@ public class Loggin extends javax.swing.JFrame {
         Panel_Menu_Izquierda.add(Icono_Carro);
         Icono_Carro.setBounds(0, 80, 74, 70);
 
-        Icono_Vendedor.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Mediaa/Icono Maestro Estatico.png"))); // NOI18N
-        Icono_Vendedor.setText("Maestro ico");
-        Icono_Vendedor.addMouseListener(new java.awt.event.MouseAdapter() {
+        Icono_Maestra.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Mediaa/Icono Maestro Estatico.png"))); // NOI18N
+        Icono_Maestra.setText("Maestro ico");
+        Icono_Maestra.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                Icono_VendedorMouseClicked(evt);
+                Icono_MaestraMouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                Icono_MaestraMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                Icono_MaestraMouseExited(evt);
             }
         });
-        Panel_Menu_Izquierda.add(Icono_Vendedor);
-        Icono_Vendedor.setBounds(6, 151, 60, 72);
+        Panel_Menu_Izquierda.add(Icono_Maestra);
+        Icono_Maestra.setBounds(6, 151, 60, 72);
 
         Icono_Alumno.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Mediaa/Icono Alumno Estatico.png"))); // NOI18N
         Icono_Alumno.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -3924,7 +3930,7 @@ public class Loggin extends javax.swing.JFrame {
 
     private void Icono_ClaseMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Icono_ClaseMouseClicked
 
-        Cambio_Menu CM= new Cambio_Menu(Panel_Productos,Panel_Factura,Panel_Cliente,Panel_Informes,Icono_Vendedor,Panel_Bitacora,Panel_Tienda,Panel_vendedores,false);
+        Cambio_Menu CM= new Cambio_Menu(Panel_Productos,Panel_Factura,Panel_Cliente,Panel_Informes,Icono_Maestra,Panel_Bitacora,Panel_Tienda,Panel_vendedores,false);
         CM.start();
         tf_idTienda.setText("");
         tf_nombreTienda.setText("");
@@ -3979,7 +3985,7 @@ public class Loggin extends javax.swing.JFrame {
 
     private void Icono_CarroMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Icono_CarroMouseClicked
         if (Icono_Carro.isEnabled()) {
-            Cambio_Menu CM= new Cambio_Menu(Panel_Productos,Panel_Factura,Panel_Cliente,Panel_Informes,Icono_Vendedor,Panel_Bitacora,Panel_Tienda,Panel_vendedores,true);
+            Cambio_Menu CM= new Cambio_Menu(Panel_Productos,Panel_Factura,Panel_Cliente,Panel_Informes,Icono_Maestra,Panel_Bitacora,Panel_Tienda,Panel_vendedores,true);
             CM.start();
             tf_UPC.setText("");
             tf_nombreProducto.setText("");
@@ -4009,9 +4015,9 @@ public class Loggin extends javax.swing.JFrame {
         
     }//GEN-LAST:event_Icono_CarroMouseClicked
 
-    private void Icono_VendedorMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Icono_VendedorMouseClicked
-        if (Icono_Vendedor.isEnabled()) {
-            Cambio_Menu CM= new Cambio_Menu(Panel_Productos,Panel_Factura,Panel_Cliente,Panel_Informes,Icono_Vendedor,Panel_Bitacora,Panel_vendedores,Panel_Tienda,false);
+    private void Icono_MaestraMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Icono_MaestraMouseClicked
+        if (Icono_Maestra.isEnabled()) {
+            Cambio_Menu CM= new Cambio_Menu(Panel_Productos,Panel_Factura,Panel_Cliente,Panel_Informes,Icono_Maestra,Panel_Bitacora,Panel_vendedores,Panel_Tienda,false);
             CM.start();
             tf_idVendedor.setText("");
             tf_nombreVendedor.setText("");
@@ -4041,15 +4047,15 @@ public class Loggin extends javax.swing.JFrame {
             });
         }
         
-    }//GEN-LAST:event_Icono_VendedorMouseClicked
+    }//GEN-LAST:event_Icono_MaestraMouseClicked
 
     private void Icono_AlumnoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Icono_AlumnoMouseClicked
-        Cambio_Menu CM= new Cambio_Menu(Panel_Factura,Panel_Cliente,Panel_Productos,Panel_Informes,Icono_Vendedor,Panel_Bitacora,Panel_Tienda,Panel_vendedores,true);
+        Cambio_Menu CM= new Cambio_Menu(Panel_Factura,Panel_Cliente,Panel_Productos,Panel_Informes,Icono_Maestra,Panel_Bitacora,Panel_Tienda,Panel_vendedores,true);
         CM.start();
     }//GEN-LAST:event_Icono_AlumnoMouseClicked
 
     private void Icono_ClienteMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Icono_ClienteMouseClicked
-        Cambio_Menu CM= new Cambio_Menu(Panel_Cliente,Panel_Productos,Panel_Factura,Panel_Informes,Icono_Vendedor,Panel_Bitacora,Panel_Tienda,Panel_vendedores,true);
+        Cambio_Menu CM= new Cambio_Menu(Panel_Cliente,Panel_Productos,Panel_Factura,Panel_Informes,Icono_Maestra,Panel_Bitacora,Panel_Tienda,Panel_vendedores,true);
         CM.start();
         tf_idCliente.setText("");
         tf_nombreCliente.setText("");
@@ -4071,7 +4077,7 @@ public class Loggin extends javax.swing.JFrame {
     }//GEN-LAST:event_Icono_ClienteMouseClicked
 
     private void jLabel29MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel29MouseClicked
-        Cambio_Menu CM= new Cambio_Menu(Panel_Informes,Panel_Cliente,Panel_Productos,Panel_Factura,Icono_Vendedor,Panel_Bitacora,Panel_Tienda,Panel_vendedores,true);
+        Cambio_Menu CM= new Cambio_Menu(Panel_Informes,Panel_Cliente,Panel_Productos,Panel_Factura,Icono_Maestra,Panel_Bitacora,Panel_Tienda,Panel_vendedores,true);
         CM.start();
     }//GEN-LAST:event_jLabel29MouseClicked
 
@@ -4105,7 +4111,7 @@ public class Loggin extends javax.swing.JFrame {
     }//GEN-LAST:event_btn_crearTiendaMouseClicked
 
     private void lbl_BitacoraMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lbl_BitacoraMouseClicked
-        Cambio_Menu CM= new Cambio_Menu(Panel_Bitacora,Panel_Cliente,Panel_Productos,Panel_Factura,Icono_Vendedor,Panel_Informes,Panel_Tienda,Panel_vendedores,true);
+        Cambio_Menu CM= new Cambio_Menu(Panel_Bitacora,Panel_Cliente,Panel_Productos,Panel_Factura,Icono_Maestra,Panel_Informes,Panel_Tienda,Panel_vendedores,true);
         CM.start();
         Statement st;
         ResultSet rs;
@@ -4772,7 +4778,7 @@ public class Loggin extends javax.swing.JFrame {
     }//GEN-LAST:event_btn_modifyInventario2MouseClicked
 
     private void Icono_ClaseMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Icono_ClaseMouseEntered
-        String rutaImagen = "/Mediaa/clases Icono.gif";
+        String rutaImagen = "/Mediaa/clases-Icono.gif";
         URL urlImagen = getClass().getResource(rutaImagen);
         ImageIcon icono = new ImageIcon(urlImagen);
         Icono_Clase.setIcon(icono);
@@ -4803,15 +4809,29 @@ public class Loggin extends javax.swing.JFrame {
         String rutaImagen = "/Mediaa/Icono-Alumno.gif";
         URL urlImagen = getClass().getResource(rutaImagen);
         ImageIcon icono = new ImageIcon(urlImagen);
-        Icono_Carro.setIcon(icono);
+        Icono_Alumno.setIcon(icono);
     }//GEN-LAST:event_Icono_AlumnoMouseEntered
 
     private void Icono_AlumnoMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Icono_AlumnoMouseExited
         String rutaImagen = "/Mediaa/Icono Alumno Estatico.png";
         URL urlImagen = getClass().getResource(rutaImagen);
         ImageIcon icono = new ImageIcon(urlImagen);
-        Icono_Carro.setIcon(icono);
+        Icono_Alumno.setIcon(icono);
     }//GEN-LAST:event_Icono_AlumnoMouseExited
+
+    private void Icono_MaestraMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Icono_MaestraMouseEntered
+        String rutaImagen = "/Mediaa/Icono-Maestro.gif";
+        URL urlImagen = getClass().getResource(rutaImagen);
+        ImageIcon icono = new ImageIcon(urlImagen);
+        Icono_Maestra.setIcon(icono);
+    }//GEN-LAST:event_Icono_MaestraMouseEntered
+
+    private void Icono_MaestraMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Icono_MaestraMouseExited
+        String rutaImagen = "/Mediaa/Icono Maestro Estatico.png";
+        URL urlImagen = getClass().getResource(rutaImagen);
+        ImageIcon icono = new ImageIcon(urlImagen);
+        Icono_Maestra.setIcon(icono);
+    }//GEN-LAST:event_Icono_MaestraMouseExited
     private void listarVendedores(JTable tablaVendedores){
         Statement st;
         ResultSet rs;
@@ -5127,11 +5147,11 @@ public class Loggin extends javax.swing.JFrame {
     private javax.swing.JLabel Icono_Cliente1;
     private javax.swing.JLabel Icono_Cliente2;
     private javax.swing.JLabel Icono_Factura1;
+    private javax.swing.JLabel Icono_Maestra;
     private javax.swing.JLabel Icono_Producto1;
     private javax.swing.JLabel Icono_Producto2;
     private javax.swing.JLabel Icono_Tienda1;
     private javax.swing.JLabel Icono_Tienda2;
-    private javax.swing.JLabel Icono_Vendedor;
     private javax.swing.JLabel Icono_Vendedor1;
     private javax.swing.JLabel Icono_Vendedor2;
     private javax.swing.JLabel Label_Incorrecto;
