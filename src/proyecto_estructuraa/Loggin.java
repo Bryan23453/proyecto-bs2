@@ -522,7 +522,7 @@ public class Loggin extends javax.swing.JFrame {
         Icono_Clase = new javax.swing.JLabel();
         Icono_Carro = new javax.swing.JLabel();
         Icono_Vendedor = new javax.swing.JLabel();
-        Icono_Factura = new javax.swing.JLabel();
+        Icono_Alumno = new javax.swing.JLabel();
         Icono_Cliente = new javax.swing.JLabel();
         jLabel29 = new javax.swing.JLabel();
         lbl_Bitacora = new javax.swing.JLabel();
@@ -1753,14 +1753,20 @@ public class Loggin extends javax.swing.JFrame {
         Panel_Menu_Izquierda.add(Icono_Vendedor);
         Icono_Vendedor.setBounds(6, 151, 60, 72);
 
-        Icono_Factura.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Mediaa/Icono Alumno Estatico.png"))); // NOI18N
-        Icono_Factura.addMouseListener(new java.awt.event.MouseAdapter() {
+        Icono_Alumno.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Mediaa/Icono Alumno Estatico.png"))); // NOI18N
+        Icono_Alumno.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                Icono_FacturaMouseClicked(evt);
+                Icono_AlumnoMouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                Icono_AlumnoMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                Icono_AlumnoMouseExited(evt);
             }
         });
-        Panel_Menu_Izquierda.add(Icono_Factura);
-        Icono_Factura.setBounds(6, 241, 70, 70);
+        Panel_Menu_Izquierda.add(Icono_Alumno);
+        Icono_Alumno.setBounds(6, 241, 70, 70);
 
         Icono_Cliente.setText("Examen Ico");
         Icono_Cliente.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -4037,10 +4043,10 @@ public class Loggin extends javax.swing.JFrame {
         
     }//GEN-LAST:event_Icono_VendedorMouseClicked
 
-    private void Icono_FacturaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Icono_FacturaMouseClicked
+    private void Icono_AlumnoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Icono_AlumnoMouseClicked
         Cambio_Menu CM= new Cambio_Menu(Panel_Factura,Panel_Cliente,Panel_Productos,Panel_Informes,Icono_Vendedor,Panel_Bitacora,Panel_Tienda,Panel_vendedores,true);
         CM.start();
-    }//GEN-LAST:event_Icono_FacturaMouseClicked
+    }//GEN-LAST:event_Icono_AlumnoMouseClicked
 
     private void Icono_ClienteMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Icono_ClienteMouseClicked
         Cambio_Menu CM= new Cambio_Menu(Panel_Cliente,Panel_Productos,Panel_Factura,Panel_Informes,Icono_Vendedor,Panel_Bitacora,Panel_Tienda,Panel_vendedores,true);
@@ -4792,6 +4798,20 @@ public class Loggin extends javax.swing.JFrame {
         ImageIcon icono = new ImageIcon(urlImagen);
         Icono_Carro.setIcon(icono);
     }//GEN-LAST:event_Icono_CarroMouseExited
+
+    private void Icono_AlumnoMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Icono_AlumnoMouseEntered
+        String rutaImagen = "/Mediaa/Icono-Alumno.gif";
+        URL urlImagen = getClass().getResource(rutaImagen);
+        ImageIcon icono = new ImageIcon(urlImagen);
+        Icono_Carro.setIcon(icono);
+    }//GEN-LAST:event_Icono_AlumnoMouseEntered
+
+    private void Icono_AlumnoMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Icono_AlumnoMouseExited
+        String rutaImagen = "/Mediaa/Icono Alumno Estatico.png";
+        URL urlImagen = getClass().getResource(rutaImagen);
+        ImageIcon icono = new ImageIcon(urlImagen);
+        Icono_Carro.setIcon(icono);
+    }//GEN-LAST:event_Icono_AlumnoMouseExited
     private void listarVendedores(JTable tablaVendedores){
         Statement st;
         ResultSet rs;
@@ -5100,12 +5120,12 @@ public class Loggin extends javax.swing.JFrame {
     private javax.swing.JLabel Fondo7;
     private javax.swing.JLabel Fondo_Cambio;
     private javax.swing.JLabel Fondo_Login;
+    private javax.swing.JLabel Icono_Alumno;
     private javax.swing.JLabel Icono_Carro;
     private javax.swing.JLabel Icono_Clase;
     private javax.swing.JLabel Icono_Cliente;
     private javax.swing.JLabel Icono_Cliente1;
     private javax.swing.JLabel Icono_Cliente2;
-    private javax.swing.JLabel Icono_Factura;
     private javax.swing.JLabel Icono_Factura1;
     private javax.swing.JLabel Icono_Producto1;
     private javax.swing.JLabel Icono_Producto2;
