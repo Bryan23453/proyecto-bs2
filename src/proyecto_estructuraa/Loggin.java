@@ -1774,14 +1774,20 @@ public class Loggin extends javax.swing.JFrame {
         Panel_Menu_Izquierda.add(Icono_Alumno);
         Icono_Alumno.setBounds(6, 241, 70, 70);
 
-        Icono_Cliente.setText("Examen Ico");
+        Icono_Cliente.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Mediaa/Icono Notas Estatico.png"))); // NOI18N
         Icono_Cliente.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 Icono_ClienteMouseClicked(evt);
             }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                Icono_ClienteMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                Icono_ClienteMouseExited(evt);
+            }
         });
         Panel_Menu_Izquierda.add(Icono_Cliente);
-        Icono_Cliente.setBounds(6, 329, 61, 70);
+        Icono_Cliente.setBounds(6, 329, 70, 70);
 
         jLabel29.setText("Financiero Ico");
         jLabel29.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -4832,6 +4838,20 @@ public class Loggin extends javax.swing.JFrame {
         ImageIcon icono = new ImageIcon(urlImagen);
         Icono_Maestra.setIcon(icono);
     }//GEN-LAST:event_Icono_MaestraMouseExited
+
+    private void Icono_ClienteMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Icono_ClienteMouseEntered
+        String rutaImagen = "/Mediaa/Icono-Notas.gif";
+        URL urlImagen = getClass().getResource(rutaImagen);
+        ImageIcon icono = new ImageIcon(urlImagen);
+        Icono_Maestra.setIcon(icono);
+    }//GEN-LAST:event_Icono_ClienteMouseEntered
+
+    private void Icono_ClienteMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Icono_ClienteMouseExited
+        String rutaImagen = "/Mediaa/Icono Notas Estatico.png";
+        URL urlImagen = getClass().getResource(rutaImagen);
+        ImageIcon icono = new ImageIcon(urlImagen);
+        Icono_Maestra.setIcon(icono);
+    }//GEN-LAST:event_Icono_ClienteMouseExited
     private void listarVendedores(JTable tablaVendedores){
         Statement st;
         ResultSet rs;
