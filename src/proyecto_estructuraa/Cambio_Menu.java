@@ -26,14 +26,12 @@ public class Cambio_Menu extends Thread {
     JPanel panel8;
     JTabbedPane tabpane1;
     boolean pass;
-    JLabel a;
-    public Cambio_Menu(JPanel pane,JPanel pane4,JPanel pane5,JPanel pane6,JLabel a,JPanel pane7,JPanel pane8,JTabbedPane tabpane,boolean pas){
+    public Cambio_Menu(JPanel pane,JPanel pane4,JPanel pane5,JPanel pane6,JPanel pane7,JPanel pane8,JTabbedPane tabpane,boolean pas){
         panel=pane;
         panel4=pane4;
         panel5=pane5;
         panel6=pane6;
         panel7=pane7;
-        this.a=a;
         tabpane1=tabpane;
         panel8=pane8;
         pass=pas;
@@ -42,7 +40,6 @@ public class Cambio_Menu extends Thread {
     
     public void run () {
         if (pass) {
-            a.setEnabled(false);
             int w=1230;
             tabpane1.setLocation(w, 0);
             panel4.setLocation(w, 0);
@@ -55,12 +52,10 @@ public class Cambio_Menu extends Thread {
                     Thread.sleep(1);
                     panel.setLocation(w,0);
                     w=w-3;
-                } catch (InterruptedException ex) {}
-                
+                } catch (InterruptedException ex) {}    
             }
-            a.setEnabled(true);
+           
         }else{
-            a.setEnabled(false);
             int w=1230;
             panel.setLocation(w,0);
             panel4.setLocation(w, 0);
@@ -76,7 +71,6 @@ public class Cambio_Menu extends Thread {
                 } catch (InterruptedException ex) {}
                 
             }
-            a.setEnabled(true);
         }
         
             

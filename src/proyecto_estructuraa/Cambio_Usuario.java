@@ -27,7 +27,7 @@ public class Cambio_Usuario extends Thread {
 	public void run () {
         try {
             Thread.sleep(6500);
-            //2880
+            //6500
             fondo2.setVisible(false);
             panel.setVisible(true);
             fondo3.setVisible(true);

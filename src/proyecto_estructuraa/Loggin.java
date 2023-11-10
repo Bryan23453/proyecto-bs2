@@ -50,7 +50,7 @@ public class Loggin extends javax.swing.JFrame {
         Fondo_Cambio.setVisible(false);
         Fondo5.setVisible(false);
         Menu_Admin.setVisible(false);
-        Menu_Customer.setVisible(false);
+        Menu_Estudiantes.setVisible(false);
         Label_Incorrecto.setVisible(false);
         Label_Incorrecto1.setVisible(false);
         panel_ingreso.setVisible(false);
@@ -60,335 +60,7 @@ public class Loggin extends javax.swing.JFrame {
         cm.start();
         
     }
-   public void meterClientes(){
-        Statement st;
-        ResultSet rs;
-        
-        try{
-            st = c.conexion.createStatement();
-            rs = st.executeQuery("select * from vistacliente");
-            while(rs.next()){ 
-                int id = rs.getInt("idcliente");
-                String NumeroCad =  Integer.toString(id);
 
-                String concat = rs.getString("nombreCliente") + " " + NumeroCad;
-                Clientes.add(rs.getString("nombreCliente"));
-            }
-            
-            
-        }catch(SQLException e){
-            System.out.println("Error!!!");
-        }
-        
-    }
-    public void mostrarInventario(){
-        DefaultTableModel tInventario = new DefaultTableModel();
-        tInventario.addColumn("idTienda");
-        tInventario.addColumn("nombreTienda");
-        tInventario.addColumn("NombreProducto");
-        tInventario.addColumn("TamañoProducto");
-        tInventario.addColumn("Embalaje");
-        tInventario.addColumn("Marca");
-        tInventario.addColumn("Precio");
-        tInventario.addColumn("CantidadProducto");
-        tInventario.addColumn("UbicacionTienda");
-        tableReportes.setModel(tInventario);
-        
-        String []datos = new String[9];
-        
-        Statement st;
-        ResultSet rs;
-        
-        try{
-            st = c.conexion.createStatement();
-            rs = st.executeQuery("select * from 1view_Inv");
-            while(rs.next()){
-                int id = rs.getInt("idTienda");
-                String IntCad =  Integer.toString(id);
-                datos[0] = IntCad;
-                
-                datos[1] = rs.getString("nombreTienda");
-                datos[2] = rs.getString("nombreProducto");
-                datos[3] = rs.getString("tamanoProducto");
-                datos[4] = rs.getString("embalaje");
-                datos[5] = rs.getString("marca");
-                
-                float precio = rs.getFloat("precioProducto");
-                String FloatCad1 = Float.toString(precio);
-                datos[6] = FloatCad1;
-                
-                int cantidad = rs.getInt("cantidadProducto");
-                String NumeroCad =  Integer.toString(cantidad);
-                datos[7] = NumeroCad;
-                
-                datos[8] = rs.getString("ubicacionTienda");
-                
-                tInventario.addRow(datos);
-            }
-            
-            tableReportes.setModel(tInventario);
-        }catch(SQLException e){
-            System.out.println("Error!!!");
-        }
-        
-    }
-    
-    public void mostrarComprasCliente(){
-        //System.out.println(Nom);
-        DefaultTableModel tInventario = new DefaultTableModel();
-        tInventario.addColumn("NombreCliente");
-        tInventario.addColumn("NumeroFactura");
-        tInventario.addColumn("FechaFactura");
-        tInventario.addColumn("IDProductosComprados");
-        tableReportes.setModel(tInventario);
-        
-        String []datos = new String[4];
-        
-        Statement st;
-        ResultSet rs;
-        
-        try{
-            
-            st = c.conexion.createStatement();
-            rs = st.executeQuery("select * from 2view_CxC");
-            String veri = "";
-            while(rs.next()){
-               
-                datos[0] = rs.getString("nombreCliente");
-                datos[1] = rs.getString("numeroFactura");
-
-                java.util.Date fecha = rs.getDate("fechaFactura");
-                SimpleDateFormat formato = new SimpleDateFormat("yyyy-MM-dd");
-                String fechaFormateada = formato.format(fecha);
-                datos[2] = fechaFormateada;
-
-                //float total = rs.getString("ProductosComprados");
-                String FloatCad = rs.getString("ProductosComprados");
-                datos[3] = FloatCad;
-                tInventario.addRow(datos);
-                
-                
-            }
-            
-            tableReportes.setModel(tInventario);
-        }catch(SQLException e){
-            e.printStackTrace();
-        }
-        
-    }
-    public void mostrarHistorialVentas(){
-        DefaultTableModel tInventario = new DefaultTableModel();
-        tInventario.addColumn("NombreTienda");
-        tInventario.addColumn("NumeroFactura");
-        tInventario.addColumn("FechaFactura");
-        tInventario.addColumn("Total");
-        tableReportes.setModel(tInventario);
-        
-        String []datos = new String[4];
-        
-        Statement st;
-        ResultSet rs;
-        
-        try{
-            st = c.conexion.createStatement();
-            rs = st.executeQuery("select * from 3view_HistorialVenta");
-            while(rs.next()){
-                
-                datos[0] = rs.getString("nombreTienda");
-                datos[1] = rs.getString("numeroFactura");
-                
-                java.util.Date fecha = rs.getDate("fechaFactura");
-                SimpleDateFormat formato = new SimpleDateFormat("yyyy-MM-dd");
-                String fechaFormateada = formato.format(fecha);
-                datos[2] = fechaFormateada;
-                
-                float total = rs.getFloat("total");
-                String FloatCad = Float.toString(total);
-                datos[3] = FloatCad;
-                
-                
-                tInventario.addRow(datos);
-            }
-            
-            tableReportes.setModel(tInventario);
-        }catch(SQLException e){
-            System.out.println("Error!!!");
-        }
-        
-    }
-    public void mostrarTop20Tiendas(){
-        DefaultTableModel tInventario = new DefaultTableModel();
-        tInventario.addColumn("NombreTienda");
-        tInventario.addColumn("NombreProducto");
-        tInventario.addColumn("CantidadVendida");
-        tableReportes.setModel(tInventario);
-        
-        String []datos = new String[3];
-        
-        Statement st;
-        ResultSet rs;
-        
-        try{
-            st = c.conexion.createStatement();
-            rs = st.executeQuery("select * from 4view_Top20Tienda");
-            while(rs.next()){
-                
-                datos[0] = rs.getString("nombreTienda");
-                datos[1] = rs.getString("nombreProducto");
-                
-                int compras = rs.getInt("CantidadVendida");
-                String NumeroCad1 =  Integer.toString(compras);
-                datos[2] = NumeroCad1;
-                   
-                tInventario.addRow(datos);
-            }
-            
-            tableReportes.setModel(tInventario);
-        }catch(SQLException e){
-            System.out.println("Error!!!");
-        }
-        
-    }
-    
-    public void mostrarTop20TiendasUbi(){
-        DefaultTableModel tInventario = new DefaultTableModel();
-        tInventario.addColumn("UbicacionTienda");
-        tInventario.addColumn("NombreProducto");
-        tInventario.addColumn("CantidadVendida");
-        tableReportes.setModel(tInventario);
-        
-        String []datos = new String[3];
-        
-        Statement st;
-        ResultSet rs;
-        
-        try{
-            st = c.conexion.createStatement();
-            rs = st.executeQuery("select * from 5view_Top20Ubi");
-            while(rs.next()){
-                
-                datos[0] = rs.getString("ubicacionTienda");
-                datos[1] = rs.getString("nombreProducto");
-                
-                int compras = rs.getInt("CantidadVendida");
-                String NumeroCad1 =  Integer.toString(compras);
-                datos[2] = NumeroCad1;
-                   
-                tInventario.addRow(datos);
-            }
-            
-            tableReportes.setModel(tInventario);
-        }catch(SQLException e){
-            System.out.println("Error!!!");
-        }
-        
-    }
-    
-    public void mostrarTiendsVentas(){
-        DefaultTableModel tInventario = new DefaultTableModel();
-        tInventario.addColumn("NombreTienda");
-        tInventario.addColumn("VentasAnuales");
-        tableReportes.setModel(tInventario);
-        
-        String []datos = new String[3];
-        
-        Statement st;
-        ResultSet rs;
-        
-        try{
-            st = c.conexion.createStatement();
-            rs = st.executeQuery("select * from 6view_Top5");
-            while(rs.next()){
-                
-                datos[0] = rs.getString("nombreTienda");
-                
-                
-                float total = rs.getFloat("VentasAnuales");
-                String FloatCad = Float.toString(total);
-                datos[1] = FloatCad;
-                   
-                tInventario.addRow(datos);
-            }
-            
-            tableReportes.setModel(tInventario);
-        }catch(SQLException e){
-            System.out.println("Error!!!");
-        }
-        
-    }
-    
-    // falta 2
-    public void mostrarCocaCola(){
-        DefaultTableModel tInventario = new DefaultTableModel();
-        tInventario.addColumn("NombreTienda");
-        tInventario.addColumn("VentasCocaCola");
-        tInventario.addColumn("VentasPepsi");
-        tableReportes.setModel(tInventario);
-        
-        String []datos = new String[3];
-        
-        Statement st;
-        ResultSet rs;
-        
-        try{
-            st = c.conexion.createStatement();
-            rs = st.executeQuery("select * from 7view_CocaCola");
-            while(rs.next()){
-                
-                datos[0] = rs.getString("ubicacionTienda");
-                
-                int compras = rs.getInt("VentasCocaCola");
-                String NumeroCad =  Integer.toString(compras);
-                datos[1] = NumeroCad;
-                
-                
-                int compras1 = rs.getInt("VentasPepsi");
-                String NumeroCad1 =  Integer.toString(compras);
-                datos[2] = NumeroCad1;
-                   
-                tInventario.addRow(datos);
-            }
-            
-            tableReportes.setModel(tInventario);
-        }catch(SQLException e){
-            System.out.println("Error!!!");
-        }
-        
-    }
-    
-     public void mostrarAntiLeche(){
-        DefaultTableModel tInventario = new DefaultTableModel();
-        tInventario.addColumn("TipoProducto");
-        tInventario.addColumn("CantidadCompras");
-        tableReportes.setModel(tInventario);
-        
-        String []datos = new String[2];
-        
-        Statement st;
-        ResultSet rs;
-        
-        try{
-            st = c.conexion.createStatement();
-            rs = st.executeQuery("select * from 8view_ExLeche");
-            while(rs.next()){
-                datos[0] = rs.getString("tipoProducto");
-                
-                int compras = rs.getInt("CantidadCompras");
-                String NumeroCad =  Integer.toString(compras);
-                datos[1] = NumeroCad;
-
-                   
-                tInventario.addRow(datos);
-            }
-            
-            tableReportes.setModel(tInventario);
-        }catch(SQLException e){
-            System.out.println("Error!!!");
-        }
-        
-    }
-
-    
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -509,33 +181,28 @@ public class Loggin extends javax.swing.JFrame {
         Fondo5 = new javax.swing.JLabel();
         jPanel1 = new javax.swing.JPanel();
         Menu_Maestro = new javax.swing.JPanel();
+        Panel_Clase = new javax.swing.JPanel();
+        jLabel46 = new javax.swing.JLabel();
+        jLabel119 = new javax.swing.JLabel();
+        btn_deleteCliente2 = new javax.swing.JButton();
+        btn_createCliente2 = new javax.swing.JButton();
+        jScrollPane27 = new javax.swing.JScrollPane();
+        table_Clientes2 = new javax.swing.JTable();
+        jLabel1 = new javax.swing.JLabel();
+        jComboBox10 = new javax.swing.JComboBox<>();
         Panel_Bitacora2 = new javax.swing.JPanel();
         jLabel117 = new javax.swing.JLabel();
         jScrollPane25 = new javax.swing.JScrollPane();
         ta_Bitacora2 = new javax.swing.JTextArea();
         Panel_Menu_Izquierda2 = new javax.swing.JPanel();
-        Icono_Tienda2 = new javax.swing.JLabel();
-        Icono_Producto2 = new javax.swing.JLabel();
-        Icono_Vendedor2 = new javax.swing.JLabel();
-        Icono_Cliente2 = new javax.swing.JLabel();
+        Icono_Clases = new javax.swing.JLabel();
+        Icono_Examenes = new javax.swing.JLabel();
+        Icono_Calificacion = new javax.swing.JLabel();
         Panel_Informes2 = new javax.swing.JPanel();
         jLabel41 = new javax.swing.JLabel();
         ComboReportes2 = new javax.swing.JComboBox<>();
         jScrollPane26 = new javax.swing.JScrollPane();
         tableReportes2 = new javax.swing.JTable();
-        Panel_Cliente2 = new javax.swing.JPanel();
-        jLabel46 = new javax.swing.JLabel();
-        jLabel49 = new javax.swing.JLabel();
-        jLabel118 = new javax.swing.JLabel();
-        jLabel119 = new javax.swing.JLabel();
-        tf_idCliente2 = new javax.swing.JTextField();
-        tf_nombreCliente2 = new javax.swing.JTextField();
-        tf_correoCliente2 = new javax.swing.JTextField();
-        btn_deleteCliente2 = new javax.swing.JButton();
-        btn_createCliente2 = new javax.swing.JButton();
-        btn_updateCliente2 = new javax.swing.JButton();
-        jScrollPane27 = new javax.swing.JScrollPane();
-        table_Clientes2 = new javax.swing.JTable();
         Panel_Productos2 = new javax.swing.JPanel();
         jLabel120 = new javax.swing.JLabel();
         jLabel121 = new javax.swing.JLabel();
@@ -634,11 +301,9 @@ public class Loggin extends javax.swing.JFrame {
         btn_eliminarInventario2 = new javax.swing.JToggleButton();
         btn_modifyInventario2 = new javax.swing.JToggleButton();
         Fondo7 = new javax.swing.JLabel();
-        Menu_Customer = new javax.swing.JPanel();
-        Panel_Bitacora1 = new javax.swing.JPanel();
-        jLabel74 = new javax.swing.JLabel();
-        jScrollPane14 = new javax.swing.JScrollPane();
-        ta_Bitacora1 = new javax.swing.JTextArea();
+        Menu_Estudiantes = new javax.swing.JPanel();
+        Panel_menu_abajo1 = new javax.swing.JPanel();
+        jLabel99 = new javax.swing.JLabel();
         Panel_Menu_Izquierda1 = new javax.swing.JPanel();
         Icono_Tienda1 = new javax.swing.JLabel();
         Icono_Producto1 = new javax.swing.JLabel();
@@ -650,19 +315,6 @@ public class Loggin extends javax.swing.JFrame {
         ComboReportes1 = new javax.swing.JComboBox<>();
         jScrollPane15 = new javax.swing.JScrollPane();
         tableReportes1 = new javax.swing.JTable();
-        Panel_Cliente1 = new javax.swing.JPanel();
-        jLabel45 = new javax.swing.JLabel();
-        jLabel47 = new javax.swing.JLabel();
-        jLabel77 = new javax.swing.JLabel();
-        jLabel85 = new javax.swing.JLabel();
-        tf_idCliente1 = new javax.swing.JTextField();
-        tf_nombreCliente1 = new javax.swing.JTextField();
-        tf_correoCliente1 = new javax.swing.JTextField();
-        btn_deleteCliente1 = new javax.swing.JButton();
-        btn_createCliente1 = new javax.swing.JButton();
-        btn_updateCliente1 = new javax.swing.JButton();
-        jScrollPane16 = new javax.swing.JScrollPane();
-        table_Clientes1 = new javax.swing.JTable();
         Panel_Productos1 = new javax.swing.JPanel();
         jLabel86 = new javax.swing.JLabel();
         jLabel87 = new javax.swing.JLabel();
@@ -682,6 +334,10 @@ public class Loggin extends javax.swing.JFrame {
         tf_marcaProducto1 = new javax.swing.JTextField();
         jLabel92 = new javax.swing.JLabel();
         tf_tipoProducto1 = new javax.swing.JTextField();
+        Panel_Bitacora1 = new javax.swing.JPanel();
+        jLabel74 = new javax.swing.JLabel();
+        jScrollPane14 = new javax.swing.JScrollPane();
+        ta_Bitacora1 = new javax.swing.JTextArea();
         Panel_vendedores1 = new javax.swing.JTabbedPane();
         Panel_Vendedorsitos1 = new javax.swing.JPanel();
         jLabel93 = new javax.swing.JLabel();
@@ -705,8 +361,19 @@ public class Loggin extends javax.swing.JFrame {
         jLabel97 = new javax.swing.JLabel();
         jLabel98 = new javax.swing.JLabel();
         jButton15 = new javax.swing.JButton();
-        Panel_menu_abajo1 = new javax.swing.JPanel();
-        jLabel99 = new javax.swing.JLabel();
+        Panel_Cliente1 = new javax.swing.JPanel();
+        jLabel45 = new javax.swing.JLabel();
+        jLabel47 = new javax.swing.JLabel();
+        jLabel77 = new javax.swing.JLabel();
+        jLabel85 = new javax.swing.JLabel();
+        tf_idCliente1 = new javax.swing.JTextField();
+        tf_nombreCliente1 = new javax.swing.JTextField();
+        tf_correoCliente1 = new javax.swing.JTextField();
+        btn_deleteCliente1 = new javax.swing.JButton();
+        btn_createCliente1 = new javax.swing.JButton();
+        btn_updateCliente1 = new javax.swing.JButton();
+        jScrollPane16 = new javax.swing.JScrollPane();
+        table_Clientes1 = new javax.swing.JTable();
         Panel_Factura1 = new javax.swing.JPanel();
         jLabel100 = new javax.swing.JLabel();
         jLabel101 = new javax.swing.JLabel();
@@ -728,38 +395,6 @@ public class Loggin extends javax.swing.JFrame {
         jToggleButton7 = new javax.swing.JToggleButton();
         jToggleButton8 = new javax.swing.JToggleButton();
         jToggleButton9 = new javax.swing.JToggleButton();
-        Panel_Tienda1 = new javax.swing.JTabbedPane();
-        Panel_Tiendita1 = new javax.swing.JPanel();
-        jLabel108 = new javax.swing.JLabel();
-        tf_idTienda1 = new javax.swing.JTextField();
-        jLabel109 = new javax.swing.JLabel();
-        tf_nombreTienda1 = new javax.swing.JTextField();
-        jLabel110 = new javax.swing.JLabel();
-        tf_horarioTienda1 = new javax.swing.JTextField();
-        jScrollPane22 = new javax.swing.JScrollPane();
-        table_Tiendas1 = new javax.swing.JTable();
-        btn_modificarTienda1 = new javax.swing.JToggleButton();
-        btn_eliminarTienda1 = new javax.swing.JToggleButton();
-        btn_crearTienda1 = new javax.swing.JToggleButton();
-        jLabel111 = new javax.swing.JLabel();
-        tf_ubicacionTienda1 = new javax.swing.JTextField();
-        jLabel112 = new javax.swing.JLabel();
-        jPanel4 = new javax.swing.JPanel();
-        jLabel113 = new javax.swing.JLabel();
-        cbox_NombreTiendas1 = new javax.swing.JComboBox<>();
-        jScrollPane23 = new javax.swing.JScrollPane();
-        table_TodosProductos1 = new javax.swing.JTable();
-        jScrollPane24 = new javax.swing.JScrollPane();
-        table_ProductosXTienda1 = new javax.swing.JTable();
-        btn_agregarProductoTienda1 = new javax.swing.JButton();
-        tf_precio1 = new javax.swing.JTextField();
-        tf_cantidad1 = new javax.swing.JTextField();
-        tf_reorden1 = new javax.swing.JTextField();
-        jLabel114 = new javax.swing.JLabel();
-        jLabel115 = new javax.swing.JLabel();
-        jLabel116 = new javax.swing.JLabel();
-        btn_eliminarInventario1 = new javax.swing.JToggleButton();
-        btn_modifyInventario1 = new javax.swing.JToggleButton();
         Fondo6 = new javax.swing.JLabel();
         panel_Registro = new javax.swing.JPanel();
         jLabel78 = new javax.swing.JLabel();
@@ -1462,7 +1097,7 @@ public class Loggin extends javax.swing.JFrame {
         Panel_menu_abajo.setLayout(null);
 
         jLabel72.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        jLabel72.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Media/cerrar-sesion (1).png"))); // NOI18N
+        jLabel72.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Mediaa/cerrar-sesion (1).png"))); // NOI18N
         jLabel72.setText("Salir");
         jLabel72.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -1618,6 +1253,72 @@ public class Loggin extends javax.swing.JFrame {
 
         Menu_Maestro.setLayout(null);
 
+        Panel_Clase.setBackground(new java.awt.Color(0, 0, 0,150));
+        Panel_Clase.setForeground(new java.awt.Color(255, 255, 255));
+        Panel_Clase.setPreferredSize(new java.awt.Dimension(1070, 610));
+        Panel_Clase.setLayout(null);
+
+        jLabel46.setFont(new java.awt.Font("Segoe UI", 0, 48)); // NOI18N
+        jLabel46.setForeground(new java.awt.Color(137, 250, 230));
+        jLabel46.setText("Clases");
+        Panel_Clase.add(jLabel46);
+        jLabel46.setBounds(420, 10, 270, 70);
+
+        jLabel119.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        jLabel119.setForeground(new java.awt.Color(137, 250, 230));
+        jLabel119.setText("ID");
+        Panel_Clase.add(jLabel119);
+        jLabel119.setBounds(50, 90, 60, 30);
+
+        btn_deleteCliente2.setBackground(new java.awt.Color(204, 204, 204));
+        btn_deleteCliente2.setForeground(new java.awt.Color(0, 0, 0));
+        btn_deleteCliente2.setText("Eliminar Alumno");
+        btn_deleteCliente2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btn_deleteCliente2MouseClicked(evt);
+            }
+        });
+        Panel_Clase.add(btn_deleteCliente2);
+        btn_deleteCliente2.setBounds(60, 320, 170, 50);
+
+        btn_createCliente2.setBackground(new java.awt.Color(204, 204, 204));
+        btn_createCliente2.setForeground(new java.awt.Color(0, 0, 0));
+        btn_createCliente2.setText("Añadir Alumno");
+        btn_createCliente2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btn_createCliente2MouseClicked(evt);
+            }
+        });
+        Panel_Clase.add(btn_createCliente2);
+        btn_createCliente2.setBounds(60, 240, 170, 50);
+
+        table_Clientes2.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null}
+            },
+            new String [] {
+                "ID Cliente", "Nombre Cliente", "Correo Cliente"
+            }
+        ));
+        jScrollPane27.setViewportView(table_Clientes2);
+
+        Panel_Clase.add(jScrollPane27);
+        jScrollPane27.setBounds(330, 140, 670, 450);
+
+        jLabel1.setText("Lista Alumnos En La Clase");
+        Panel_Clase.add(jLabel1);
+        jLabel1.setBounds(580, 110, 170, 16);
+
+        jComboBox10.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        Panel_Clase.add(jComboBox10);
+        jComboBox10.setBounds(50, 130, 200, 50);
+
+        Menu_Maestro.add(Panel_Clase);
+        Panel_Clase.setBounds(1230, 0, 1080, 610);
+
         Panel_Bitacora2.setBackground(new java.awt.Color(0, 0, 0,150));
         Panel_Bitacora2.setLayout(null);
 
@@ -1639,31 +1340,42 @@ public class Loggin extends javax.swing.JFrame {
 
         Panel_Menu_Izquierda2.setBackground(new java.awt.Color(67, 122, 227,170));
 
-        Icono_Tienda2.setText("Usuario Ico");
-        Icono_Tienda2.addMouseListener(new java.awt.event.MouseAdapter() {
+        Icono_Clases.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Mediaa/Icono Clases Estatico.png"))); // NOI18N
+        Icono_Clases.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                Icono_Tienda2MouseClicked(evt);
+                Icono_ClasesMouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                Icono_ClasesMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                Icono_ClasesMouseExited(evt);
             }
         });
 
-        Icono_Producto2.setText("Clases Ico");
-        Icono_Producto2.addMouseListener(new java.awt.event.MouseAdapter() {
+        Icono_Examenes.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Mediaa/Icono-Alumno.gif"))); // NOI18N
+        Icono_Examenes.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                Icono_Producto2MouseClicked(evt);
+                Icono_ExamenesMouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                Icono_ExamenesMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                Icono_ExamenesMouseExited(evt);
             }
         });
 
-        Icono_Vendedor2.setText("Examen ico");
-        Icono_Vendedor2.addMouseListener(new java.awt.event.MouseAdapter() {
+        Icono_Calificacion.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Mediaa/Icono Notas Estatico.png"))); // NOI18N
+        Icono_Calificacion.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                Icono_Vendedor2MouseClicked(evt);
+                Icono_CalificacionMouseClicked(evt);
             }
-        });
-
-        Icono_Cliente2.setText("Calificacion ico");
-        Icono_Cliente2.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                Icono_Cliente2MouseClicked(evt);
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                Icono_CalificacionMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                Icono_CalificacionMouseExited(evt);
             }
         });
 
@@ -1674,30 +1386,26 @@ public class Loggin extends javax.swing.JFrame {
             .addGroup(Panel_Menu_Izquierda2Layout.createSequentialGroup()
                 .addGroup(Panel_Menu_Izquierda2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(Panel_Menu_Izquierda2Layout.createSequentialGroup()
-                        .addComponent(Icono_Cliente2)
+                        .addComponent(Icono_Calificacion)
                         .addGap(0, 0, Short.MAX_VALUE))
                     .addGroup(Panel_Menu_Izquierda2Layout.createSequentialGroup()
                         .addContainerGap()
                         .addGroup(Panel_Menu_Izquierda2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(Icono_Examenes, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addGroup(Panel_Menu_Izquierda2Layout.createSequentialGroup()
-                                .addGroup(Panel_Menu_Izquierda2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(Icono_Tienda2, javax.swing.GroupLayout.PREFERRED_SIZE, 81, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(Icono_Producto2, javax.swing.GroupLayout.PREFERRED_SIZE, 81, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addGap(0, 0, Short.MAX_VALUE))
-                            .addComponent(Icono_Vendedor2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+                                .addComponent(Icono_Clases)
+                                .addGap(0, 0, Short.MAX_VALUE)))))
                 .addContainerGap())
         );
         Panel_Menu_Izquierda2Layout.setVerticalGroup(
             Panel_Menu_Izquierda2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(Panel_Menu_Izquierda2Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(Icono_Tienda2, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(52, 52, 52)
+                .addComponent(Icono_Clases, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
-                .addComponent(Icono_Producto2, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(Icono_Examenes, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
-                .addComponent(Icono_Vendedor2, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(Icono_Cliente2, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(Icono_Calificacion, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(350, Short.MAX_VALUE))
         );
 
@@ -1739,102 +1447,6 @@ public class Loggin extends javax.swing.JFrame {
 
         Menu_Maestro.add(Panel_Informes2);
         Panel_Informes2.setBounds(1220, 0, 1080, 610);
-
-        Panel_Cliente2.setBackground(new java.awt.Color(0, 0, 0,150));
-        Panel_Cliente2.setForeground(new java.awt.Color(255, 255, 255));
-        Panel_Cliente2.setPreferredSize(new java.awt.Dimension(1070, 610));
-        Panel_Cliente2.setLayout(null);
-
-        jLabel46.setFont(new java.awt.Font("Segoe UI", 0, 48)); // NOI18N
-        jLabel46.setForeground(new java.awt.Color(137, 250, 230));
-        jLabel46.setText("Clientes");
-        Panel_Cliente2.add(jLabel46);
-        jLabel46.setBounds(420, 10, 270, 70);
-
-        jLabel49.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        jLabel49.setForeground(new java.awt.Color(137, 250, 230));
-        jLabel49.setText("Nombre");
-        Panel_Cliente2.add(jLabel49);
-        jLabel49.setBounds(50, 130, 110, 30);
-
-        jLabel118.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        jLabel118.setForeground(new java.awt.Color(137, 250, 230));
-        jLabel118.setText("Correo");
-        Panel_Cliente2.add(jLabel118);
-        jLabel118.setBounds(50, 210, 60, 30);
-
-        jLabel119.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        jLabel119.setForeground(new java.awt.Color(137, 250, 230));
-        jLabel119.setText("ID");
-        Panel_Cliente2.add(jLabel119);
-        jLabel119.setBounds(50, 50, 60, 30);
-
-        tf_idCliente2.setBackground(new java.awt.Color(102, 102, 102));
-        tf_idCliente2.setForeground(new java.awt.Color(255, 255, 255));
-        Panel_Cliente2.add(tf_idCliente2);
-        tf_idCliente2.setBounds(50, 80, 210, 30);
-
-        tf_nombreCliente2.setBackground(new java.awt.Color(102, 102, 102));
-        tf_nombreCliente2.setForeground(new java.awt.Color(255, 255, 255));
-        Panel_Cliente2.add(tf_nombreCliente2);
-        tf_nombreCliente2.setBounds(50, 160, 210, 30);
-
-        tf_correoCliente2.setBackground(new java.awt.Color(102, 102, 102));
-        tf_correoCliente2.setForeground(new java.awt.Color(255, 255, 255));
-        Panel_Cliente2.add(tf_correoCliente2);
-        tf_correoCliente2.setBounds(50, 240, 210, 30);
-
-        btn_deleteCliente2.setBackground(new java.awt.Color(204, 204, 204));
-        btn_deleteCliente2.setForeground(new java.awt.Color(0, 0, 0));
-        btn_deleteCliente2.setText("Eliminar");
-        btn_deleteCliente2.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                btn_deleteCliente2MouseClicked(evt);
-            }
-        });
-        Panel_Cliente2.add(btn_deleteCliente2);
-        btn_deleteCliente2.setBounds(60, 450, 160, 40);
-
-        btn_createCliente2.setBackground(new java.awt.Color(204, 204, 204));
-        btn_createCliente2.setForeground(new java.awt.Color(0, 0, 0));
-        btn_createCliente2.setText("Añadir");
-        btn_createCliente2.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                btn_createCliente2MouseClicked(evt);
-            }
-        });
-        Panel_Cliente2.add(btn_createCliente2);
-        btn_createCliente2.setBounds(60, 310, 160, 40);
-
-        btn_updateCliente2.setBackground(new java.awt.Color(204, 204, 204));
-        btn_updateCliente2.setForeground(new java.awt.Color(0, 0, 0));
-        btn_updateCliente2.setText("Modificar");
-        btn_updateCliente2.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                btn_updateCliente2MouseClicked(evt);
-            }
-        });
-        Panel_Cliente2.add(btn_updateCliente2);
-        btn_updateCliente2.setBounds(60, 380, 160, 40);
-
-        table_Clientes2.setModel(new javax.swing.table.DefaultTableModel(
-            new Object [][] {
-                {null, null, null},
-                {null, null, null},
-                {null, null, null},
-                {null, null, null}
-            },
-            new String [] {
-                "ID Cliente", "Nombre Cliente", "Correo Cliente"
-            }
-        ));
-        jScrollPane27.setViewportView(table_Clientes2);
-
-        Panel_Cliente2.add(jScrollPane27);
-        jScrollPane27.setBounds(330, 90, 670, 450);
-
-        Menu_Maestro.add(Panel_Cliente2);
-        Panel_Cliente2.setBounds(1230, 0, 1080, 610);
 
         Panel_Productos2.setBackground(new java.awt.Color(0, 0, 0,150));
         Panel_Productos2.setForeground(new java.awt.Color(255, 255, 255));
@@ -2160,7 +1772,7 @@ public class Loggin extends javax.swing.JFrame {
         Panel_menu_abajo2.setLayout(null);
 
         jLabel133.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        jLabel133.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Media/cerrar-sesion (1).png"))); // NOI18N
+        jLabel133.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Mediaa/cerrar-sesion (1).png"))); // NOI18N
         jLabel133.setText("Salir");
         jLabel133.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -2578,33 +2190,31 @@ public class Loggin extends javax.swing.JFrame {
         Menu_Maestro.add(Panel_Tienda2);
         Panel_Tienda2.setBounds(1230, 0, 1080, 610);
 
-        Fondo7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Media/frame menu.png"))); // NOI18N
+        Fondo7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Mediaa/fondo.gif"))); // NOI18N
         Menu_Maestro.add(Fondo7);
-        Fondo7.setBounds(0, 0, 1150, 650);
+        Fondo7.setBounds(60, 0, 1150, 650);
 
         getContentPane().add(Menu_Maestro);
         Menu_Maestro.setBounds(0, 0, 2300, 650);
 
-        Menu_Customer.setLayout(null);
+        Menu_Estudiantes.setLayout(null);
 
-        Panel_Bitacora1.setBackground(new java.awt.Color(0, 0, 0,150));
-        Panel_Bitacora1.setLayout(null);
+        Panel_menu_abajo1.setBackground(new java.awt.Color(67, 122, 227,200));
+        Panel_menu_abajo1.setLayout(null);
 
-        jLabel74.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N
-        jLabel74.setForeground(new java.awt.Color(137, 250, 230));
-        jLabel74.setText("Bitacora");
-        Panel_Bitacora1.add(jLabel74);
-        jLabel74.setBounds(480, 0, 150, 50);
+        jLabel99.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jLabel99.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Mediaa/cerrar-sesion (1).png"))); // NOI18N
+        jLabel99.setText("Salir");
+        jLabel99.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel99MouseClicked(evt);
+            }
+        });
+        Panel_menu_abajo1.add(jLabel99);
+        jLabel99.setBounds(960, 0, 70, 32);
 
-        ta_Bitacora1.setColumns(20);
-        ta_Bitacora1.setRows(5);
-        jScrollPane14.setViewportView(ta_Bitacora1);
-
-        Panel_Bitacora1.add(jScrollPane14);
-        jScrollPane14.setBounds(50, 70, 1000, 510);
-
-        Menu_Customer.add(Panel_Bitacora1);
-        Panel_Bitacora1.setBounds(1230, 0, 1080, 610);
+        Menu_Estudiantes.add(Panel_menu_abajo1);
+        Panel_menu_abajo1.setBounds(80, 610, 1080, 40);
 
         Panel_Menu_Izquierda1.setBackground(new java.awt.Color(67, 122, 227,170));
 
@@ -2677,7 +2287,7 @@ public class Loggin extends javax.swing.JFrame {
                 .addContainerGap(274, Short.MAX_VALUE))
         );
 
-        Menu_Customer.add(Panel_Menu_Izquierda1);
+        Menu_Estudiantes.add(Panel_Menu_Izquierda1);
         Panel_Menu_Izquierda1.setBounds(0, 0, 80, 650);
 
         Panel_Informes1.setBackground(new java.awt.Color(0, 0, 0,150));
@@ -2713,104 +2323,8 @@ public class Loggin extends javax.swing.JFrame {
         Panel_Informes1.add(jScrollPane15);
         jScrollPane15.setBounds(30, 110, 960, 430);
 
-        Menu_Customer.add(Panel_Informes1);
+        Menu_Estudiantes.add(Panel_Informes1);
         Panel_Informes1.setBounds(1220, 0, 1080, 610);
-
-        Panel_Cliente1.setBackground(new java.awt.Color(0, 0, 0,150));
-        Panel_Cliente1.setForeground(new java.awt.Color(255, 255, 255));
-        Panel_Cliente1.setPreferredSize(new java.awt.Dimension(1070, 610));
-        Panel_Cliente1.setLayout(null);
-
-        jLabel45.setFont(new java.awt.Font("Segoe UI", 0, 48)); // NOI18N
-        jLabel45.setForeground(new java.awt.Color(137, 250, 230));
-        jLabel45.setText("Clientes");
-        Panel_Cliente1.add(jLabel45);
-        jLabel45.setBounds(420, 10, 270, 70);
-
-        jLabel47.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        jLabel47.setForeground(new java.awt.Color(137, 250, 230));
-        jLabel47.setText("Nombre");
-        Panel_Cliente1.add(jLabel47);
-        jLabel47.setBounds(50, 130, 110, 30);
-
-        jLabel77.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        jLabel77.setForeground(new java.awt.Color(137, 250, 230));
-        jLabel77.setText("Correo");
-        Panel_Cliente1.add(jLabel77);
-        jLabel77.setBounds(50, 210, 60, 30);
-
-        jLabel85.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        jLabel85.setForeground(new java.awt.Color(137, 250, 230));
-        jLabel85.setText("ID");
-        Panel_Cliente1.add(jLabel85);
-        jLabel85.setBounds(50, 50, 60, 30);
-
-        tf_idCliente1.setBackground(new java.awt.Color(102, 102, 102));
-        tf_idCliente1.setForeground(new java.awt.Color(255, 255, 255));
-        Panel_Cliente1.add(tf_idCliente1);
-        tf_idCliente1.setBounds(50, 80, 210, 30);
-
-        tf_nombreCliente1.setBackground(new java.awt.Color(102, 102, 102));
-        tf_nombreCliente1.setForeground(new java.awt.Color(255, 255, 255));
-        Panel_Cliente1.add(tf_nombreCliente1);
-        tf_nombreCliente1.setBounds(50, 160, 210, 30);
-
-        tf_correoCliente1.setBackground(new java.awt.Color(102, 102, 102));
-        tf_correoCliente1.setForeground(new java.awt.Color(255, 255, 255));
-        Panel_Cliente1.add(tf_correoCliente1);
-        tf_correoCliente1.setBounds(50, 240, 210, 30);
-
-        btn_deleteCliente1.setBackground(new java.awt.Color(204, 204, 204));
-        btn_deleteCliente1.setForeground(new java.awt.Color(0, 0, 0));
-        btn_deleteCliente1.setText("Eliminar");
-        btn_deleteCliente1.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                btn_deleteCliente1MouseClicked(evt);
-            }
-        });
-        Panel_Cliente1.add(btn_deleteCliente1);
-        btn_deleteCliente1.setBounds(60, 450, 160, 40);
-
-        btn_createCliente1.setBackground(new java.awt.Color(204, 204, 204));
-        btn_createCliente1.setForeground(new java.awt.Color(0, 0, 0));
-        btn_createCliente1.setText("Añadir");
-        btn_createCliente1.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                btn_createCliente1MouseClicked(evt);
-            }
-        });
-        Panel_Cliente1.add(btn_createCliente1);
-        btn_createCliente1.setBounds(60, 310, 160, 40);
-
-        btn_updateCliente1.setBackground(new java.awt.Color(204, 204, 204));
-        btn_updateCliente1.setForeground(new java.awt.Color(0, 0, 0));
-        btn_updateCliente1.setText("Modificar");
-        btn_updateCliente1.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                btn_updateCliente1MouseClicked(evt);
-            }
-        });
-        Panel_Cliente1.add(btn_updateCliente1);
-        btn_updateCliente1.setBounds(60, 380, 160, 40);
-
-        table_Clientes1.setModel(new javax.swing.table.DefaultTableModel(
-            new Object [][] {
-                {null, null, null},
-                {null, null, null},
-                {null, null, null},
-                {null, null, null}
-            },
-            new String [] {
-                "ID Cliente", "Nombre Cliente", "Correo Cliente"
-            }
-        ));
-        jScrollPane16.setViewportView(table_Clientes1);
-
-        Panel_Cliente1.add(jScrollPane16);
-        jScrollPane16.setBounds(330, 90, 670, 450);
-
-        Menu_Customer.add(Panel_Cliente1);
-        Panel_Cliente1.setBounds(1230, 0, 1080, 610);
 
         Panel_Productos1.setBackground(new java.awt.Color(0, 0, 0,150));
         Panel_Productos1.setForeground(new java.awt.Color(255, 255, 255));
@@ -2938,8 +2452,27 @@ public class Loggin extends javax.swing.JFrame {
         Panel_Productos1.add(tf_tipoProducto1);
         tf_tipoProducto1.setBounds(70, 340, 220, 30);
 
-        Menu_Customer.add(Panel_Productos1);
+        Menu_Estudiantes.add(Panel_Productos1);
         Panel_Productos1.setBounds(1230, 0, 1080, 610);
+
+        Panel_Bitacora1.setBackground(new java.awt.Color(0, 0, 0,150));
+        Panel_Bitacora1.setLayout(null);
+
+        jLabel74.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N
+        jLabel74.setForeground(new java.awt.Color(137, 250, 230));
+        jLabel74.setText("Bitacora");
+        Panel_Bitacora1.add(jLabel74);
+        jLabel74.setBounds(480, 0, 150, 50);
+
+        ta_Bitacora1.setColumns(20);
+        ta_Bitacora1.setRows(5);
+        jScrollPane14.setViewportView(ta_Bitacora1);
+
+        Panel_Bitacora1.add(jScrollPane14);
+        jScrollPane14.setBounds(50, 70, 1000, 510);
+
+        Menu_Estudiantes.add(Panel_Bitacora1);
+        Panel_Bitacora1.setBounds(1230, 0, 1080, 610);
 
         Panel_Vendedorsitos1.setBackground(new java.awt.Color(0, 0, 0,150));
         Panel_Vendedorsitos1.setForeground(new java.awt.Color(255, 255, 255));
@@ -3129,25 +2662,104 @@ public class Loggin extends javax.swing.JFrame {
 
         Panel_vendedores1.addTab("Inventario", jPanel6);
 
-        Menu_Customer.add(Panel_vendedores1);
+        Menu_Estudiantes.add(Panel_vendedores1);
         Panel_vendedores1.setBounds(1230, 0, 1080, 610);
 
-        Panel_menu_abajo1.setBackground(new java.awt.Color(67, 122, 227,200));
-        Panel_menu_abajo1.setLayout(null);
+        Panel_Cliente1.setBackground(new java.awt.Color(0, 0, 0,150));
+        Panel_Cliente1.setForeground(new java.awt.Color(255, 255, 255));
+        Panel_Cliente1.setPreferredSize(new java.awt.Dimension(1070, 610));
+        Panel_Cliente1.setLayout(null);
 
-        jLabel99.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        jLabel99.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Media/cerrar-sesion (1).png"))); // NOI18N
-        jLabel99.setText("Salir");
-        jLabel99.addMouseListener(new java.awt.event.MouseAdapter() {
+        jLabel45.setFont(new java.awt.Font("Segoe UI", 0, 48)); // NOI18N
+        jLabel45.setForeground(new java.awt.Color(137, 250, 230));
+        jLabel45.setText("Clientes");
+        Panel_Cliente1.add(jLabel45);
+        jLabel45.setBounds(420, 10, 270, 70);
+
+        jLabel47.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        jLabel47.setForeground(new java.awt.Color(137, 250, 230));
+        jLabel47.setText("Nombre");
+        Panel_Cliente1.add(jLabel47);
+        jLabel47.setBounds(50, 130, 110, 30);
+
+        jLabel77.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        jLabel77.setForeground(new java.awt.Color(137, 250, 230));
+        jLabel77.setText("Correo");
+        Panel_Cliente1.add(jLabel77);
+        jLabel77.setBounds(50, 210, 60, 30);
+
+        jLabel85.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        jLabel85.setForeground(new java.awt.Color(137, 250, 230));
+        jLabel85.setText("ID");
+        Panel_Cliente1.add(jLabel85);
+        jLabel85.setBounds(50, 50, 60, 30);
+
+        tf_idCliente1.setBackground(new java.awt.Color(102, 102, 102));
+        tf_idCliente1.setForeground(new java.awt.Color(255, 255, 255));
+        Panel_Cliente1.add(tf_idCliente1);
+        tf_idCliente1.setBounds(50, 80, 210, 30);
+
+        tf_nombreCliente1.setBackground(new java.awt.Color(102, 102, 102));
+        tf_nombreCliente1.setForeground(new java.awt.Color(255, 255, 255));
+        Panel_Cliente1.add(tf_nombreCliente1);
+        tf_nombreCliente1.setBounds(50, 160, 210, 30);
+
+        tf_correoCliente1.setBackground(new java.awt.Color(102, 102, 102));
+        tf_correoCliente1.setForeground(new java.awt.Color(255, 255, 255));
+        Panel_Cliente1.add(tf_correoCliente1);
+        tf_correoCliente1.setBounds(50, 240, 210, 30);
+
+        btn_deleteCliente1.setBackground(new java.awt.Color(204, 204, 204));
+        btn_deleteCliente1.setForeground(new java.awt.Color(0, 0, 0));
+        btn_deleteCliente1.setText("Eliminar");
+        btn_deleteCliente1.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jLabel99MouseClicked(evt);
+                btn_deleteCliente1MouseClicked(evt);
             }
         });
-        Panel_menu_abajo1.add(jLabel99);
-        jLabel99.setBounds(960, 0, 70, 32);
+        Panel_Cliente1.add(btn_deleteCliente1);
+        btn_deleteCliente1.setBounds(60, 450, 160, 40);
 
-        Menu_Customer.add(Panel_menu_abajo1);
-        Panel_menu_abajo1.setBounds(80, 610, 1080, 40);
+        btn_createCliente1.setBackground(new java.awt.Color(204, 204, 204));
+        btn_createCliente1.setForeground(new java.awt.Color(0, 0, 0));
+        btn_createCliente1.setText("Añadir");
+        btn_createCliente1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btn_createCliente1MouseClicked(evt);
+            }
+        });
+        Panel_Cliente1.add(btn_createCliente1);
+        btn_createCliente1.setBounds(60, 310, 160, 40);
+
+        btn_updateCliente1.setBackground(new java.awt.Color(204, 204, 204));
+        btn_updateCliente1.setForeground(new java.awt.Color(0, 0, 0));
+        btn_updateCliente1.setText("Modificar");
+        btn_updateCliente1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btn_updateCliente1MouseClicked(evt);
+            }
+        });
+        Panel_Cliente1.add(btn_updateCliente1);
+        btn_updateCliente1.setBounds(60, 380, 160, 40);
+
+        table_Clientes1.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null}
+            },
+            new String [] {
+                "ID Cliente", "Nombre Cliente", "Correo Cliente"
+            }
+        ));
+        jScrollPane16.setViewportView(table_Clientes1);
+
+        Panel_Cliente1.add(jScrollPane16);
+        jScrollPane16.setBounds(330, 90, 670, 450);
+
+        Menu_Estudiantes.add(Panel_Cliente1);
+        Panel_Cliente1.setBounds(1230, 0, 1080, 610);
 
         Panel_Factura1.setBackground(new java.awt.Color(0, 0, 0,150));
         Panel_Factura1.setForeground(new java.awt.Color(255, 255, 255));
@@ -3272,300 +2884,21 @@ public class Loggin extends javax.swing.JFrame {
         Panel_Factura1.add(jToggleButton9);
         jToggleButton9.setBounds(150, 540, 85, 27);
 
-        Menu_Customer.add(Panel_Factura1);
+        Menu_Estudiantes.add(Panel_Factura1);
         Panel_Factura1.setBounds(1230, 0, 1080, 610);
 
-        Panel_Tienda1.setBackground(new java.awt.Color(153, 153, 153));
-        Panel_Tienda1.setForeground(new java.awt.Color(0, 0, 0));
+        Fondo6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Mediaa/fondo.gif"))); // NOI18N
+        Menu_Estudiantes.add(Fondo6);
+        Fondo6.setBounds(50, 0, 1150, 650);
 
-        Panel_Tiendita1.setBackground(new java.awt.Color(0, 0, 0,200));
-        Panel_Tiendita1.setForeground(new java.awt.Color(0, 0, 0));
-        Panel_Tiendita1.setPreferredSize(new java.awt.Dimension(1070, 610));
-        Panel_Tiendita1.setLayout(null);
-
-        jLabel108.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        jLabel108.setForeground(new java.awt.Color(137, 250, 230));
-        jLabel108.setText("Horario");
-        Panel_Tiendita1.add(jLabel108);
-        jLabel108.setBounds(110, 200, 100, 30);
-
-        tf_idTienda1.setBackground(new java.awt.Color(102, 102, 102));
-        tf_idTienda1.setForeground(new java.awt.Color(255, 255, 255));
-        Panel_Tiendita1.add(tf_idTienda1);
-        tf_idTienda1.setBounds(40, 70, 200, 30);
-
-        jLabel109.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        jLabel109.setForeground(new java.awt.Color(137, 250, 230));
-        jLabel109.setText("ID");
-        Panel_Tiendita1.add(jLabel109);
-        jLabel109.setBounds(130, 40, 100, 30);
-
-        tf_nombreTienda1.setBackground(new java.awt.Color(102, 102, 102));
-        tf_nombreTienda1.setForeground(new java.awt.Color(255, 255, 255));
-        Panel_Tiendita1.add(tf_nombreTienda1);
-        tf_nombreTienda1.setBounds(40, 150, 200, 30);
-
-        jLabel110.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        jLabel110.setForeground(new java.awt.Color(137, 250, 230));
-        jLabel110.setText("Nombre");
-        Panel_Tiendita1.add(jLabel110);
-        jLabel110.setBounds(110, 120, 100, 30);
-
-        tf_horarioTienda1.setBackground(new java.awt.Color(102, 102, 102));
-        tf_horarioTienda1.setForeground(new java.awt.Color(255, 255, 255));
-        Panel_Tiendita1.add(tf_horarioTienda1);
-        tf_horarioTienda1.setBounds(40, 230, 200, 30);
-
-        table_Tiendas1.setBackground(new java.awt.Color(153, 153, 153));
-        table_Tiendas1.setForeground(new java.awt.Color(0, 0, 0));
-        table_Tiendas1.setModel(new javax.swing.table.DefaultTableModel(
-            new Object [][] {
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null}
-            },
-            new String [] {
-                "Id Tienda", "Nombre Tienda", "Horario", "Ubicacion"
-            }
-        ));
-        table_Tiendas1.setGridColor(new java.awt.Color(153, 153, 153));
-        table_Tiendas1.setSelectionForeground(new java.awt.Color(0, 0, 0));
-        table_Tiendas1.setShowGrid(false);
-        jScrollPane22.setViewportView(table_Tiendas1);
-
-        Panel_Tiendita1.add(jScrollPane22);
-        jScrollPane22.setBounds(260, 90, 770, 470);
-
-        btn_modificarTienda1.setBackground(new java.awt.Color(204, 204, 204));
-        btn_modificarTienda1.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        btn_modificarTienda1.setForeground(new java.awt.Color(0, 0, 0));
-        btn_modificarTienda1.setText("Modificar");
-        btn_modificarTienda1.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                btn_modificarTienda1MouseClicked(evt);
-            }
-        });
-        Panel_Tiendita1.add(btn_modificarTienda1);
-        btn_modificarTienda1.setBounds(60, 450, 150, 40);
-
-        btn_eliminarTienda1.setBackground(new java.awt.Color(204, 204, 204));
-        btn_eliminarTienda1.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        btn_eliminarTienda1.setForeground(new java.awt.Color(0, 0, 0));
-        btn_eliminarTienda1.setText("Eliminar");
-        btn_eliminarTienda1.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                btn_eliminarTienda1MouseClicked(evt);
-            }
-        });
-        Panel_Tiendita1.add(btn_eliminarTienda1);
-        btn_eliminarTienda1.setBounds(60, 520, 150, 40);
-
-        btn_crearTienda1.setBackground(new java.awt.Color(204, 204, 204));
-        btn_crearTienda1.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        btn_crearTienda1.setForeground(new java.awt.Color(0, 0, 0));
-        btn_crearTienda1.setText("Añadir");
-        btn_crearTienda1.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                btn_crearTienda1MouseClicked(evt);
-            }
-        });
-        Panel_Tiendita1.add(btn_crearTienda1);
-        btn_crearTienda1.setBounds(60, 380, 150, 40);
-
-        jLabel111.setFont(new java.awt.Font("Segoe UI", 1, 48)); // NOI18N
-        jLabel111.setForeground(new java.awt.Color(137, 250, 230));
-        jLabel111.setText("Tiendas");
-        Panel_Tiendita1.add(jLabel111);
-        jLabel111.setBounds(550, 10, 180, 64);
-
-        tf_ubicacionTienda1.setBackground(new java.awt.Color(102, 102, 102));
-        tf_ubicacionTienda1.setForeground(new java.awt.Color(255, 255, 255));
-        Panel_Tiendita1.add(tf_ubicacionTienda1);
-        tf_ubicacionTienda1.setBounds(40, 310, 200, 30);
-
-        jLabel112.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        jLabel112.setForeground(new java.awt.Color(137, 250, 230));
-        jLabel112.setText("Ubicacion");
-        Panel_Tiendita1.add(jLabel112);
-        jLabel112.setBounds(100, 280, 100, 30);
-
-        Panel_Tienda1.addTab("Tiendas", Panel_Tiendita1);
-
-        jPanel4.setBackground(new java.awt.Color(0,0,0,200));
-        jPanel4.setForeground(new java.awt.Color(0, 0, 0));
-        jPanel4.setLayout(null);
-
-        jLabel113.setBackground(new java.awt.Color(137, 250, 230));
-        jLabel113.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N
-        jLabel113.setForeground(new java.awt.Color(137, 250, 230));
-        jLabel113.setText("Tienda");
-        jPanel4.add(jLabel113);
-        jLabel113.setBounds(40, 10, 130, 70);
-
-        cbox_NombreTiendas1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
-        cbox_NombreTiendas1.addItemListener(new java.awt.event.ItemListener() {
-            public void itemStateChanged(java.awt.event.ItemEvent evt) {
-                cbox_NombreTiendas1ItemStateChanged(evt);
-            }
-        });
-        jPanel4.add(cbox_NombreTiendas1);
-        cbox_NombreTiendas1.setBounds(170, 30, 310, 40);
-
-        table_TodosProductos1.setBackground(new java.awt.Color(153, 153, 153));
-        table_TodosProductos1.setModel(new javax.swing.table.DefaultTableModel(
-            new Object [][] {
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null}
-            },
-            new String [] {
-                "UPC", "Nombre Producto", "Tamano Producto", "Embalaje", "Marca", "Tipo"
-            }
-        ));
-        jScrollPane23.setViewportView(table_TodosProductos1);
-
-        jPanel4.add(jScrollPane23);
-        jScrollPane23.setBounds(50, 100, 400, 300);
-
-        table_ProductosXTienda1.setBackground(new java.awt.Color(153, 153, 153));
-        table_ProductosXTienda1.setModel(new javax.swing.table.DefaultTableModel(
-            new Object [][] {
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null}
-            },
-            new String [] {
-                "idTienda", "UPC", "Precio", "Cantidad", "Reorden"
-            }
-        ));
-        jScrollPane24.setViewportView(table_ProductosXTienda1);
-
-        jPanel4.add(jScrollPane24);
-        jScrollPane24.setBounds(560, 100, 400, 300);
-
-        btn_agregarProductoTienda1.setBackground(new java.awt.Color(204, 204, 204));
-        btn_agregarProductoTienda1.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        btn_agregarProductoTienda1.setForeground(new java.awt.Color(0, 0, 0));
-        btn_agregarProductoTienda1.setText("->");
-        btn_agregarProductoTienda1.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                btn_agregarProductoTienda1MouseClicked(evt);
-            }
-        });
-        jPanel4.add(btn_agregarProductoTienda1);
-        btn_agregarProductoTienda1.setBounds(480, 230, 50, 31);
-
-        tf_precio1.setBackground(new java.awt.Color(102, 102, 102));
-        tf_precio1.setForeground(new java.awt.Color(255, 255, 255));
-        jPanel4.add(tf_precio1);
-        tf_precio1.setBounds(40, 440, 220, 40);
-
-        tf_cantidad1.setBackground(new java.awt.Color(102, 102, 102));
-        tf_cantidad1.setForeground(new java.awt.Color(255, 255, 255));
-        jPanel4.add(tf_cantidad1);
-        tf_cantidad1.setBounds(40, 520, 220, 40);
-
-        tf_reorden1.setBackground(new java.awt.Color(102, 102, 102));
-        tf_reorden1.setForeground(new java.awt.Color(255, 255, 255));
-        jPanel4.add(tf_reorden1);
-        tf_reorden1.setBounds(280, 480, 220, 40);
-
-        jLabel114.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        jLabel114.setForeground(new java.awt.Color(137, 250, 230));
-        jLabel114.setText("Cantidad");
-        jPanel4.add(jLabel114);
-        jLabel114.setBounds(110, 490, 80, 25);
-
-        jLabel115.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        jLabel115.setForeground(new java.awt.Color(137, 250, 230));
-        jLabel115.setText("Reorder");
-        jPanel4.add(jLabel115);
-        jLabel115.setBounds(350, 450, 90, 25);
-
-        jLabel116.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        jLabel116.setForeground(new java.awt.Color(137, 250, 230));
-        jLabel116.setText("Precio");
-        jPanel4.add(jLabel116);
-        jLabel116.setBounds(120, 410, 60, 20);
-
-        btn_eliminarInventario1.setBackground(new java.awt.Color(204, 204, 204));
-        btn_eliminarInventario1.setForeground(new java.awt.Color(0, 0, 0));
-        btn_eliminarInventario1.setText("Eliminar");
-        btn_eliminarInventario1.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                btn_eliminarInventario1MouseClicked(evt);
-            }
-        });
-        jPanel4.add(btn_eliminarInventario1);
-        btn_eliminarInventario1.setBounds(590, 430, 140, 40);
-
-        btn_modifyInventario1.setBackground(new java.awt.Color(204, 204, 204));
-        btn_modifyInventario1.setForeground(new java.awt.Color(0, 0, 0));
-        btn_modifyInventario1.setText("Modificar");
-        btn_modifyInventario1.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                btn_modifyInventario1MouseClicked(evt);
-            }
-        });
-        jPanel4.add(btn_modifyInventario1);
-        btn_modifyInventario1.setBounds(590, 490, 140, 40);
-
-        Panel_Tienda1.addTab("Inventario", jPanel4);
-
-        Menu_Customer.add(Panel_Tienda1);
-        Panel_Tienda1.setBounds(1230, 0, 1080, 610);
-
-        Fondo6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Media/frame menu.png"))); // NOI18N
-        Menu_Customer.add(Fondo6);
-        Fondo6.setBounds(0, 0, 1150, 650);
-
-        getContentPane().add(Menu_Customer);
-        Menu_Customer.setBounds(0, 0, 2300, 650);
+        getContentPane().add(Menu_Estudiantes);
+        Menu_Estudiantes.setBounds(0, 0, 2300, 650);
 
         panel_Registro.setBackground(new java.awt.Color(255,255,255,150));
         panel_Registro.setToolTipText("");
         panel_Registro.setLayout(null);
 
-        jLabel78.setIcon(new javax.swing.ImageIcon(getClass().getResource("/media/engranaje.png"))); // NOI18N
+        jLabel78.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Mediaa/engranaje.png"))); // NOI18N
         jLabel78.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jLabel78MouseClicked(evt);
@@ -3600,7 +2933,7 @@ public class Loggin extends javax.swing.JFrame {
         panel_Registro.add(Label_Incorrecto1);
         Label_Incorrecto1.setBounds(60, 480, 320, 25);
 
-        jLabel83.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Media/cerrar-sesion (2).png"))); // NOI18N
+        jLabel83.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Mediaa/cerrar-sesion (2).png"))); // NOI18N
         jLabel83.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jLabel83MouseClicked(evt);
@@ -3655,7 +2988,7 @@ public class Loggin extends javax.swing.JFrame {
         panel_ingreso.add(Contra);
         Contra.setBounds(60, 430, 320, 40);
 
-        jLabel81.setIcon(new javax.swing.ImageIcon(getClass().getResource("/media/engranaje.png"))); // NOI18N
+        jLabel81.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Mediaa/engranaje.png"))); // NOI18N
         jLabel81.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jLabel81MouseClicked(evt);
@@ -3664,7 +2997,7 @@ public class Loggin extends javax.swing.JFrame {
         panel_ingreso.add(jLabel81);
         jLabel81.setBounds(10, 0, 32, 40);
 
-        jLabel82.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Media/cerrar-sesion (2).png"))); // NOI18N
+        jLabel82.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Mediaa/cerrar-sesion (2).png"))); // NOI18N
         jLabel82.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jLabel82MouseClicked(evt);
@@ -3732,7 +3065,7 @@ public class Loggin extends javax.swing.JFrame {
 
     private void Icono_ClaseMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Icono_ClaseMouseClicked
 
-        Cambio_Menu CM= new Cambio_Menu(Panel_Alumnos,Panel_Maestros,Panel_Carro,Panel_Informes,Icono_Maestra,Panel_Financiero,Panel_Notas,Panel_Clases,false);
+        Cambio_Menu CM= new Cambio_Menu(Panel_Alumnos,Panel_Maestros,Panel_Carro,Panel_Informes,Panel_Financiero,Panel_Notas,Panel_Clases,false);
         CM.start();
 
 
@@ -3742,7 +3075,7 @@ public class Loggin extends javax.swing.JFrame {
 
     private void Icono_CarroMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Icono_CarroMouseClicked
         if (Icono_Carro.isEnabled()) {
-            Cambio_Menu CM= new Cambio_Menu(Panel_Carro,Panel_Maestros,Panel_Alumnos,Panel_Informes,Icono_Maestra,Panel_Financiero,Panel_Notas,Panel_Clases,true);
+            Cambio_Menu CM= new Cambio_Menu(Panel_Carro,Panel_Maestros,Panel_Alumnos,Panel_Informes,Panel_Financiero,Panel_Notas,Panel_Clases,true);
             CM.start();
             tf_UPC.setText("");
             tf_nombreProducto.setText("");
@@ -3755,7 +3088,7 @@ public class Loggin extends javax.swing.JFrame {
 
     private void Icono_MaestraMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Icono_MaestraMouseClicked
         if (Icono_Maestra.isEnabled()) {
-            Cambio_Menu CM= new Cambio_Menu(Panel_Maestros,Panel_Alumnos,Panel_Carro,Panel_Informes,Icono_Maestra,Panel_Financiero,Panel_Notas,Panel_Clases,true);
+            Cambio_Menu CM= new Cambio_Menu(Panel_Maestros,Panel_Alumnos,Panel_Carro,Panel_Informes,Panel_Financiero,Panel_Notas,Panel_Clases,true);
             CM.start();
             tf_idVendedor.setText("");
             tf_nombreVendedor.setText("");
@@ -3767,12 +3100,12 @@ public class Loggin extends javax.swing.JFrame {
     }//GEN-LAST:event_Icono_MaestraMouseClicked
 
     private void Icono_AlumnoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Icono_AlumnoMouseClicked
-        Cambio_Menu CM= new Cambio_Menu(Panel_Alumnos,Panel_Maestros,Panel_Carro,Panel_Informes,Icono_Maestra,Panel_Financiero,Panel_Notas,Panel_Clases,true);
+        Cambio_Menu CM= new Cambio_Menu(Panel_Alumnos,Panel_Maestros,Panel_Carro,Panel_Informes,Panel_Financiero,Panel_Notas,Panel_Clases,true);
         CM.start();
     }//GEN-LAST:event_Icono_AlumnoMouseClicked
 
     private void Icono_NotasMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Icono_NotasMouseClicked
-        Cambio_Menu CM= new Cambio_Menu(Panel_Notas ,Panel_Alumnos,Panel_Maestros,Panel_Informes,Icono_Maestra,Panel_Financiero,Panel_Carro,Panel_Clases,true);
+        Cambio_Menu CM= new Cambio_Menu(Panel_Notas ,Panel_Alumnos,Panel_Maestros,Panel_Informes,Panel_Financiero,Panel_Carro,Panel_Clases,true);
         CM.start();
         tf_idCliente.setText("");
         tf_nombreCliente.setText("");
@@ -3781,12 +3114,12 @@ public class Loggin extends javax.swing.JFrame {
     }//GEN-LAST:event_Icono_NotasMouseClicked
 
     private void Icono_FinancieroMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Icono_FinancieroMouseClicked
-        Cambio_Menu CM= new Cambio_Menu(Panel_Financiero  ,Panel_Carro,Panel_Alumnos,Panel_Maestros,Icono_Maestra,Panel_Notas,Panel_Informes,Panel_Clases,true);
+        Cambio_Menu CM= new Cambio_Menu(Panel_Financiero  ,Panel_Carro,Panel_Alumnos,Panel_Maestros,Panel_Notas,Panel_Informes,Panel_Clases,true);
         CM.start();
     }//GEN-LAST:event_Icono_FinancieroMouseClicked
 
     private void Icono_InformeMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Icono_InformeMouseClicked
-        Cambio_Menu CM= new Cambio_Menu( Panel_Informes ,Panel_Carro,Panel_Alumnos,Panel_Maestros,Icono_Maestra,Panel_Financiero,Panel_Notas,Panel_Clases,true);
+        Cambio_Menu CM= new Cambio_Menu( Panel_Informes ,Panel_Carro,Panel_Alumnos,Panel_Maestros,Panel_Financiero,Panel_Notas,Panel_Clases,true);
         CM.start();
         
         
@@ -3995,8 +3328,13 @@ public class Loggin extends javax.swing.JFrame {
     }//GEN-LAST:event_btn_deleteProductoMouseClicked
 
     private void Boton_Ingreso3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Boton_Ingreso3MouseClicked
-
+         panel_Registro.setVisible(false);Fondo_Login.setVisible(false);Fondo4.setVisible(true);
+        Cambio_Ecena_Menu cmm = new Cambio_Ecena_Menu(Fondo4,Fondo5 ,Menu_Admin); cmm.start();//menu admin directo
+        //Cambio_Ecena_Menu cmm = new Cambio_Ecena_Menu(Fondo4,Fondo5 ,Menu_Maestro); cmm.start();//menu Maestro directo
+        //Cambio_Ecena_Menu cmm = new Cambio_Ecena_Menu(Fondo4,Fondo5 ,Menu_Customer); cmm.start();//menu estdianes directo
         
+        /*
+        //metodo provicional
         if (Correo.getText().equals("")) {
         panel_Registro.setVisible(false);
         Fondo_Login.setVisible(false);
@@ -4012,7 +3350,7 @@ public class Loggin extends javax.swing.JFrame {
             }else  {
                 Label_Incorrecto1.setVisible(true);
             }   
-        }
+        }*/
     }//GEN-LAST:event_Boton_Ingreso3MouseClicked
 
     private void jLabel78MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel78MouseClicked
@@ -4141,49 +3479,22 @@ public class Loggin extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jLabel99MouseClicked
 
-    private void btn_modificarTienda1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_modificarTienda1MouseClicked
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btn_modificarTienda1MouseClicked
+    private void Icono_ClasesMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Icono_ClasesMouseClicked
+        
+        
+        
+        
+        
+        
+    }//GEN-LAST:event_Icono_ClasesMouseClicked
 
-    private void btn_eliminarTienda1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_eliminarTienda1MouseClicked
+    private void Icono_ExamenesMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Icono_ExamenesMouseClicked
         // TODO add your handling code here:
-    }//GEN-LAST:event_btn_eliminarTienda1MouseClicked
+    }//GEN-LAST:event_Icono_ExamenesMouseClicked
 
-    private void btn_crearTienda1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_crearTienda1MouseClicked
+    private void Icono_CalificacionMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Icono_CalificacionMouseClicked
         // TODO add your handling code here:
-    }//GEN-LAST:event_btn_crearTienda1MouseClicked
-
-    private void cbox_NombreTiendas1ItemStateChanged(java.awt.event.ItemEvent evt) {//GEN-FIRST:event_cbox_NombreTiendas1ItemStateChanged
-        // TODO add your handling code here:
-    }//GEN-LAST:event_cbox_NombreTiendas1ItemStateChanged
-
-    private void btn_agregarProductoTienda1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_agregarProductoTienda1MouseClicked
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btn_agregarProductoTienda1MouseClicked
-
-    private void btn_eliminarInventario1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_eliminarInventario1MouseClicked
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btn_eliminarInventario1MouseClicked
-
-    private void btn_modifyInventario1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_modifyInventario1MouseClicked
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btn_modifyInventario1MouseClicked
-
-    private void Icono_Tienda2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Icono_Tienda2MouseClicked
-        // TODO add your handling code here:
-    }//GEN-LAST:event_Icono_Tienda2MouseClicked
-
-    private void Icono_Producto2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Icono_Producto2MouseClicked
-        // TODO add your handling code here:
-    }//GEN-LAST:event_Icono_Producto2MouseClicked
-
-    private void Icono_Vendedor2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Icono_Vendedor2MouseClicked
-        // TODO add your handling code here:
-    }//GEN-LAST:event_Icono_Vendedor2MouseClicked
-
-    private void Icono_Cliente2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Icono_Cliente2MouseClicked
-        // TODO add your handling code here:
-    }//GEN-LAST:event_Icono_Cliente2MouseClicked
+    }//GEN-LAST:event_Icono_CalificacionMouseClicked
 
     private void ComboReportes2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ComboReportes2ActionPerformed
         // TODO add your handling code here:
@@ -4196,10 +3507,6 @@ public class Loggin extends javax.swing.JFrame {
     private void btn_createCliente2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_createCliente2MouseClicked
         // TODO add your handling code here:
     }//GEN-LAST:event_btn_createCliente2MouseClicked
-
-    private void btn_updateCliente2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_updateCliente2MouseClicked
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btn_updateCliente2MouseClicked
 
     private void btn_deleteProducto2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_deleteProducto2MouseClicked
         // TODO add your handling code here:
@@ -4370,6 +3677,30 @@ public class Loggin extends javax.swing.JFrame {
         ImageIcon icono = new ImageIcon(urlImagen);
         Icono_Financiero.setIcon(icono);
     }//GEN-LAST:event_Icono_FinancieroMouseExited
+
+    private void Icono_CalificacionMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Icono_CalificacionMouseEntered
+        // TODO add your handling code here:
+    }//GEN-LAST:event_Icono_CalificacionMouseEntered
+
+    private void Icono_CalificacionMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Icono_CalificacionMouseExited
+        // TODO add your handling code here:
+    }//GEN-LAST:event_Icono_CalificacionMouseExited
+
+    private void Icono_ExamenesMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Icono_ExamenesMouseEntered
+        // TODO add your handling code here:
+    }//GEN-LAST:event_Icono_ExamenesMouseEntered
+
+    private void Icono_ExamenesMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Icono_ExamenesMouseExited
+        // TODO add your handling code here:
+    }//GEN-LAST:event_Icono_ExamenesMouseExited
+
+    private void Icono_ClasesMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Icono_ClasesMouseEntered
+        // TODO add your handling code here:
+    }//GEN-LAST:event_Icono_ClasesMouseEntered
+
+    private void Icono_ClasesMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Icono_ClasesMouseExited
+        // TODO add your handling code here:
+    }//GEN-LAST:event_Icono_ClasesMouseExited
     private void listarVendedores(JTable tablaVendedores){
         Statement st;
         ResultSet rs;
@@ -4679,33 +4010,32 @@ public class Loggin extends javax.swing.JFrame {
     private javax.swing.JLabel Fondo_Cambio;
     private javax.swing.JLabel Fondo_Login;
     private javax.swing.JLabel Icono_Alumno;
+    private javax.swing.JLabel Icono_Calificacion;
     private javax.swing.JLabel Icono_Carro;
     private javax.swing.JLabel Icono_Clase;
+    private javax.swing.JLabel Icono_Clases;
     private javax.swing.JLabel Icono_Cliente1;
-    private javax.swing.JLabel Icono_Cliente2;
+    private javax.swing.JLabel Icono_Examenes;
     private javax.swing.JLabel Icono_Factura1;
     private javax.swing.JLabel Icono_Financiero;
     private javax.swing.JLabel Icono_Informe;
     private javax.swing.JLabel Icono_Maestra;
     private javax.swing.JLabel Icono_Notas;
     private javax.swing.JLabel Icono_Producto1;
-    private javax.swing.JLabel Icono_Producto2;
     private javax.swing.JLabel Icono_Tienda1;
-    private javax.swing.JLabel Icono_Tienda2;
     private javax.swing.JLabel Icono_Vendedor1;
-    private javax.swing.JLabel Icono_Vendedor2;
     private javax.swing.JLabel Label_Incorrecto;
     private javax.swing.JLabel Label_Incorrecto1;
     private javax.swing.JPanel Menu_Admin;
-    private javax.swing.JPanel Menu_Customer;
+    private javax.swing.JPanel Menu_Estudiantes;
     private javax.swing.JPanel Menu_Maestro;
     private javax.swing.JPanel Panel_Alumnos;
     private javax.swing.JPanel Panel_Bitacora1;
     private javax.swing.JPanel Panel_Bitacora2;
     private javax.swing.JPanel Panel_Carro;
+    private javax.swing.JPanel Panel_Clase;
     private javax.swing.JTabbedPane Panel_Clases;
     private javax.swing.JPanel Panel_Cliente1;
-    private javax.swing.JPanel Panel_Cliente2;
     private javax.swing.JPanel Panel_Factura1;
     private javax.swing.JPanel Panel_Factura2;
     private javax.swing.JPanel Panel_Financiero;
@@ -4719,9 +4049,7 @@ public class Loggin extends javax.swing.JFrame {
     private javax.swing.JPanel Panel_Notas;
     private javax.swing.JPanel Panel_Productos1;
     private javax.swing.JPanel Panel_Productos2;
-    private javax.swing.JTabbedPane Panel_Tienda1;
     private javax.swing.JTabbedPane Panel_Tienda2;
-    private javax.swing.JPanel Panel_Tiendita1;
     private javax.swing.JPanel Panel_Tiendita2;
     private javax.swing.JPanel Panel_Vendedorsitos;
     private javax.swing.JPanel Panel_Vendedorsitos1;
@@ -4734,9 +4062,7 @@ public class Loggin extends javax.swing.JFrame {
     private javax.swing.JTextField Usuario;
     private javax.swing.JTextField Usuario1;
     private javax.swing.JTextField Usuario2;
-    private javax.swing.JButton btn_agregarProductoTienda1;
     private javax.swing.JButton btn_agregarProductoTienda2;
-    private javax.swing.JToggleButton btn_crearTienda1;
     private javax.swing.JToggleButton btn_crearTienda2;
     private javax.swing.JButton btn_createCliente;
     private javax.swing.JButton btn_createCliente1;
@@ -4756,17 +4082,12 @@ public class Loggin extends javax.swing.JFrame {
     private javax.swing.JButton btn_deleteVendedor;
     private javax.swing.JButton btn_deleteVendedor1;
     private javax.swing.JButton btn_deleteVendedor2;
-    private javax.swing.JToggleButton btn_eliminarInventario1;
     private javax.swing.JToggleButton btn_eliminarInventario2;
-    private javax.swing.JToggleButton btn_eliminarTienda1;
     private javax.swing.JToggleButton btn_eliminarTienda2;
-    private javax.swing.JToggleButton btn_modificarTienda1;
     private javax.swing.JToggleButton btn_modificarTienda2;
-    private javax.swing.JToggleButton btn_modifyInventario1;
     private javax.swing.JToggleButton btn_modifyInventario2;
     private javax.swing.JButton btn_updateCliente;
     private javax.swing.JButton btn_updateCliente1;
-    private javax.swing.JButton btn_updateCliente2;
     private javax.swing.JButton btn_updateProducto;
     private javax.swing.JButton btn_updateProducto1;
     private javax.swing.JButton btn_updateProducto2;
@@ -4776,7 +4097,6 @@ public class Loggin extends javax.swing.JFrame {
     private javax.swing.JComboBox<String> cbox_ListaVendedores;
     private javax.swing.JComboBox<String> cbox_ListaVendedores1;
     private javax.swing.JComboBox<String> cbox_ListaVendedores2;
-    private javax.swing.JComboBox<String> cbox_NombreTiendas1;
     private javax.swing.JComboBox<String> cbox_NombreTiendas2;
     private javax.swing.JTextField contra;
     private javax.swing.JButton jButton12;
@@ -4786,6 +4106,7 @@ public class Loggin extends javax.swing.JFrame {
     private javax.swing.JButton jButton16;
     private javax.swing.JButton jButton17;
     private javax.swing.JComboBox<String> jComboBox1;
+    private javax.swing.JComboBox<String> jComboBox10;
     private javax.swing.JComboBox<String> jComboBox2;
     private javax.swing.JComboBox<String> jComboBox3;
     private javax.swing.JComboBox<String> jComboBox4;
@@ -4797,6 +4118,7 @@ public class Loggin extends javax.swing.JFrame {
     private javax.swing.JFormattedTextField jFormattedTextField1;
     private javax.swing.JFormattedTextField jFormattedTextField2;
     private javax.swing.JFormattedTextField jFormattedTextField3;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel100;
     private javax.swing.JLabel jLabel101;
@@ -4806,18 +4128,8 @@ public class Loggin extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel105;
     private javax.swing.JLabel jLabel106;
     private javax.swing.JLabel jLabel107;
-    private javax.swing.JLabel jLabel108;
-    private javax.swing.JLabel jLabel109;
     private javax.swing.JLabel jLabel11;
-    private javax.swing.JLabel jLabel110;
-    private javax.swing.JLabel jLabel111;
-    private javax.swing.JLabel jLabel112;
-    private javax.swing.JLabel jLabel113;
-    private javax.swing.JLabel jLabel114;
-    private javax.swing.JLabel jLabel115;
-    private javax.swing.JLabel jLabel116;
     private javax.swing.JLabel jLabel117;
-    private javax.swing.JLabel jLabel118;
     private javax.swing.JLabel jLabel119;
     private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel120;
@@ -4879,7 +4191,6 @@ public class Loggin extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel46;
     private javax.swing.JLabel jLabel47;
     private javax.swing.JLabel jLabel48;
-    private javax.swing.JLabel jLabel49;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel55;
     private javax.swing.JLabel jLabel56;
@@ -4917,7 +4228,6 @@ public class Loggin extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel99;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
-    private javax.swing.JPanel jPanel4;
     private javax.swing.JPanel jPanel5;
     private javax.swing.JPanel jPanel6;
     private javax.swing.JPanel jPanel7;
@@ -4934,9 +4244,6 @@ public class Loggin extends javax.swing.JFrame {
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JScrollPane jScrollPane20;
     private javax.swing.JScrollPane jScrollPane21;
-    private javax.swing.JScrollPane jScrollPane22;
-    private javax.swing.JScrollPane jScrollPane23;
-    private javax.swing.JScrollPane jScrollPane24;
     private javax.swing.JScrollPane jScrollPane25;
     private javax.swing.JScrollPane jScrollPane26;
     private javax.swing.JScrollPane jScrollPane27;
@@ -4999,14 +4306,11 @@ public class Loggin extends javax.swing.JFrame {
     private javax.swing.JTable table_Productos;
     private javax.swing.JTable table_Productos1;
     private javax.swing.JTable table_Productos2;
-    private javax.swing.JTable table_ProductosXTienda1;
     private javax.swing.JTable table_ProductosXTienda2;
     private javax.swing.JTable table_ProductosparaVendedor;
     private javax.swing.JTable table_ProductosparaVendedor1;
     private javax.swing.JTable table_ProductosparaVendedor2;
-    private javax.swing.JTable table_Tiendas1;
     private javax.swing.JTable table_Tiendas2;
-    private javax.swing.JTable table_TodosProductos1;
     private javax.swing.JTable table_TodosProductos2;
     private javax.swing.JTable table_Vendedores;
     private javax.swing.JTable table_Vendedores1;
@@ -5014,19 +4318,14 @@ public class Loggin extends javax.swing.JFrame {
     private javax.swing.JTextField tf_UPC;
     private javax.swing.JTextField tf_UPC1;
     private javax.swing.JTextField tf_UPC2;
-    private javax.swing.JTextField tf_cantidad1;
     private javax.swing.JTextField tf_cantidad2;
     private javax.swing.JTextField tf_correoCliente1;
-    private javax.swing.JTextField tf_correoCliente2;
     private javax.swing.JTextField tf_embalajeProducto;
     private javax.swing.JTextField tf_embalajeProducto1;
     private javax.swing.JTextField tf_embalajeProducto2;
-    private javax.swing.JTextField tf_horarioTienda1;
     private javax.swing.JTextField tf_horarioTienda2;
     private javax.swing.JTextField tf_idCliente;
     private javax.swing.JTextField tf_idCliente1;
-    private javax.swing.JTextField tf_idCliente2;
-    private javax.swing.JTextField tf_idTienda1;
     private javax.swing.JTextField tf_idTienda2;
     private javax.swing.JTextField tf_idVendedor;
     private javax.swing.JTextField tf_idVendedor1;
@@ -5036,25 +4335,20 @@ public class Loggin extends javax.swing.JFrame {
     private javax.swing.JTextField tf_marcaProducto2;
     private javax.swing.JTextField tf_nombreCliente;
     private javax.swing.JTextField tf_nombreCliente1;
-    private javax.swing.JTextField tf_nombreCliente2;
     private javax.swing.JTextField tf_nombreProducto;
     private javax.swing.JTextField tf_nombreProducto1;
     private javax.swing.JTextField tf_nombreProducto2;
-    private javax.swing.JTextField tf_nombreTienda1;
     private javax.swing.JTextField tf_nombreTienda2;
     private javax.swing.JTextField tf_nombreVendedor;
     private javax.swing.JTextField tf_nombreVendedor1;
     private javax.swing.JTextField tf_nombreVendedor2;
-    private javax.swing.JTextField tf_precio1;
     private javax.swing.JTextField tf_precio2;
-    private javax.swing.JTextField tf_reorden1;
     private javax.swing.JTextField tf_reorden2;
     private javax.swing.JTextField tf_tamanoProducto;
     private javax.swing.JTextField tf_tamanoProducto1;
     private javax.swing.JTextField tf_tamanoProducto2;
     private javax.swing.JTextField tf_tipoProducto1;
     private javax.swing.JTextField tf_tipoProducto2;
-    private javax.swing.JTextField tf_ubicacionTienda1;
     private javax.swing.JTextField tf_ubicacionTienda2;
     // End of variables declaration//GEN-END:variables
 }
