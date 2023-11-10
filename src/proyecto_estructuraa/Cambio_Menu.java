@@ -23,11 +23,11 @@ public class Cambio_Menu extends Thread {
     JPanel panel5;
     JPanel panel6;
     JPanel panel7;
+    JPanel panel8;
     JTabbedPane tabpane1;
-    JTabbedPane tabpanel2;
     boolean pass;
     JLabel a;
-    public Cambio_Menu(JPanel pane,JPanel pane4,JPanel pane5,JPanel pane6,JLabel a,JPanel pane7,JTabbedPane tabpane,JTabbedPane tabpane2,boolean pas){
+    public Cambio_Menu(JPanel pane,JPanel pane4,JPanel pane5,JPanel pane6,JLabel a,JPanel pane7,JPanel pane8,JTabbedPane tabpane,boolean pas){
         panel=pane;
         panel4=pane4;
         panel5=pane5;
@@ -35,7 +35,7 @@ public class Cambio_Menu extends Thread {
         panel7=pane7;
         this.a=a;
         tabpane1=tabpane;
-        tabpanel2=tabpane2;
+        panel8=pane8;
         pass=pas;
         
     }
@@ -45,11 +45,11 @@ public class Cambio_Menu extends Thread {
             a.setEnabled(false);
             int w=1230;
             tabpane1.setLocation(w, 0);
-            tabpanel2.setLocation(w, 0);
             panel4.setLocation(w, 0);
             panel5.setLocation(w, 0);
             panel6.setLocation(w, 0);
             panel7.setLocation(w, 0);
+            panel8.setLocation(w, 0);
             while (w>80){
             try {
                     Thread.sleep(1);
@@ -63,11 +63,11 @@ public class Cambio_Menu extends Thread {
             a.setEnabled(false);
             int w=1230;
             panel.setLocation(w,0);
-            tabpanel2.setLocation(w, 0);
             panel4.setLocation(w, 0);
             panel5.setLocation(w, 0);
             panel6.setLocation(w, 0);
             panel7.setLocation(w, 0);
+            panel8.setLocation(w, 0);
             while (w>80){
             try {
                     Thread.sleep(1);
