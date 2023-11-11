@@ -71,11 +71,6 @@ public class Loggin extends javax.swing.JFrame {
     private void initComponents() {
 
         Menu_Maestro = new javax.swing.JPanel();
-        Panel_Menu_Izquierda3 = new javax.swing.JPanel();
-        jPanel3 = new javax.swing.JPanel();
-        Icono_Clases = new javax.swing.JLabel();
-        Icono_Examenes = new javax.swing.JLabel();
-        Icono_Calificacion = new javax.swing.JLabel();
         Panel_Notas1 = new javax.swing.JPanel();
         jLabel26 = new javax.swing.JLabel();
         jLabel33 = new javax.swing.JLabel();
@@ -126,9 +121,53 @@ public class Loggin extends javax.swing.JFrame {
         table_Clientes2 = new javax.swing.JTable();
         jLabel1 = new javax.swing.JLabel();
         jComboBox10 = new javax.swing.JComboBox<>();
-        Panel_menu_abajo2 = new javax.swing.JPanel();
-        jLabel133 = new javax.swing.JLabel();
+        Panel_menu_abajo3 = new javax.swing.JPanel();
+        jLabel73 = new javax.swing.JLabel();
+        Panel_Menu_Izquierda2 = new javax.swing.JPanel();
+        jPanel4 = new javax.swing.JPanel();
+        Icono_Clases = new javax.swing.JLabel();
+        Icono_Examenes = new javax.swing.JLabel();
+        Icono_Calificacion = new javax.swing.JLabel();
         Fondo7 = new javax.swing.JLabel();
+        Menu_Estudiantes = new javax.swing.JPanel();
+        Panel_Notas2 = new javax.swing.JPanel();
+        jLabel45 = new javax.swing.JLabel();
+        jScrollPane16 = new javax.swing.JScrollPane();
+        table_Clientes1 = new javax.swing.JTable();
+        Panel_menu_abajo1 = new javax.swing.JPanel();
+        jLabel99 = new javax.swing.JLabel();
+        Panel_Menu_Izquierda1 = new javax.swing.JPanel();
+        Icono_Examen1 = new javax.swing.JLabel();
+        Icono_Examen2 = new javax.swing.JLabel();
+        Icono_Financiero1 = new javax.swing.JLabel();
+        Icono_Notas1 = new javax.swing.JLabel();
+        Panel_Notas_Estudiante = new javax.swing.JPanel();
+        jLabel40 = new javax.swing.JLabel();
+        ComboReportes1 = new javax.swing.JComboBox<>();
+        jScrollPane15 = new javax.swing.JScrollPane();
+        tableReportes1 = new javax.swing.JTable();
+        jLabel27 = new javax.swing.JLabel();
+        Panel_Examen2 = new javax.swing.JPanel();
+        jLabel86 = new javax.swing.JLabel();
+        btn_createProducto1 = new javax.swing.JButton();
+        jComboBox4 = new javax.swing.JComboBox<>();
+        jLabel28 = new javax.swing.JLabel();
+        jRadioButton1 = new javax.swing.JRadioButton();
+        jRadioButton2 = new javax.swing.JRadioButton();
+        jRadioButton3 = new javax.swing.JRadioButton();
+        jRadioButton8 = new javax.swing.JRadioButton();
+        Panel_Financiero1 = new javax.swing.JPanel();
+        jLabel74 = new javax.swing.JLabel();
+        jLabel108 = new javax.swing.JLabel();
+        jComboBox6 = new javax.swing.JComboBox<>();
+        jScrollPane13 = new javax.swing.JScrollPane();
+        jTable5 = new javax.swing.JTable();
+        jLabel109 = new javax.swing.JLabel();
+        jToggleButton1 = new javax.swing.JToggleButton();
+        jLabel110 = new javax.swing.JLabel();
+        jScrollPane17 = new javax.swing.JScrollPane();
+        jTable8 = new javax.swing.JTable();
+        Fondo6 = new javax.swing.JLabel();
         Menu_Admin = new javax.swing.JPanel();
         Panel_Notas = new javax.swing.JPanel();
         jLabel21 = new javax.swing.JLabel();
@@ -241,101 +280,6 @@ public class Loggin extends javax.swing.JFrame {
         Icono_Informe = new javax.swing.JLabel();
         Fondo5 = new javax.swing.JLabel();
         jPanel1 = new javax.swing.JPanel();
-        Menu_Estudiantes = new javax.swing.JPanel();
-        Panel_menu_abajo1 = new javax.swing.JPanel();
-        jLabel99 = new javax.swing.JLabel();
-        Panel_Menu_Izquierda1 = new javax.swing.JPanel();
-        Icono_Tienda1 = new javax.swing.JLabel();
-        Icono_Producto1 = new javax.swing.JLabel();
-        Icono_Vendedor1 = new javax.swing.JLabel();
-        Icono_Factura1 = new javax.swing.JLabel();
-        Icono_Cliente1 = new javax.swing.JLabel();
-        Panel_Informes1 = new javax.swing.JPanel();
-        jLabel40 = new javax.swing.JLabel();
-        ComboReportes1 = new javax.swing.JComboBox<>();
-        jScrollPane15 = new javax.swing.JScrollPane();
-        tableReportes1 = new javax.swing.JTable();
-        Panel_Productos1 = new javax.swing.JPanel();
-        jLabel86 = new javax.swing.JLabel();
-        jLabel87 = new javax.swing.JLabel();
-        jLabel88 = new javax.swing.JLabel();
-        jLabel89 = new javax.swing.JLabel();
-        jLabel90 = new javax.swing.JLabel();
-        jLabel91 = new javax.swing.JLabel();
-        tf_embalajeProducto1 = new javax.swing.JTextField();
-        tf_UPC1 = new javax.swing.JTextField();
-        tf_nombreProducto1 = new javax.swing.JTextField();
-        tf_tamanoProducto1 = new javax.swing.JTextField();
-        btn_deleteProducto1 = new javax.swing.JButton();
-        jScrollPane17 = new javax.swing.JScrollPane();
-        table_Productos1 = new javax.swing.JTable();
-        btn_createProducto1 = new javax.swing.JButton();
-        btn_updateProducto1 = new javax.swing.JButton();
-        tf_marcaProducto1 = new javax.swing.JTextField();
-        jLabel92 = new javax.swing.JLabel();
-        tf_tipoProducto1 = new javax.swing.JTextField();
-        Panel_Bitacora1 = new javax.swing.JPanel();
-        jLabel74 = new javax.swing.JLabel();
-        jScrollPane14 = new javax.swing.JScrollPane();
-        ta_Bitacora1 = new javax.swing.JTextArea();
-        Panel_vendedores1 = new javax.swing.JTabbedPane();
-        Panel_Vendedorsitos1 = new javax.swing.JPanel();
-        jLabel93 = new javax.swing.JLabel();
-        jLabel94 = new javax.swing.JLabel();
-        jLabel95 = new javax.swing.JLabel();
-        tf_nombreVendedor1 = new javax.swing.JTextField();
-        tf_idVendedor1 = new javax.swing.JTextField();
-        btn_updateVendedor1 = new javax.swing.JButton();
-        btn_deleteVendedor1 = new javax.swing.JButton();
-        btn_createVendedor1 = new javax.swing.JButton();
-        jScrollPane18 = new javax.swing.JScrollPane();
-        table_Vendedores1 = new javax.swing.JTable();
-        jPanel6 = new javax.swing.JPanel();
-        jLabel96 = new javax.swing.JLabel();
-        cbox_ListaVendedores1 = new javax.swing.JComboBox<>();
-        jScrollPane19 = new javax.swing.JScrollPane();
-        table_ProductosparaVendedor1 = new javax.swing.JTable();
-        jScrollPane20 = new javax.swing.JScrollPane();
-        jTable13 = new javax.swing.JTable();
-        jButton14 = new javax.swing.JButton();
-        jLabel97 = new javax.swing.JLabel();
-        jLabel98 = new javax.swing.JLabel();
-        jButton15 = new javax.swing.JButton();
-        Panel_Cliente1 = new javax.swing.JPanel();
-        jLabel45 = new javax.swing.JLabel();
-        jLabel47 = new javax.swing.JLabel();
-        jLabel77 = new javax.swing.JLabel();
-        jLabel85 = new javax.swing.JLabel();
-        tf_idCliente1 = new javax.swing.JTextField();
-        tf_nombreCliente1 = new javax.swing.JTextField();
-        tf_correoCliente1 = new javax.swing.JTextField();
-        btn_deleteCliente1 = new javax.swing.JButton();
-        btn_createCliente1 = new javax.swing.JButton();
-        btn_updateCliente1 = new javax.swing.JButton();
-        jScrollPane16 = new javax.swing.JScrollPane();
-        table_Clientes1 = new javax.swing.JTable();
-        Panel_Factura1 = new javax.swing.JPanel();
-        jLabel100 = new javax.swing.JLabel();
-        jLabel101 = new javax.swing.JLabel();
-        jLabel102 = new javax.swing.JLabel();
-        jLabel103 = new javax.swing.JLabel();
-        jLabel104 = new javax.swing.JLabel();
-        jLabel105 = new javax.swing.JLabel();
-        jLabel106 = new javax.swing.JLabel();
-        jLabel107 = new javax.swing.JLabel();
-        jTextField11 = new javax.swing.JTextField();
-        jFormattedTextField2 = new javax.swing.JFormattedTextField();
-        jTextField12 = new javax.swing.JTextField();
-        jTextField13 = new javax.swing.JTextField();
-        jTextField14 = new javax.swing.JTextField();
-        jComboBox3 = new javax.swing.JComboBox<>();
-        jComboBox5 = new javax.swing.JComboBox<>();
-        jScrollPane21 = new javax.swing.JScrollPane();
-        jTable4 = new javax.swing.JTable();
-        jToggleButton7 = new javax.swing.JToggleButton();
-        jToggleButton8 = new javax.swing.JToggleButton();
-        jToggleButton9 = new javax.swing.JToggleButton();
-        Fondo6 = new javax.swing.JLabel();
         panel_Registro = new javax.swing.JPanel();
         jLabel78 = new javax.swing.JLabel();
         Correo = new javax.swing.JTextField();
@@ -371,74 +315,6 @@ public class Loggin extends javax.swing.JFrame {
         getContentPane().setLayout(null);
 
         Menu_Maestro.setLayout(null);
-
-        Panel_Menu_Izquierda3.setBackground(new java.awt.Color(255, 255, 255,240));
-        Panel_Menu_Izquierda3.setLayout(null);
-
-        jPanel3.setBackground(new java.awt.Color(0, 0, 0));
-        jPanel3.setForeground(new java.awt.Color(0, 0, 0));
-
-        javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
-        jPanel3.setLayout(jPanel3Layout);
-        jPanel3Layout.setHorizontalGroup(
-            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 2, Short.MAX_VALUE)
-        );
-        jPanel3Layout.setVerticalGroup(
-            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 650, Short.MAX_VALUE)
-        );
-
-        Panel_Menu_Izquierda3.add(jPanel3);
-        jPanel3.setBounds(78, 0, 2, 650);
-
-        Icono_Clases.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Mediaa/Icono Clases Estatico.png"))); // NOI18N
-        Icono_Clases.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                Icono_ClasesMouseClicked(evt);
-            }
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                Icono_ClasesMouseEntered(evt);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                Icono_ClasesMouseExited(evt);
-            }
-        });
-        Panel_Menu_Izquierda3.add(Icono_Clases);
-        Icono_Clases.setBounds(0, 20, 70, 70);
-
-        Icono_Examenes.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Mediaa/Icono Examen Estatico.png"))); // NOI18N
-        Icono_Examenes.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                Icono_ExamenesMouseClicked(evt);
-            }
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                Icono_ExamenesMouseEntered(evt);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                Icono_ExamenesMouseExited(evt);
-            }
-        });
-        Panel_Menu_Izquierda3.add(Icono_Examenes);
-        Icono_Examenes.setBounds(0, 110, 70, 70);
-
-        Icono_Calificacion.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Mediaa/Icono Notas Estatico.png"))); // NOI18N
-        Icono_Calificacion.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                Icono_CalificacionMouseClicked(evt);
-            }
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                Icono_CalificacionMouseEntered(evt);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                Icono_CalificacionMouseExited(evt);
-            }
-        });
-        Panel_Menu_Izquierda3.add(Icono_Calificacion);
-        Icono_Calificacion.setBounds(0, 210, 70, 70);
-
-        Menu_Maestro.add(Panel_Menu_Izquierda3);
-        Panel_Menu_Izquierda3.setBounds(0, 0, 80, 650);
 
         Panel_Notas1.setBackground(new java.awt.Color(0, 0, 0,150));
         Panel_Notas1.setForeground(new java.awt.Color(255, 255, 255));
@@ -751,22 +627,90 @@ public class Loggin extends javax.swing.JFrame {
         Menu_Maestro.add(Panel_Clase);
         Panel_Clase.setBounds(1230, 0, 1080, 610);
 
-        Panel_menu_abajo2.setBackground(new java.awt.Color(67, 122, 227,200));
-        Panel_menu_abajo2.setLayout(null);
+        Panel_menu_abajo3.setBackground(new java.awt.Color(67, 122, 227,200));
+        Panel_menu_abajo3.setLayout(null);
 
-        jLabel133.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        jLabel133.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Mediaa/cerrar-sesion (1).png"))); // NOI18N
-        jLabel133.setText("Salir");
-        jLabel133.addMouseListener(new java.awt.event.MouseAdapter() {
+        jLabel73.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jLabel73.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Mediaa/cerrar-sesion (1).png"))); // NOI18N
+        jLabel73.setText("Salir");
+        jLabel73.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jLabel133MouseClicked(evt);
+                jLabel73MouseClicked(evt);
             }
         });
-        Panel_menu_abajo2.add(jLabel133);
-        jLabel133.setBounds(960, 0, 70, 32);
+        Panel_menu_abajo3.add(jLabel73);
+        jLabel73.setBounds(960, 0, 70, 32);
 
-        Menu_Maestro.add(Panel_menu_abajo2);
-        Panel_menu_abajo2.setBounds(80, 610, 1080, 40);
+        Menu_Maestro.add(Panel_menu_abajo3);
+        Panel_menu_abajo3.setBounds(80, 610, 1080, 40);
+
+        Panel_Menu_Izquierda2.setBackground(new java.awt.Color(255, 255, 255,240));
+        Panel_Menu_Izquierda2.setLayout(null);
+
+        jPanel4.setBackground(new java.awt.Color(0, 0, 0));
+        jPanel4.setForeground(new java.awt.Color(0, 0, 0));
+
+        javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
+        jPanel4.setLayout(jPanel4Layout);
+        jPanel4Layout.setHorizontalGroup(
+            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 2, Short.MAX_VALUE)
+        );
+        jPanel4Layout.setVerticalGroup(
+            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 650, Short.MAX_VALUE)
+        );
+
+        Panel_Menu_Izquierda2.add(jPanel4);
+        jPanel4.setBounds(78, 0, 2, 650);
+
+        Icono_Clases.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Mediaa/Icono Clases Estatico.png"))); // NOI18N
+        Icono_Clases.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                Icono_ClasesMouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                Icono_ClasesMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                Icono_ClasesMouseExited(evt);
+            }
+        });
+        Panel_Menu_Izquierda2.add(Icono_Clases);
+        Icono_Clases.setBounds(0, 20, 70, 70);
+
+        Icono_Examenes.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Mediaa/Icono Examen Estatico.png"))); // NOI18N
+        Icono_Examenes.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                Icono_ExamenesMouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                Icono_ExamenesMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                Icono_ExamenesMouseExited(evt);
+            }
+        });
+        Panel_Menu_Izquierda2.add(Icono_Examenes);
+        Icono_Examenes.setBounds(0, 110, 70, 70);
+
+        Icono_Calificacion.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Mediaa/Icono Notas Estatico.png"))); // NOI18N
+        Icono_Calificacion.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                Icono_CalificacionMouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                Icono_CalificacionMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                Icono_CalificacionMouseExited(evt);
+            }
+        });
+        Panel_Menu_Izquierda2.add(Icono_Calificacion);
+        Icono_Calificacion.setBounds(0, 210, 70, 70);
+
+        Menu_Maestro.add(Panel_Menu_Izquierda2);
+        Panel_Menu_Izquierda2.setBounds(0, 0, 80, 650);
 
         Fondo7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Mediaa/fondo.gif"))); // NOI18N
         Menu_Maestro.add(Fondo7);
@@ -774,6 +718,310 @@ public class Loggin extends javax.swing.JFrame {
 
         getContentPane().add(Menu_Maestro);
         Menu_Maestro.setBounds(0, 0, 2300, 650);
+
+        Menu_Estudiantes.setLayout(null);
+
+        Panel_Notas2.setBackground(new java.awt.Color(0, 0, 0,150));
+        Panel_Notas2.setForeground(new java.awt.Color(255, 255, 255));
+        Panel_Notas2.setPreferredSize(new java.awt.Dimension(1070, 610));
+        Panel_Notas2.setLayout(null);
+
+        jLabel45.setFont(new java.awt.Font("Segoe UI", 0, 48)); // NOI18N
+        jLabel45.setForeground(new java.awt.Color(137, 250, 230));
+        jLabel45.setText("Notas");
+        Panel_Notas2.add(jLabel45);
+        jLabel45.setBounds(460, 10, 270, 70);
+
+        table_Clientes1.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null}
+            },
+            new String [] {
+                "ID Cliente", "Nombre Cliente", "Correo Cliente"
+            }
+        ));
+        jScrollPane16.setViewportView(table_Clientes1);
+
+        Panel_Notas2.add(jScrollPane16);
+        jScrollPane16.setBounds(50, 100, 980, 470);
+
+        Menu_Estudiantes.add(Panel_Notas2);
+        Panel_Notas2.setBounds(1230, 0, 1080, 610);
+
+        Panel_menu_abajo1.setBackground(new java.awt.Color(67, 122, 227,200));
+        Panel_menu_abajo1.setLayout(null);
+
+        jLabel99.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jLabel99.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Mediaa/cerrar-sesion (1).png"))); // NOI18N
+        jLabel99.setText("Salir");
+        jLabel99.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel99MouseClicked(evt);
+            }
+        });
+        Panel_menu_abajo1.add(jLabel99);
+        jLabel99.setBounds(960, 0, 70, 32);
+
+        Menu_Estudiantes.add(Panel_menu_abajo1);
+        Panel_menu_abajo1.setBounds(80, 610, 1080, 40);
+
+        Panel_Menu_Izquierda1.setBackground(new java.awt.Color(67, 122, 227,170));
+
+        Icono_Examen1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Mediaa/Icono Clases Estatico.png"))); // NOI18N
+        Icono_Examen1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                Icono_Examen1MouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                Icono_Examen1MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                Icono_Examen1MouseExited(evt);
+            }
+        });
+
+        Icono_Examen2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Mediaa/Icono Examen Estatico.png"))); // NOI18N
+        Icono_Examen2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                Icono_Examen2MouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                Icono_Examen2MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                Icono_Examen2MouseExited(evt);
+            }
+        });
+
+        Icono_Financiero1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Mediaa/Icono Financiero Estatico.png"))); // NOI18N
+        Icono_Financiero1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                Icono_Financiero1MouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                Icono_Financiero1MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                Icono_Financiero1MouseExited(evt);
+            }
+        });
+
+        Icono_Notas1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Mediaa/Icono Notas Estatico.png"))); // NOI18N
+        Icono_Notas1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                Icono_Notas1MouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                Icono_Notas1MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                Icono_Notas1MouseExited(evt);
+            }
+        });
+
+        javax.swing.GroupLayout Panel_Menu_Izquierda1Layout = new javax.swing.GroupLayout(Panel_Menu_Izquierda1);
+        Panel_Menu_Izquierda1.setLayout(Panel_Menu_Izquierda1Layout);
+        Panel_Menu_Izquierda1Layout.setHorizontalGroup(
+            Panel_Menu_Izquierda1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(Panel_Menu_Izquierda1Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(Panel_Menu_Izquierda1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(Icono_Notas1)
+                    .addComponent(Icono_Financiero1, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(Panel_Menu_Izquierda1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                        .addComponent(Icono_Examen2, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(Icono_Examen1, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        Panel_Menu_Izquierda1Layout.setVerticalGroup(
+            Panel_Menu_Izquierda1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(Panel_Menu_Izquierda1Layout.createSequentialGroup()
+                .addGap(40, 40, 40)
+                .addComponent(Icono_Examen1, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(Icono_Examen2, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(Icono_Financiero1, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(Icono_Notas1, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(274, Short.MAX_VALUE))
+        );
+
+        Menu_Estudiantes.add(Panel_Menu_Izquierda1);
+        Panel_Menu_Izquierda1.setBounds(0, 0, 80, 650);
+
+        Panel_Notas_Estudiante.setBackground(new java.awt.Color(0, 0, 0,150));
+        Panel_Notas_Estudiante.setPreferredSize(new java.awt.Dimension(1070, 610));
+        Panel_Notas_Estudiante.setLayout(null);
+
+        jLabel40.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N
+        jLabel40.setForeground(new java.awt.Color(137, 250, 230));
+        jLabel40.setText("Clase");
+        Panel_Notas_Estudiante.add(jLabel40);
+        jLabel40.setBounds(470, 0, 170, 60);
+
+        ComboReportes1.setForeground(new java.awt.Color(102, 102, 102));
+        ComboReportes1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Vista 1", "Vista 2", "Vista 3", "Vista 4", "Vista 5", "Vista 6", "Vista 7", "Vista 8" }));
+        ComboReportes1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ComboReportes1ActionPerformed(evt);
+            }
+        });
+        Panel_Notas_Estudiante.add(ComboReportes1);
+        ComboReportes1.setBounds(390, 60, 250, 40);
+
+        tableReportes1.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+
+            },
+            new String [] {
+
+            }
+        ));
+        jScrollPane15.setViewportView(tableReportes1);
+
+        Panel_Notas_Estudiante.add(jScrollPane15);
+        jScrollPane15.setBounds(30, 170, 960, 430);
+
+        jLabel27.setText("Notas Clase");
+        Panel_Notas_Estudiante.add(jLabel27);
+        jLabel27.setBounds(500, 130, 80, 16);
+
+        Menu_Estudiantes.add(Panel_Notas_Estudiante);
+        Panel_Notas_Estudiante.setBounds(1220, 0, 1080, 610);
+
+        Panel_Examen2.setBackground(new java.awt.Color(0, 0, 0,150));
+        Panel_Examen2.setForeground(new java.awt.Color(255, 255, 255));
+        Panel_Examen2.setPreferredSize(new java.awt.Dimension(1070, 610));
+        Panel_Examen2.setLayout(null);
+
+        jLabel86.setFont(new java.awt.Font("Segoe UI", 0, 48)); // NOI18N
+        jLabel86.setForeground(new java.awt.Color(137, 250, 230));
+        jLabel86.setText("Examen");
+        Panel_Examen2.add(jLabel86);
+        jLabel86.setBounds(500, 10, 270, 70);
+
+        btn_createProducto1.setBackground(new java.awt.Color(204, 204, 204));
+        btn_createProducto1.setForeground(new java.awt.Color(0, 0, 0));
+        btn_createProducto1.setText("Contestar");
+        btn_createProducto1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btn_createProducto1MouseClicked(evt);
+            }
+        });
+        Panel_Examen2.add(btn_createProducto1);
+        btn_createProducto1.setBounds(860, 530, 170, 40);
+
+        jComboBox4.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        Panel_Examen2.add(jComboBox4);
+        jComboBox4.setBounds(430, 80, 300, 60);
+
+        jLabel28.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabel28.setText("Preguntaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa");
+        Panel_Examen2.add(jLabel28);
+        jLabel28.setBounds(80, 200, 960, 20);
+
+        jRadioButton1.setText("jRadioButton1");
+        Panel_Examen2.add(jRadioButton1);
+        jRadioButton1.setBounds(400, 320, 160, 60);
+
+        jRadioButton2.setText("jRadioButton1");
+        Panel_Examen2.add(jRadioButton2);
+        jRadioButton2.setBounds(100, 320, 160, 60);
+
+        jRadioButton3.setText("jRadioButton1");
+        Panel_Examen2.add(jRadioButton3);
+        jRadioButton3.setBounds(100, 420, 160, 60);
+
+        jRadioButton8.setText("jRadioButton1");
+        Panel_Examen2.add(jRadioButton8);
+        jRadioButton8.setBounds(400, 420, 160, 60);
+
+        Menu_Estudiantes.add(Panel_Examen2);
+        Panel_Examen2.setBounds(1230, 0, 1080, 610);
+
+        Panel_Financiero1.setBackground(new java.awt.Color(0, 0, 0,150));
+        Panel_Financiero1.setLayout(null);
+
+        jLabel74.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N
+        jLabel74.setForeground(new java.awt.Color(137, 250, 230));
+        jLabel74.setText("Pagar Clases");
+        Panel_Financiero1.add(jLabel74);
+        jLabel74.setBounds(480, 0, 220, 50);
+
+        jLabel108.setBackground(new java.awt.Color(137, 250, 230));
+        jLabel108.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        jLabel108.setForeground(new java.awt.Color(137, 250, 230));
+        jLabel108.setText("Pagos Realizados");
+        Panel_Financiero1.add(jLabel108);
+        jLabel108.setBounds(650, 160, 160, 20);
+
+        jComboBox6.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        Panel_Financiero1.add(jComboBox6);
+        jComboBox6.setBounds(70, 80, 180, 40);
+
+        jTable5.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null}
+            },
+            new String [] {
+                "Title 1", "Title 2", "Title 3", "Title 4"
+            }
+        ));
+        jScrollPane13.setViewportView(jTable5);
+
+        Panel_Financiero1.add(jScrollPane13);
+        jScrollPane13.setBounds(550, 200, 350, 320);
+
+        jLabel109.setBackground(new java.awt.Color(137, 250, 230));
+        jLabel109.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        jLabel109.setForeground(new java.awt.Color(137, 250, 230));
+        jLabel109.setText("Clase");
+        Panel_Financiero1.add(jLabel109);
+        jLabel109.setBounds(20, 90, 60, 20);
+
+        jToggleButton1.setText("Pagar");
+        Panel_Financiero1.add(jToggleButton1);
+        jToggleButton1.setBounds(170, 540, 64, 40);
+
+        jLabel110.setBackground(new java.awt.Color(137, 250, 230));
+        jLabel110.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        jLabel110.setForeground(new java.awt.Color(137, 250, 230));
+        jLabel110.setText("Pagos Pendientes");
+        Panel_Financiero1.add(jLabel110);
+        jLabel110.setBounds(140, 170, 180, 20);
+
+        jTable8.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null}
+            },
+            new String [] {
+                "Title 1", "Title 2", "Title 3", "Title 4"
+            }
+        ));
+        jScrollPane17.setViewportView(jTable8);
+
+        Panel_Financiero1.add(jScrollPane17);
+        jScrollPane17.setBounds(40, 200, 350, 320);
+
+        Menu_Estudiantes.add(Panel_Financiero1);
+        Panel_Financiero1.setBounds(1230, 0, 1080, 610);
+
+        Fondo6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Mediaa/fondo.gif"))); // NOI18N
+        Menu_Estudiantes.add(Fondo6);
+        Fondo6.setBounds(50, 0, 1150, 650);
+
+        getContentPane().add(Menu_Estudiantes);
+        Menu_Estudiantes.setBounds(0, 0, 2300, 650);
 
         Menu_Admin.setLayout(null);
 
@@ -1606,703 +1854,6 @@ public class Loggin extends javax.swing.JFrame {
         getContentPane().add(Menu_Admin);
         Menu_Admin.setBounds(0, 0, 2300, 650);
 
-        Menu_Estudiantes.setLayout(null);
-
-        Panel_menu_abajo1.setBackground(new java.awt.Color(67, 122, 227,200));
-        Panel_menu_abajo1.setLayout(null);
-
-        jLabel99.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        jLabel99.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Mediaa/cerrar-sesion (1).png"))); // NOI18N
-        jLabel99.setText("Salir");
-        jLabel99.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jLabel99MouseClicked(evt);
-            }
-        });
-        Panel_menu_abajo1.add(jLabel99);
-        jLabel99.setBounds(960, 0, 70, 32);
-
-        Menu_Estudiantes.add(Panel_menu_abajo1);
-        Panel_menu_abajo1.setBounds(80, 610, 1080, 40);
-
-        Panel_Menu_Izquierda1.setBackground(new java.awt.Color(67, 122, 227,170));
-
-        Icono_Tienda1.setText("Usuario Ico");
-        Icono_Tienda1.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                Icono_Tienda1MouseClicked(evt);
-            }
-        });
-
-        Icono_Producto1.setText("Clases Ico");
-        Icono_Producto1.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                Icono_Producto1MouseClicked(evt);
-            }
-        });
-
-        Icono_Vendedor1.setText("Examen ico");
-        Icono_Vendedor1.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                Icono_Vendedor1MouseClicked(evt);
-            }
-        });
-
-        Icono_Factura1.setText("Financiero ico");
-        Icono_Factura1.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                Icono_Factura1MouseClicked(evt);
-            }
-        });
-
-        Icono_Cliente1.setText("Calificacion ico");
-        Icono_Cliente1.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                Icono_Cliente1MouseClicked(evt);
-            }
-        });
-
-        javax.swing.GroupLayout Panel_Menu_Izquierda1Layout = new javax.swing.GroupLayout(Panel_Menu_Izquierda1);
-        Panel_Menu_Izquierda1.setLayout(Panel_Menu_Izquierda1Layout);
-        Panel_Menu_Izquierda1Layout.setHorizontalGroup(
-            Panel_Menu_Izquierda1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(Panel_Menu_Izquierda1Layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(Panel_Menu_Izquierda1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(Panel_Menu_Izquierda1Layout.createSequentialGroup()
-                        .addComponent(Icono_Vendedor1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addContainerGap())
-                    .addGroup(Panel_Menu_Izquierda1Layout.createSequentialGroup()
-                        .addGroup(Panel_Menu_Izquierda1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(Icono_Cliente1)
-                            .addComponent(Icono_Factura1)
-                            .addComponent(Icono_Producto1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(Icono_Tienda1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
-        );
-        Panel_Menu_Izquierda1Layout.setVerticalGroup(
-            Panel_Menu_Izquierda1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(Panel_Menu_Izquierda1Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(Icono_Tienda1, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(Icono_Producto1, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(Icono_Vendedor1, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(Icono_Factura1, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(Icono_Cliente1, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(274, Short.MAX_VALUE))
-        );
-
-        Menu_Estudiantes.add(Panel_Menu_Izquierda1);
-        Panel_Menu_Izquierda1.setBounds(0, 0, 80, 650);
-
-        Panel_Informes1.setBackground(new java.awt.Color(0, 0, 0,150));
-        Panel_Informes1.setPreferredSize(new java.awt.Dimension(1070, 610));
-        Panel_Informes1.setLayout(null);
-
-        jLabel40.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N
-        jLabel40.setForeground(new java.awt.Color(137, 250, 230));
-        jLabel40.setText("Informes");
-        Panel_Informes1.add(jLabel40);
-        jLabel40.setBounds(470, 0, 170, 60);
-
-        ComboReportes1.setForeground(new java.awt.Color(102, 102, 102));
-        ComboReportes1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Vista 1", "Vista 2", "Vista 3", "Vista 4", "Vista 5", "Vista 6", "Vista 7", "Vista 8" }));
-        ComboReportes1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                ComboReportes1ActionPerformed(evt);
-            }
-        });
-        Panel_Informes1.add(ComboReportes1);
-        ComboReportes1.setBounds(470, 60, 170, 40);
-
-        tableReportes1.setModel(new javax.swing.table.DefaultTableModel(
-            new Object [][] {
-
-            },
-            new String [] {
-
-            }
-        ));
-        jScrollPane15.setViewportView(tableReportes1);
-
-        Panel_Informes1.add(jScrollPane15);
-        jScrollPane15.setBounds(30, 110, 960, 430);
-
-        Menu_Estudiantes.add(Panel_Informes1);
-        Panel_Informes1.setBounds(1220, 0, 1080, 610);
-
-        Panel_Productos1.setBackground(new java.awt.Color(0, 0, 0,150));
-        Panel_Productos1.setForeground(new java.awt.Color(255, 255, 255));
-        Panel_Productos1.setPreferredSize(new java.awt.Dimension(1070, 610));
-        Panel_Productos1.setLayout(null);
-
-        jLabel86.setFont(new java.awt.Font("Segoe UI", 0, 48)); // NOI18N
-        jLabel86.setForeground(new java.awt.Color(137, 250, 230));
-        jLabel86.setText("Productos");
-        Panel_Productos1.add(jLabel86);
-        jLabel86.setBounds(500, 10, 270, 70);
-
-        jLabel87.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        jLabel87.setForeground(new java.awt.Color(137, 250, 230));
-        jLabel87.setText("UPC");
-        Panel_Productos1.add(jLabel87);
-        jLabel87.setBounds(70, 50, 37, 20);
-
-        jLabel88.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        jLabel88.setForeground(new java.awt.Color(137, 250, 230));
-        jLabel88.setText("Nombre");
-        Panel_Productos1.add(jLabel88);
-        jLabel88.setBounds(70, 100, 80, 20);
-
-        jLabel89.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        jLabel89.setForeground(new java.awt.Color(137, 250, 230));
-        jLabel89.setText("Tamaño");
-        Panel_Productos1.add(jLabel89);
-        jLabel89.setBounds(70, 150, 80, 20);
-
-        jLabel90.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        jLabel90.setForeground(new java.awt.Color(137, 250, 230));
-        jLabel90.setText("Embalaje");
-        Panel_Productos1.add(jLabel90);
-        jLabel90.setBounds(70, 200, 80, 30);
-
-        jLabel91.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        jLabel91.setForeground(new java.awt.Color(137, 250, 230));
-        jLabel91.setText("Marca");
-        Panel_Productos1.add(jLabel91);
-        jLabel91.setBounds(70, 260, 80, 20);
-
-        tf_embalajeProducto1.setBackground(new java.awt.Color(102, 102, 102));
-        tf_embalajeProducto1.setForeground(new java.awt.Color(255, 255, 255));
-        Panel_Productos1.add(tf_embalajeProducto1);
-        tf_embalajeProducto1.setBounds(70, 230, 220, 30);
-
-        tf_UPC1.setBackground(new java.awt.Color(102, 102, 102));
-        tf_UPC1.setForeground(new java.awt.Color(255, 255, 255));
-        Panel_Productos1.add(tf_UPC1);
-        tf_UPC1.setBounds(70, 70, 220, 30);
-
-        tf_nombreProducto1.setBackground(new java.awt.Color(102, 102, 102));
-        tf_nombreProducto1.setForeground(new java.awt.Color(255, 255, 255));
-        Panel_Productos1.add(tf_nombreProducto1);
-        tf_nombreProducto1.setBounds(70, 120, 220, 30);
-
-        tf_tamanoProducto1.setBackground(new java.awt.Color(102, 102, 102));
-        tf_tamanoProducto1.setForeground(new java.awt.Color(255, 255, 255));
-        Panel_Productos1.add(tf_tamanoProducto1);
-        tf_tamanoProducto1.setBounds(70, 170, 220, 30);
-
-        btn_deleteProducto1.setBackground(new java.awt.Color(204, 204, 204));
-        btn_deleteProducto1.setForeground(new java.awt.Color(0, 0, 0));
-        btn_deleteProducto1.setText("Eliminar");
-        btn_deleteProducto1.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                btn_deleteProducto1MouseClicked(evt);
-            }
-        });
-        Panel_Productos1.add(btn_deleteProducto1);
-        btn_deleteProducto1.setBounds(110, 510, 170, 40);
-
-        table_Productos1.setModel(new javax.swing.table.DefaultTableModel(
-            new Object [][] {
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null}
-            },
-            new String [] {
-                "UPC", "Nombre Producto", "Tamaño", "Embalaje", "Marca", "Tipo"
-            }
-        ));
-        jScrollPane17.setViewportView(table_Productos1);
-
-        Panel_Productos1.add(jScrollPane17);
-        jScrollPane17.setBounds(350, 100, 670, 450);
-
-        btn_createProducto1.setBackground(new java.awt.Color(204, 204, 204));
-        btn_createProducto1.setForeground(new java.awt.Color(0, 0, 0));
-        btn_createProducto1.setText("Agregar");
-        btn_createProducto1.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                btn_createProducto1MouseClicked(evt);
-            }
-        });
-        Panel_Productos1.add(btn_createProducto1);
-        btn_createProducto1.setBounds(110, 390, 170, 40);
-
-        btn_updateProducto1.setBackground(new java.awt.Color(204, 204, 204));
-        btn_updateProducto1.setForeground(new java.awt.Color(0, 0, 0));
-        btn_updateProducto1.setText("Editar");
-        btn_updateProducto1.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                btn_updateProducto1MouseClicked(evt);
-            }
-        });
-        Panel_Productos1.add(btn_updateProducto1);
-        btn_updateProducto1.setBounds(110, 450, 170, 40);
-
-        tf_marcaProducto1.setBackground(new java.awt.Color(102, 102, 102));
-        tf_marcaProducto1.setForeground(new java.awt.Color(255, 255, 255));
-        Panel_Productos1.add(tf_marcaProducto1);
-        tf_marcaProducto1.setBounds(70, 280, 220, 30);
-
-        jLabel92.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        jLabel92.setForeground(new java.awt.Color(137, 250, 230));
-        jLabel92.setText("Tipo Producto");
-        Panel_Productos1.add(jLabel92);
-        jLabel92.setBounds(70, 310, 120, 30);
-
-        tf_tipoProducto1.setBackground(new java.awt.Color(102, 102, 102));
-        tf_tipoProducto1.setForeground(new java.awt.Color(255, 255, 255));
-        Panel_Productos1.add(tf_tipoProducto1);
-        tf_tipoProducto1.setBounds(70, 340, 220, 30);
-
-        Menu_Estudiantes.add(Panel_Productos1);
-        Panel_Productos1.setBounds(1230, 0, 1080, 610);
-
-        Panel_Bitacora1.setBackground(new java.awt.Color(0, 0, 0,150));
-        Panel_Bitacora1.setLayout(null);
-
-        jLabel74.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N
-        jLabel74.setForeground(new java.awt.Color(137, 250, 230));
-        jLabel74.setText("Bitacora");
-        Panel_Bitacora1.add(jLabel74);
-        jLabel74.setBounds(480, 0, 150, 50);
-
-        ta_Bitacora1.setColumns(20);
-        ta_Bitacora1.setRows(5);
-        jScrollPane14.setViewportView(ta_Bitacora1);
-
-        Panel_Bitacora1.add(jScrollPane14);
-        jScrollPane14.setBounds(50, 70, 1000, 510);
-
-        Menu_Estudiantes.add(Panel_Bitacora1);
-        Panel_Bitacora1.setBounds(1230, 0, 1080, 610);
-
-        Panel_Vendedorsitos1.setBackground(new java.awt.Color(0, 0, 0,150));
-        Panel_Vendedorsitos1.setForeground(new java.awt.Color(255, 255, 255));
-        Panel_Vendedorsitos1.setPreferredSize(new java.awt.Dimension(1070, 610));
-        Panel_Vendedorsitos1.setLayout(null);
-
-        jLabel93.setFont(new java.awt.Font("Segoe UI", 0, 48)); // NOI18N
-        jLabel93.setForeground(new java.awt.Color(137, 250, 230));
-        jLabel93.setText("Vendedores");
-        Panel_Vendedorsitos1.add(jLabel93);
-        jLabel93.setBounds(400, 0, 270, 70);
-
-        jLabel94.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        jLabel94.setForeground(new java.awt.Color(137, 250, 230));
-        jLabel94.setText("ID");
-        Panel_Vendedorsitos1.add(jLabel94);
-        jLabel94.setBounds(40, 120, 130, 25);
-
-        jLabel95.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        jLabel95.setForeground(new java.awt.Color(137, 250, 230));
-        jLabel95.setText("Nombre");
-        Panel_Vendedorsitos1.add(jLabel95);
-        jLabel95.setBounds(40, 200, 130, 25);
-
-        tf_nombreVendedor1.setBackground(new java.awt.Color(102, 102, 102));
-        tf_nombreVendedor1.setForeground(new java.awt.Color(255, 255, 255));
-        Panel_Vendedorsitos1.add(tf_nombreVendedor1);
-        tf_nombreVendedor1.setBounds(40, 230, 260, 30);
-
-        tf_idVendedor1.setBackground(new java.awt.Color(102, 102, 102));
-        tf_idVendedor1.setForeground(new java.awt.Color(255, 255, 255));
-        Panel_Vendedorsitos1.add(tf_idVendedor1);
-        tf_idVendedor1.setBounds(40, 150, 260, 30);
-
-        btn_updateVendedor1.setBackground(new java.awt.Color(204, 204, 204));
-        btn_updateVendedor1.setForeground(new java.awt.Color(0, 0, 0));
-        btn_updateVendedor1.setText("Modificar");
-        btn_updateVendedor1.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                btn_updateVendedor1MouseClicked(evt);
-            }
-        });
-        Panel_Vendedorsitos1.add(btn_updateVendedor1);
-        btn_updateVendedor1.setBounds(110, 380, 120, 40);
-
-        btn_deleteVendedor1.setBackground(new java.awt.Color(204, 204, 204));
-        btn_deleteVendedor1.setForeground(new java.awt.Color(0, 0, 0));
-        btn_deleteVendedor1.setText("Eliminar");
-        btn_deleteVendedor1.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                btn_deleteVendedor1MouseClicked(evt);
-            }
-        });
-        Panel_Vendedorsitos1.add(btn_deleteVendedor1);
-        btn_deleteVendedor1.setBounds(110, 450, 120, 40);
-
-        btn_createVendedor1.setBackground(new java.awt.Color(204, 204, 204));
-        btn_createVendedor1.setForeground(new java.awt.Color(0, 0, 0));
-        btn_createVendedor1.setText("Añadir");
-        btn_createVendedor1.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                btn_createVendedor1MouseClicked(evt);
-            }
-        });
-        Panel_Vendedorsitos1.add(btn_createVendedor1);
-        btn_createVendedor1.setBounds(110, 310, 120, 40);
-
-        table_Vendedores1.setModel(new javax.swing.table.DefaultTableModel(
-            new Object [][] {
-                {null, null},
-                {null, null},
-                {null, null},
-                {null, null}
-            },
-            new String [] {
-                "Id Vendedor", "Nombre Vendedor"
-            }
-        ) {
-            boolean[] canEdit = new boolean [] {
-                false, false
-            };
-
-            public boolean isCellEditable(int rowIndex, int columnIndex) {
-                return canEdit [columnIndex];
-            }
-        });
-        jScrollPane18.setViewportView(table_Vendedores1);
-
-        Panel_Vendedorsitos1.add(jScrollPane18);
-        jScrollPane18.setBounds(340, 100, 680, 440);
-
-        Panel_vendedores1.addTab("Vendedores", Panel_Vendedorsitos1);
-
-        jPanel6.setBackground(new java.awt.Color(0,0,0,200));
-        jPanel6.setForeground(new java.awt.Color(0, 0, 0));
-        jPanel6.setLayout(null);
-
-        jLabel96.setBackground(new java.awt.Color(137, 250, 230));
-        jLabel96.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N
-        jLabel96.setForeground(new java.awt.Color(137, 250, 230));
-        jLabel96.setText("Vendedor");
-        jPanel6.add(jLabel96);
-        jLabel96.setBounds(40, 10, 180, 70);
-
-        cbox_ListaVendedores1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
-        cbox_ListaVendedores1.addItemListener(new java.awt.event.ItemListener() {
-            public void itemStateChanged(java.awt.event.ItemEvent evt) {
-                cbox_ListaVendedores1ItemStateChanged(evt);
-            }
-        });
-        cbox_ListaVendedores1.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                cbox_ListaVendedores1MouseClicked(evt);
-            }
-        });
-        jPanel6.add(cbox_ListaVendedores1);
-        cbox_ListaVendedores1.setBounds(220, 30, 310, 40);
-
-        table_ProductosparaVendedor1.setBackground(new java.awt.Color(153, 153, 153));
-        table_ProductosparaVendedor1.setModel(new javax.swing.table.DefaultTableModel(
-            new Object [][] {
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null}
-            },
-            new String [] {
-                "Title 1", "Title 2", "Title 3", "Title 4"
-            }
-        ));
-        jScrollPane19.setViewportView(table_ProductosparaVendedor1);
-
-        jPanel6.add(jScrollPane19);
-        jScrollPane19.setBounds(30, 120, 430, 440);
-
-        jTable13.setBackground(new java.awt.Color(153, 153, 153));
-        jTable13.setModel(new javax.swing.table.DefaultTableModel(
-            new Object [][] {
-
-            },
-            new String [] {
-
-            }
-        ));
-        jScrollPane20.setViewportView(jTable13);
-
-        jPanel6.add(jScrollPane20);
-        jScrollPane20.setBounds(610, 120, 430, 440);
-
-        jButton14.setBackground(new java.awt.Color(204, 204, 204));
-        jButton14.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        jButton14.setForeground(new java.awt.Color(0, 0, 0));
-        jButton14.setText("<-");
-        jButton14.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jButton14MouseClicked(evt);
-            }
-        });
-        jPanel6.add(jButton14);
-        jButton14.setBounds(500, 340, 80, 50);
-
-        jLabel97.setBackground(new java.awt.Color(137, 250, 230));
-        jLabel97.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        jLabel97.setForeground(new java.awt.Color(137, 250, 230));
-        jLabel97.setText("Productos");
-        jPanel6.add(jLabel97);
-        jLabel97.setBounds(190, 90, 100, 20);
-
-        jLabel98.setBackground(new java.awt.Color(137, 250, 230));
-        jLabel98.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        jLabel98.setForeground(new java.awt.Color(137, 250, 230));
-        jLabel98.setText("Productos Que Vende");
-        jPanel6.add(jLabel98);
-        jLabel98.setBounds(730, 90, 210, 20);
-
-        jButton15.setBackground(new java.awt.Color(204, 204, 204));
-        jButton15.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        jButton15.setForeground(new java.awt.Color(0, 0, 0));
-        jButton15.setText("->");
-        jButton15.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jButton15MouseClicked(evt);
-            }
-        });
-        jPanel6.add(jButton15);
-        jButton15.setBounds(500, 270, 80, 50);
-
-        Panel_vendedores1.addTab("Inventario", jPanel6);
-
-        Menu_Estudiantes.add(Panel_vendedores1);
-        Panel_vendedores1.setBounds(1230, 0, 1080, 610);
-
-        Panel_Cliente1.setBackground(new java.awt.Color(0, 0, 0,150));
-        Panel_Cliente1.setForeground(new java.awt.Color(255, 255, 255));
-        Panel_Cliente1.setPreferredSize(new java.awt.Dimension(1070, 610));
-        Panel_Cliente1.setLayout(null);
-
-        jLabel45.setFont(new java.awt.Font("Segoe UI", 0, 48)); // NOI18N
-        jLabel45.setForeground(new java.awt.Color(137, 250, 230));
-        jLabel45.setText("Clientes");
-        Panel_Cliente1.add(jLabel45);
-        jLabel45.setBounds(420, 10, 270, 70);
-
-        jLabel47.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        jLabel47.setForeground(new java.awt.Color(137, 250, 230));
-        jLabel47.setText("Nombre");
-        Panel_Cliente1.add(jLabel47);
-        jLabel47.setBounds(50, 130, 110, 30);
-
-        jLabel77.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        jLabel77.setForeground(new java.awt.Color(137, 250, 230));
-        jLabel77.setText("Correo");
-        Panel_Cliente1.add(jLabel77);
-        jLabel77.setBounds(50, 210, 60, 30);
-
-        jLabel85.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        jLabel85.setForeground(new java.awt.Color(137, 250, 230));
-        jLabel85.setText("ID");
-        Panel_Cliente1.add(jLabel85);
-        jLabel85.setBounds(50, 50, 60, 30);
-
-        tf_idCliente1.setBackground(new java.awt.Color(102, 102, 102));
-        tf_idCliente1.setForeground(new java.awt.Color(255, 255, 255));
-        Panel_Cliente1.add(tf_idCliente1);
-        tf_idCliente1.setBounds(50, 80, 210, 30);
-
-        tf_nombreCliente1.setBackground(new java.awt.Color(102, 102, 102));
-        tf_nombreCliente1.setForeground(new java.awt.Color(255, 255, 255));
-        Panel_Cliente1.add(tf_nombreCliente1);
-        tf_nombreCliente1.setBounds(50, 160, 210, 30);
-
-        tf_correoCliente1.setBackground(new java.awt.Color(102, 102, 102));
-        tf_correoCliente1.setForeground(new java.awt.Color(255, 255, 255));
-        Panel_Cliente1.add(tf_correoCliente1);
-        tf_correoCliente1.setBounds(50, 240, 210, 30);
-
-        btn_deleteCliente1.setBackground(new java.awt.Color(204, 204, 204));
-        btn_deleteCliente1.setForeground(new java.awt.Color(0, 0, 0));
-        btn_deleteCliente1.setText("Eliminar");
-        btn_deleteCliente1.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                btn_deleteCliente1MouseClicked(evt);
-            }
-        });
-        Panel_Cliente1.add(btn_deleteCliente1);
-        btn_deleteCliente1.setBounds(60, 450, 160, 40);
-
-        btn_createCliente1.setBackground(new java.awt.Color(204, 204, 204));
-        btn_createCliente1.setForeground(new java.awt.Color(0, 0, 0));
-        btn_createCliente1.setText("Añadir");
-        btn_createCliente1.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                btn_createCliente1MouseClicked(evt);
-            }
-        });
-        Panel_Cliente1.add(btn_createCliente1);
-        btn_createCliente1.setBounds(60, 310, 160, 40);
-
-        btn_updateCliente1.setBackground(new java.awt.Color(204, 204, 204));
-        btn_updateCliente1.setForeground(new java.awt.Color(0, 0, 0));
-        btn_updateCliente1.setText("Modificar");
-        btn_updateCliente1.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                btn_updateCliente1MouseClicked(evt);
-            }
-        });
-        Panel_Cliente1.add(btn_updateCliente1);
-        btn_updateCliente1.setBounds(60, 380, 160, 40);
-
-        table_Clientes1.setModel(new javax.swing.table.DefaultTableModel(
-            new Object [][] {
-                {null, null, null},
-                {null, null, null},
-                {null, null, null},
-                {null, null, null}
-            },
-            new String [] {
-                "ID Cliente", "Nombre Cliente", "Correo Cliente"
-            }
-        ));
-        jScrollPane16.setViewportView(table_Clientes1);
-
-        Panel_Cliente1.add(jScrollPane16);
-        jScrollPane16.setBounds(330, 90, 670, 450);
-
-        Menu_Estudiantes.add(Panel_Cliente1);
-        Panel_Cliente1.setBounds(1230, 0, 1080, 610);
-
-        Panel_Factura1.setBackground(new java.awt.Color(0, 0, 0,150));
-        Panel_Factura1.setForeground(new java.awt.Color(255, 255, 255));
-        Panel_Factura1.setPreferredSize(new java.awt.Dimension(1070, 610));
-        Panel_Factura1.setLayout(null);
-
-        jLabel100.setFont(new java.awt.Font("Segoe UI", 0, 48)); // NOI18N
-        jLabel100.setForeground(new java.awt.Color(137, 250, 230));
-        jLabel100.setText("Facturas");
-        Panel_Factura1.add(jLabel100);
-        jLabel100.setBounds(470, 0, 270, 70);
-
-        jLabel101.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        jLabel101.setForeground(new java.awt.Color(137, 250, 230));
-        jLabel101.setText("Fecha");
-        Panel_Factura1.add(jLabel101);
-        jLabel101.setBounds(30, 90, 100, 30);
-
-        jLabel102.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        jLabel102.setForeground(new java.awt.Color(137, 250, 230));
-        jLabel102.setText("ID Tienda");
-        Panel_Factura1.add(jLabel102);
-        jLabel102.setBounds(30, 440, 100, 30);
-
-        jLabel103.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        jLabel103.setForeground(new java.awt.Color(137, 250, 230));
-        jLabel103.setText("Subtotal");
-        Panel_Factura1.add(jLabel103);
-        jLabel103.setBounds(30, 230, 100, 30);
-
-        jLabel104.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        jLabel104.setForeground(new java.awt.Color(137, 250, 230));
-        jLabel104.setText("Total");
-        Panel_Factura1.add(jLabel104);
-        jLabel104.setBounds(30, 300, 100, 30);
-
-        jLabel105.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        jLabel105.setForeground(new java.awt.Color(137, 250, 230));
-        jLabel105.setText("ISV");
-        Panel_Factura1.add(jLabel105);
-        jLabel105.setBounds(30, 160, 100, 30);
-
-        jLabel106.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        jLabel106.setForeground(new java.awt.Color(137, 250, 230));
-        jLabel106.setText("ID Cliente");
-        Panel_Factura1.add(jLabel106);
-        jLabel106.setBounds(30, 370, 100, 30);
-
-        jLabel107.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        jLabel107.setForeground(new java.awt.Color(137, 250, 230));
-        jLabel107.setText("Numero");
-        Panel_Factura1.add(jLabel107);
-        jLabel107.setBounds(30, 20, 100, 30);
-
-        jTextField11.setBackground(new java.awt.Color(102, 102, 102));
-        jTextField11.setForeground(new java.awt.Color(255, 255, 255));
-        jTextField11.setText("jTextField7");
-        Panel_Factura1.add(jTextField11);
-        jTextField11.setBounds(30, 50, 190, 30);
-
-        jFormattedTextField2.setText("jFormattedTextField1");
-        Panel_Factura1.add(jFormattedTextField2);
-        jFormattedTextField2.setBounds(30, 120, 190, 30);
-
-        jTextField12.setBackground(new java.awt.Color(102, 102, 102));
-        jTextField12.setForeground(new java.awt.Color(255, 255, 255));
-        jTextField12.setText("jTextField8");
-        Panel_Factura1.add(jTextField12);
-        jTextField12.setBounds(30, 190, 190, 30);
-
-        jTextField13.setBackground(new java.awt.Color(102, 102, 102));
-        jTextField13.setForeground(new java.awt.Color(255, 255, 255));
-        jTextField13.setText("jTextField9");
-        Panel_Factura1.add(jTextField13);
-        jTextField13.setBounds(30, 260, 190, 30);
-
-        jTextField14.setBackground(new java.awt.Color(102, 102, 102));
-        jTextField14.setForeground(new java.awt.Color(102, 102, 102));
-        jTextField14.setText("jTextField10");
-        Panel_Factura1.add(jTextField14);
-        jTextField14.setBounds(30, 330, 190, 30);
-
-        jComboBox3.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
-        Panel_Factura1.add(jComboBox3);
-        jComboBox3.setBounds(30, 400, 190, 30);
-
-        jComboBox5.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
-        Panel_Factura1.add(jComboBox5);
-        jComboBox5.setBounds(30, 470, 190, 30);
-
-        jTable4.setModel(new javax.swing.table.DefaultTableModel(
-            new Object [][] {
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null}
-            },
-            new String [] {
-                "Title 1", "Title 2", "Title 3", "Title 4"
-            }
-        ));
-        jScrollPane21.setViewportView(jTable4);
-
-        Panel_Factura1.add(jScrollPane21);
-        jScrollPane21.setBounds(280, 90, 710, 460);
-
-        jToggleButton7.setBackground(new java.awt.Color(204, 204, 204));
-        jToggleButton7.setForeground(new java.awt.Color(0, 0, 0));
-        jToggleButton7.setText("Agregar");
-        Panel_Factura1.add(jToggleButton7);
-        jToggleButton7.setBounds(20, 520, 76, 27);
-
-        jToggleButton8.setBackground(new java.awt.Color(204, 204, 204));
-        jToggleButton8.setForeground(new java.awt.Color(0, 0, 0));
-        jToggleButton8.setText("Eliminar");
-        Panel_Factura1.add(jToggleButton8);
-        jToggleButton8.setBounds(20, 560, 77, 27);
-
-        jToggleButton9.setBackground(new java.awt.Color(204, 204, 204));
-        jToggleButton9.setForeground(new java.awt.Color(0, 0, 0));
-        jToggleButton9.setText("Modificar");
-        Panel_Factura1.add(jToggleButton9);
-        jToggleButton9.setBounds(150, 540, 85, 27);
-
-        Menu_Estudiantes.add(Panel_Factura1);
-        Panel_Factura1.setBounds(1230, 0, 1080, 610);
-
-        Fondo6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Mediaa/fondo.gif"))); // NOI18N
-        Menu_Estudiantes.add(Fondo6);
-        Fondo6.setBounds(50, 0, 1150, 650);
-
-        getContentPane().add(Menu_Estudiantes);
-        Menu_Estudiantes.setBounds(0, 0, 2300, 650);
-
         panel_Registro.setBackground(new java.awt.Color(255,255,255,150));
         panel_Registro.setToolTipText("");
         panel_Registro.setLayout(null);
@@ -2739,8 +2290,8 @@ public class Loggin extends javax.swing.JFrame {
     private void Boton_Ingreso3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Boton_Ingreso3MouseClicked
          panel_Registro.setVisible(false);Fondo_Login.setVisible(false);Fondo4.setVisible(true);
         //Cambio_Ecena_Menu cmm = new Cambio_Ecena_Menu(Fondo4,Fondo5 ,Menu_Admin); cmm.start();//menu admin directo
-        Cambio_Ecena_Menu cmm = new Cambio_Ecena_Menu(Fondo4,Fondo5 ,Menu_Maestro); cmm.start();//menu Maestro directo
-        //Cambio_Ecena_Menu cmm = new Cambio_Ecena_Menu(Fondo4,Fondo5 ,Menu_Customer); cmm.start();//menu estdianes directo
+       Cambio_Ecena_Menu cmm = new Cambio_Ecena_Menu(Fondo4,Fondo5 ,Menu_Maestro); cmm.start();//menu Maestro directo
+       // Cambio_Ecena_Menu cmm = new Cambio_Ecena_Menu(Fondo4,Fondo5 ,Menu_Estudiantes); cmm.start();//menu estdianes directo
         
         /*
         //metodo provicional
@@ -2808,81 +2359,29 @@ public class Loggin extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_cbox_ListaVendedoresItemStateChanged
 
-    private void Icono_Tienda1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Icono_Tienda1MouseClicked
+    private void Icono_Examen1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Icono_Examen1MouseClicked
         // TODO add your handling code here:
-    }//GEN-LAST:event_Icono_Tienda1MouseClicked
+    }//GEN-LAST:event_Icono_Examen1MouseClicked
 
-    private void Icono_Producto1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Icono_Producto1MouseClicked
+    private void Icono_Examen2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Icono_Examen2MouseClicked
         // TODO add your handling code here:
-    }//GEN-LAST:event_Icono_Producto1MouseClicked
+    }//GEN-LAST:event_Icono_Examen2MouseClicked
 
-    private void Icono_Vendedor1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Icono_Vendedor1MouseClicked
+    private void Icono_Financiero1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Icono_Financiero1MouseClicked
         // TODO add your handling code here:
-    }//GEN-LAST:event_Icono_Vendedor1MouseClicked
+    }//GEN-LAST:event_Icono_Financiero1MouseClicked
 
-    private void Icono_Factura1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Icono_Factura1MouseClicked
+    private void Icono_Notas1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Icono_Notas1MouseClicked
         // TODO add your handling code here:
-    }//GEN-LAST:event_Icono_Factura1MouseClicked
-
-    private void Icono_Cliente1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Icono_Cliente1MouseClicked
-        // TODO add your handling code here:
-    }//GEN-LAST:event_Icono_Cliente1MouseClicked
+    }//GEN-LAST:event_Icono_Notas1MouseClicked
 
     private void ComboReportes1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ComboReportes1ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_ComboReportes1ActionPerformed
 
-    private void btn_deleteCliente1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_deleteCliente1MouseClicked
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btn_deleteCliente1MouseClicked
-
-    private void btn_createCliente1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_createCliente1MouseClicked
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btn_createCliente1MouseClicked
-
-    private void btn_updateCliente1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_updateCliente1MouseClicked
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btn_updateCliente1MouseClicked
-
-    private void btn_deleteProducto1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_deleteProducto1MouseClicked
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btn_deleteProducto1MouseClicked
-
     private void btn_createProducto1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_createProducto1MouseClicked
         // TODO add your handling code here:
     }//GEN-LAST:event_btn_createProducto1MouseClicked
-
-    private void btn_updateProducto1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_updateProducto1MouseClicked
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btn_updateProducto1MouseClicked
-
-    private void btn_updateVendedor1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_updateVendedor1MouseClicked
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btn_updateVendedor1MouseClicked
-
-    private void btn_deleteVendedor1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_deleteVendedor1MouseClicked
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btn_deleteVendedor1MouseClicked
-
-    private void btn_createVendedor1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_createVendedor1MouseClicked
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btn_createVendedor1MouseClicked
-
-    private void cbox_ListaVendedores1ItemStateChanged(java.awt.event.ItemEvent evt) {//GEN-FIRST:event_cbox_ListaVendedores1ItemStateChanged
-        // TODO add your handling code here:
-    }//GEN-LAST:event_cbox_ListaVendedores1ItemStateChanged
-
-    private void cbox_ListaVendedores1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_cbox_ListaVendedores1MouseClicked
-        // TODO add your handling code here:
-    }//GEN-LAST:event_cbox_ListaVendedores1MouseClicked
-
-    private void jButton14MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton14MouseClicked
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton14MouseClicked
-
-    private void jButton15MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton15MouseClicked
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton15MouseClicked
 
     private void jLabel99MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel99MouseClicked
         // TODO add your handling code here:
@@ -2918,10 +2417,6 @@ public class Loggin extends javax.swing.JFrame {
     private void cbox_ListaVendedores2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_cbox_ListaVendedores2MouseClicked
         // TODO add your handling code here:
     }//GEN-LAST:event_cbox_ListaVendedores2MouseClicked
-
-    private void jLabel133MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel133MouseClicked
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jLabel133MouseClicked
 
     private void Icono_ClaseMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Icono_ClaseMouseEntered
         String rutaImagen = "/Mediaa/clases-Icono.gif";
@@ -3022,27 +2517,45 @@ public class Loggin extends javax.swing.JFrame {
     }//GEN-LAST:event_Icono_FinancieroMouseExited
 
     private void Icono_CalificacionMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Icono_CalificacionMouseEntered
-        // TODO add your handling code here:
+        String rutaImagen = "/Mediaa/Icono-Notas.gif";
+        URL urlImagen = getClass().getResource(rutaImagen);
+        ImageIcon icono = new ImageIcon(urlImagen);
+        Icono_Calificacion.setIcon(icono);
     }//GEN-LAST:event_Icono_CalificacionMouseEntered
 
     private void Icono_CalificacionMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Icono_CalificacionMouseExited
-        // TODO add your handling code here:
+        String rutaImagen = "/Mediaa/Icono Notas Estatico.png";
+        URL urlImagen = getClass().getResource(rutaImagen);
+        ImageIcon icono = new ImageIcon(urlImagen);
+        Icono_Calificacion.setIcon(icono);
     }//GEN-LAST:event_Icono_CalificacionMouseExited
 
     private void Icono_ExamenesMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Icono_ExamenesMouseEntered
-        // TODO add your handling code here:
+         String rutaImagen = "/Mediaa/Icono-Examen.gif";
+        URL urlImagen = getClass().getResource(rutaImagen);
+        ImageIcon icono = new ImageIcon(urlImagen);
+        Icono_Examenes.setIcon(icono);
     }//GEN-LAST:event_Icono_ExamenesMouseEntered
 
     private void Icono_ExamenesMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Icono_ExamenesMouseExited
-        // TODO add your handling code here:
+        String rutaImagen = "/Mediaa/Icono Examen Estatico.png";
+        URL urlImagen = getClass().getResource(rutaImagen);
+        ImageIcon icono = new ImageIcon(urlImagen);
+        Icono_Examenes.setIcon(icono);
     }//GEN-LAST:event_Icono_ExamenesMouseExited
 
     private void Icono_ClasesMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Icono_ClasesMouseEntered
-        // TODO add your handling code here:
+        String rutaImagen = "/Mediaa/clases-Icono.gif";
+        URL urlImagen = getClass().getResource(rutaImagen);
+        ImageIcon icono = new ImageIcon(urlImagen);
+        Icono_Clases.setIcon(icono);
     }//GEN-LAST:event_Icono_ClasesMouseEntered
 
     private void Icono_ClasesMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Icono_ClasesMouseExited
-        // TODO add your handling code here:
+        String rutaImagen = "/Mediaa/Icono Clases Estatico.png";
+        URL urlImagen = getClass().getResource(rutaImagen);
+        ImageIcon icono = new ImageIcon(urlImagen);
+        Icono_Clases.setIcon(icono);
     }//GEN-LAST:event_Icono_ClasesMouseExited
 
     private void btn_createCliente3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_createCliente3MouseClicked
@@ -3060,6 +2573,66 @@ public class Loggin extends javax.swing.JFrame {
     private void btn_createCliente4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_createCliente4MouseClicked
         // TODO add your handling code here:
     }//GEN-LAST:event_btn_createCliente4MouseClicked
+
+    private void Icono_Examen1MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Icono_Examen1MouseEntered
+         String rutaImagen = "/Mediaa/Examen-Icono.gif";
+        URL urlImagen = getClass().getResource(rutaImagen);
+        ImageIcon icono = new ImageIcon(urlImagen);
+        Icono_Examen1.setIcon(icono);
+    }//GEN-LAST:event_Icono_Examen1MouseEntered
+
+    private void Icono_Examen1MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Icono_Examen1MouseExited
+        String rutaImagen = "/Mediaa/Icono Examen Estatico.png";
+        URL urlImagen = getClass().getResource(rutaImagen);
+        ImageIcon icono = new ImageIcon(urlImagen);
+        Icono_Examen1.setIcon(icono);
+    }//GEN-LAST:event_Icono_Examen1MouseExited
+
+    private void Icono_Examen2MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Icono_Examen2MouseEntered
+         String rutaImagen = "/Mediaa/Examen-Icono.gif";
+        URL urlImagen = getClass().getResource(rutaImagen);
+        ImageIcon icono = new ImageIcon(urlImagen);
+        Icono_Examen2.setIcon(icono);
+    }//GEN-LAST:event_Icono_Examen2MouseEntered
+
+    private void Icono_Examen2MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Icono_Examen2MouseExited
+        String rutaImagen = "/Mediaa/Icono Examen Estatico.png";
+        URL urlImagen = getClass().getResource(rutaImagen);
+        ImageIcon icono = new ImageIcon(urlImagen);
+        Icono_Examen2.setIcon(icono);
+    }//GEN-LAST:event_Icono_Examen2MouseExited
+
+    private void Icono_Financiero1MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Icono_Financiero1MouseEntered
+         String rutaImagen = "/Mediaa/Financiero-Icono.gif";
+        URL urlImagen = getClass().getResource(rutaImagen);
+        ImageIcon icono = new ImageIcon(urlImagen);
+        Icono_Financiero1.setIcon(icono);
+    }//GEN-LAST:event_Icono_Financiero1MouseEntered
+
+    private void Icono_Financiero1MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Icono_Financiero1MouseExited
+        String rutaImagen = "/Mediaa/Icono Financiero Estatico.png";
+        URL urlImagen = getClass().getResource(rutaImagen);
+        ImageIcon icono = new ImageIcon(urlImagen);
+        Icono_Financiero1.setIcon(icono);
+    }//GEN-LAST:event_Icono_Financiero1MouseExited
+
+    private void Icono_Notas1MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Icono_Notas1MouseEntered
+         String rutaImagen = "/Mediaa/Notas-Icono.gif";
+        URL urlImagen = getClass().getResource(rutaImagen);
+        ImageIcon icono = new ImageIcon(urlImagen);
+        Icono_Notas1.setIcon(icono);
+    }//GEN-LAST:event_Icono_Notas1MouseEntered
+
+    private void Icono_Notas1MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Icono_Notas1MouseExited
+        String rutaImagen = "/Mediaa/Icono Notas Estatico.png";
+        URL urlImagen = getClass().getResource(rutaImagen);
+        ImageIcon icono = new ImageIcon(urlImagen);
+        Icono_Notas1.setIcon(icono);
+    }//GEN-LAST:event_Icono_Notas1MouseExited
+
+    private void jLabel73MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel73MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jLabel73MouseClicked
     private void listarVendedores(JTable tablaVendedores){
         Statement st;
         ResultSet rs;
@@ -3372,81 +2945,66 @@ public class Loggin extends javax.swing.JFrame {
     private javax.swing.JLabel Icono_Carro;
     private javax.swing.JLabel Icono_Clase;
     private javax.swing.JLabel Icono_Clases;
-    private javax.swing.JLabel Icono_Cliente1;
+    private javax.swing.JLabel Icono_Examen1;
+    private javax.swing.JLabel Icono_Examen2;
     private javax.swing.JLabel Icono_Examenes;
-    private javax.swing.JLabel Icono_Factura1;
     private javax.swing.JLabel Icono_Financiero;
+    private javax.swing.JLabel Icono_Financiero1;
     private javax.swing.JLabel Icono_Informe;
     private javax.swing.JLabel Icono_Maestra;
     private javax.swing.JLabel Icono_Notas;
-    private javax.swing.JLabel Icono_Producto1;
-    private javax.swing.JLabel Icono_Tienda1;
-    private javax.swing.JLabel Icono_Vendedor1;
+    private javax.swing.JLabel Icono_Notas1;
     private javax.swing.JLabel Label_Incorrecto;
     private javax.swing.JLabel Label_Incorrecto1;
     private javax.swing.JPanel Menu_Admin;
     private javax.swing.JPanel Menu_Estudiantes;
     private javax.swing.JPanel Menu_Maestro;
     private javax.swing.JPanel Panel_Alumnos;
-    private javax.swing.JPanel Panel_Bitacora1;
     private javax.swing.JPanel Panel_Carro;
     private javax.swing.JPanel Panel_Clase;
     private javax.swing.JTabbedPane Panel_Clases;
-    private javax.swing.JPanel Panel_Cliente1;
+    private javax.swing.JPanel Panel_Examen2;
     private javax.swing.JTabbedPane Panel_Examenes;
-    private javax.swing.JPanel Panel_Factura1;
     private javax.swing.JPanel Panel_Financiero;
+    private javax.swing.JPanel Panel_Financiero1;
     private javax.swing.JPanel Panel_Informes;
-    private javax.swing.JPanel Panel_Informes1;
     private javax.swing.JPanel Panel_Maestros;
     private javax.swing.JPanel Panel_Menu_Izquierda;
     private javax.swing.JPanel Panel_Menu_Izquierda1;
-    private javax.swing.JPanel Panel_Menu_Izquierda3;
+    private javax.swing.JPanel Panel_Menu_Izquierda2;
     private javax.swing.JPanel Panel_Notas;
     private javax.swing.JPanel Panel_Notas1;
-    private javax.swing.JPanel Panel_Productos1;
+    private javax.swing.JPanel Panel_Notas2;
+    private javax.swing.JPanel Panel_Notas_Estudiante;
     private javax.swing.JPanel Panel_Vendedorsitos;
-    private javax.swing.JPanel Panel_Vendedorsitos1;
     private javax.swing.JPanel Panel_Vendedorsitos2;
     private javax.swing.JPanel Panel_menu_abajo;
     private javax.swing.JPanel Panel_menu_abajo1;
-    private javax.swing.JPanel Panel_menu_abajo2;
-    private javax.swing.JTabbedPane Panel_vendedores1;
+    private javax.swing.JPanel Panel_menu_abajo3;
     private javax.swing.JTextField Usuario;
     private javax.swing.JTextField Usuario1;
     private javax.swing.JTextField Usuario2;
     private javax.swing.JButton btn_createCliente;
-    private javax.swing.JButton btn_createCliente1;
     private javax.swing.JButton btn_createCliente2;
     private javax.swing.JButton btn_createCliente3;
     private javax.swing.JButton btn_createCliente4;
     private javax.swing.JButton btn_createProducto;
     private javax.swing.JButton btn_createProducto1;
     private javax.swing.JButton btn_createVendedor;
-    private javax.swing.JButton btn_createVendedor1;
     private javax.swing.JButton btn_deleteCliente;
-    private javax.swing.JButton btn_deleteCliente1;
     private javax.swing.JButton btn_deleteCliente2;
     private javax.swing.JButton btn_deleteCliente3;
     private javax.swing.JButton btn_deleteCliente4;
     private javax.swing.JButton btn_deleteProducto;
-    private javax.swing.JButton btn_deleteProducto1;
     private javax.swing.JButton btn_deleteVendedor;
-    private javax.swing.JButton btn_deleteVendedor1;
     private javax.swing.JButton btn_updateCliente;
-    private javax.swing.JButton btn_updateCliente1;
     private javax.swing.JButton btn_updateProducto;
-    private javax.swing.JButton btn_updateProducto1;
     private javax.swing.JButton btn_updateVendedor;
-    private javax.swing.JButton btn_updateVendedor1;
     private javax.swing.JComboBox<String> cbox_ListaVendedores;
-    private javax.swing.JComboBox<String> cbox_ListaVendedores1;
     private javax.swing.JComboBox<String> cbox_ListaVendedores2;
     private javax.swing.JTextField contra;
     private javax.swing.JButton jButton12;
     private javax.swing.JButton jButton13;
-    private javax.swing.JButton jButton14;
-    private javax.swing.JButton jButton15;
     private javax.swing.JComboBox<String> jComboBox1;
     private javax.swing.JComboBox<String> jComboBox10;
     private javax.swing.JComboBox<String> jComboBox12;
@@ -3455,30 +3013,23 @@ public class Loggin extends javax.swing.JFrame {
     private javax.swing.JComboBox<String> jComboBox15;
     private javax.swing.JComboBox<String> jComboBox16;
     private javax.swing.JComboBox<String> jComboBox2;
-    private javax.swing.JComboBox<String> jComboBox3;
-    private javax.swing.JComboBox<String> jComboBox5;
+    private javax.swing.JComboBox<String> jComboBox4;
+    private javax.swing.JComboBox<String> jComboBox6;
     private javax.swing.JComboBox<String> jComboBox7;
     private javax.swing.JComboBox<String> jComboBox8;
     private javax.swing.JComboBox<String> jComboBox9;
     private javax.swing.JFormattedTextField jFormattedTextField1;
-    private javax.swing.JFormattedTextField jFormattedTextField2;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
-    private javax.swing.JLabel jLabel100;
-    private javax.swing.JLabel jLabel101;
-    private javax.swing.JLabel jLabel102;
-    private javax.swing.JLabel jLabel103;
-    private javax.swing.JLabel jLabel104;
-    private javax.swing.JLabel jLabel105;
-    private javax.swing.JLabel jLabel106;
-    private javax.swing.JLabel jLabel107;
+    private javax.swing.JLabel jLabel108;
+    private javax.swing.JLabel jLabel109;
     private javax.swing.JLabel jLabel11;
+    private javax.swing.JLabel jLabel110;
     private javax.swing.JLabel jLabel119;
     private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel127;
     private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel130;
-    private javax.swing.JLabel jLabel133;
     private javax.swing.JLabel jLabel14;
     private javax.swing.JLabel jLabel142;
     private javax.swing.JLabel jLabel143;
@@ -3497,6 +3048,8 @@ public class Loggin extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel24;
     private javax.swing.JLabel jLabel25;
     private javax.swing.JLabel jLabel26;
+    private javax.swing.JLabel jLabel27;
+    private javax.swing.JLabel jLabel28;
     private javax.swing.JLabel jLabel29;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel30;
@@ -3513,7 +3066,6 @@ public class Loggin extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel40;
     private javax.swing.JLabel jLabel45;
     private javax.swing.JLabel jLabel46;
-    private javax.swing.JLabel jLabel47;
     private javax.swing.JLabel jLabel48;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel55;
@@ -3522,10 +3074,10 @@ public class Loggin extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel72;
+    private javax.swing.JLabel jLabel73;
     private javax.swing.JLabel jLabel74;
     private javax.swing.JLabel jLabel75;
     private javax.swing.JLabel jLabel76;
-    private javax.swing.JLabel jLabel77;
     private javax.swing.JLabel jLabel78;
     private javax.swing.JLabel jLabel79;
     private javax.swing.JLabel jLabel8;
@@ -3534,44 +3086,30 @@ public class Loggin extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel82;
     private javax.swing.JLabel jLabel83;
     private javax.swing.JLabel jLabel84;
-    private javax.swing.JLabel jLabel85;
     private javax.swing.JLabel jLabel86;
-    private javax.swing.JLabel jLabel87;
-    private javax.swing.JLabel jLabel88;
-    private javax.swing.JLabel jLabel89;
     private javax.swing.JLabel jLabel9;
-    private javax.swing.JLabel jLabel90;
-    private javax.swing.JLabel jLabel91;
-    private javax.swing.JLabel jLabel92;
-    private javax.swing.JLabel jLabel93;
-    private javax.swing.JLabel jLabel94;
-    private javax.swing.JLabel jLabel95;
-    private javax.swing.JLabel jLabel96;
-    private javax.swing.JLabel jLabel97;
-    private javax.swing.JLabel jLabel98;
     private javax.swing.JLabel jLabel99;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
-    private javax.swing.JPanel jPanel3;
+    private javax.swing.JPanel jPanel4;
     private javax.swing.JPanel jPanel5;
-    private javax.swing.JPanel jPanel6;
     private javax.swing.JPanel jPanel7;
+    private javax.swing.JRadioButton jRadioButton1;
+    private javax.swing.JRadioButton jRadioButton2;
+    private javax.swing.JRadioButton jRadioButton3;
     private javax.swing.JRadioButton jRadioButton4;
     private javax.swing.JRadioButton jRadioButton5;
     private javax.swing.JRadioButton jRadioButton6;
     private javax.swing.JRadioButton jRadioButton7;
+    private javax.swing.JRadioButton jRadioButton8;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane11;
     private javax.swing.JScrollPane jScrollPane12;
-    private javax.swing.JScrollPane jScrollPane14;
+    private javax.swing.JScrollPane jScrollPane13;
     private javax.swing.JScrollPane jScrollPane15;
     private javax.swing.JScrollPane jScrollPane16;
     private javax.swing.JScrollPane jScrollPane17;
-    private javax.swing.JScrollPane jScrollPane18;
-    private javax.swing.JScrollPane jScrollPane19;
     private javax.swing.JScrollPane jScrollPane2;
-    private javax.swing.JScrollPane jScrollPane20;
-    private javax.swing.JScrollPane jScrollPane21;
     private javax.swing.JScrollPane jScrollPane27;
     private javax.swing.JScrollPane jScrollPane29;
     private javax.swing.JScrollPane jScrollPane3;
@@ -3583,23 +3121,20 @@ public class Loggin extends javax.swing.JFrame {
     private javax.swing.JScrollPane jScrollPane9;
     private javax.swing.JTable jTable1;
     private javax.swing.JTable jTable11;
-    private javax.swing.JTable jTable13;
     private javax.swing.JTable jTable3;
-    private javax.swing.JTable jTable4;
+    private javax.swing.JTable jTable5;
     private javax.swing.JTable jTable6;
     private javax.swing.JTable jTable7;
+    private javax.swing.JTable jTable8;
     private javax.swing.JTextArea jTextArea1;
     private javax.swing.JTextField jTextField1;
     private javax.swing.JTextField jTextField10;
-    private javax.swing.JTextField jTextField11;
-    private javax.swing.JTextField jTextField12;
-    private javax.swing.JTextField jTextField13;
-    private javax.swing.JTextField jTextField14;
     private javax.swing.JTextField jTextField2;
     private javax.swing.JTextField jTextField3;
     private javax.swing.JTextField jTextField7;
     private javax.swing.JTextField jTextField8;
     private javax.swing.JTextField jTextField9;
+    private javax.swing.JToggleButton jToggleButton1;
     private javax.swing.JToggleButton jToggleButton13;
     private javax.swing.JToggleButton jToggleButton14;
     private javax.swing.JToggleButton jToggleButton15;
@@ -3609,45 +3144,27 @@ public class Loggin extends javax.swing.JFrame {
     private javax.swing.JToggleButton jToggleButton4;
     private javax.swing.JToggleButton jToggleButton5;
     private javax.swing.JToggleButton jToggleButton6;
-    private javax.swing.JToggleButton jToggleButton7;
-    private javax.swing.JToggleButton jToggleButton8;
-    private javax.swing.JToggleButton jToggleButton9;
     private javax.swing.JPanel panel_Registro;
     private javax.swing.JPanel panel_ingreso;
-    private javax.swing.JTextArea ta_Bitacora1;
     private javax.swing.JTable tableReportes;
     private javax.swing.JTable tableReportes1;
     private javax.swing.JTable table_Clientes;
     private javax.swing.JTable table_Clientes1;
     private javax.swing.JTable table_Clientes2;
     private javax.swing.JTable table_Productos;
-    private javax.swing.JTable table_Productos1;
     private javax.swing.JTable table_ProductosparaVendedor;
-    private javax.swing.JTable table_ProductosparaVendedor1;
     private javax.swing.JTable table_Vendedores;
-    private javax.swing.JTable table_Vendedores1;
     private javax.swing.JTable table_Vendedores2;
     private javax.swing.JTextField tf_UPC;
-    private javax.swing.JTextField tf_UPC1;
-    private javax.swing.JTextField tf_correoCliente1;
     private javax.swing.JTextField tf_embalajeProducto;
-    private javax.swing.JTextField tf_embalajeProducto1;
     private javax.swing.JTextField tf_horarioTienda2;
     private javax.swing.JTextField tf_idCliente;
-    private javax.swing.JTextField tf_idCliente1;
     private javax.swing.JTextField tf_idTienda2;
     private javax.swing.JTextField tf_idVendedor;
-    private javax.swing.JTextField tf_idVendedor1;
     private javax.swing.JTextField tf_marcaProducto;
-    private javax.swing.JTextField tf_marcaProducto1;
     private javax.swing.JTextField tf_nombreCliente;
-    private javax.swing.JTextField tf_nombreCliente1;
     private javax.swing.JTextField tf_nombreProducto;
-    private javax.swing.JTextField tf_nombreProducto1;
     private javax.swing.JTextField tf_nombreVendedor;
-    private javax.swing.JTextField tf_nombreVendedor1;
     private javax.swing.JTextField tf_tamanoProducto;
-    private javax.swing.JTextField tf_tamanoProducto1;
-    private javax.swing.JTextField tf_tipoProducto1;
     // End of variables declaration//GEN-END:variables
 }
