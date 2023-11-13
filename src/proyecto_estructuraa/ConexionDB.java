@@ -5,33 +5,39 @@
 package proyecto_estructuraa;
 
 import java.sql.*;
+import org.neo4j.driver.AuthTokens;
+import org.neo4j.driver.Driver;
+import org.neo4j.driver.GraphDatabase;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.function.Function;
+import javax.swing.JOptionPane;
+import org.neo4j.driver.Record;
+import org.neo4j.driver.Session;
+import org.neo4j.driver.Result;
+import org.neo4j.driver.Transaction;
+import static org.neo4j.driver.Values.parameters;
+import org.neo4j.driver.TransactionWork;
 /**
  *
  * @author diego
  */
 public class ConexionDB {
-    Connection conexion;
-    private String host = "retailerdb.c97ylrd8k5vq.us-east-1.rds.amazonaws.com";
-    private String port = "3306";
-    private String dbName = "retailer";
-    private String userName = "admin";
-    private String userPass = "admin123";
-
-        
-    
+    Driver driver;
+    String url = "bolt://localhost:7687";
+    String user = "neo4j";
+    String password = "admin123";
     public ConexionDB(){
         try{
-            Class.forName("org.mariadb.jdbc.Driver");
-            String url = "jdbc:mariadb://" + this.host +":" + this.port + "/" + this.dbName;
-            conexion = DriverManager.getConnection(url, this.userName, this.userPass);
-        }catch (ClassNotFoundException | SQLException e){
-            e.printStackTrace();
+            driver = GraphDatabase.driver(url, AuthTokens.basic(user, password));
+            System.out.print("Conectado Exitosamente");
+        } catch (Exception ex) {
+            Logger.getLogger(ConexionDB.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
     public void desconectar(){
-        try{
-            conexion.close();
-        }catch (SQLException e){
-        }
+        driver.close();
     }
 }
