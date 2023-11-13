@@ -71,10 +71,6 @@ public class Loggin extends javax.swing.JFrame {
     private void initComponents() {
 
         Menu_Estudiantes = new javax.swing.JPanel();
-        Panel_Notas2 = new javax.swing.JPanel();
-        jLabel45 = new javax.swing.JLabel();
-        jScrollPane16 = new javax.swing.JScrollPane();
-        table_Clientes1 = new javax.swing.JTable();
         Panel_menu_abajo1 = new javax.swing.JPanel();
         jLabel99 = new javax.swing.JLabel();
         Panel_Menu_Izquierda3 = new javax.swing.JPanel();
@@ -89,6 +85,10 @@ public class Loggin extends javax.swing.JFrame {
         jScrollPane15 = new javax.swing.JScrollPane();
         tableReportes1 = new javax.swing.JTable();
         jLabel27 = new javax.swing.JLabel();
+        Panel_Notas2 = new javax.swing.JPanel();
+        jLabel45 = new javax.swing.JLabel();
+        jScrollPane16 = new javax.swing.JScrollPane();
+        table_Clientes1 = new javax.swing.JTable();
         Panel_Examen2 = new javax.swing.JPanel();
         jLabel86 = new javax.swing.JLabel();
         btn_createProducto1 = new javax.swing.JButton();
@@ -317,36 +317,6 @@ public class Loggin extends javax.swing.JFrame {
 
         Menu_Estudiantes.setLayout(null);
 
-        Panel_Notas2.setBackground(new java.awt.Color(0, 0, 0,150));
-        Panel_Notas2.setForeground(new java.awt.Color(255, 255, 255));
-        Panel_Notas2.setPreferredSize(new java.awt.Dimension(1070, 610));
-        Panel_Notas2.setLayout(null);
-
-        jLabel45.setFont(new java.awt.Font("Segoe UI", 0, 48)); // NOI18N
-        jLabel45.setForeground(new java.awt.Color(137, 250, 230));
-        jLabel45.setText("Notas");
-        Panel_Notas2.add(jLabel45);
-        jLabel45.setBounds(460, 10, 270, 70);
-
-        table_Clientes1.setModel(new javax.swing.table.DefaultTableModel(
-            new Object [][] {
-                {null, null, null},
-                {null, null, null},
-                {null, null, null},
-                {null, null, null}
-            },
-            new String [] {
-                "ID Cliente", "Nombre Cliente", "Correo Cliente"
-            }
-        ));
-        jScrollPane16.setViewportView(table_Clientes1);
-
-        Panel_Notas2.add(jScrollPane16);
-        jScrollPane16.setBounds(50, 100, 980, 470);
-
-        Menu_Estudiantes.add(Panel_Notas2);
-        Panel_Notas2.setBounds(1230, 0, 1080, 610);
-
         Panel_menu_abajo1.setBackground(new java.awt.Color(67, 122, 227,200));
         Panel_menu_abajo1.setLayout(null);
 
@@ -487,6 +457,36 @@ public class Loggin extends javax.swing.JFrame {
         Menu_Estudiantes.add(Panel_Notas_Estudiante);
         Panel_Notas_Estudiante.setBounds(1220, 0, 1080, 610);
 
+        Panel_Notas2.setBackground(new java.awt.Color(0, 0, 0,150));
+        Panel_Notas2.setForeground(new java.awt.Color(255, 255, 255));
+        Panel_Notas2.setPreferredSize(new java.awt.Dimension(1070, 610));
+        Panel_Notas2.setLayout(null);
+
+        jLabel45.setFont(new java.awt.Font("Segoe UI", 0, 48)); // NOI18N
+        jLabel45.setForeground(new java.awt.Color(137, 250, 230));
+        jLabel45.setText("Notas");
+        Panel_Notas2.add(jLabel45);
+        jLabel45.setBounds(460, 10, 270, 70);
+
+        table_Clientes1.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null}
+            },
+            new String [] {
+                "ID Cliente", "Nombre Cliente", "Correo Cliente"
+            }
+        ));
+        jScrollPane16.setViewportView(table_Clientes1);
+
+        Panel_Notas2.add(jScrollPane16);
+        jScrollPane16.setBounds(50, 100, 980, 470);
+
+        Menu_Estudiantes.add(Panel_Notas2);
+        Panel_Notas2.setBounds(1230, 0, 1080, 610);
+
         Panel_Examen2.setBackground(new java.awt.Color(0, 0, 0,150));
         Panel_Examen2.setForeground(new java.awt.Color(255, 255, 255));
         Panel_Examen2.setPreferredSize(new java.awt.Dimension(1070, 610));
@@ -582,7 +582,7 @@ public class Loggin extends javax.swing.JFrame {
 
         jToggleButton1.setText("Pagar");
         Panel_Financiero1.add(jToggleButton1);
-        jToggleButton1.setBounds(170, 540, 64, 40);
+        jToggleButton1.setBounds(170, 540, 60, 40);
 
         jLabel110.setBackground(new java.awt.Color(137, 250, 230));
         jLabel110.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
@@ -2211,19 +2211,23 @@ public class Loggin extends javax.swing.JFrame {
     }//GEN-LAST:event_cbox_ListaVendedoresItemStateChanged
 
     private void Icono_Clases3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Icono_Clases3MouseClicked
-        // TODO add your handling code here:
+        Cambio_Menu CM= new Cambio_Menu(Panel_Notas_Estudiante,Panel_Notas2,Panel_Examen2,Panel_Financiero1,true,true,true);
+        CM.start();
     }//GEN-LAST:event_Icono_Clases3MouseClicked
 
     private void Icono_Examen2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Icono_Examen2MouseClicked
-        // TODO add your handling code here:
+        Cambio_Menu CM= new Cambio_Menu(Panel_Examen2 ,Panel_Notas2,Panel_Notas_Estudiante ,Panel_Financiero1,true,true,true);
+        CM.start();
     }//GEN-LAST:event_Icono_Examen2MouseClicked
 
     private void Icono_Financiero1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Icono_Financiero1MouseClicked
-        // TODO add your handling code here:
+        Cambio_Menu CM= new Cambio_Menu(Panel_Financiero1  ,Panel_Notas2,Panel_Notas_Estudiante , Panel_Examen2,true,true,true);
+        CM.start();
     }//GEN-LAST:event_Icono_Financiero1MouseClicked
 
     private void Icono_Notas1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Icono_Notas1MouseClicked
-        // TODO add your handling code here:
+        Cambio_Menu CM= new Cambio_Menu(Panel_Examen2 ,Panel_Notas2,Panel_Notas_Estudiante ,Panel_Financiero1 ,true,false,false);
+        CM.start();
     }//GEN-LAST:event_Icono_Notas1MouseClicked
 
     private void ComboReportes1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ComboReportes1ActionPerformed

@@ -27,6 +27,7 @@ public class Cambio_Menu extends Thread {
     JTabbedPane tabpane1;
     boolean pass;
     boolean pass2=false;
+    boolean pass3=false;
     public Cambio_Menu(JPanel pane,JPanel pane4,JPanel pane5,JPanel pane6,JPanel pane7,JPanel pane8,JTabbedPane tabpane,boolean pas){
         panel=pane;
         panel4=pane4;
@@ -46,54 +47,61 @@ public class Cambio_Menu extends Thread {
         this.pass = pass;
         this.pass2 = pass2;
     }
-    
+    public Cambio_Menu(JPanel panel, JPanel panel4,JPanel panel3,JPanel panel5,boolean pass3, boolean pass, boolean pass2) {
+        this.panel = panel;
+        this.panel4 = panel4;
+        this.panel6 = panel4;
+        this.panel5 = panel5;
+        this.pass = pass;
+        this.pass2 = pass2;
+        this.pass3 = pass3;
+    }
     
     public void run () {
-        if (pass2) {
-            if (pass) {
-            int w=1230;
-            tabpane1.setLocation(w, 0);
-            panel.setLocation(w, 0);
-            panel4.setLocation(w, 0);
-            while (w>80){
-            try {
-                    Thread.sleep(1);
-                    panel.setLocation(w,0);
-                    w=w-3;
-                } catch (InterruptedException ex) {}    
-            }
-            }else{
+            if (pass3) {
                 int w=1230;
-                panel.setLocation(w,0);
-                panel4.setLocation(w, 0);
-                while (w>80){
-                try {
-                        Thread.sleep(1);
-                        tabpane1.setLocation(w,0);
-                        w=w-3;
-                    } catch (InterruptedException ex) {}
+                    panel.setLocation(w, 0);
+                    panel4.setLocation(w, 0);
+                    panel6.setLocation(w, 0);
+                    panel5.setLocation(w, 0);
+                    while (w>80){
+                    try {
+                            Thread.sleep(1);
+                            panel.setLocation(w,0);
+                            w=w-3;
+                        } catch (InterruptedException ex) {}    
+                    }
+            }else{
+                if (pass2) {
+                    if (pass) {
+                    int w=1230;
+                    tabpane1.setLocation(w, 0);
+                    panel.setLocation(w, 0);
+                    panel4.setLocation(w, 0);
+                    while (w>80){
+                    try {
+                            Thread.sleep(1);
+                            panel.setLocation(w,0);
+                            w=w-3;
+                        } catch (InterruptedException ex) {}    
+                    }
+                    }else{
+                        int w=1230;
+                        panel.setLocation(w,0);
+                        panel4.setLocation(w, 0);
+                        while (w>80){
+                        try {
+                                Thread.sleep(1);
+                                tabpane1.setLocation(w,0);
+                                w=w-3;
+                            } catch (InterruptedException ex) {}
 
-                }
-            }
-        }else{
-            if (pass) {
-            int w=1230;
-            tabpane1.setLocation(w, 0);
-            panel4.setLocation(w, 0);
-            panel5.setLocation(w, 0);
-            panel6.setLocation(w, 0);
-            panel7.setLocation(w, 0);
-            panel8.setLocation(w, 0);
-            while (w>80){
-            try {
-                    Thread.sleep(1);
-                    panel.setLocation(w,0);
-                    w=w-3;
-                } catch (InterruptedException ex) {}    
-            }
+                        }
+                    }
             }else{
+                if (pass) {
                 int w=1230;
-                panel.setLocation(w,0);
+                tabpane1.setLocation(w, 0);
                 panel4.setLocation(w, 0);
                 panel5.setLocation(w, 0);
                 panel6.setLocation(w, 0);
@@ -102,13 +110,30 @@ public class Cambio_Menu extends Thread {
                 while (w>80){
                 try {
                         Thread.sleep(1);
-                        tabpane1.setLocation(w,0);
+                        panel.setLocation(w,0);
                         w=w-3;
-                    } catch (InterruptedException ex) {}
+                    } catch (InterruptedException ex) {}    
+                }
+                }else{
+                    int w=1230;
+                    panel.setLocation(w,0);
+                    panel4.setLocation(w, 0);
+                    panel5.setLocation(w, 0);
+                    panel6.setLocation(w, 0);
+                    panel7.setLocation(w, 0);
+                    panel8.setLocation(w, 0);
+                    while (w>80){
+                    try {
+                            Thread.sleep(1);
+                            tabpane1.setLocation(w,0);
+                            w=w-3;
+                        } catch (InterruptedException ex) {}
 
+                    }
                 }
             }
         }
+        
         
         
             
