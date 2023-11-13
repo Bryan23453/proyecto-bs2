@@ -1841,7 +1841,7 @@ public class Loggin extends javax.swing.JFrame {
 
         jToggleButton1.setText("Pagar");
         Panel_Financiero1.add(jToggleButton1);
-        jToggleButton1.setBounds(170, 540, 64, 40);
+        jToggleButton1.setBounds(170, 540, 60, 40);
 
         jLabel110.setBackground(new java.awt.Color(137, 250, 230));
         jLabel110.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
@@ -2005,7 +2005,7 @@ public class Loggin extends javax.swing.JFrame {
         contra.setBounds(60, 420, 320, 40);
 
         jLabel84.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        jLabel84.setText("Contrase;a");
+        jLabel84.setText("Contraseña");
         panel_Registro.add(jLabel84);
         jLabel84.setBounds(60, 390, 90, 25);
 
@@ -2155,6 +2155,7 @@ public class Loggin extends javax.swing.JFrame {
 
     private void Boton_Ingreso3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Boton_Ingreso3MouseClicked
          panel_Registro.setVisible(false);Fondo_Login.setVisible(false);Fondo4.setVisible(true);
+         c = new ConexionDB();
         //Cambio_Ecena_Menu cmm = new Cambio_Ecena_Menu(Fondo4,Fondo5 ,Menu_Admin); cmm.start();//menu admin directo
       // Cambio_Ecena_Menu cmm = new Cambio_Ecena_Menu(Fondo4,Fondo5 ,Menu_Maestro); cmm.start();//menu Maestro directo
        // Cambio_Ecena_Menu cmm = new Cambio_Ecena_Menu(Fondo4,Fondo5 ,Menu_Estudiantes); cmm.start();//menu estdianes directo
