@@ -2211,22 +2211,22 @@ public class Loggin extends javax.swing.JFrame {
     }//GEN-LAST:event_cbox_ListaVendedoresItemStateChanged
 
     private void Icono_Clases3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Icono_Clases3MouseClicked
-        Cambio_Menu CM= new Cambio_Menu(Panel_Notas_Estudiante,Panel_Notas2,Panel_Examen2,Panel_Financiero1,true,true,true);
+        Cambio_Menu CM= new Cambio_Menu(Panel_Notas_Estudiante,Panel_Notas2,Panel_Examen2,Panel_Financiero1,true);
         CM.start();
     }//GEN-LAST:event_Icono_Clases3MouseClicked
 
     private void Icono_Examen2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Icono_Examen2MouseClicked
-        Cambio_Menu CM= new Cambio_Menu(Panel_Examen2 ,Panel_Notas2,Panel_Notas_Estudiante ,Panel_Financiero1,true,true,true);
+        Cambio_Menu CM= new Cambio_Menu(Panel_Examen2 ,Panel_Notas2,Panel_Notas_Estudiante ,Panel_Financiero1,true);
         CM.start();
     }//GEN-LAST:event_Icono_Examen2MouseClicked
 
     private void Icono_Financiero1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Icono_Financiero1MouseClicked
-        Cambio_Menu CM= new Cambio_Menu(Panel_Financiero1  ,Panel_Notas2,Panel_Notas_Estudiante , Panel_Examen2,true,true,true);
+        Cambio_Menu CM= new Cambio_Menu(Panel_Financiero1  ,Panel_Notas2,Panel_Notas_Estudiante , Panel_Examen2,true);
         CM.start();
     }//GEN-LAST:event_Icono_Financiero1MouseClicked
 
     private void Icono_Notas1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Icono_Notas1MouseClicked
-        Cambio_Menu CM= new Cambio_Menu(Panel_Examen2 ,Panel_Notas2,Panel_Notas_Estudiante ,Panel_Financiero1 ,true,false,false);
+        Cambio_Menu CM= new Cambio_Menu(Panel_Notas2,Panel_Examen2,Panel_Notas_Estudiante ,Panel_Financiero1 ,true);
         CM.start();
     }//GEN-LAST:event_Icono_Notas1MouseClicked
 

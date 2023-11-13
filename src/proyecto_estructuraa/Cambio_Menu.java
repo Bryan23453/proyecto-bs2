@@ -47,13 +47,11 @@ public class Cambio_Menu extends Thread {
         this.pass = pass;
         this.pass2 = pass2;
     }
-    public Cambio_Menu(JPanel panel, JPanel panel4,JPanel panel3,JPanel panel5,boolean pass3, boolean pass, boolean pass2) {
+    public Cambio_Menu(JPanel panel, JPanel panel4,JPanel panel3,JPanel panel5,boolean pass3) {
         this.panel = panel;
         this.panel4 = panel4;
-        this.panel6 = panel4;
+        this.panel6 = panel3;
         this.panel5 = panel5;
-        this.pass = pass;
-        this.pass2 = pass2;
         this.pass3 = pass3;
     }
     
