@@ -77,31 +77,26 @@ public class Loggin extends javax.swing.JFrame {
     private void initComponents() {
 
         Menu_Admin = new javax.swing.JPanel();
-        Panel_Clases = new javax.swing.JTabbedPane();
-        Panel_Vendedorsitos = new javax.swing.JPanel();
-        jLabel5 = new javax.swing.JLabel();
-        jLabel15 = new javax.swing.JLabel();
-        jLabel16 = new javax.swing.JLabel();
-        tf_nombreVendedor = new javax.swing.JTextField();
-        tf_idVendedor = new javax.swing.JTextField();
-        btn_updateVendedor = new javax.swing.JButton();
-        btn_deleteVendedor = new javax.swing.JButton();
-        btn_createVendedor = new javax.swing.JButton();
-        jScrollPane2 = new javax.swing.JScrollPane();
-        table_Vendedores = new javax.swing.JTable();
-        jLabel17 = new javax.swing.JLabel();
-        jComboBox1 = new javax.swing.JComboBox<>();
-        jPanel5 = new javax.swing.JPanel();
-        jLabel55 = new javax.swing.JLabel();
-        cbox_ListaVendedores = new javax.swing.JComboBox<>();
-        jScrollPane11 = new javax.swing.JScrollPane();
-        table_ProductosparaVendedor = new javax.swing.JTable();
-        jScrollPane12 = new javax.swing.JScrollPane();
-        jTable11 = new javax.swing.JTable();
-        jButton12 = new javax.swing.JButton();
-        jLabel56 = new javax.swing.JLabel();
-        jLabel57 = new javax.swing.JLabel();
-        jButton13 = new javax.swing.JButton();
+        Panel_Informes = new javax.swing.JPanel();
+        jLabel30 = new javax.swing.JLabel();
+        ComboReportes = new javax.swing.JComboBox<>();
+        jScrollPane6 = new javax.swing.JScrollPane();
+        tableReportes = new javax.swing.JTable();
+        Panel_Notas = new javax.swing.JPanel();
+        jLabel21 = new javax.swing.JLabel();
+        jLabel32 = new javax.swing.JLabel();
+        jLabel35 = new javax.swing.JLabel();
+        jLabel36 = new javax.swing.JLabel();
+        jScrollPane8 = new javax.swing.JScrollPane();
+        jTable6 = new javax.swing.JTable();
+        Boton_Agregar_Nota_Admin = new javax.swing.JToggleButton();
+        Boton_Eliminar_Nota_Admin = new javax.swing.JToggleButton();
+        Boton_Modificar_Nota_Admin = new javax.swing.JToggleButton();
+        jComboBox2 = new javax.swing.JComboBox<>();
+        jComboBox9 = new javax.swing.JComboBox<>();
+        G_Datos_Observaciones_Notas_Admin = new javax.swing.JTextField();
+        jComboBox16 = new javax.swing.JComboBox<>();
+        jLabel39 = new javax.swing.JLabel();
         Panel_Maestros = new javax.swing.JPanel();
         jLabel4 = new javax.swing.JLabel();
         jLabel14 = new javax.swing.JLabel();
@@ -119,8 +114,36 @@ public class Loggin extends javax.swing.JFrame {
         Boton_Agregar_Maestros = new javax.swing.JToggleButton();
         Boton_Eliminar_Maestros = new javax.swing.JToggleButton();
         Boton_Modificar_Maestros = new javax.swing.JToggleButton();
+<<<<<<< HEAD
         G_Apellido1_Profe = new javax.swing.JTextField();
         jLabel29 = new javax.swing.JLabel();
+=======
+        Panel_Clases = new javax.swing.JTabbedPane();
+        Panel_Vendedorsitos = new javax.swing.JPanel();
+        jLabel5 = new javax.swing.JLabel();
+        jLabel15 = new javax.swing.JLabel();
+        jLabel16 = new javax.swing.JLabel();
+        G_Nombre_Clases = new javax.swing.JTextField();
+        G_Id_Clases = new javax.swing.JTextField();
+        Boton_Modificar_Clases = new javax.swing.JButton();
+        Boton_Eliminar_Clases = new javax.swing.JButton();
+        Boton_Crear_Clases = new javax.swing.JButton();
+        jScrollPane2 = new javax.swing.JScrollPane();
+        table_Vendedores = new javax.swing.JTable();
+        jLabel17 = new javax.swing.JLabel();
+        jComboBox1 = new javax.swing.JComboBox<>();
+        jPanel5 = new javax.swing.JPanel();
+        jLabel55 = new javax.swing.JLabel();
+        cbox_ListaVendedores = new javax.swing.JComboBox<>();
+        jScrollPane11 = new javax.swing.JScrollPane();
+        table_ProductosparaVendedor = new javax.swing.JTable();
+        jScrollPane12 = new javax.swing.JScrollPane();
+        jTable11 = new javax.swing.JTable();
+        jButton12 = new javax.swing.JButton();
+        jLabel56 = new javax.swing.JLabel();
+        jLabel57 = new javax.swing.JLabel();
+        jButton13 = new javax.swing.JButton();
+>>>>>>> 6f07567841dc6c41c4967240785506b02690cc7d
         Panel_Carro = new javax.swing.JPanel();
         jLabel3 = new javax.swing.JLabel();
         jLabel23 = new javax.swing.JLabel();
@@ -140,10 +163,19 @@ public class Loggin extends javax.swing.JFrame {
         jLabel42 = new javax.swing.JLabel();
         G_Tarifa_Carros = new javax.swing.JTextField();
         jLabel43 = new javax.swing.JLabel();
+<<<<<<< HEAD
         cb_licenciasCarros = new javax.swing.JComboBox<>();
         jLabel44 = new javax.swing.JLabel();
         jLabel47 = new javax.swing.JLabel();
         cb_lujosCarro = new javax.swing.JComboBox<>();
+=======
+        jLabel50 = new javax.swing.JLabel();
+        Combobox_Profesor = new javax.swing.JComboBox<>();
+        G_Tarifa_Adicional = new javax.swing.JTextField();
+        jLabel51 = new javax.swing.JLabel();
+        G_Tipo_Lujo = new javax.swing.JTextField();
+        jLabel52 = new javax.swing.JLabel();
+>>>>>>> 6f07567841dc6c41c4967240785506b02690cc7d
         Panel_Alumnos = new javax.swing.JPanel();
         jLabel6 = new javax.swing.JLabel();
         jLabel9 = new javax.swing.JLabel();
@@ -151,13 +183,14 @@ public class Loggin extends javax.swing.JFrame {
         jLabel11 = new javax.swing.JLabel();
         jLabel12 = new javax.swing.JLabel();
         jLabel13 = new javax.swing.JLabel();
-        tf_embalajeProducto = new javax.swing.JTextField();
-        tf_UPC = new javax.swing.JTextField();
-        tf_nombreProducto = new javax.swing.JTextField();
-        tf_tamanoProducto = new javax.swing.JTextField();
-        btn_deleteProducto = new javax.swing.JButton();
+        G_Dirreccion_Alumnos_Admin = new javax.swing.JTextField();
+        G_Dni_Alumnos_Admin = new javax.swing.JTextField();
+        G_Nombre_Alumnos_Admin = new javax.swing.JTextField();
+        G_Apellidos_Alumnos_Admin = new javax.swing.JTextField();
+        Boton_Eliminar_Alumnos = new javax.swing.JButton();
         jScrollPane1 = new javax.swing.JScrollPane();
         table_Productos = new javax.swing.JTable();
+<<<<<<< HEAD
         btn_createProducto = new javax.swing.JButton();
         btn_updateProducto = new javax.swing.JButton();
         tf_marcaProducto = new javax.swing.JTextField();
@@ -185,6 +218,24 @@ public class Loggin extends javax.swing.JFrame {
         jLabel48 = new javax.swing.JLabel();
         jScrollPane7 = new javax.swing.JScrollPane();
         tablePagos = new javax.swing.JTable();
+=======
+        Boton_Agregar_Alumnos = new javax.swing.JButton();
+        Boton_Editar_Alumnos = new javax.swing.JButton();
+        G_Telefonos_Alumnos_Admin = new javax.swing.JTextField();
+        Panel_Financiero = new javax.swing.JPanel();
+        jLabel48 = new javax.swing.JLabel();
+        jScrollPane7 = new javax.swing.JScrollPane();
+        jTable1 = new javax.swing.JTable();
+        jLabel29 = new javax.swing.JLabel();
+        G_No_Pago_Pagos = new javax.swing.JTextField();
+        jLabel44 = new javax.swing.JLabel();
+        G_Importe_Pagos = new javax.swing.JTextField();
+        jLabel47 = new javax.swing.JLabel();
+        jComboBox3 = new javax.swing.JComboBox<>();
+        Boton_Agregar_Pagos = new javax.swing.JToggleButton();
+        Boton_Eliminar_Pagos = new javax.swing.JToggleButton();
+        Boton_Modificar_Pagos = new javax.swing.JToggleButton();
+>>>>>>> 6f07567841dc6c41c4967240785506b02690cc7d
         Panel_menu_abajo = new javax.swing.JPanel();
         jLabel72 = new javax.swing.JLabel();
         Panel_Menu_Izquierda = new javax.swing.JPanel();
@@ -199,6 +250,15 @@ public class Loggin extends javax.swing.JFrame {
         Fondo5 = new javax.swing.JLabel();
         jPanel1 = new javax.swing.JPanel();
         Menu_Maestro = new javax.swing.JPanel();
+        Panel_Clase = new javax.swing.JPanel();
+        jLabel46 = new javax.swing.JLabel();
+        jLabel119 = new javax.swing.JLabel();
+        btn_deleteCliente2 = new javax.swing.JButton();
+        btn_createCliente2 = new javax.swing.JButton();
+        jScrollPane27 = new javax.swing.JScrollPane();
+        table_Clientes2 = new javax.swing.JTable();
+        jLabel1 = new javax.swing.JLabel();
+        jComboBox10 = new javax.swing.JComboBox<>();
         Panel_Notas1 = new javax.swing.JPanel();
         jLabel26 = new javax.swing.JLabel();
         jLabel33 = new javax.swing.JLabel();
@@ -220,16 +280,29 @@ public class Loggin extends javax.swing.JFrame {
         jScrollPane29 = new javax.swing.JScrollPane();
         table_Vendedores2 = new javax.swing.JTable();
         jLabel143 = new javax.swing.JLabel();
-        tf_idTienda2 = new javax.swing.JTextField();
         jLabel144 = new javax.swing.JLabel();
         jLabel142 = new javax.swing.JLabel();
         tf_horarioTienda2 = new javax.swing.JTextField();
-        jLabel146 = new javax.swing.JLabel();
-        jComboBox12 = new javax.swing.JComboBox<>();
-        jTextField2 = new javax.swing.JTextField();
-        btn_createCliente3 = new javax.swing.JButton();
-        btn_deleteCliente3 = new javax.swing.JButton();
-        btn_deleteCliente4 = new javax.swing.JButton();
+        Boton_Agregar_Evaluacion = new javax.swing.JButton();
+        Boton_Modificar_Evaluacion = new javax.swing.JButton();
+        Boton_Eliminar_Evaluacion = new javax.swing.JButton();
+        tf_idTienda3 = new javax.swing.JTextField();
+        jComboBox5 = new javax.swing.JComboBox<>();
+        jPanel6 = new javax.swing.JPanel();
+        jLabel145 = new javax.swing.JLabel();
+        tf_idTienda4 = new javax.swing.JTextField();
+        jLabel147 = new javax.swing.JLabel();
+        jLabel148 = new javax.swing.JLabel();
+        tf_horarioTienda3 = new javax.swing.JTextField();
+        Boton_Agregar_Practica = new javax.swing.JButton();
+        Boton_Modifica_Practica = new javax.swing.JButton();
+        Boton_Elimina_Practica = new javax.swing.JButton();
+        jScrollPane30 = new javax.swing.JScrollPane();
+        table_Vendedores3 = new javax.swing.JTable();
+        jLabel128 = new javax.swing.JLabel();
+        tf_idTienda5 = new javax.swing.JTextField();
+        jLabel149 = new javax.swing.JLabel();
+        tf_horarioTienda4 = new javax.swing.JTextField();
         jPanel7 = new javax.swing.JPanel();
         jLabel130 = new javax.swing.JLabel();
         cbox_ListaVendedores2 = new javax.swing.JComboBox<>();
@@ -240,15 +313,6 @@ public class Loggin extends javax.swing.JFrame {
         jScrollPane5 = new javax.swing.JScrollPane();
         jTextArea1 = new javax.swing.JTextArea();
         btn_createCliente4 = new javax.swing.JButton();
-        Panel_Clase = new javax.swing.JPanel();
-        jLabel46 = new javax.swing.JLabel();
-        jLabel119 = new javax.swing.JLabel();
-        btn_deleteCliente2 = new javax.swing.JButton();
-        btn_createCliente2 = new javax.swing.JButton();
-        jScrollPane27 = new javax.swing.JScrollPane();
-        table_Clientes2 = new javax.swing.JTable();
-        jLabel1 = new javax.swing.JLabel();
-        jComboBox10 = new javax.swing.JComboBox<>();
         Panel_menu_abajo3 = new javax.swing.JPanel();
         jLabel73 = new javax.swing.JLabel();
         Panel_Menu_Izquierda2 = new javax.swing.JPanel();
@@ -266,25 +330,18 @@ public class Loggin extends javax.swing.JFrame {
         Icono_Examen2 = new javax.swing.JLabel();
         Icono_Financiero1 = new javax.swing.JLabel();
         Icono_Notas1 = new javax.swing.JLabel();
-        Panel_Notas_Estudiante = new javax.swing.JPanel();
+        Panel_Matricula = new javax.swing.JPanel();
         jLabel40 = new javax.swing.JLabel();
         ComboReportes1 = new javax.swing.JComboBox<>();
         jScrollPane15 = new javax.swing.JScrollPane();
         tableReportes1 = new javax.swing.JTable();
-        jLabel27 = new javax.swing.JLabel();
+        jLabel111 = new javax.swing.JLabel();
+        Boton_Matricular_Clases_Estudiante = new javax.swing.JButton();
+        jLabel112 = new javax.swing.JLabel();
         Panel_Notas2 = new javax.swing.JPanel();
         jLabel45 = new javax.swing.JLabel();
         jScrollPane16 = new javax.swing.JScrollPane();
         table_Clientes1 = new javax.swing.JTable();
-        Panel_Examen2 = new javax.swing.JPanel();
-        jLabel86 = new javax.swing.JLabel();
-        btn_createProducto1 = new javax.swing.JButton();
-        jComboBox4 = new javax.swing.JComboBox<>();
-        jLabel28 = new javax.swing.JLabel();
-        jRadioButton1 = new javax.swing.JRadioButton();
-        jRadioButton2 = new javax.swing.JRadioButton();
-        jRadioButton3 = new javax.swing.JRadioButton();
-        jRadioButton8 = new javax.swing.JRadioButton();
         Panel_Financiero1 = new javax.swing.JPanel();
         jLabel74 = new javax.swing.JLabel();
         jLabel108 = new javax.swing.JLabel();
@@ -292,27 +349,20 @@ public class Loggin extends javax.swing.JFrame {
         jScrollPane13 = new javax.swing.JScrollPane();
         jTable5 = new javax.swing.JTable();
         jLabel109 = new javax.swing.JLabel();
-        jToggleButton1 = new javax.swing.JToggleButton();
+        Boton_Pagar_Clases_Alumno = new javax.swing.JToggleButton();
         jLabel110 = new javax.swing.JLabel();
         jScrollPane17 = new javax.swing.JScrollPane();
         jTable8 = new javax.swing.JTable();
+        Panel_Examen2 = new javax.swing.JPanel();
+        jLabel86 = new javax.swing.JLabel();
+        Boton_Contestar_Examen = new javax.swing.JButton();
+        jComboBox4 = new javax.swing.JComboBox<>();
+        jLabel28 = new javax.swing.JLabel();
+        jRadioButton1 = new javax.swing.JRadioButton();
+        jRadioButton2 = new javax.swing.JRadioButton();
+        jRadioButton3 = new javax.swing.JRadioButton();
+        jRadioButton8 = new javax.swing.JRadioButton();
         Fondo6 = new javax.swing.JLabel();
-        panel_ingreso = new javax.swing.JPanel();
-        Usuario = new javax.swing.JTextField();
-        jLabel2 = new javax.swing.JLabel();
-        Boton_Ingreso = new javax.swing.JButton();
-        jLabel7 = new javax.swing.JLabel();
-        jLabel8 = new javax.swing.JLabel();
-        Label_Incorrecto = new javax.swing.JLabel();
-        Contra = new javax.swing.JPasswordField();
-        jLabel81 = new javax.swing.JLabel();
-        jLabel82 = new javax.swing.JLabel();
-        jLabel31 = new javax.swing.JLabel();
-        Contra1 = new javax.swing.JPasswordField();
-        Usuario1 = new javax.swing.JTextField();
-        jLabel75 = new javax.swing.JLabel();
-        Usuario2 = new javax.swing.JTextField();
-        jLabel76 = new javax.swing.JLabel();
         panel_Registro = new javax.swing.JPanel();
         jLabel78 = new javax.swing.JLabel();
         Correo = new javax.swing.JTextField();
@@ -321,8 +371,26 @@ public class Loggin extends javax.swing.JFrame {
         jLabel80 = new javax.swing.JLabel();
         Label_Incorrecto1 = new javax.swing.JLabel();
         jLabel83 = new javax.swing.JLabel();
-        contra = new javax.swing.JTextField();
         jLabel84 = new javax.swing.JLabel();
+        contra = new javax.swing.JPasswordField();
+        panel_ingreso = new javax.swing.JPanel();
+        G_Registra_Usuario = new javax.swing.JTextField();
+        jLabel2 = new javax.swing.JLabel();
+        Boton_Ingreso = new javax.swing.JButton();
+        jLabel7 = new javax.swing.JLabel();
+        jLabel8 = new javax.swing.JLabel();
+        Label_Incorrecto = new javax.swing.JLabel();
+        G_Registra_Contra = new javax.swing.JPasswordField();
+        jLabel81 = new javax.swing.JLabel();
+        jLabel82 = new javax.swing.JLabel();
+        jLabel31 = new javax.swing.JLabel();
+        G_Registra_Id = new javax.swing.JPasswordField();
+        G_Registra_Apellido = new javax.swing.JTextField();
+        jLabel75 = new javax.swing.JLabel();
+        G_Registra_Nombre = new javax.swing.JTextField();
+        jLabel76 = new javax.swing.JLabel();
+        G_Registra_Dirrecion = new javax.swing.JPasswordField();
+        jLabel49 = new javax.swing.JLabel();
         Fondo4 = new javax.swing.JLabel();
         Fondo3 = new javax.swing.JLabel();
         Fondo_Login = new javax.swing.JLabel();
@@ -332,6 +400,229 @@ public class Loggin extends javax.swing.JFrame {
         getContentPane().setLayout(null);
 
         Menu_Admin.setLayout(null);
+
+        Panel_Informes.setBackground(new java.awt.Color(0, 0, 0,150));
+        Panel_Informes.setPreferredSize(new java.awt.Dimension(1070, 610));
+        Panel_Informes.setLayout(null);
+
+        jLabel30.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N
+        jLabel30.setForeground(new java.awt.Color(137, 250, 230));
+        jLabel30.setText("Informes");
+        Panel_Informes.add(jLabel30);
+        jLabel30.setBounds(470, 0, 170, 60);
+
+        ComboReportes.setForeground(new java.awt.Color(102, 102, 102));
+        ComboReportes.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Vista 1", "Vista 2", "Vista 3", "Vista 4", "Vista 5", "Vista 6", "Vista 7", "Vista 8" }));
+        ComboReportes.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ComboReportesActionPerformed(evt);
+            }
+        });
+        Panel_Informes.add(ComboReportes);
+        ComboReportes.setBounds(470, 60, 170, 40);
+
+        tableReportes.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+
+            },
+            new String [] {
+
+            }
+        ));
+        jScrollPane6.setViewportView(tableReportes);
+
+        Panel_Informes.add(jScrollPane6);
+        jScrollPane6.setBounds(30, 110, 960, 430);
+
+        Menu_Admin.add(Panel_Informes);
+        Panel_Informes.setBounds(1220, 0, 1080, 610);
+
+        Panel_Notas.setBackground(new java.awt.Color(0, 0, 0,150));
+        Panel_Notas.setForeground(new java.awt.Color(255, 255, 255));
+        Panel_Notas.setPreferredSize(new java.awt.Dimension(1070, 610));
+        Panel_Notas.setLayout(null);
+
+        jLabel21.setFont(new java.awt.Font("Segoe UI", 0, 48)); // NOI18N
+        jLabel21.setForeground(new java.awt.Color(137, 250, 230));
+        jLabel21.setText("Notas");
+        Panel_Notas.add(jLabel21);
+        jLabel21.setBounds(470, 0, 270, 70);
+
+        jLabel32.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        jLabel32.setForeground(new java.awt.Color(137, 250, 230));
+        jLabel32.setText("Alumno");
+        Panel_Notas.add(jLabel32);
+        jLabel32.setBounds(30, 100, 140, 30);
+
+        jLabel35.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        jLabel35.setForeground(new java.awt.Color(137, 250, 230));
+        jLabel35.setText("Fallos/Observaciones");
+        Panel_Notas.add(jLabel35);
+        jLabel35.setBounds(30, 260, 190, 30);
+
+        jLabel36.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        jLabel36.setForeground(new java.awt.Color(137, 250, 230));
+        jLabel36.setText("Clase");
+        Panel_Notas.add(jLabel36);
+        jLabel36.setBounds(30, 20, 100, 30);
+
+        jTable6.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null}
+            },
+            new String [] {
+                "Title 1", "Title 2", "Title 3", "Title 4"
+            }
+        ));
+        jScrollPane8.setViewportView(jTable6);
+
+        Panel_Notas.add(jScrollPane8);
+        jScrollPane8.setBounds(280, 90, 710, 460);
+
+        Boton_Agregar_Nota_Admin.setBackground(new java.awt.Color(204, 204, 204));
+        Boton_Agregar_Nota_Admin.setForeground(new java.awt.Color(0, 0, 0));
+        Boton_Agregar_Nota_Admin.setText("Agregar");
+        Panel_Notas.add(Boton_Agregar_Nota_Admin);
+        Boton_Agregar_Nota_Admin.setBounds(50, 380, 140, 50);
+
+        Boton_Eliminar_Nota_Admin.setBackground(new java.awt.Color(204, 204, 204));
+        Boton_Eliminar_Nota_Admin.setForeground(new java.awt.Color(0, 0, 0));
+        Boton_Eliminar_Nota_Admin.setText("Eliminar");
+        Panel_Notas.add(Boton_Eliminar_Nota_Admin);
+        Boton_Eliminar_Nota_Admin.setBounds(50, 500, 140, 50);
+
+        Boton_Modificar_Nota_Admin.setBackground(new java.awt.Color(204, 204, 204));
+        Boton_Modificar_Nota_Admin.setForeground(new java.awt.Color(0, 0, 0));
+        Boton_Modificar_Nota_Admin.setText("Modificar");
+        Panel_Notas.add(Boton_Modificar_Nota_Admin);
+        Boton_Modificar_Nota_Admin.setBounds(50, 440, 140, 50);
+
+        jComboBox2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        Panel_Notas.add(jComboBox2);
+        jComboBox2.setBounds(20, 50, 180, 40);
+
+        jComboBox9.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        Panel_Notas.add(jComboBox9);
+        jComboBox9.setBounds(20, 130, 180, 40);
+        Panel_Notas.add(G_Datos_Observaciones_Notas_Admin);
+        G_Datos_Observaciones_Notas_Admin.setBounds(30, 300, 180, 40);
+
+        jComboBox16.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        Panel_Notas.add(jComboBox16);
+        jComboBox16.setBounds(20, 210, 180, 40);
+
+        jLabel39.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        jLabel39.setForeground(new java.awt.Color(137, 250, 230));
+        jLabel39.setText("Evaluacion");
+        Panel_Notas.add(jLabel39);
+        jLabel39.setBounds(30, 180, 140, 30);
+
+        Menu_Admin.add(Panel_Notas);
+        Panel_Notas.setBounds(1230, 0, 1080, 610);
+
+        Panel_Maestros.setBackground(new java.awt.Color(0, 0, 0,150));
+        Panel_Maestros.setForeground(new java.awt.Color(255, 255, 255));
+        Panel_Maestros.setPreferredSize(new java.awt.Dimension(1070, 610));
+        Panel_Maestros.setLayout(null);
+
+        jLabel4.setFont(new java.awt.Font("Segoe UI", 0, 48)); // NOI18N
+        jLabel4.setForeground(new java.awt.Color(137, 250, 230));
+        jLabel4.setText("Maestros");
+        Panel_Maestros.add(jLabel4);
+        jLabel4.setBounds(470, 0, 270, 70);
+
+        jLabel14.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        jLabel14.setForeground(new java.awt.Color(137, 250, 230));
+        jLabel14.setText("Telefono");
+        Panel_Maestros.add(jLabel14);
+        jLabel14.setBounds(20, 80, 140, 30);
+
+        jLabel18.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        jLabel18.setForeground(new java.awt.Color(137, 250, 230));
+        jLabel18.setText("Apellido");
+        Panel_Maestros.add(jLabel18);
+        jLabel18.setBounds(20, 220, 100, 30);
+
+        jLabel19.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        jLabel19.setForeground(new java.awt.Color(137, 250, 230));
+        jLabel19.setText("Dirreccion");
+        Panel_Maestros.add(jLabel19);
+        jLabel19.setBounds(20, 290, 100, 30);
+
+        jLabel20.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        jLabel20.setForeground(new java.awt.Color(137, 250, 230));
+        jLabel20.setText("Nombre");
+        Panel_Maestros.add(jLabel20);
+        jLabel20.setBounds(20, 150, 100, 30);
+
+        jLabel22.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        jLabel22.setForeground(new java.awt.Color(137, 250, 230));
+        jLabel22.setText("Dni");
+        Panel_Maestros.add(jLabel22);
+        jLabel22.setBounds(20, 10, 100, 30);
+
+        G_Dni_Profe.setBackground(new java.awt.Color(102, 102, 102));
+        G_Dni_Profe.setForeground(new java.awt.Color(255, 255, 255));
+        Panel_Maestros.add(G_Dni_Profe);
+        G_Dni_Profe.setBounds(20, 40, 190, 30);
+        Panel_Maestros.add(G_telefono_Profe);
+        G_telefono_Profe.setBounds(20, 110, 190, 30);
+
+        G_nombre_Profe.setBackground(new java.awt.Color(102, 102, 102));
+        G_nombre_Profe.setForeground(new java.awt.Color(255, 255, 255));
+        Panel_Maestros.add(G_nombre_Profe);
+        G_nombre_Profe.setBounds(20, 180, 190, 30);
+
+        G_Apellido_Profe.setBackground(new java.awt.Color(102, 102, 102));
+        G_Apellido_Profe.setForeground(new java.awt.Color(255, 255, 255));
+        Panel_Maestros.add(G_Apellido_Profe);
+        G_Apellido_Profe.setBounds(20, 250, 190, 30);
+
+        G_dirrecion_Profe.setBackground(new java.awt.Color(102, 102, 102));
+        G_dirrecion_Profe.setForeground(new java.awt.Color(102, 102, 102));
+        G_dirrecion_Profe.setText("jTextField10");
+        Panel_Maestros.add(G_dirrecion_Profe);
+        G_dirrecion_Profe.setBounds(20, 320, 190, 30);
+
+        jTable3.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null}
+            },
+            new String [] {
+                "Title 1", "Title 2", "Title 3", "Title 4"
+            }
+        ));
+        jScrollPane3.setViewportView(jTable3);
+
+        Panel_Maestros.add(jScrollPane3);
+        jScrollPane3.setBounds(280, 90, 710, 460);
+
+        Boton_Agregar_Maestros.setBackground(new java.awt.Color(204, 204, 204));
+        Boton_Agregar_Maestros.setForeground(new java.awt.Color(0, 0, 0));
+        Boton_Agregar_Maestros.setText("Agregar");
+        Panel_Maestros.add(Boton_Agregar_Maestros);
+        Boton_Agregar_Maestros.setBounds(50, 380, 140, 50);
+
+        Boton_Eliminar_Maestros.setBackground(new java.awt.Color(204, 204, 204));
+        Boton_Eliminar_Maestros.setForeground(new java.awt.Color(0, 0, 0));
+        Boton_Eliminar_Maestros.setText("Eliminar");
+        Panel_Maestros.add(Boton_Eliminar_Maestros);
+        Boton_Eliminar_Maestros.setBounds(50, 500, 140, 50);
+
+        Boton_Modificar_Maestros.setBackground(new java.awt.Color(204, 204, 204));
+        Boton_Modificar_Maestros.setForeground(new java.awt.Color(0, 0, 0));
+        Boton_Modificar_Maestros.setText("Modificar");
+        Panel_Maestros.add(Boton_Modificar_Maestros);
+        Boton_Modificar_Maestros.setBounds(50, 440, 140, 50);
+
+        Menu_Admin.add(Panel_Maestros);
+        Panel_Maestros.setBounds(1230, 0, 1080, 610);
 
         Panel_Vendedorsitos.setBackground(new java.awt.Color(0, 0, 0,150));
         Panel_Vendedorsitos.setForeground(new java.awt.Color(255, 255, 255));
@@ -356,48 +647,48 @@ public class Loggin extends javax.swing.JFrame {
         Panel_Vendedorsitos.add(jLabel16);
         jLabel16.setBounds(40, 120, 130, 25);
 
-        tf_nombreVendedor.setBackground(new java.awt.Color(102, 102, 102));
-        tf_nombreVendedor.setForeground(new java.awt.Color(255, 255, 255));
-        Panel_Vendedorsitos.add(tf_nombreVendedor);
-        tf_nombreVendedor.setBounds(40, 150, 260, 30);
+        G_Nombre_Clases.setBackground(new java.awt.Color(102, 102, 102));
+        G_Nombre_Clases.setForeground(new java.awt.Color(255, 255, 255));
+        Panel_Vendedorsitos.add(G_Nombre_Clases);
+        G_Nombre_Clases.setBounds(40, 150, 260, 30);
 
-        tf_idVendedor.setBackground(new java.awt.Color(102, 102, 102));
-        tf_idVendedor.setForeground(new java.awt.Color(255, 255, 255));
-        Panel_Vendedorsitos.add(tf_idVendedor);
-        tf_idVendedor.setBounds(40, 70, 260, 30);
+        G_Id_Clases.setBackground(new java.awt.Color(102, 102, 102));
+        G_Id_Clases.setForeground(new java.awt.Color(255, 255, 255));
+        Panel_Vendedorsitos.add(G_Id_Clases);
+        G_Id_Clases.setBounds(40, 70, 260, 30);
 
-        btn_updateVendedor.setBackground(new java.awt.Color(204, 204, 204));
-        btn_updateVendedor.setForeground(new java.awt.Color(0, 0, 0));
-        btn_updateVendedor.setText("Modificar");
-        btn_updateVendedor.addMouseListener(new java.awt.event.MouseAdapter() {
+        Boton_Modificar_Clases.setBackground(new java.awt.Color(204, 204, 204));
+        Boton_Modificar_Clases.setForeground(new java.awt.Color(0, 0, 0));
+        Boton_Modificar_Clases.setText("Modificar");
+        Boton_Modificar_Clases.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                btn_updateVendedorMouseClicked(evt);
+                Boton_Modificar_ClasesMouseClicked(evt);
             }
         });
-        Panel_Vendedorsitos.add(btn_updateVendedor);
-        btn_updateVendedor.setBounds(110, 380, 120, 40);
+        Panel_Vendedorsitos.add(Boton_Modificar_Clases);
+        Boton_Modificar_Clases.setBounds(110, 380, 120, 40);
 
-        btn_deleteVendedor.setBackground(new java.awt.Color(204, 204, 204));
-        btn_deleteVendedor.setForeground(new java.awt.Color(0, 0, 0));
-        btn_deleteVendedor.setText("Eliminar");
-        btn_deleteVendedor.addMouseListener(new java.awt.event.MouseAdapter() {
+        Boton_Eliminar_Clases.setBackground(new java.awt.Color(204, 204, 204));
+        Boton_Eliminar_Clases.setForeground(new java.awt.Color(0, 0, 0));
+        Boton_Eliminar_Clases.setText("Eliminar");
+        Boton_Eliminar_Clases.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                btn_deleteVendedorMouseClicked(evt);
+                Boton_Eliminar_ClasesMouseClicked(evt);
             }
         });
-        Panel_Vendedorsitos.add(btn_deleteVendedor);
-        btn_deleteVendedor.setBounds(110, 450, 120, 40);
+        Panel_Vendedorsitos.add(Boton_Eliminar_Clases);
+        Boton_Eliminar_Clases.setBounds(110, 450, 120, 40);
 
-        btn_createVendedor.setBackground(new java.awt.Color(204, 204, 204));
-        btn_createVendedor.setForeground(new java.awt.Color(0, 0, 0));
-        btn_createVendedor.setText("Añadir");
-        btn_createVendedor.addMouseListener(new java.awt.event.MouseAdapter() {
+        Boton_Crear_Clases.setBackground(new java.awt.Color(204, 204, 204));
+        Boton_Crear_Clases.setForeground(new java.awt.Color(0, 0, 0));
+        Boton_Crear_Clases.setText("Añadir");
+        Boton_Crear_Clases.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                btn_createVendedorMouseClicked(evt);
+                Boton_Crear_ClasesMouseClicked(evt);
             }
         });
-        Panel_Vendedorsitos.add(btn_createVendedor);
-        btn_createVendedor.setBounds(110, 310, 120, 40);
+        Panel_Vendedorsitos.add(Boton_Crear_Clases);
+        Boton_Crear_Clases.setBounds(110, 310, 120, 40);
 
         table_Vendedores.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -534,6 +825,7 @@ public class Loggin extends javax.swing.JFrame {
         Menu_Admin.add(Panel_Clases);
         Panel_Clases.setBounds(1230, 0, 1080, 610);
 
+<<<<<<< HEAD
         Panel_Maestros.setBackground(new java.awt.Color(0, 0, 0,150));
         Panel_Maestros.setForeground(new java.awt.Color(255, 255, 255));
         Panel_Maestros.setPreferredSize(new java.awt.Dimension(1070, 610));
@@ -664,6 +956,8 @@ public class Loggin extends javax.swing.JFrame {
         Menu_Admin.add(Panel_Maestros);
         Panel_Maestros.setBounds(1230, 0, 1080, 610);
 
+=======
+>>>>>>> 6f07567841dc6c41c4967240785506b02690cc7d
         Panel_Carro.setBackground(new java.awt.Color(0, 0, 0,150));
         Panel_Carro.setForeground(new java.awt.Color(255, 255, 255));
         Panel_Carro.setPreferredSize(new java.awt.Dimension(1070, 610));
@@ -673,35 +967,55 @@ public class Loggin extends javax.swing.JFrame {
         jLabel3.setForeground(new java.awt.Color(137, 250, 230));
         jLabel3.setText("Carros");
         Panel_Carro.add(jLabel3);
-        jLabel3.setBounds(420, 10, 270, 70);
+        jLabel3.setBounds(660, 10, 270, 70);
 
         jLabel23.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         jLabel23.setForeground(new java.awt.Color(137, 250, 230));
         jLabel23.setText("Año De Compra");
         Panel_Carro.add(jLabel23);
+<<<<<<< HEAD
         jLabel23.setBounds(10, 70, 160, 30);
+=======
+        jLabel23.setBounds(20, 80, 160, 30);
+>>>>>>> 6f07567841dc6c41c4967240785506b02690cc7d
 
         jLabel24.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         jLabel24.setForeground(new java.awt.Color(137, 250, 230));
         jLabel24.setText("Modelo");
         Panel_Carro.add(jLabel24);
+<<<<<<< HEAD
         jLabel24.setBounds(190, 150, 70, 30);
+=======
+        jLabel24.setBounds(20, 220, 130, 30);
+>>>>>>> 6f07567841dc6c41c4967240785506b02690cc7d
 
         jLabel25.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         jLabel25.setForeground(new java.awt.Color(137, 250, 230));
         jLabel25.setText("Matricula");
         Panel_Carro.add(jLabel25);
+<<<<<<< HEAD
         jLabel25.setBounds(10, 10, 90, 30);
+=======
+        jLabel25.setBounds(20, 10, 90, 30);
+>>>>>>> 6f07567841dc6c41c4967240785506b02690cc7d
 
         G_Matricula_Carros.setBackground(new java.awt.Color(102, 102, 102));
         G_Matricula_Carros.setForeground(new java.awt.Color(255, 255, 255));
         Panel_Carro.add(G_Matricula_Carros);
+<<<<<<< HEAD
         G_Matricula_Carros.setBounds(10, 40, 200, 30);
+=======
+        G_Matricula_Carros.setBounds(20, 40, 210, 30);
+>>>>>>> 6f07567841dc6c41c4967240785506b02690cc7d
 
         G_Modelo_Carros.setBackground(new java.awt.Color(102, 102, 102));
         G_Modelo_Carros.setForeground(new java.awt.Color(255, 255, 255));
         Panel_Carro.add(G_Modelo_Carros);
+<<<<<<< HEAD
         G_Modelo_Carros.setBounds(150, 180, 160, 30);
+=======
+        G_Modelo_Carros.setBounds(20, 250, 210, 30);
+>>>>>>> 6f07567841dc6c41c4967240785506b02690cc7d
 
         Boton_Eliminar_Carros.setBackground(new java.awt.Color(204, 204, 204));
         Boton_Eliminar_Carros.setForeground(new java.awt.Color(0, 0, 0));
@@ -712,7 +1026,11 @@ public class Loggin extends javax.swing.JFrame {
             }
         });
         Panel_Carro.add(Boton_Eliminar_Carros);
+<<<<<<< HEAD
         Boton_Eliminar_Carros.setBounds(100, 530, 160, 40);
+=======
+        Boton_Eliminar_Carros.setBounds(310, 350, 110, 40);
+>>>>>>> 6f07567841dc6c41c4967240785506b02690cc7d
 
         Boton_Agregar_Carros.setBackground(new java.awt.Color(204, 204, 204));
         Boton_Agregar_Carros.setForeground(new java.awt.Color(0, 0, 0));
@@ -723,7 +1041,11 @@ public class Loggin extends javax.swing.JFrame {
             }
         });
         Panel_Carro.add(Boton_Agregar_Carros);
+<<<<<<< HEAD
         Boton_Agregar_Carros.setBounds(100, 410, 160, 40);
+=======
+        Boton_Agregar_Carros.setBounds(310, 250, 110, 40);
+>>>>>>> 6f07567841dc6c41c4967240785506b02690cc7d
 
         Boton_Modificar_Carros.setBackground(new java.awt.Color(204, 204, 204));
         Boton_Modificar_Carros.setForeground(new java.awt.Color(0, 0, 0));
@@ -734,7 +1056,11 @@ public class Loggin extends javax.swing.JFrame {
             }
         });
         Panel_Carro.add(Boton_Modificar_Carros);
+<<<<<<< HEAD
         Boton_Modificar_Carros.setBounds(100, 470, 160, 40);
+=======
+        Boton_Modificar_Carros.setBounds(310, 300, 110, 40);
+>>>>>>> 6f07567841dc6c41c4967240785506b02690cc7d
 
         table_CarrosAdmin.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -750,44 +1076,73 @@ public class Loggin extends javax.swing.JFrame {
         jScrollPane4.setViewportView(table_CarrosAdmin);
 
         Panel_Carro.add(jScrollPane4);
+<<<<<<< HEAD
         jScrollPane4.setBounds(330, 90, 740, 450);
+=======
+        jScrollPane4.setBounds(500, 90, 550, 450);
+>>>>>>> 6f07567841dc6c41c4967240785506b02690cc7d
 
         G_Ano_De_Compra_Carros.setBackground(new java.awt.Color(102, 102, 102));
         G_Ano_De_Compra_Carros.setForeground(new java.awt.Color(255, 255, 255));
         Panel_Carro.add(G_Ano_De_Compra_Carros);
+<<<<<<< HEAD
         G_Ano_De_Compra_Carros.setBounds(10, 110, 120, 30);
+=======
+        G_Ano_De_Compra_Carros.setBounds(20, 110, 210, 30);
+>>>>>>> 6f07567841dc6c41c4967240785506b02690cc7d
 
         jLabel41.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         jLabel41.setForeground(new java.awt.Color(137, 250, 230));
         jLabel41.setText("Marca");
         Panel_Carro.add(jLabel41);
+<<<<<<< HEAD
         jLabel41.setBounds(10, 150, 130, 30);
+=======
+        jLabel41.setBounds(20, 150, 130, 30);
+>>>>>>> 6f07567841dc6c41c4967240785506b02690cc7d
 
         G_Marca_Carros.setBackground(new java.awt.Color(102, 102, 102));
         G_Marca_Carros.setForeground(new java.awt.Color(255, 255, 255));
         Panel_Carro.add(G_Marca_Carros);
+<<<<<<< HEAD
         G_Marca_Carros.setBounds(10, 180, 120, 30);
+=======
+        G_Marca_Carros.setBounds(20, 180, 210, 30);
+>>>>>>> 6f07567841dc6c41c4967240785506b02690cc7d
 
         G_Cilindrada_Carros.setBackground(new java.awt.Color(102, 102, 102));
         G_Cilindrada_Carros.setForeground(new java.awt.Color(255, 255, 255));
         Panel_Carro.add(G_Cilindrada_Carros);
+<<<<<<< HEAD
         G_Cilindrada_Carros.setBounds(10, 260, 110, 30);
+=======
+        G_Cilindrada_Carros.setBounds(20, 320, 210, 30);
+>>>>>>> 6f07567841dc6c41c4967240785506b02690cc7d
 
         jLabel42.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         jLabel42.setForeground(new java.awt.Color(137, 250, 230));
         jLabel42.setText("Licencia Rec.");
         Panel_Carro.add(jLabel42);
+<<<<<<< HEAD
         jLabel42.setBounds(180, 300, 120, 30);
+=======
+        jLabel42.setBounds(20, 290, 130, 30);
+>>>>>>> 6f07567841dc6c41c4967240785506b02690cc7d
 
         G_Tarifa_Carros.setBackground(new java.awt.Color(102, 102, 102));
         G_Tarifa_Carros.setForeground(new java.awt.Color(255, 255, 255));
         Panel_Carro.add(G_Tarifa_Carros);
+<<<<<<< HEAD
         G_Tarifa_Carros.setBounds(150, 260, 150, 30);
+=======
+        G_Tarifa_Carros.setBounds(20, 390, 210, 30);
+>>>>>>> 6f07567841dc6c41c4967240785506b02690cc7d
 
         jLabel43.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         jLabel43.setForeground(new java.awt.Color(137, 250, 230));
-        jLabel43.setText("Tarifa");
+        jLabel43.setText("Profesor");
         Panel_Carro.add(jLabel43);
+<<<<<<< HEAD
         jLabel43.setBounds(170, 220, 130, 30);
 
         cb_licenciasCarros.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
@@ -809,6 +1164,41 @@ public class Loggin extends javax.swing.JFrame {
         cb_lujosCarro.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
         Panel_Carro.add(cb_lujosCarro);
         cb_lujosCarro.setBounds(10, 340, 120, 30);
+=======
+        jLabel43.setBounds(20, 430, 130, 30);
+
+        jLabel50.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        jLabel50.setForeground(new java.awt.Color(137, 250, 230));
+        jLabel50.setText("Tarifa");
+        Panel_Carro.add(jLabel50);
+        jLabel50.setBounds(20, 360, 130, 30);
+
+        Combobox_Profesor.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        Panel_Carro.add(Combobox_Profesor);
+        Combobox_Profesor.setBounds(20, 460, 210, 40);
+
+        G_Tarifa_Adicional.setBackground(new java.awt.Color(102, 102, 102));
+        G_Tarifa_Adicional.setForeground(new java.awt.Color(255, 255, 255));
+        Panel_Carro.add(G_Tarifa_Adicional);
+        G_Tarifa_Adicional.setBounds(260, 110, 210, 30);
+
+        jLabel51.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        jLabel51.setForeground(new java.awt.Color(137, 250, 230));
+        jLabel51.setText("Tarifa Adicional");
+        Panel_Carro.add(jLabel51);
+        jLabel51.setBounds(260, 80, 150, 30);
+
+        G_Tipo_Lujo.setBackground(new java.awt.Color(102, 102, 102));
+        G_Tipo_Lujo.setForeground(new java.awt.Color(255, 255, 255));
+        Panel_Carro.add(G_Tipo_Lujo);
+        G_Tipo_Lujo.setBounds(260, 40, 210, 30);
+
+        jLabel52.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        jLabel52.setForeground(new java.awt.Color(137, 250, 230));
+        jLabel52.setText("Tipo Lujo");
+        Panel_Carro.add(jLabel52);
+        jLabel52.setBounds(260, 10, 130, 30);
+>>>>>>> 6f07567841dc6c41c4967240785506b02690cc7d
 
         Menu_Admin.add(Panel_Carro);
         Panel_Carro.setBounds(1230, 0, 1080, 610);
@@ -826,7 +1216,7 @@ public class Loggin extends javax.swing.JFrame {
 
         jLabel9.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jLabel9.setForeground(new java.awt.Color(137, 250, 230));
-        jLabel9.setText("ID");
+        jLabel9.setText("DNI");
         Panel_Alumnos.add(jLabel9);
         jLabel9.setBounds(70, 50, 37, 20);
 
@@ -838,88 +1228,89 @@ public class Loggin extends javax.swing.JFrame {
 
         jLabel11.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jLabel11.setForeground(new java.awt.Color(137, 250, 230));
-        jLabel11.setText("Correo");
+        jLabel11.setText("Apellido");
         Panel_Alumnos.add(jLabel11);
         jLabel11.setBounds(70, 150, 80, 20);
 
         jLabel12.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jLabel12.setForeground(new java.awt.Color(137, 250, 230));
-        jLabel12.setText("Usuario");
+        jLabel12.setText("Dirreccion");
         Panel_Alumnos.add(jLabel12);
         jLabel12.setBounds(70, 200, 80, 30);
 
         jLabel13.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jLabel13.setForeground(new java.awt.Color(137, 250, 230));
-        jLabel13.setText("Contrase;a");
+        jLabel13.setText("Teléfono");
         Panel_Alumnos.add(jLabel13);
         jLabel13.setBounds(70, 260, 80, 20);
 
-        tf_embalajeProducto.setBackground(new java.awt.Color(102, 102, 102));
-        tf_embalajeProducto.setForeground(new java.awt.Color(255, 255, 255));
-        Panel_Alumnos.add(tf_embalajeProducto);
-        tf_embalajeProducto.setBounds(70, 230, 220, 30);
+        G_Dirreccion_Alumnos_Admin.setBackground(new java.awt.Color(102, 102, 102));
+        G_Dirreccion_Alumnos_Admin.setForeground(new java.awt.Color(255, 255, 255));
+        Panel_Alumnos.add(G_Dirreccion_Alumnos_Admin);
+        G_Dirreccion_Alumnos_Admin.setBounds(70, 230, 220, 30);
 
-        tf_UPC.setBackground(new java.awt.Color(102, 102, 102));
-        tf_UPC.setForeground(new java.awt.Color(255, 255, 255));
-        Panel_Alumnos.add(tf_UPC);
-        tf_UPC.setBounds(70, 70, 220, 30);
+        G_Dni_Alumnos_Admin.setBackground(new java.awt.Color(102, 102, 102));
+        G_Dni_Alumnos_Admin.setForeground(new java.awt.Color(255, 255, 255));
+        Panel_Alumnos.add(G_Dni_Alumnos_Admin);
+        G_Dni_Alumnos_Admin.setBounds(70, 70, 220, 30);
 
-        tf_nombreProducto.setBackground(new java.awt.Color(102, 102, 102));
-        tf_nombreProducto.setForeground(new java.awt.Color(255, 255, 255));
-        Panel_Alumnos.add(tf_nombreProducto);
-        tf_nombreProducto.setBounds(70, 120, 220, 30);
+        G_Nombre_Alumnos_Admin.setBackground(new java.awt.Color(102, 102, 102));
+        G_Nombre_Alumnos_Admin.setForeground(new java.awt.Color(255, 255, 255));
+        Panel_Alumnos.add(G_Nombre_Alumnos_Admin);
+        G_Nombre_Alumnos_Admin.setBounds(70, 120, 220, 30);
 
-        tf_tamanoProducto.setBackground(new java.awt.Color(102, 102, 102));
-        tf_tamanoProducto.setForeground(new java.awt.Color(255, 255, 255));
-        Panel_Alumnos.add(tf_tamanoProducto);
-        tf_tamanoProducto.setBounds(70, 170, 220, 30);
+        G_Apellidos_Alumnos_Admin.setBackground(new java.awt.Color(102, 102, 102));
+        G_Apellidos_Alumnos_Admin.setForeground(new java.awt.Color(255, 255, 255));
+        Panel_Alumnos.add(G_Apellidos_Alumnos_Admin);
+        G_Apellidos_Alumnos_Admin.setBounds(70, 170, 220, 30);
 
-        btn_deleteProducto.setBackground(new java.awt.Color(204, 204, 204));
-        btn_deleteProducto.setForeground(new java.awt.Color(0, 0, 0));
-        btn_deleteProducto.setText("Eliminar");
-        btn_deleteProducto.addMouseListener(new java.awt.event.MouseAdapter() {
+        Boton_Eliminar_Alumnos.setBackground(new java.awt.Color(204, 204, 204));
+        Boton_Eliminar_Alumnos.setForeground(new java.awt.Color(0, 0, 0));
+        Boton_Eliminar_Alumnos.setText("Eliminar");
+        Boton_Eliminar_Alumnos.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                btn_deleteProductoMouseClicked(evt);
+                Boton_Eliminar_AlumnosMouseClicked(evt);
             }
         });
-        Panel_Alumnos.add(btn_deleteProducto);
-        btn_deleteProducto.setBounds(90, 490, 170, 40);
+        Panel_Alumnos.add(Boton_Eliminar_Alumnos);
+        Boton_Eliminar_Alumnos.setBounds(90, 490, 170, 40);
 
         jScrollPane1.setViewportView(table_Productos);
 
         Panel_Alumnos.add(jScrollPane1);
         jScrollPane1.setBounds(350, 100, 670, 450);
 
-        btn_createProducto.setBackground(new java.awt.Color(204, 204, 204));
-        btn_createProducto.setForeground(new java.awt.Color(0, 0, 0));
-        btn_createProducto.setText("Agregar");
-        btn_createProducto.addMouseListener(new java.awt.event.MouseAdapter() {
+        Boton_Agregar_Alumnos.setBackground(new java.awt.Color(204, 204, 204));
+        Boton_Agregar_Alumnos.setForeground(new java.awt.Color(0, 0, 0));
+        Boton_Agregar_Alumnos.setText("Agregar");
+        Boton_Agregar_Alumnos.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                btn_createProductoMouseClicked(evt);
+                Boton_Agregar_AlumnosMouseClicked(evt);
             }
         });
-        Panel_Alumnos.add(btn_createProducto);
-        btn_createProducto.setBounds(90, 370, 170, 40);
+        Panel_Alumnos.add(Boton_Agregar_Alumnos);
+        Boton_Agregar_Alumnos.setBounds(90, 370, 170, 40);
 
-        btn_updateProducto.setBackground(new java.awt.Color(204, 204, 204));
-        btn_updateProducto.setForeground(new java.awt.Color(0, 0, 0));
-        btn_updateProducto.setText("Editar");
-        btn_updateProducto.addMouseListener(new java.awt.event.MouseAdapter() {
+        Boton_Editar_Alumnos.setBackground(new java.awt.Color(204, 204, 204));
+        Boton_Editar_Alumnos.setForeground(new java.awt.Color(0, 0, 0));
+        Boton_Editar_Alumnos.setText("Editar");
+        Boton_Editar_Alumnos.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                btn_updateProductoMouseClicked(evt);
+                Boton_Editar_AlumnosMouseClicked(evt);
             }
         });
-        Panel_Alumnos.add(btn_updateProducto);
-        btn_updateProducto.setBounds(90, 430, 170, 40);
+        Panel_Alumnos.add(Boton_Editar_Alumnos);
+        Boton_Editar_Alumnos.setBounds(90, 430, 170, 40);
 
-        tf_marcaProducto.setBackground(new java.awt.Color(102, 102, 102));
-        tf_marcaProducto.setForeground(new java.awt.Color(255, 255, 255));
-        Panel_Alumnos.add(tf_marcaProducto);
-        tf_marcaProducto.setBounds(70, 280, 220, 30);
+        G_Telefonos_Alumnos_Admin.setBackground(new java.awt.Color(102, 102, 102));
+        G_Telefonos_Alumnos_Admin.setForeground(new java.awt.Color(255, 255, 255));
+        Panel_Alumnos.add(G_Telefonos_Alumnos_Admin);
+        G_Telefonos_Alumnos_Admin.setBounds(70, 280, 220, 30);
 
         Menu_Admin.add(Panel_Alumnos);
         Panel_Alumnos.setBounds(1230, 0, 1080, 610);
 
+<<<<<<< HEAD
         Panel_Notas.setBackground(new java.awt.Color(0, 0, 0,150));
         Panel_Notas.setForeground(new java.awt.Color(255, 255, 255));
         Panel_Notas.setPreferredSize(new java.awt.Dimension(1070, 610));
@@ -1044,14 +1435,16 @@ public class Loggin extends javax.swing.JFrame {
         Menu_Admin.add(Panel_Informes);
         Panel_Informes.setBounds(1220, 0, 1080, 610);
 
+=======
+>>>>>>> 6f07567841dc6c41c4967240785506b02690cc7d
         Panel_Financiero.setBackground(new java.awt.Color(0, 0, 0,150));
         Panel_Financiero.setLayout(null);
 
         jLabel48.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N
         jLabel48.setForeground(new java.awt.Color(137, 250, 230));
-        jLabel48.setText("Informe Dinero");
+        jLabel48.setText("Pagos");
         Panel_Financiero.add(jLabel48);
-        jLabel48.setBounds(480, 0, 290, 50);
+        jLabel48.setBounds(390, 0, 290, 50);
 
         tablePagos.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -1067,7 +1460,57 @@ public class Loggin extends javax.swing.JFrame {
         jScrollPane7.setViewportView(tablePagos);
 
         Panel_Financiero.add(jScrollPane7);
-        jScrollPane7.setBounds(60, 100, 970, 440);
+        jScrollPane7.setBounds(380, 100, 650, 440);
+
+        jLabel29.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        jLabel29.setForeground(new java.awt.Color(137, 250, 230));
+        jLabel29.setText("No. De Pago");
+        Panel_Financiero.add(jLabel29);
+        jLabel29.setBounds(60, 30, 110, 30);
+
+        G_No_Pago_Pagos.setBackground(new java.awt.Color(102, 102, 102));
+        G_No_Pago_Pagos.setForeground(new java.awt.Color(255, 255, 255));
+        Panel_Financiero.add(G_No_Pago_Pagos);
+        G_No_Pago_Pagos.setBounds(50, 70, 190, 30);
+
+        jLabel44.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        jLabel44.setForeground(new java.awt.Color(137, 250, 230));
+        jLabel44.setText("Importe");
+        Panel_Financiero.add(jLabel44);
+        jLabel44.setBounds(60, 120, 100, 30);
+
+        G_Importe_Pagos.setBackground(new java.awt.Color(102, 102, 102));
+        G_Importe_Pagos.setForeground(new java.awt.Color(255, 255, 255));
+        Panel_Financiero.add(G_Importe_Pagos);
+        G_Importe_Pagos.setBounds(50, 160, 190, 30);
+
+        jLabel47.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        jLabel47.setForeground(new java.awt.Color(137, 250, 230));
+        jLabel47.setText("No. Matricula");
+        Panel_Financiero.add(jLabel47);
+        jLabel47.setBounds(60, 210, 130, 30);
+
+        jComboBox3.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        Panel_Financiero.add(jComboBox3);
+        jComboBox3.setBounds(60, 250, 170, 40);
+
+        Boton_Agregar_Pagos.setBackground(new java.awt.Color(204, 204, 204));
+        Boton_Agregar_Pagos.setForeground(new java.awt.Color(0, 0, 0));
+        Boton_Agregar_Pagos.setText("Agregar");
+        Panel_Financiero.add(Boton_Agregar_Pagos);
+        Boton_Agregar_Pagos.setBounds(90, 350, 140, 50);
+
+        Boton_Eliminar_Pagos.setBackground(new java.awt.Color(204, 204, 204));
+        Boton_Eliminar_Pagos.setForeground(new java.awt.Color(0, 0, 0));
+        Boton_Eliminar_Pagos.setText("Eliminar");
+        Panel_Financiero.add(Boton_Eliminar_Pagos);
+        Boton_Eliminar_Pagos.setBounds(90, 470, 140, 50);
+
+        Boton_Modificar_Pagos.setBackground(new java.awt.Color(204, 204, 204));
+        Boton_Modificar_Pagos.setForeground(new java.awt.Color(0, 0, 0));
+        Boton_Modificar_Pagos.setText("Modificar");
+        Panel_Financiero.add(Boton_Modificar_Pagos);
+        Boton_Modificar_Pagos.setBounds(90, 410, 140, 50);
 
         Menu_Admin.add(Panel_Financiero);
         Panel_Financiero.setBounds(1230, 0, 1080, 610);
@@ -1227,7 +1670,76 @@ public class Loggin extends javax.swing.JFrame {
         Menu_Admin.add(jPanel1);
         jPanel1.setBounds(80, 0, 10, 10);
 
+        getContentPane().add(Menu_Admin);
+        Menu_Admin.setBounds(0, 0, 2300, 650);
+
         Menu_Maestro.setLayout(null);
+
+        Panel_Clase.setBackground(new java.awt.Color(0, 0, 0,150));
+        Panel_Clase.setForeground(new java.awt.Color(255, 255, 255));
+        Panel_Clase.setPreferredSize(new java.awt.Dimension(1070, 610));
+        Panel_Clase.setLayout(null);
+
+        jLabel46.setFont(new java.awt.Font("Segoe UI", 0, 48)); // NOI18N
+        jLabel46.setForeground(new java.awt.Color(137, 250, 230));
+        jLabel46.setText("Clases");
+        Panel_Clase.add(jLabel46);
+        jLabel46.setBounds(420, 10, 270, 70);
+
+        jLabel119.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        jLabel119.setForeground(new java.awt.Color(137, 250, 230));
+        jLabel119.setText("ID");
+        Panel_Clase.add(jLabel119);
+        jLabel119.setBounds(50, 90, 60, 30);
+
+        btn_deleteCliente2.setBackground(new java.awt.Color(204, 204, 204));
+        btn_deleteCliente2.setForeground(new java.awt.Color(0, 0, 0));
+        btn_deleteCliente2.setText("Eliminar Alumno");
+        btn_deleteCliente2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btn_deleteCliente2MouseClicked(evt);
+            }
+        });
+        Panel_Clase.add(btn_deleteCliente2);
+        btn_deleteCliente2.setBounds(60, 320, 170, 50);
+
+        btn_createCliente2.setBackground(new java.awt.Color(204, 204, 204));
+        btn_createCliente2.setForeground(new java.awt.Color(0, 0, 0));
+        btn_createCliente2.setText("Añadir Alumno");
+        btn_createCliente2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btn_createCliente2MouseClicked(evt);
+            }
+        });
+        Panel_Clase.add(btn_createCliente2);
+        btn_createCliente2.setBounds(60, 240, 170, 50);
+
+        table_Clientes2.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null}
+            },
+            new String [] {
+                "ID Cliente", "Nombre Cliente", "Correo Cliente"
+            }
+        ));
+        jScrollPane27.setViewportView(table_Clientes2);
+
+        Panel_Clase.add(jScrollPane27);
+        jScrollPane27.setBounds(330, 140, 670, 450);
+
+        jLabel1.setText("Lista Alumnos En La Clase");
+        Panel_Clase.add(jLabel1);
+        jLabel1.setBounds(580, 110, 170, 16);
+
+        jComboBox10.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        Panel_Clase.add(jComboBox10);
+        jComboBox10.setBounds(50, 130, 200, 50);
+
+        Menu_Maestro.add(Panel_Clase);
+        Panel_Clase.setBounds(1230, 0, 1080, 610);
 
         Panel_Notas1.setBackground(new java.awt.Color(0, 0, 0,150));
         Panel_Notas1.setForeground(new java.awt.Color(255, 255, 255));
@@ -1248,9 +1760,9 @@ public class Loggin extends javax.swing.JFrame {
 
         jLabel37.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         jLabel37.setForeground(new java.awt.Color(137, 250, 230));
-        jLabel37.setText("Nota");
+        jLabel37.setText("Resultado/Fallos");
         Panel_Notas1.add(jLabel37);
-        jLabel37.setBounds(30, 260, 100, 30);
+        jLabel37.setBounds(30, 260, 150, 30);
 
         jLabel38.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         jLabel38.setForeground(new java.awt.Color(137, 250, 230));
@@ -1324,7 +1836,7 @@ public class Loggin extends javax.swing.JFrame {
 
         jLabel127.setFont(new java.awt.Font("Segoe UI", 0, 48)); // NOI18N
         jLabel127.setForeground(new java.awt.Color(137, 250, 230));
-        jLabel127.setText("Examenes");
+        jLabel127.setText("Evaluaciones");
         Panel_Vendedorsitos2.add(jLabel127);
         jLabel127.setBounds(400, 0, 270, 70);
 
@@ -1335,80 +1847,218 @@ public class Loggin extends javax.swing.JFrame {
 
         jLabel143.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         jLabel143.setForeground(new java.awt.Color(137, 250, 230));
-        jLabel143.setText("ID");
+        jLabel143.setText("No. Test");
         Panel_Vendedorsitos2.add(jLabel143);
-        jLabel143.setBounds(100, 70, 100, 30);
-
-        tf_idTienda2.setBackground(new java.awt.Color(102, 102, 102));
-        tf_idTienda2.setForeground(new java.awt.Color(255, 255, 255));
-        Panel_Vendedorsitos2.add(tf_idTienda2);
-        tf_idTienda2.setBounds(10, 100, 200, 30);
+        jLabel143.setBounds(130, 60, 100, 30);
 
         jLabel144.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         jLabel144.setForeground(new java.awt.Color(137, 250, 230));
         jLabel144.setText("Clase");
         Panel_Vendedorsitos2.add(jLabel144);
-        jLabel144.setBounds(80, 150, 100, 30);
+        jLabel144.setBounds(140, 140, 100, 30);
 
         jLabel142.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         jLabel142.setForeground(new java.awt.Color(137, 250, 230));
-        jLabel142.setText("Horario");
+        jLabel142.setText("Fecha De La Prueba");
         Panel_Vendedorsitos2.add(jLabel142);
-        jLabel142.setBounds(80, 230, 100, 30);
+        jLabel142.setBounds(80, 220, 180, 30);
 
         tf_horarioTienda2.setBackground(new java.awt.Color(102, 102, 102));
         tf_horarioTienda2.setForeground(new java.awt.Color(255, 255, 255));
         Panel_Vendedorsitos2.add(tf_horarioTienda2);
-        tf_horarioTienda2.setBounds(10, 260, 200, 30);
+        tf_horarioTienda2.setBounds(70, 250, 200, 30);
 
-        jLabel146.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        jLabel146.setForeground(new java.awt.Color(137, 250, 230));
-        jLabel146.setText("Puntaje");
-        Panel_Vendedorsitos2.add(jLabel146);
-        jLabel146.setBounds(50, 310, 100, 30);
-
-        jComboBox12.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
-        Panel_Vendedorsitos2.add(jComboBox12);
-        jComboBox12.setBounds(10, 180, 200, 40);
-
-        jTextField2.setText("jTextField2");
-        Panel_Vendedorsitos2.add(jTextField2);
-        jTextField2.setBounds(120, 310, 60, 30);
-
-        btn_createCliente3.setBackground(new java.awt.Color(204, 204, 204));
-        btn_createCliente3.setForeground(new java.awt.Color(0, 0, 0));
-        btn_createCliente3.setText("Añadir Examen");
-        btn_createCliente3.addMouseListener(new java.awt.event.MouseAdapter() {
+        Boton_Agregar_Evaluacion.setBackground(new java.awt.Color(204, 204, 204));
+        Boton_Agregar_Evaluacion.setForeground(new java.awt.Color(0, 0, 0));
+        Boton_Agregar_Evaluacion.setText("Añadir Evaluacion");
+        Boton_Agregar_Evaluacion.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                btn_createCliente3MouseClicked(evt);
+                Boton_Agregar_EvaluacionMouseClicked(evt);
             }
         });
-        Panel_Vendedorsitos2.add(btn_createCliente3);
-        btn_createCliente3.setBounds(40, 370, 170, 50);
+        Panel_Vendedorsitos2.add(Boton_Agregar_Evaluacion);
+        Boton_Agregar_Evaluacion.setBounds(80, 330, 170, 50);
 
-        btn_deleteCliente3.setBackground(new java.awt.Color(204, 204, 204));
-        btn_deleteCliente3.setForeground(new java.awt.Color(0, 0, 0));
-        btn_deleteCliente3.setText("Modificar Examen");
-        btn_deleteCliente3.addMouseListener(new java.awt.event.MouseAdapter() {
+        Boton_Modificar_Evaluacion.setBackground(new java.awt.Color(204, 204, 204));
+        Boton_Modificar_Evaluacion.setForeground(new java.awt.Color(0, 0, 0));
+        Boton_Modificar_Evaluacion.setText("Modificar Evaluacion");
+        Boton_Modificar_Evaluacion.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                btn_deleteCliente3MouseClicked(evt);
+                Boton_Modificar_EvaluacionMouseClicked(evt);
             }
         });
-        Panel_Vendedorsitos2.add(btn_deleteCliente3);
-        btn_deleteCliente3.setBounds(40, 430, 170, 50);
+        Panel_Vendedorsitos2.add(Boton_Modificar_Evaluacion);
+        Boton_Modificar_Evaluacion.setBounds(80, 390, 170, 50);
 
-        btn_deleteCliente4.setBackground(new java.awt.Color(204, 204, 204));
-        btn_deleteCliente4.setForeground(new java.awt.Color(0, 0, 0));
-        btn_deleteCliente4.setText("Eliminar Examen");
-        btn_deleteCliente4.addMouseListener(new java.awt.event.MouseAdapter() {
+        Boton_Eliminar_Evaluacion.setBackground(new java.awt.Color(204, 204, 204));
+        Boton_Eliminar_Evaluacion.setForeground(new java.awt.Color(0, 0, 0));
+        Boton_Eliminar_Evaluacion.setText("Eliminar Evaluacion");
+        Boton_Eliminar_Evaluacion.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                btn_deleteCliente4MouseClicked(evt);
+                Boton_Eliminar_EvaluacionMouseClicked(evt);
             }
         });
-        Panel_Vendedorsitos2.add(btn_deleteCliente4);
-        btn_deleteCliente4.setBounds(40, 490, 170, 50);
+        Panel_Vendedorsitos2.add(Boton_Eliminar_Evaluacion);
+        Boton_Eliminar_Evaluacion.setBounds(80, 450, 170, 50);
 
-        Panel_Examenes.addTab("Notas", Panel_Vendedorsitos2);
+        tf_idTienda3.setBackground(new java.awt.Color(102, 102, 102));
+        tf_idTienda3.setForeground(new java.awt.Color(255, 255, 255));
+        Panel_Vendedorsitos2.add(tf_idTienda3);
+        tf_idTienda3.setBounds(70, 90, 200, 30);
+
+        jComboBox5.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        Panel_Vendedorsitos2.add(jComboBox5);
+        jComboBox5.setBounds(70, 170, 200, 30);
+
+        Panel_Examenes.addTab("Crear_Evaluaciones", Panel_Vendedorsitos2);
+
+        jLabel145.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        jLabel145.setForeground(new java.awt.Color(137, 250, 230));
+        jLabel145.setText("Objetivos");
+
+        tf_idTienda4.setBackground(new java.awt.Color(102, 102, 102));
+        tf_idTienda4.setForeground(new java.awt.Color(255, 255, 255));
+        tf_idTienda4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                tf_idTienda4ActionPerformed(evt);
+            }
+        });
+
+        jLabel147.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        jLabel147.setForeground(new java.awt.Color(137, 250, 230));
+        jLabel147.setText("Resultados");
+
+        jLabel148.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        jLabel148.setForeground(new java.awt.Color(137, 250, 230));
+        jLabel148.setText("Fecha De La Practica");
+
+        tf_horarioTienda3.setBackground(new java.awt.Color(102, 102, 102));
+        tf_horarioTienda3.setForeground(new java.awt.Color(255, 255, 255));
+
+        Boton_Agregar_Practica.setBackground(new java.awt.Color(204, 204, 204));
+        Boton_Agregar_Practica.setForeground(new java.awt.Color(0, 0, 0));
+        Boton_Agregar_Practica.setText("Añadir Practica");
+        Boton_Agregar_Practica.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                Boton_Agregar_PracticaMouseClicked(evt);
+            }
+        });
+
+        Boton_Modifica_Practica.setBackground(new java.awt.Color(204, 204, 204));
+        Boton_Modifica_Practica.setForeground(new java.awt.Color(0, 0, 0));
+        Boton_Modifica_Practica.setText("Modificar Practica");
+        Boton_Modifica_Practica.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                Boton_Modifica_PracticaMouseClicked(evt);
+            }
+        });
+
+        Boton_Elimina_Practica.setBackground(new java.awt.Color(204, 204, 204));
+        Boton_Elimina_Practica.setForeground(new java.awt.Color(0, 0, 0));
+        Boton_Elimina_Practica.setText("Eliminar Practica");
+        Boton_Elimina_Practica.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                Boton_Elimina_PracticaMouseClicked(evt);
+            }
+        });
+
+        jScrollPane30.setViewportView(table_Vendedores3);
+
+        jLabel128.setFont(new java.awt.Font("Segoe UI", 0, 48)); // NOI18N
+        jLabel128.setForeground(new java.awt.Color(137, 250, 230));
+        jLabel128.setText("Evaluaciones");
+
+        tf_idTienda5.setBackground(new java.awt.Color(102, 102, 102));
+        tf_idTienda5.setForeground(new java.awt.Color(255, 255, 255));
+
+        jLabel149.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        jLabel149.setForeground(new java.awt.Color(137, 250, 230));
+        jLabel149.setText("Duracion");
+
+        tf_horarioTienda4.setBackground(new java.awt.Color(102, 102, 102));
+        tf_horarioTienda4.setForeground(new java.awt.Color(255, 255, 255));
+
+        javax.swing.GroupLayout jPanel6Layout = new javax.swing.GroupLayout(jPanel6);
+        jPanel6.setLayout(jPanel6Layout);
+        jPanel6Layout.setHorizontalGroup(
+            jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel6Layout.createSequentialGroup()
+                .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel6Layout.createSequentialGroup()
+                        .addGap(63, 63, 63)
+                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(tf_horarioTienda4, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGroup(jPanel6Layout.createSequentialGroup()
+                                .addGap(10, 10, 10)
+                                .addComponent(jLabel148, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(tf_horarioTienda3, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(tf_idTienda5, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGroup(jPanel6Layout.createSequentialGroup()
+                                .addGap(51, 51, 51)
+                                .addComponent(jLabel147, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(jPanel6Layout.createSequentialGroup()
+                                .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(jPanel6Layout.createSequentialGroup()
+                                        .addGap(60, 60, 60)
+                                        .addComponent(jLabel145, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addComponent(tf_idTienda4, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 264, Short.MAX_VALUE)
+                                .addComponent(jLabel128, javax.swing.GroupLayout.PREFERRED_SIZE, 270, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                    .addGroup(jPanel6Layout.createSequentialGroup()
+                        .addGap(111, 111, 111)
+                        .addComponent(jLabel149, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(283, 283, 283))
+            .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(jPanel6Layout.createSequentialGroup()
+                    .addGap(10, 75, Short.MAX_VALUE)
+                    .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addComponent(Boton_Agregar_Practica, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(Boton_Modifica_Practica, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(Boton_Elimina_Practica, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGap(100, 100, 100)
+                    .addComponent(jScrollPane30, javax.swing.GroupLayout.PREFERRED_SIZE, 670, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGap(0, 65, Short.MAX_VALUE)))
+        );
+        jPanel6Layout.setVerticalGroup(
+            jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel6Layout.createSequentialGroup()
+                .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel6Layout.createSequentialGroup()
+                        .addGap(26, 26, 26)
+                        .addComponent(jLabel128, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel6Layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(jLabel145, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(0, 0, 0)
+                        .addComponent(tf_idTienda4, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(18, 18, 18)
+                .addComponent(jLabel147, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(tf_idTienda5, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(jLabel148, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, 0)
+                .addComponent(tf_horarioTienda3, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(jLabel149, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, 0)
+                .addComponent(tf_horarioTienda4, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(243, Short.MAX_VALUE))
+            .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(jPanel6Layout.createSequentialGroup()
+                    .addContainerGap(129, Short.MAX_VALUE)
+                    .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel6Layout.createSequentialGroup()
+                            .addComponent(Boton_Agregar_Practica, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGap(10, 10, 10)
+                            .addComponent(Boton_Modifica_Practica, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGap(10, 10, 10)
+                            .addComponent(Boton_Elimina_Practica, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(jScrollPane30, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 440, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGap(0, 10, Short.MAX_VALUE)))
+        );
+
+        Panel_Examenes.addTab("Clases Practicas", jPanel6);
 
         jPanel7.setBackground(new java.awt.Color(0,0,0,200));
         jPanel7.setForeground(new java.awt.Color(0, 0, 0));
@@ -1469,76 +2119,10 @@ public class Loggin extends javax.swing.JFrame {
         jPanel7.add(btn_createCliente4);
         btn_createCliente4.setBounds(890, 510, 170, 50);
 
-        Panel_Examenes.addTab("Examenes", jPanel7);
+        Panel_Examenes.addTab("Agregar_Preguntas", jPanel7);
 
         Menu_Maestro.add(Panel_Examenes);
         Panel_Examenes.setBounds(1230, 0, 1080, 610);
-
-        Panel_Clase.setBackground(new java.awt.Color(0, 0, 0,150));
-        Panel_Clase.setForeground(new java.awt.Color(255, 255, 255));
-        Panel_Clase.setPreferredSize(new java.awt.Dimension(1070, 610));
-        Panel_Clase.setLayout(null);
-
-        jLabel46.setFont(new java.awt.Font("Segoe UI", 0, 48)); // NOI18N
-        jLabel46.setForeground(new java.awt.Color(137, 250, 230));
-        jLabel46.setText("Clases");
-        Panel_Clase.add(jLabel46);
-        jLabel46.setBounds(420, 10, 270, 70);
-
-        jLabel119.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        jLabel119.setForeground(new java.awt.Color(137, 250, 230));
-        jLabel119.setText("ID");
-        Panel_Clase.add(jLabel119);
-        jLabel119.setBounds(50, 90, 60, 30);
-
-        btn_deleteCliente2.setBackground(new java.awt.Color(204, 204, 204));
-        btn_deleteCliente2.setForeground(new java.awt.Color(0, 0, 0));
-        btn_deleteCliente2.setText("Eliminar Alumno");
-        btn_deleteCliente2.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                btn_deleteCliente2MouseClicked(evt);
-            }
-        });
-        Panel_Clase.add(btn_deleteCliente2);
-        btn_deleteCliente2.setBounds(60, 320, 170, 50);
-
-        btn_createCliente2.setBackground(new java.awt.Color(204, 204, 204));
-        btn_createCliente2.setForeground(new java.awt.Color(0, 0, 0));
-        btn_createCliente2.setText("Añadir Alumno");
-        btn_createCliente2.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                btn_createCliente2MouseClicked(evt);
-            }
-        });
-        Panel_Clase.add(btn_createCliente2);
-        btn_createCliente2.setBounds(60, 240, 170, 50);
-
-        table_Clientes2.setModel(new javax.swing.table.DefaultTableModel(
-            new Object [][] {
-                {null, null, null},
-                {null, null, null},
-                {null, null, null},
-                {null, null, null}
-            },
-            new String [] {
-                "ID Cliente", "Nombre Cliente", "Correo Cliente"
-            }
-        ));
-        jScrollPane27.setViewportView(table_Clientes2);
-
-        Panel_Clase.add(jScrollPane27);
-        jScrollPane27.setBounds(330, 140, 670, 450);
-
-        jLabel1.setText("Lista Alumnos En La Clase");
-        Panel_Clase.add(jLabel1);
-        jLabel1.setBounds(580, 110, 170, 16);
-
-        jComboBox10.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
-        Panel_Clase.add(jComboBox10);
-        jComboBox10.setBounds(50, 130, 200, 50);
-
-        Menu_Maestro.add(Panel_Clase);
-        Panel_Clase.setBounds(1230, 0, 1080, 610);
 
         Panel_menu_abajo3.setBackground(new java.awt.Color(67, 122, 227,200));
         Panel_menu_abajo3.setLayout(null);
@@ -1629,11 +2213,8 @@ public class Loggin extends javax.swing.JFrame {
         Menu_Maestro.add(Fondo7);
         Fondo7.setBounds(60, 0, 1150, 650);
 
-        Menu_Admin.add(Menu_Maestro);
+        getContentPane().add(Menu_Maestro);
         Menu_Maestro.setBounds(0, 0, 2300, 650);
-
-        getContentPane().add(Menu_Admin);
-        Menu_Admin.setBounds(0, 0, 2300, 650);
 
         Menu_Estudiantes.setLayout(null);
 
@@ -1737,14 +2318,14 @@ public class Loggin extends javax.swing.JFrame {
         Menu_Estudiantes.add(Panel_Menu_Izquierda3);
         Panel_Menu_Izquierda3.setBounds(0, 0, 80, 650);
 
-        Panel_Notas_Estudiante.setBackground(new java.awt.Color(0, 0, 0,150));
-        Panel_Notas_Estudiante.setPreferredSize(new java.awt.Dimension(1070, 610));
-        Panel_Notas_Estudiante.setLayout(null);
+        Panel_Matricula.setBackground(new java.awt.Color(0, 0, 0,150));
+        Panel_Matricula.setPreferredSize(new java.awt.Dimension(1070, 610));
+        Panel_Matricula.setLayout(null);
 
         jLabel40.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N
         jLabel40.setForeground(new java.awt.Color(137, 250, 230));
-        jLabel40.setText("Clase");
-        Panel_Notas_Estudiante.add(jLabel40);
+        jLabel40.setText("Matricula");
+        Panel_Matricula.add(jLabel40);
         jLabel40.setBounds(470, 0, 170, 60);
 
         ComboReportes1.setForeground(new java.awt.Color(102, 102, 102));
@@ -1754,8 +2335,8 @@ public class Loggin extends javax.swing.JFrame {
                 ComboReportes1ActionPerformed(evt);
             }
         });
-        Panel_Notas_Estudiante.add(ComboReportes1);
-        ComboReportes1.setBounds(390, 60, 250, 40);
+        Panel_Matricula.add(ComboReportes1);
+        ComboReportes1.setBounds(180, 80, 250, 40);
 
         tableReportes1.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -1767,15 +2348,34 @@ public class Loggin extends javax.swing.JFrame {
         ));
         jScrollPane15.setViewportView(tableReportes1);
 
-        Panel_Notas_Estudiante.add(jScrollPane15);
-        jScrollPane15.setBounds(30, 170, 960, 430);
+        Panel_Matricula.add(jScrollPane15);
+        jScrollPane15.setBounds(70, 220, 950, 370);
 
-        jLabel27.setText("Notas Clase");
-        Panel_Notas_Estudiante.add(jLabel27);
-        jLabel27.setBounds(500, 130, 80, 16);
+        jLabel111.setBackground(new java.awt.Color(137, 250, 230));
+        jLabel111.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        jLabel111.setForeground(new java.awt.Color(137, 250, 230));
+        jLabel111.setText("Clases Matriculadas");
+        Panel_Matricula.add(jLabel111);
+        jLabel111.setBounds(440, 190, 170, 20);
 
-        Menu_Estudiantes.add(Panel_Notas_Estudiante);
-        Panel_Notas_Estudiante.setBounds(1220, 0, 1080, 610);
+        Boton_Matricular_Clases_Estudiante.setText("Matricular");
+        Boton_Matricular_Clases_Estudiante.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                Boton_Matricular_Clases_EstudianteMouseClicked(evt);
+            }
+        });
+        Panel_Matricula.add(Boton_Matricular_Clases_Estudiante);
+        Boton_Matricular_Clases_Estudiante.setBounds(450, 80, 120, 50);
+
+        jLabel112.setBackground(new java.awt.Color(137, 250, 230));
+        jLabel112.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        jLabel112.setForeground(new java.awt.Color(137, 250, 230));
+        jLabel112.setText("Clases Disponibles");
+        Panel_Matricula.add(jLabel112);
+        jLabel112.setBounds(20, 90, 170, 20);
+
+        Menu_Estudiantes.add(Panel_Matricula);
+        Panel_Matricula.setBounds(1220, 0, 1080, 610);
 
         Panel_Notas2.setBackground(new java.awt.Color(0, 0, 0,150));
         Panel_Notas2.setForeground(new java.awt.Color(255, 255, 255));
@@ -1806,56 +2406,6 @@ public class Loggin extends javax.swing.JFrame {
 
         Menu_Estudiantes.add(Panel_Notas2);
         Panel_Notas2.setBounds(1230, 0, 1080, 610);
-
-        Panel_Examen2.setBackground(new java.awt.Color(0, 0, 0,150));
-        Panel_Examen2.setForeground(new java.awt.Color(255, 255, 255));
-        Panel_Examen2.setPreferredSize(new java.awt.Dimension(1070, 610));
-        Panel_Examen2.setLayout(null);
-
-        jLabel86.setFont(new java.awt.Font("Segoe UI", 0, 48)); // NOI18N
-        jLabel86.setForeground(new java.awt.Color(137, 250, 230));
-        jLabel86.setText("Examen");
-        Panel_Examen2.add(jLabel86);
-        jLabel86.setBounds(500, 10, 270, 70);
-
-        btn_createProducto1.setBackground(new java.awt.Color(204, 204, 204));
-        btn_createProducto1.setForeground(new java.awt.Color(0, 0, 0));
-        btn_createProducto1.setText("Contestar");
-        btn_createProducto1.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                btn_createProducto1MouseClicked(evt);
-            }
-        });
-        Panel_Examen2.add(btn_createProducto1);
-        btn_createProducto1.setBounds(860, 530, 170, 40);
-
-        jComboBox4.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
-        Panel_Examen2.add(jComboBox4);
-        jComboBox4.setBounds(430, 80, 300, 60);
-
-        jLabel28.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        jLabel28.setText("Preguntaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa");
-        Panel_Examen2.add(jLabel28);
-        jLabel28.setBounds(80, 200, 960, 20);
-
-        jRadioButton1.setText("jRadioButton1");
-        Panel_Examen2.add(jRadioButton1);
-        jRadioButton1.setBounds(400, 320, 160, 60);
-
-        jRadioButton2.setText("jRadioButton1");
-        Panel_Examen2.add(jRadioButton2);
-        jRadioButton2.setBounds(100, 320, 160, 60);
-
-        jRadioButton3.setText("jRadioButton1");
-        Panel_Examen2.add(jRadioButton3);
-        jRadioButton3.setBounds(100, 420, 160, 60);
-
-        jRadioButton8.setText("jRadioButton1");
-        Panel_Examen2.add(jRadioButton8);
-        jRadioButton8.setBounds(400, 420, 160, 60);
-
-        Menu_Estudiantes.add(Panel_Examen2);
-        Panel_Examen2.setBounds(1230, 0, 1080, 610);
 
         Panel_Financiero1.setBackground(new java.awt.Color(0, 0, 0,150));
         Panel_Financiero1.setLayout(null);
@@ -1900,9 +2450,9 @@ public class Loggin extends javax.swing.JFrame {
         Panel_Financiero1.add(jLabel109);
         jLabel109.setBounds(20, 90, 60, 20);
 
-        jToggleButton1.setText("Pagar");
-        Panel_Financiero1.add(jToggleButton1);
-        jToggleButton1.setBounds(170, 540, 60, 40);
+        Boton_Pagar_Clases_Alumno.setText("Pagar");
+        Panel_Financiero1.add(Boton_Pagar_Clases_Alumno);
+        Boton_Pagar_Clases_Alumno.setBounds(170, 540, 64, 40);
 
         jLabel110.setBackground(new java.awt.Color(137, 250, 230));
         jLabel110.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
@@ -1930,90 +2480,62 @@ public class Loggin extends javax.swing.JFrame {
         Menu_Estudiantes.add(Panel_Financiero1);
         Panel_Financiero1.setBounds(1230, 0, 1080, 610);
 
+        Panel_Examen2.setBackground(new java.awt.Color(0, 0, 0,150));
+        Panel_Examen2.setForeground(new java.awt.Color(255, 255, 255));
+        Panel_Examen2.setPreferredSize(new java.awt.Dimension(1070, 610));
+        Panel_Examen2.setLayout(null);
+
+        jLabel86.setFont(new java.awt.Font("Segoe UI", 0, 48)); // NOI18N
+        jLabel86.setForeground(new java.awt.Color(137, 250, 230));
+        jLabel86.setText("Examen");
+        Panel_Examen2.add(jLabel86);
+        jLabel86.setBounds(300, 10, 270, 70);
+
+        Boton_Contestar_Examen.setBackground(new java.awt.Color(204, 204, 204));
+        Boton_Contestar_Examen.setForeground(new java.awt.Color(0, 0, 0));
+        Boton_Contestar_Examen.setText("Contestar");
+        Boton_Contestar_Examen.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                Boton_Contestar_ExamenMouseClicked(evt);
+            }
+        });
+        Panel_Examen2.add(Boton_Contestar_Examen);
+        Boton_Contestar_Examen.setBounds(860, 530, 170, 40);
+
+        jComboBox4.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        Panel_Examen2.add(jComboBox4);
+        jComboBox4.setBounds(500, 20, 300, 60);
+
+        jLabel28.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabel28.setText("Preguntaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa");
+        Panel_Examen2.add(jLabel28);
+        jLabel28.setBounds(80, 200, 960, 20);
+
+        jRadioButton1.setText("jRadioButton1");
+        Panel_Examen2.add(jRadioButton1);
+        jRadioButton1.setBounds(400, 320, 160, 60);
+
+        jRadioButton2.setText("jRadioButton1");
+        Panel_Examen2.add(jRadioButton2);
+        jRadioButton2.setBounds(100, 320, 160, 60);
+
+        jRadioButton3.setText("jRadioButton1");
+        Panel_Examen2.add(jRadioButton3);
+        jRadioButton3.setBounds(100, 420, 160, 60);
+
+        jRadioButton8.setText("jRadioButton1");
+        Panel_Examen2.add(jRadioButton8);
+        jRadioButton8.setBounds(400, 420, 160, 60);
+
+        Menu_Estudiantes.add(Panel_Examen2);
+        Panel_Examen2.setBounds(1230, 0, 1080, 610);
+
         Fondo6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Mediaa/fondo.gif"))); // NOI18N
         Menu_Estudiantes.add(Fondo6);
         Fondo6.setBounds(50, 0, 1150, 650);
 
         getContentPane().add(Menu_Estudiantes);
         Menu_Estudiantes.setBounds(0, 0, 2300, 650);
-
-        panel_ingreso.setBackground(new java.awt.Color(255,255,255,150));
-        panel_ingreso.setLayout(null);
-        panel_ingreso.add(Usuario);
-        Usuario.setBounds(60, 360, 320, 40);
-
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Mediaa/carro-trafico1.gif"))); // NOI18N
-        panel_ingreso.add(jLabel2);
-        jLabel2.setBounds(60, 10, 310, 160);
-
-        Boton_Ingreso.setText("Ingresar");
-        Boton_Ingreso.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                Boton_IngresoMouseClicked(evt);
-            }
-        });
-        panel_ingreso.add(Boton_Ingreso);
-        Boton_Ingreso.setBounds(150, 580, 120, 50);
-
-        jLabel7.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        jLabel7.setText("Usuario");
-        panel_ingreso.add(jLabel7);
-        jLabel7.setBounds(60, 330, 90, 25);
-
-        jLabel8.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        jLabel8.setText("Contraseña");
-        panel_ingreso.add(jLabel8);
-        jLabel8.setBounds(60, 400, 100, 25);
-
-        Label_Incorrecto.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        Label_Incorrecto.setForeground(new java.awt.Color(255, 0, 51));
-        Label_Incorrecto.setText("Usuario o Contraseña Incorrectos");
-        panel_ingreso.add(Label_Incorrecto);
-        Label_Incorrecto.setBounds(60, 540, 320, 25);
-        panel_ingreso.add(Contra);
-        Contra.setBounds(60, 430, 320, 40);
-
-        jLabel81.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Mediaa/engranaje.png"))); // NOI18N
-        jLabel81.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jLabel81MouseClicked(evt);
-            }
-        });
-        panel_ingreso.add(jLabel81);
-        jLabel81.setBounds(10, 0, 32, 40);
-
-        jLabel82.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Mediaa/cerrar-sesion (2).png"))); // NOI18N
-        jLabel82.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jLabel82MouseClicked(evt);
-            }
-        });
-        panel_ingreso.add(jLabel82);
-        jLabel82.setBounds(380, 0, 32, 32);
-
-        jLabel31.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        jLabel31.setText("ID");
-        panel_ingreso.add(jLabel31);
-        jLabel31.setBounds(60, 470, 100, 25);
-        panel_ingreso.add(Contra1);
-        Contra1.setBounds(60, 500, 320, 40);
-        panel_ingreso.add(Usuario1);
-        Usuario1.setBounds(60, 290, 320, 40);
-
-        jLabel75.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        jLabel75.setText("Usuario");
-        panel_ingreso.add(jLabel75);
-        jLabel75.setBounds(60, 260, 90, 25);
-        panel_ingreso.add(Usuario2);
-        Usuario2.setBounds(60, 210, 320, 40);
-
-        jLabel76.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        jLabel76.setText("Usuario");
-        panel_ingreso.add(jLabel76);
-        jLabel76.setBounds(60, 180, 90, 25);
-
-        getContentPane().add(panel_ingreso);
-        panel_ingreso.setBounds(380, 0, 420, 650);
 
         panel_Registro.setBackground(new java.awt.Color(255,255,255,150));
         panel_Registro.setToolTipText("");
@@ -2062,16 +2584,103 @@ public class Loggin extends javax.swing.JFrame {
         });
         panel_Registro.add(jLabel83);
         jLabel83.setBounds(380, 0, 32, 32);
-        panel_Registro.add(contra);
-        contra.setBounds(60, 420, 320, 40);
 
         jLabel84.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         jLabel84.setText("Contraseña");
         panel_Registro.add(jLabel84);
         jLabel84.setBounds(60, 390, 90, 25);
 
+        contra.setText("jPasswordField1");
+        panel_Registro.add(contra);
+        contra.setBounds(60, 420, 320, 40);
+
         getContentPane().add(panel_Registro);
         panel_Registro.setBounds(380, 0, 420, 650);
+
+        panel_ingreso.setBackground(new java.awt.Color(255,255,255,150));
+        panel_ingreso.setLayout(null);
+        panel_ingreso.add(G_Registra_Usuario);
+        G_Registra_Usuario.setBounds(60, 290, 320, 40);
+
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Mediaa/carro-trafico1.gif"))); // NOI18N
+        panel_ingreso.add(jLabel2);
+        jLabel2.setBounds(60, -60, 310, 160);
+
+        Boton_Ingreso.setText("Ingresar");
+        Boton_Ingreso.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                Boton_IngresoMouseClicked(evt);
+            }
+        });
+        panel_ingreso.add(Boton_Ingreso);
+        Boton_Ingreso.setBounds(150, 590, 120, 50);
+
+        jLabel7.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        jLabel7.setText("Usuario");
+        panel_ingreso.add(jLabel7);
+        jLabel7.setBounds(60, 260, 90, 25);
+
+        jLabel8.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        jLabel8.setText("Contraseña");
+        panel_ingreso.add(jLabel8);
+        jLabel8.setBounds(60, 330, 100, 25);
+
+        Label_Incorrecto.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        Label_Incorrecto.setForeground(new java.awt.Color(255, 0, 51));
+        Label_Incorrecto.setText("Usuario o Contraseña Incorrectos");
+        panel_ingreso.add(Label_Incorrecto);
+        Label_Incorrecto.setBounds(60, 560, 320, 25);
+        panel_ingreso.add(G_Registra_Contra);
+        G_Registra_Contra.setBounds(60, 360, 320, 40);
+
+        jLabel81.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Mediaa/engranaje.png"))); // NOI18N
+        jLabel81.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel81MouseClicked(evt);
+            }
+        });
+        panel_ingreso.add(jLabel81);
+        jLabel81.setBounds(10, 0, 32, 40);
+
+        jLabel82.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Mediaa/cerrar-sesion (2).png"))); // NOI18N
+        jLabel82.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel82MouseClicked(evt);
+            }
+        });
+        panel_ingreso.add(jLabel82);
+        jLabel82.setBounds(380, 0, 32, 32);
+
+        jLabel31.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        jLabel31.setText("ID");
+        panel_ingreso.add(jLabel31);
+        jLabel31.setBounds(60, 400, 100, 25);
+        panel_ingreso.add(G_Registra_Id);
+        G_Registra_Id.setBounds(60, 430, 320, 40);
+        panel_ingreso.add(G_Registra_Apellido);
+        G_Registra_Apellido.setBounds(60, 220, 320, 40);
+
+        jLabel75.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        jLabel75.setText("Apellido");
+        panel_ingreso.add(jLabel75);
+        jLabel75.setBounds(60, 190, 90, 25);
+        panel_ingreso.add(G_Registra_Nombre);
+        G_Registra_Nombre.setBounds(60, 140, 320, 40);
+
+        jLabel76.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        jLabel76.setText("Nombre");
+        panel_ingreso.add(jLabel76);
+        jLabel76.setBounds(60, 110, 90, 25);
+        panel_ingreso.add(G_Registra_Dirrecion);
+        G_Registra_Dirrecion.setBounds(60, 510, 320, 40);
+
+        jLabel49.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        jLabel49.setText("Dirrecion");
+        panel_ingreso.add(jLabel49);
+        jLabel49.setBounds(60, 480, 100, 25);
+
+        getContentPane().add(panel_ingreso);
+        panel_ingreso.setBounds(380, 0, 420, 650);
 
         Fondo4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Mediaa/GIF-MEDIO.gif"))); // NOI18N
         getContentPane().add(Fondo4);
@@ -2093,7 +2702,7 @@ public class Loggin extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
     String variableprovisionalusuarioadmin="admin",variableprovisionalcontraadmin="admin";
     private void Boton_IngresoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Boton_IngresoMouseClicked
-        if (Usuario.getText().equals(variableprovisionalusuarioadmin) && Contra.getText().equals(variableprovisionalcontraadmin)) {
+        if (G_Registra_Usuario.getText().equals(variableprovisionalusuarioadmin) && G_Registra_Contra.getText().equals(variableprovisionalcontraadmin)) {
             c = new ConexionDB();
             Fondo_Login.setVisible(false);
             Fondo4.setVisible(true);
@@ -2120,7 +2729,15 @@ public class Loggin extends javax.swing.JFrame {
         if (Icono_Carro.isEnabled()) {
             Cambio_Menu CM= new Cambio_Menu(Panel_Carro,Panel_Maestros,Panel_Alumnos,Panel_Informes,Panel_Financiero,Panel_Notas,Panel_Clases,true);
             CM.start();
+<<<<<<< HEAD
             listarCarrosTable(table_CarrosAdmin);
+=======
+            G_Dni_Alumnos_Admin.setText("");
+            G_Nombre_Alumnos_Admin.setText("");
+            G_Apellidos_Alumnos_Admin.setText("");
+            G_Telefonos_Alumnos_Admin.setText("");
+            G_Dirreccion_Alumnos_Admin.setText("");
+>>>>>>> 6f07567841dc6c41c4967240785506b02690cc7d
         }
         
     }//GEN-LAST:event_Icono_CarroMouseClicked
@@ -2129,6 +2746,7 @@ public class Loggin extends javax.swing.JFrame {
         if (Icono_Maestra.isEnabled()) {
             Cambio_Menu CM= new Cambio_Menu(Panel_Maestros,Panel_Alumnos,Panel_Carro,Panel_Informes,Panel_Financiero,Panel_Notas,Panel_Clases,true);
             CM.start();
+<<<<<<< HEAD
             tf_idVendedor.setText("");
             tf_nombreVendedor.setText("");
             listarProfesoresTable(tableMaestrosAdmin);
@@ -2148,6 +2766,13 @@ public class Loggin extends javax.swing.JFrame {
                     }
                 }
             });
+=======
+            G_Id_Clases.setText("");
+            G_Nombre_Clases.setText("");
+           
+            
+           
+>>>>>>> 6f07567841dc6c41c4967240785506b02690cc7d
         }
         
     }//GEN-LAST:event_Icono_MaestraMouseClicked
@@ -2187,18 +2812,18 @@ public class Loggin extends javax.swing.JFrame {
         panel_Registro.setVisible(true);
     }//GEN-LAST:event_jLabel72MouseClicked
 
-    private void btn_createVendedorMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_createVendedorMouseClicked
+    private void Boton_Crear_ClasesMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Boton_Crear_ClasesMouseClicked
        
-    }//GEN-LAST:event_btn_createVendedorMouseClicked
+    }//GEN-LAST:event_Boton_Crear_ClasesMouseClicked
 
-    private void btn_updateVendedorMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_updateVendedorMouseClicked
+    private void Boton_Modificar_ClasesMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Boton_Modificar_ClasesMouseClicked
       
         
-    }//GEN-LAST:event_btn_updateVendedorMouseClicked
+    }//GEN-LAST:event_Boton_Modificar_ClasesMouseClicked
 
-    private void btn_deleteVendedorMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_deleteVendedorMouseClicked
+    private void Boton_Eliminar_ClasesMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Boton_Eliminar_ClasesMouseClicked
       
-    }//GEN-LAST:event_btn_deleteVendedorMouseClicked
+    }//GEN-LAST:event_Boton_Eliminar_ClasesMouseClicked
 
     private void Boton_Agregar_CarrosMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Boton_Agregar_CarrosMouseClicked
        
@@ -2213,18 +2838,18 @@ public class Loggin extends javax.swing.JFrame {
         
     }//GEN-LAST:event_Boton_Eliminar_CarrosMouseClicked
 
-    private void btn_createProductoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_createProductoMouseClicked
+    private void Boton_Agregar_AlumnosMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Boton_Agregar_AlumnosMouseClicked
         // TODO add your handling code here:
 
-    }//GEN-LAST:event_btn_createProductoMouseClicked
+    }//GEN-LAST:event_Boton_Agregar_AlumnosMouseClicked
 
-    private void btn_updateProductoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_updateProductoMouseClicked
+    private void Boton_Editar_AlumnosMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Boton_Editar_AlumnosMouseClicked
 
-    }//GEN-LAST:event_btn_updateProductoMouseClicked
+    }//GEN-LAST:event_Boton_Editar_AlumnosMouseClicked
 
-    private void btn_deleteProductoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_deleteProductoMouseClicked
+    private void Boton_Eliminar_AlumnosMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Boton_Eliminar_AlumnosMouseClicked
       
-    }//GEN-LAST:event_btn_deleteProductoMouseClicked
+    }//GEN-LAST:event_Boton_Eliminar_AlumnosMouseClicked
 
     private void Boton_Ingreso3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Boton_Ingreso3MouseClicked
          panel_Registro.setVisible(false);Fondo_Login.setVisible(false);Fondo4.setVisible(true);
@@ -2308,22 +2933,22 @@ public class Loggin extends javax.swing.JFrame {
     }//GEN-LAST:event_cbox_ListaVendedoresItemStateChanged
 
     private void Icono_Clases3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Icono_Clases3MouseClicked
-        Cambio_Menu CM= new Cambio_Menu(Panel_Notas_Estudiante,Panel_Notas2,Panel_Examen2,Panel_Financiero1,true);
+        Cambio_Menu CM= new Cambio_Menu(Panel_Matricula,Panel_Notas2,Panel_Examen2,Panel_Financiero1,true);
         CM.start();
     }//GEN-LAST:event_Icono_Clases3MouseClicked
 
     private void Icono_Examen2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Icono_Examen2MouseClicked
-        Cambio_Menu CM= new Cambio_Menu(Panel_Examen2 ,Panel_Notas2,Panel_Notas_Estudiante ,Panel_Financiero1,true);
+        Cambio_Menu CM= new Cambio_Menu(Panel_Examen2 ,Panel_Notas2,Panel_Matricula ,Panel_Financiero1,true);
         CM.start();
     }//GEN-LAST:event_Icono_Examen2MouseClicked
 
     private void Icono_Financiero1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Icono_Financiero1MouseClicked
-        Cambio_Menu CM= new Cambio_Menu(Panel_Financiero1  ,Panel_Notas2,Panel_Notas_Estudiante , Panel_Examen2,true);
+        Cambio_Menu CM= new Cambio_Menu(Panel_Financiero1  ,Panel_Notas2,Panel_Matricula , Panel_Examen2,true);
         CM.start();
     }//GEN-LAST:event_Icono_Financiero1MouseClicked
 
     private void Icono_Notas1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Icono_Notas1MouseClicked
-        Cambio_Menu CM= new Cambio_Menu(Panel_Notas2,Panel_Examen2,Panel_Notas_Estudiante ,Panel_Financiero1 ,true);
+        Cambio_Menu CM= new Cambio_Menu(Panel_Notas2,Panel_Examen2,Panel_Matricula ,Panel_Financiero1 ,true);
         CM.start();
     }//GEN-LAST:event_Icono_Notas1MouseClicked
 
@@ -2331,9 +2956,9 @@ public class Loggin extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_ComboReportes1ActionPerformed
 
-    private void btn_createProducto1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_createProducto1MouseClicked
+    private void Boton_Contestar_ExamenMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Boton_Contestar_ExamenMouseClicked
         // TODO add your handling code here:
-    }//GEN-LAST:event_btn_createProducto1MouseClicked
+    }//GEN-LAST:event_Boton_Contestar_ExamenMouseClicked
 
     private void jLabel99MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel99MouseClicked
         Menu_Estudiantes.setVisible(false);
@@ -2513,17 +3138,17 @@ public class Loggin extends javax.swing.JFrame {
         Icono_Clases.setIcon(icono);
     }//GEN-LAST:event_Icono_ClasesMouseExited
 
-    private void btn_createCliente3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_createCliente3MouseClicked
+    private void Boton_Agregar_EvaluacionMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Boton_Agregar_EvaluacionMouseClicked
         // TODO add your handling code here:
-    }//GEN-LAST:event_btn_createCliente3MouseClicked
+    }//GEN-LAST:event_Boton_Agregar_EvaluacionMouseClicked
 
-    private void btn_deleteCliente3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_deleteCliente3MouseClicked
+    private void Boton_Modificar_EvaluacionMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Boton_Modificar_EvaluacionMouseClicked
         // TODO add your handling code here:
-    }//GEN-LAST:event_btn_deleteCliente3MouseClicked
+    }//GEN-LAST:event_Boton_Modificar_EvaluacionMouseClicked
 
-    private void btn_deleteCliente4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_deleteCliente4MouseClicked
+    private void Boton_Eliminar_EvaluacionMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Boton_Eliminar_EvaluacionMouseClicked
         // TODO add your handling code here:
-    }//GEN-LAST:event_btn_deleteCliente4MouseClicked
+    }//GEN-LAST:event_Boton_Eliminar_EvaluacionMouseClicked
 
     private void btn_createCliente4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_createCliente4MouseClicked
         // TODO add your handling code here:
@@ -2592,6 +3217,7 @@ public class Loggin extends javax.swing.JFrame {
         panel_Registro.setVisible(true);
     }//GEN-LAST:event_jLabel73MouseClicked
 
+<<<<<<< HEAD
     private void Boton_Agregar_MaestrosMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Boton_Agregar_MaestrosMouseClicked
         // TODO add your handling code here:
         try (Session session = c.driver.session()) {
@@ -2749,6 +3375,28 @@ public class Loggin extends javax.swing.JFrame {
             e.printStackTrace();
         }
     }
+=======
+    private void Boton_Matricular_Clases_EstudianteMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Boton_Matricular_Clases_EstudianteMouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_Boton_Matricular_Clases_EstudianteMouseClicked
+
+    private void Boton_Agregar_PracticaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Boton_Agregar_PracticaMouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_Boton_Agregar_PracticaMouseClicked
+
+    private void Boton_Modifica_PracticaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Boton_Modifica_PracticaMouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_Boton_Modifica_PracticaMouseClicked
+
+    private void Boton_Elimina_PracticaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Boton_Elimina_PracticaMouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_Boton_Elimina_PracticaMouseClicked
+
+    private void tf_idTienda4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tf_idTienda4ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_tf_idTienda4ActionPerformed
+   
+>>>>>>> 6f07567841dc6c41c4967240785506b02690cc7d
     /**
      * @param args the command line arguments
      */
@@ -2785,18 +3433,38 @@ public class Loggin extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton Boton_Agregar_Alumnos;
     private javax.swing.JButton Boton_Agregar_Carros;
+    private javax.swing.JButton Boton_Agregar_Evaluacion;
     private javax.swing.JToggleButton Boton_Agregar_Maestros;
+    private javax.swing.JToggleButton Boton_Agregar_Nota_Admin;
+    private javax.swing.JToggleButton Boton_Agregar_Pagos;
+    private javax.swing.JButton Boton_Agregar_Practica;
+    private javax.swing.JButton Boton_Contestar_Examen;
+    private javax.swing.JButton Boton_Crear_Clases;
+    private javax.swing.JButton Boton_Editar_Alumnos;
+    private javax.swing.JButton Boton_Elimina_Practica;
+    private javax.swing.JButton Boton_Eliminar_Alumnos;
     private javax.swing.JButton Boton_Eliminar_Carros;
+    private javax.swing.JButton Boton_Eliminar_Clases;
+    private javax.swing.JButton Boton_Eliminar_Evaluacion;
     private javax.swing.JToggleButton Boton_Eliminar_Maestros;
+    private javax.swing.JToggleButton Boton_Eliminar_Nota_Admin;
+    private javax.swing.JToggleButton Boton_Eliminar_Pagos;
     private javax.swing.JButton Boton_Ingreso;
     private javax.swing.JButton Boton_Ingreso3;
+    private javax.swing.JButton Boton_Matricular_Clases_Estudiante;
+    private javax.swing.JButton Boton_Modifica_Practica;
     private javax.swing.JButton Boton_Modificar_Carros;
+    private javax.swing.JButton Boton_Modificar_Clases;
+    private javax.swing.JButton Boton_Modificar_Evaluacion;
     private javax.swing.JToggleButton Boton_Modificar_Maestros;
+    private javax.swing.JToggleButton Boton_Modificar_Nota_Admin;
+    private javax.swing.JToggleButton Boton_Modificar_Pagos;
+    private javax.swing.JToggleButton Boton_Pagar_Clases_Alumno;
     private javax.swing.JComboBox<String> ComboReportes;
     private javax.swing.JComboBox<String> ComboReportes1;
-    private javax.swing.JPasswordField Contra;
-    private javax.swing.JPasswordField Contra1;
+    private javax.swing.JComboBox<String> Combobox_Profesor;
     private javax.swing.JTextField Correo;
     private javax.swing.JLabel Fondo3;
     private javax.swing.JLabel Fondo4;
@@ -2806,15 +3474,41 @@ public class Loggin extends javax.swing.JFrame {
     private javax.swing.JLabel Fondo_Cambio;
     private javax.swing.JLabel Fondo_Login;
     private javax.swing.JTextField G_Ano_De_Compra_Carros;
+<<<<<<< HEAD
     private javax.swing.JTextField G_Apellido1_Profe;
     private javax.swing.JTextField G_Apellido2_Profe;
+=======
+    private javax.swing.JTextField G_Apellido_Profe;
+    private javax.swing.JTextField G_Apellidos_Alumnos_Admin;
+>>>>>>> 6f07567841dc6c41c4967240785506b02690cc7d
     private javax.swing.JTextField G_Cilindrada_Carros;
+    private javax.swing.JTextField G_Datos_Observaciones_Notas_Admin;
+    private javax.swing.JTextField G_Dirreccion_Alumnos_Admin;
+    private javax.swing.JTextField G_Dni_Alumnos_Admin;
     private javax.swing.JTextField G_Dni_Profe;
+    private javax.swing.JTextField G_Id_Clases;
+    private javax.swing.JTextField G_Importe_Pagos;
     private javax.swing.JTextField G_Marca_Carros;
     private javax.swing.JTextField G_Matricula_Carros;
     private javax.swing.JTextField G_Modelo_Carros;
+    private javax.swing.JTextField G_No_Pago_Pagos;
+    private javax.swing.JTextField G_Nombre_Alumnos_Admin;
+    private javax.swing.JTextField G_Nombre_Clases;
+    private javax.swing.JTextField G_Registra_Apellido;
+    private javax.swing.JPasswordField G_Registra_Contra;
+    private javax.swing.JPasswordField G_Registra_Dirrecion;
+    private javax.swing.JPasswordField G_Registra_Id;
+    private javax.swing.JTextField G_Registra_Nombre;
+    private javax.swing.JTextField G_Registra_Usuario;
+    private javax.swing.JTextField G_Tarifa_Adicional;
     private javax.swing.JTextField G_Tarifa_Carros;
+<<<<<<< HEAD
     private javax.swing.JTextField G_direcion_Profe;
+=======
+    private javax.swing.JTextField G_Telefonos_Alumnos_Admin;
+    private javax.swing.JTextField G_Tipo_Lujo;
+    private javax.swing.JTextField G_dirrecion_Profe;
+>>>>>>> 6f07567841dc6c41c4967240785506b02690cc7d
     private javax.swing.JTextField G_nombre_Profe;
     private javax.swing.JFormattedTextField G_telefono_Profe;
     private javax.swing.JLabel Icono_Alumno;
@@ -2846,28 +3540,22 @@ public class Loggin extends javax.swing.JFrame {
     private javax.swing.JPanel Panel_Financiero1;
     private javax.swing.JPanel Panel_Informes;
     private javax.swing.JPanel Panel_Maestros;
+    private javax.swing.JPanel Panel_Matricula;
     private javax.swing.JPanel Panel_Menu_Izquierda;
     private javax.swing.JPanel Panel_Menu_Izquierda2;
     private javax.swing.JPanel Panel_Menu_Izquierda3;
     private javax.swing.JPanel Panel_Notas;
     private javax.swing.JPanel Panel_Notas1;
     private javax.swing.JPanel Panel_Notas2;
-    private javax.swing.JPanel Panel_Notas_Estudiante;
     private javax.swing.JPanel Panel_Vendedorsitos;
     private javax.swing.JPanel Panel_Vendedorsitos2;
     private javax.swing.JPanel Panel_menu_abajo;
     private javax.swing.JPanel Panel_menu_abajo1;
     private javax.swing.JPanel Panel_menu_abajo3;
-    private javax.swing.JTextField Usuario;
-    private javax.swing.JTextField Usuario1;
-    private javax.swing.JTextField Usuario2;
     private javax.swing.JButton btn_createCliente2;
-    private javax.swing.JButton btn_createCliente3;
     private javax.swing.JButton btn_createCliente4;
-    private javax.swing.JButton btn_createProducto;
-    private javax.swing.JButton btn_createProducto1;
-    private javax.swing.JButton btn_createVendedor;
     private javax.swing.JButton btn_deleteCliente2;
+<<<<<<< HEAD
     private javax.swing.JButton btn_deleteCliente3;
     private javax.swing.JButton btn_deleteCliente4;
     private javax.swing.JButton btn_deleteProducto;
@@ -2876,20 +3564,23 @@ public class Loggin extends javax.swing.JFrame {
     private javax.swing.JButton btn_updateVendedor;
     private javax.swing.JComboBox<String> cb_licenciasCarros;
     private javax.swing.JComboBox<String> cb_lujosCarro;
+=======
+>>>>>>> 6f07567841dc6c41c4967240785506b02690cc7d
     private javax.swing.JComboBox<String> cbox_ListaVendedores;
     private javax.swing.JComboBox<String> cbox_ListaVendedores2;
-    private javax.swing.JTextField contra;
+    private javax.swing.JPasswordField contra;
     private javax.swing.JButton jButton12;
     private javax.swing.JButton jButton13;
     private javax.swing.JComboBox<String> jComboBox1;
     private javax.swing.JComboBox<String> jComboBox10;
-    private javax.swing.JComboBox<String> jComboBox12;
     private javax.swing.JComboBox<String> jComboBox13;
     private javax.swing.JComboBox<String> jComboBox14;
     private javax.swing.JComboBox<String> jComboBox15;
     private javax.swing.JComboBox<String> jComboBox16;
     private javax.swing.JComboBox<String> jComboBox2;
+    private javax.swing.JComboBox<String> jComboBox3;
     private javax.swing.JComboBox<String> jComboBox4;
+    private javax.swing.JComboBox<String> jComboBox5;
     private javax.swing.JComboBox<String> jComboBox6;
     private javax.swing.JComboBox<String> jComboBox9;
     private javax.swing.JLabel jLabel1;
@@ -2898,16 +3589,22 @@ public class Loggin extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel109;
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel110;
+    private javax.swing.JLabel jLabel111;
+    private javax.swing.JLabel jLabel112;
     private javax.swing.JLabel jLabel119;
     private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel127;
+    private javax.swing.JLabel jLabel128;
     private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel130;
     private javax.swing.JLabel jLabel14;
     private javax.swing.JLabel jLabel142;
     private javax.swing.JLabel jLabel143;
     private javax.swing.JLabel jLabel144;
-    private javax.swing.JLabel jLabel146;
+    private javax.swing.JLabel jLabel145;
+    private javax.swing.JLabel jLabel147;
+    private javax.swing.JLabel jLabel148;
+    private javax.swing.JLabel jLabel149;
     private javax.swing.JLabel jLabel15;
     private javax.swing.JLabel jLabel16;
     private javax.swing.JLabel jLabel17;
@@ -2921,7 +3618,6 @@ public class Loggin extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel24;
     private javax.swing.JLabel jLabel25;
     private javax.swing.JLabel jLabel26;
-    private javax.swing.JLabel jLabel27;
     private javax.swing.JLabel jLabel28;
     private javax.swing.JLabel jLabel29;
     private javax.swing.JLabel jLabel3;
@@ -2945,7 +3641,11 @@ public class Loggin extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel46;
     private javax.swing.JLabel jLabel47;
     private javax.swing.JLabel jLabel48;
+    private javax.swing.JLabel jLabel49;
     private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel50;
+    private javax.swing.JLabel jLabel51;
+    private javax.swing.JLabel jLabel52;
     private javax.swing.JLabel jLabel55;
     private javax.swing.JLabel jLabel56;
     private javax.swing.JLabel jLabel57;
@@ -2972,6 +3672,7 @@ public class Loggin extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel4;
     private javax.swing.JPanel jPanel5;
+    private javax.swing.JPanel jPanel6;
     private javax.swing.JPanel jPanel7;
     private javax.swing.JRadioButton jRadioButton1;
     private javax.swing.JRadioButton jRadioButton2;
@@ -2992,6 +3693,7 @@ public class Loggin extends javax.swing.JFrame {
     private javax.swing.JScrollPane jScrollPane27;
     private javax.swing.JScrollPane jScrollPane29;
     private javax.swing.JScrollPane jScrollPane3;
+    private javax.swing.JScrollPane jScrollPane30;
     private javax.swing.JScrollPane jScrollPane4;
     private javax.swing.JScrollPane jScrollPane5;
     private javax.swing.JScrollPane jScrollPane6;
@@ -3003,13 +3705,7 @@ public class Loggin extends javax.swing.JFrame {
     private javax.swing.JTable jTable7;
     private javax.swing.JTable jTable8;
     private javax.swing.JTextArea jTextArea1;
-    private javax.swing.JTextField jTextField1;
-    private javax.swing.JTextField jTextField2;
     private javax.swing.JTextField jTextField3;
-    private javax.swing.JToggleButton jToggleButton1;
-    private javax.swing.JToggleButton jToggleButton13;
-    private javax.swing.JToggleButton jToggleButton14;
-    private javax.swing.JToggleButton jToggleButton15;
     private javax.swing.JToggleButton jToggleButton16;
     private javax.swing.JToggleButton jToggleButton17;
     private javax.swing.JToggleButton jToggleButton18;
@@ -3027,14 +3723,12 @@ public class Loggin extends javax.swing.JFrame {
     private javax.swing.JTable table_ProductosparaVendedor;
     private javax.swing.JTable table_Vendedores;
     private javax.swing.JTable table_Vendedores2;
-    private javax.swing.JTextField tf_UPC;
-    private javax.swing.JTextField tf_embalajeProducto;
+    private javax.swing.JTable table_Vendedores3;
     private javax.swing.JTextField tf_horarioTienda2;
-    private javax.swing.JTextField tf_idTienda2;
-    private javax.swing.JTextField tf_idVendedor;
-    private javax.swing.JTextField tf_marcaProducto;
-    private javax.swing.JTextField tf_nombreProducto;
-    private javax.swing.JTextField tf_nombreVendedor;
-    private javax.swing.JTextField tf_tamanoProducto;
+    private javax.swing.JTextField tf_horarioTienda3;
+    private javax.swing.JTextField tf_horarioTienda4;
+    private javax.swing.JTextField tf_idTienda3;
+    private javax.swing.JTextField tf_idTienda4;
+    private javax.swing.JTextField tf_idTienda5;
     // End of variables declaration//GEN-END:variables
 }
