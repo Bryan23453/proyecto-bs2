@@ -114,10 +114,8 @@ public class Loggin extends javax.swing.JFrame {
         Boton_Agregar_Maestros = new javax.swing.JToggleButton();
         Boton_Eliminar_Maestros = new javax.swing.JToggleButton();
         Boton_Modificar_Maestros = new javax.swing.JToggleButton();
-<<<<<<< HEAD
         G_Apellido1_Profe = new javax.swing.JTextField();
         jLabel29 = new javax.swing.JLabel();
-=======
         Panel_Clases = new javax.swing.JTabbedPane();
         Panel_Vendedorsitos = new javax.swing.JPanel();
         jLabel5 = new javax.swing.JLabel();
@@ -143,7 +141,6 @@ public class Loggin extends javax.swing.JFrame {
         jLabel56 = new javax.swing.JLabel();
         jLabel57 = new javax.swing.JLabel();
         jButton13 = new javax.swing.JButton();
->>>>>>> 6f07567841dc6c41c4967240785506b02690cc7d
         Panel_Carro = new javax.swing.JPanel();
         jLabel3 = new javax.swing.JLabel();
         jLabel23 = new javax.swing.JLabel();
@@ -163,19 +160,16 @@ public class Loggin extends javax.swing.JFrame {
         jLabel42 = new javax.swing.JLabel();
         G_Tarifa_Carros = new javax.swing.JTextField();
         jLabel43 = new javax.swing.JLabel();
-<<<<<<< HEAD
         cb_licenciasCarros = new javax.swing.JComboBox<>();
         jLabel44 = new javax.swing.JLabel();
         jLabel47 = new javax.swing.JLabel();
         cb_lujosCarro = new javax.swing.JComboBox<>();
-=======
         jLabel50 = new javax.swing.JLabel();
         Combobox_Profesor = new javax.swing.JComboBox<>();
         G_Tarifa_Adicional = new javax.swing.JTextField();
         jLabel51 = new javax.swing.JLabel();
         G_Tipo_Lujo = new javax.swing.JTextField();
         jLabel52 = new javax.swing.JLabel();
->>>>>>> 6f07567841dc6c41c4967240785506b02690cc7d
         Panel_Alumnos = new javax.swing.JPanel();
         jLabel6 = new javax.swing.JLabel();
         jLabel9 = new javax.swing.JLabel();
@@ -190,7 +184,6 @@ public class Loggin extends javax.swing.JFrame {
         Boton_Eliminar_Alumnos = new javax.swing.JButton();
         jScrollPane1 = new javax.swing.JScrollPane();
         table_Productos = new javax.swing.JTable();
-<<<<<<< HEAD
         btn_createProducto = new javax.swing.JButton();
         btn_updateProducto = new javax.swing.JButton();
         tf_marcaProducto = new javax.swing.JTextField();
@@ -218,7 +211,6 @@ public class Loggin extends javax.swing.JFrame {
         jLabel48 = new javax.swing.JLabel();
         jScrollPane7 = new javax.swing.JScrollPane();
         tablePagos = new javax.swing.JTable();
-=======
         Boton_Agregar_Alumnos = new javax.swing.JButton();
         Boton_Editar_Alumnos = new javax.swing.JButton();
         G_Telefonos_Alumnos_Admin = new javax.swing.JTextField();
@@ -235,7 +227,6 @@ public class Loggin extends javax.swing.JFrame {
         Boton_Agregar_Pagos = new javax.swing.JToggleButton();
         Boton_Eliminar_Pagos = new javax.swing.JToggleButton();
         Boton_Modificar_Pagos = new javax.swing.JToggleButton();
->>>>>>> 6f07567841dc6c41c4967240785506b02690cc7d
         Panel_menu_abajo = new javax.swing.JPanel();
         jLabel72 = new javax.swing.JLabel();
         Panel_Menu_Izquierda = new javax.swing.JPanel();
@@ -825,7 +816,6 @@ public class Loggin extends javax.swing.JFrame {
         Menu_Admin.add(Panel_Clases);
         Panel_Clases.setBounds(1230, 0, 1080, 610);
 
-<<<<<<< HEAD
         Panel_Maestros.setBackground(new java.awt.Color(0, 0, 0,150));
         Panel_Maestros.setForeground(new java.awt.Color(255, 255, 255));
         Panel_Maestros.setPreferredSize(new java.awt.Dimension(1070, 610));
@@ -956,8 +946,6 @@ public class Loggin extends javax.swing.JFrame {
         Menu_Admin.add(Panel_Maestros);
         Panel_Maestros.setBounds(1230, 0, 1080, 610);
 
-=======
->>>>>>> 6f07567841dc6c41c4967240785506b02690cc7d
         Panel_Carro.setBackground(new java.awt.Color(0, 0, 0,150));
         Panel_Carro.setForeground(new java.awt.Color(255, 255, 255));
         Panel_Carro.setPreferredSize(new java.awt.Dimension(1070, 610));
@@ -973,49 +961,34 @@ public class Loggin extends javax.swing.JFrame {
         jLabel23.setForeground(new java.awt.Color(137, 250, 230));
         jLabel23.setText("Año De Compra");
         Panel_Carro.add(jLabel23);
-<<<<<<< HEAD
         jLabel23.setBounds(10, 70, 160, 30);
-=======
         jLabel23.setBounds(20, 80, 160, 30);
->>>>>>> 6f07567841dc6c41c4967240785506b02690cc7d
 
         jLabel24.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         jLabel24.setForeground(new java.awt.Color(137, 250, 230));
         jLabel24.setText("Modelo");
         Panel_Carro.add(jLabel24);
-<<<<<<< HEAD
         jLabel24.setBounds(190, 150, 70, 30);
-=======
         jLabel24.setBounds(20, 220, 130, 30);
->>>>>>> 6f07567841dc6c41c4967240785506b02690cc7d
 
         jLabel25.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         jLabel25.setForeground(new java.awt.Color(137, 250, 230));
         jLabel25.setText("Matricula");
         Panel_Carro.add(jLabel25);
-<<<<<<< HEAD
         jLabel25.setBounds(10, 10, 90, 30);
-=======
         jLabel25.setBounds(20, 10, 90, 30);
->>>>>>> 6f07567841dc6c41c4967240785506b02690cc7d
 
         G_Matricula_Carros.setBackground(new java.awt.Color(102, 102, 102));
         G_Matricula_Carros.setForeground(new java.awt.Color(255, 255, 255));
         Panel_Carro.add(G_Matricula_Carros);
-<<<<<<< HEAD
         G_Matricula_Carros.setBounds(10, 40, 200, 30);
-=======
         G_Matricula_Carros.setBounds(20, 40, 210, 30);
->>>>>>> 6f07567841dc6c41c4967240785506b02690cc7d
 
         G_Modelo_Carros.setBackground(new java.awt.Color(102, 102, 102));
         G_Modelo_Carros.setForeground(new java.awt.Color(255, 255, 255));
         Panel_Carro.add(G_Modelo_Carros);
-<<<<<<< HEAD
         G_Modelo_Carros.setBounds(150, 180, 160, 30);
-=======
         G_Modelo_Carros.setBounds(20, 250, 210, 30);
->>>>>>> 6f07567841dc6c41c4967240785506b02690cc7d
 
         Boton_Eliminar_Carros.setBackground(new java.awt.Color(204, 204, 204));
         Boton_Eliminar_Carros.setForeground(new java.awt.Color(0, 0, 0));
@@ -1026,11 +999,8 @@ public class Loggin extends javax.swing.JFrame {
             }
         });
         Panel_Carro.add(Boton_Eliminar_Carros);
-<<<<<<< HEAD
         Boton_Eliminar_Carros.setBounds(100, 530, 160, 40);
-=======
         Boton_Eliminar_Carros.setBounds(310, 350, 110, 40);
->>>>>>> 6f07567841dc6c41c4967240785506b02690cc7d
 
         Boton_Agregar_Carros.setBackground(new java.awt.Color(204, 204, 204));
         Boton_Agregar_Carros.setForeground(new java.awt.Color(0, 0, 0));
@@ -1041,11 +1011,8 @@ public class Loggin extends javax.swing.JFrame {
             }
         });
         Panel_Carro.add(Boton_Agregar_Carros);
-<<<<<<< HEAD
         Boton_Agregar_Carros.setBounds(100, 410, 160, 40);
-=======
         Boton_Agregar_Carros.setBounds(310, 250, 110, 40);
->>>>>>> 6f07567841dc6c41c4967240785506b02690cc7d
 
         Boton_Modificar_Carros.setBackground(new java.awt.Color(204, 204, 204));
         Boton_Modificar_Carros.setForeground(new java.awt.Color(0, 0, 0));
@@ -1056,11 +1023,8 @@ public class Loggin extends javax.swing.JFrame {
             }
         });
         Panel_Carro.add(Boton_Modificar_Carros);
-<<<<<<< HEAD
         Boton_Modificar_Carros.setBounds(100, 470, 160, 40);
-=======
         Boton_Modificar_Carros.setBounds(310, 300, 110, 40);
->>>>>>> 6f07567841dc6c41c4967240785506b02690cc7d
 
         table_CarrosAdmin.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -1076,73 +1040,51 @@ public class Loggin extends javax.swing.JFrame {
         jScrollPane4.setViewportView(table_CarrosAdmin);
 
         Panel_Carro.add(jScrollPane4);
-<<<<<<< HEAD
         jScrollPane4.setBounds(330, 90, 740, 450);
-=======
         jScrollPane4.setBounds(500, 90, 550, 450);
->>>>>>> 6f07567841dc6c41c4967240785506b02690cc7d
 
         G_Ano_De_Compra_Carros.setBackground(new java.awt.Color(102, 102, 102));
         G_Ano_De_Compra_Carros.setForeground(new java.awt.Color(255, 255, 255));
         Panel_Carro.add(G_Ano_De_Compra_Carros);
-<<<<<<< HEAD
         G_Ano_De_Compra_Carros.setBounds(10, 110, 120, 30);
-=======
         G_Ano_De_Compra_Carros.setBounds(20, 110, 210, 30);
->>>>>>> 6f07567841dc6c41c4967240785506b02690cc7d
 
         jLabel41.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         jLabel41.setForeground(new java.awt.Color(137, 250, 230));
         jLabel41.setText("Marca");
         Panel_Carro.add(jLabel41);
-<<<<<<< HEAD
         jLabel41.setBounds(10, 150, 130, 30);
-=======
         jLabel41.setBounds(20, 150, 130, 30);
->>>>>>> 6f07567841dc6c41c4967240785506b02690cc7d
 
         G_Marca_Carros.setBackground(new java.awt.Color(102, 102, 102));
         G_Marca_Carros.setForeground(new java.awt.Color(255, 255, 255));
         Panel_Carro.add(G_Marca_Carros);
-<<<<<<< HEAD
         G_Marca_Carros.setBounds(10, 180, 120, 30);
-=======
         G_Marca_Carros.setBounds(20, 180, 210, 30);
->>>>>>> 6f07567841dc6c41c4967240785506b02690cc7d
 
         G_Cilindrada_Carros.setBackground(new java.awt.Color(102, 102, 102));
         G_Cilindrada_Carros.setForeground(new java.awt.Color(255, 255, 255));
         Panel_Carro.add(G_Cilindrada_Carros);
-<<<<<<< HEAD
         G_Cilindrada_Carros.setBounds(10, 260, 110, 30);
-=======
         G_Cilindrada_Carros.setBounds(20, 320, 210, 30);
->>>>>>> 6f07567841dc6c41c4967240785506b02690cc7d
 
         jLabel42.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         jLabel42.setForeground(new java.awt.Color(137, 250, 230));
         jLabel42.setText("Licencia Rec.");
         Panel_Carro.add(jLabel42);
-<<<<<<< HEAD
         jLabel42.setBounds(180, 300, 120, 30);
-=======
         jLabel42.setBounds(20, 290, 130, 30);
->>>>>>> 6f07567841dc6c41c4967240785506b02690cc7d
 
         G_Tarifa_Carros.setBackground(new java.awt.Color(102, 102, 102));
         G_Tarifa_Carros.setForeground(new java.awt.Color(255, 255, 255));
         Panel_Carro.add(G_Tarifa_Carros);
-<<<<<<< HEAD
         G_Tarifa_Carros.setBounds(150, 260, 150, 30);
-=======
         G_Tarifa_Carros.setBounds(20, 390, 210, 30);
->>>>>>> 6f07567841dc6c41c4967240785506b02690cc7d
 
         jLabel43.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         jLabel43.setForeground(new java.awt.Color(137, 250, 230));
         jLabel43.setText("Profesor");
         Panel_Carro.add(jLabel43);
-<<<<<<< HEAD
         jLabel43.setBounds(170, 220, 130, 30);
 
         cb_licenciasCarros.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
@@ -1164,7 +1106,6 @@ public class Loggin extends javax.swing.JFrame {
         cb_lujosCarro.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
         Panel_Carro.add(cb_lujosCarro);
         cb_lujosCarro.setBounds(10, 340, 120, 30);
-=======
         jLabel43.setBounds(20, 430, 130, 30);
 
         jLabel50.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
@@ -1198,7 +1139,6 @@ public class Loggin extends javax.swing.JFrame {
         jLabel52.setText("Tipo Lujo");
         Panel_Carro.add(jLabel52);
         jLabel52.setBounds(260, 10, 130, 30);
->>>>>>> 6f07567841dc6c41c4967240785506b02690cc7d
 
         Menu_Admin.add(Panel_Carro);
         Panel_Carro.setBounds(1230, 0, 1080, 610);
@@ -1310,7 +1250,6 @@ public class Loggin extends javax.swing.JFrame {
         Menu_Admin.add(Panel_Alumnos);
         Panel_Alumnos.setBounds(1230, 0, 1080, 610);
 
-<<<<<<< HEAD
         Panel_Notas.setBackground(new java.awt.Color(0, 0, 0,150));
         Panel_Notas.setForeground(new java.awt.Color(255, 255, 255));
         Panel_Notas.setPreferredSize(new java.awt.Dimension(1070, 610));
@@ -1435,8 +1374,6 @@ public class Loggin extends javax.swing.JFrame {
         Menu_Admin.add(Panel_Informes);
         Panel_Informes.setBounds(1220, 0, 1080, 610);
 
-=======
->>>>>>> 6f07567841dc6c41c4967240785506b02690cc7d
         Panel_Financiero.setBackground(new java.awt.Color(0, 0, 0,150));
         Panel_Financiero.setLayout(null);
 
@@ -2729,15 +2666,12 @@ public class Loggin extends javax.swing.JFrame {
         if (Icono_Carro.isEnabled()) {
             Cambio_Menu CM= new Cambio_Menu(Panel_Carro,Panel_Maestros,Panel_Alumnos,Panel_Informes,Panel_Financiero,Panel_Notas,Panel_Clases,true);
             CM.start();
-<<<<<<< HEAD
             listarCarrosTable(table_CarrosAdmin);
-=======
             G_Dni_Alumnos_Admin.setText("");
             G_Nombre_Alumnos_Admin.setText("");
             G_Apellidos_Alumnos_Admin.setText("");
             G_Telefonos_Alumnos_Admin.setText("");
             G_Dirreccion_Alumnos_Admin.setText("");
->>>>>>> 6f07567841dc6c41c4967240785506b02690cc7d
         }
         
     }//GEN-LAST:event_Icono_CarroMouseClicked
@@ -2746,7 +2680,6 @@ public class Loggin extends javax.swing.JFrame {
         if (Icono_Maestra.isEnabled()) {
             Cambio_Menu CM= new Cambio_Menu(Panel_Maestros,Panel_Alumnos,Panel_Carro,Panel_Informes,Panel_Financiero,Panel_Notas,Panel_Clases,true);
             CM.start();
-<<<<<<< HEAD
             tf_idVendedor.setText("");
             tf_nombreVendedor.setText("");
             listarProfesoresTable(tableMaestrosAdmin);
@@ -2766,13 +2699,11 @@ public class Loggin extends javax.swing.JFrame {
                     }
                 }
             });
-=======
             G_Id_Clases.setText("");
             G_Nombre_Clases.setText("");
            
             
            
->>>>>>> 6f07567841dc6c41c4967240785506b02690cc7d
         }
         
     }//GEN-LAST:event_Icono_MaestraMouseClicked
@@ -3217,7 +3148,6 @@ public class Loggin extends javax.swing.JFrame {
         panel_Registro.setVisible(true);
     }//GEN-LAST:event_jLabel73MouseClicked
 
-<<<<<<< HEAD
     private void Boton_Agregar_MaestrosMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Boton_Agregar_MaestrosMouseClicked
         // TODO add your handling code here:
         try (Session session = c.driver.session()) {
@@ -3375,7 +3305,6 @@ public class Loggin extends javax.swing.JFrame {
             e.printStackTrace();
         }
     }
-=======
     private void Boton_Matricular_Clases_EstudianteMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Boton_Matricular_Clases_EstudianteMouseClicked
         // TODO add your handling code here:
     }//GEN-LAST:event_Boton_Matricular_Clases_EstudianteMouseClicked
@@ -3396,7 +3325,6 @@ public class Loggin extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_tf_idTienda4ActionPerformed
    
->>>>>>> 6f07567841dc6c41c4967240785506b02690cc7d
     /**
      * @param args the command line arguments
      */
@@ -3474,13 +3402,10 @@ public class Loggin extends javax.swing.JFrame {
     private javax.swing.JLabel Fondo_Cambio;
     private javax.swing.JLabel Fondo_Login;
     private javax.swing.JTextField G_Ano_De_Compra_Carros;
-<<<<<<< HEAD
     private javax.swing.JTextField G_Apellido1_Profe;
     private javax.swing.JTextField G_Apellido2_Profe;
-=======
     private javax.swing.JTextField G_Apellido_Profe;
     private javax.swing.JTextField G_Apellidos_Alumnos_Admin;
->>>>>>> 6f07567841dc6c41c4967240785506b02690cc7d
     private javax.swing.JTextField G_Cilindrada_Carros;
     private javax.swing.JTextField G_Datos_Observaciones_Notas_Admin;
     private javax.swing.JTextField G_Dirreccion_Alumnos_Admin;
@@ -3502,13 +3427,10 @@ public class Loggin extends javax.swing.JFrame {
     private javax.swing.JTextField G_Registra_Usuario;
     private javax.swing.JTextField G_Tarifa_Adicional;
     private javax.swing.JTextField G_Tarifa_Carros;
-<<<<<<< HEAD
     private javax.swing.JTextField G_direcion_Profe;
-=======
     private javax.swing.JTextField G_Telefonos_Alumnos_Admin;
     private javax.swing.JTextField G_Tipo_Lujo;
     private javax.swing.JTextField G_dirrecion_Profe;
->>>>>>> 6f07567841dc6c41c4967240785506b02690cc7d
     private javax.swing.JTextField G_nombre_Profe;
     private javax.swing.JFormattedTextField G_telefono_Profe;
     private javax.swing.JLabel Icono_Alumno;
@@ -3555,7 +3477,6 @@ public class Loggin extends javax.swing.JFrame {
     private javax.swing.JButton btn_createCliente2;
     private javax.swing.JButton btn_createCliente4;
     private javax.swing.JButton btn_deleteCliente2;
-<<<<<<< HEAD
     private javax.swing.JButton btn_deleteCliente3;
     private javax.swing.JButton btn_deleteCliente4;
     private javax.swing.JButton btn_deleteProducto;
@@ -3564,8 +3485,6 @@ public class Loggin extends javax.swing.JFrame {
     private javax.swing.JButton btn_updateVendedor;
     private javax.swing.JComboBox<String> cb_licenciasCarros;
     private javax.swing.JComboBox<String> cb_lujosCarro;
-=======
->>>>>>> 6f07567841dc6c41c4967240785506b02690cc7d
     private javax.swing.JComboBox<String> cbox_ListaVendedores;
     private javax.swing.JComboBox<String> cbox_ListaVendedores2;
     private javax.swing.JPasswordField contra;
