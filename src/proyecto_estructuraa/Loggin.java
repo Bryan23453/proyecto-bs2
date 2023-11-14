@@ -9,7 +9,13 @@ import java.net.URL;
 import javax.swing.JFrame;
 import java.sql.*;
 import java.text.SimpleDateFormat;
+import java.time.LocalDate;
+import javax.swing.*;
 import java.util.ArrayList;
+import static org.neo4j.driver.Values.parameters;
+import org.neo4j.driver.*;
+import org.neo4j.driver.Record;
+import org.neo4j.driver.Result;
 import javax.swing.DefaultComboBoxModel;
 import javax.swing.ImageIcon;
 import javax.swing.JComboBox;
@@ -106,13 +112,15 @@ public class Loggin extends javax.swing.JFrame {
         G_Dni_Profe = new javax.swing.JTextField();
         G_telefono_Profe = new javax.swing.JFormattedTextField();
         G_nombre_Profe = new javax.swing.JTextField();
-        G_Apellido_Profe = new javax.swing.JTextField();
-        G_dirrecion_Profe = new javax.swing.JTextField();
+        G_Apellido2_Profe = new javax.swing.JTextField();
+        G_direcion_Profe = new javax.swing.JTextField();
         jScrollPane3 = new javax.swing.JScrollPane();
-        jTable3 = new javax.swing.JTable();
+        tableMaestrosAdmin = new javax.swing.JTable();
         Boton_Agregar_Maestros = new javax.swing.JToggleButton();
         Boton_Eliminar_Maestros = new javax.swing.JToggleButton();
         Boton_Modificar_Maestros = new javax.swing.JToggleButton();
+        G_Apellido1_Profe = new javax.swing.JTextField();
+        jLabel29 = new javax.swing.JLabel();
         Panel_Carro = new javax.swing.JPanel();
         jLabel3 = new javax.swing.JLabel();
         jLabel23 = new javax.swing.JLabel();
@@ -124,7 +132,7 @@ public class Loggin extends javax.swing.JFrame {
         Boton_Agregar_Carros = new javax.swing.JButton();
         Boton_Modificar_Carros = new javax.swing.JButton();
         jScrollPane4 = new javax.swing.JScrollPane();
-        table_Clientes = new javax.swing.JTable();
+        table_CarrosAdmin = new javax.swing.JTable();
         G_Ano_De_Compra_Carros = new javax.swing.JTextField();
         jLabel41 = new javax.swing.JLabel();
         G_Marca_Carros = new javax.swing.JTextField();
@@ -132,6 +140,10 @@ public class Loggin extends javax.swing.JFrame {
         jLabel42 = new javax.swing.JLabel();
         G_Tarifa_Carros = new javax.swing.JTextField();
         jLabel43 = new javax.swing.JLabel();
+        cb_licenciasCarros = new javax.swing.JComboBox<>();
+        jLabel44 = new javax.swing.JLabel();
+        jLabel47 = new javax.swing.JLabel();
+        cb_lujosCarro = new javax.swing.JComboBox<>();
         Panel_Alumnos = new javax.swing.JPanel();
         jLabel6 = new javax.swing.JLabel();
         jLabel9 = new javax.swing.JLabel();
@@ -155,7 +167,7 @@ public class Loggin extends javax.swing.JFrame {
         jLabel35 = new javax.swing.JLabel();
         jLabel36 = new javax.swing.JLabel();
         jScrollPane8 = new javax.swing.JScrollPane();
-        jTable6 = new javax.swing.JTable();
+        tableClasesAdmin = new javax.swing.JTable();
         jToggleButton13 = new javax.swing.JToggleButton();
         jToggleButton14 = new javax.swing.JToggleButton();
         jToggleButton15 = new javax.swing.JToggleButton();
@@ -172,7 +184,7 @@ public class Loggin extends javax.swing.JFrame {
         Panel_Financiero = new javax.swing.JPanel();
         jLabel48 = new javax.swing.JLabel();
         jScrollPane7 = new javax.swing.JScrollPane();
-        jTable1 = new javax.swing.JTable();
+        tablePagos = new javax.swing.JTable();
         Panel_menu_abajo = new javax.swing.JPanel();
         jLabel72 = new javax.swing.JLabel();
         Panel_Menu_Izquierda = new javax.swing.JPanel();
@@ -541,15 +553,15 @@ public class Loggin extends javax.swing.JFrame {
 
         jLabel18.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         jLabel18.setForeground(new java.awt.Color(137, 250, 230));
-        jLabel18.setText("Apellido");
+        jLabel18.setText("Apellido 2");
         Panel_Maestros.add(jLabel18);
-        jLabel18.setBounds(20, 220, 100, 30);
+        jLabel18.setBounds(20, 280, 100, 30);
 
         jLabel19.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         jLabel19.setForeground(new java.awt.Color(137, 250, 230));
-        jLabel19.setText("Dirreccion");
+        jLabel19.setText("Direccion");
         Panel_Maestros.add(jLabel19);
-        jLabel19.setBounds(20, 290, 100, 30);
+        jLabel19.setBounds(20, 340, 100, 30);
 
         jLabel20.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         jLabel20.setForeground(new java.awt.Color(137, 250, 230));
@@ -575,50 +587,79 @@ public class Loggin extends javax.swing.JFrame {
         Panel_Maestros.add(G_nombre_Profe);
         G_nombre_Profe.setBounds(20, 180, 190, 30);
 
-        G_Apellido_Profe.setBackground(new java.awt.Color(102, 102, 102));
-        G_Apellido_Profe.setForeground(new java.awt.Color(255, 255, 255));
-        Panel_Maestros.add(G_Apellido_Profe);
-        G_Apellido_Profe.setBounds(20, 250, 190, 30);
+        G_Apellido2_Profe.setBackground(new java.awt.Color(102, 102, 102));
+        G_Apellido2_Profe.setForeground(new java.awt.Color(255, 255, 255));
+        Panel_Maestros.add(G_Apellido2_Profe);
+        G_Apellido2_Profe.setBounds(20, 310, 190, 30);
 
-        G_dirrecion_Profe.setBackground(new java.awt.Color(102, 102, 102));
-        G_dirrecion_Profe.setForeground(new java.awt.Color(102, 102, 102));
-        G_dirrecion_Profe.setText("jTextField10");
-        Panel_Maestros.add(G_dirrecion_Profe);
-        G_dirrecion_Profe.setBounds(20, 320, 190, 30);
+        G_direcion_Profe.setBackground(new java.awt.Color(102, 102, 102));
+        G_direcion_Profe.setForeground(new java.awt.Color(255, 255, 255));
+        G_direcion_Profe.setSelectedTextColor(new java.awt.Color(153, 153, 153));
+        Panel_Maestros.add(G_direcion_Profe);
+        G_direcion_Profe.setBounds(20, 370, 190, 30);
 
-        jTable3.setModel(new javax.swing.table.DefaultTableModel(
+        tableMaestrosAdmin.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null}
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null}
             },
             new String [] {
-                "Title 1", "Title 2", "Title 3", "Title 4"
+                "DNI_Profesor", "Nombre", "Apellido 1", "Apellido 2", "Direccion", "Telefono"
             }
         ));
-        jScrollPane3.setViewportView(jTable3);
+        jScrollPane3.setViewportView(tableMaestrosAdmin);
 
         Panel_Maestros.add(jScrollPane3);
-        jScrollPane3.setBounds(280, 90, 710, 460);
+        jScrollPane3.setBounds(280, 100, 710, 460);
 
         Boton_Agregar_Maestros.setBackground(new java.awt.Color(204, 204, 204));
         Boton_Agregar_Maestros.setForeground(new java.awt.Color(0, 0, 0));
         Boton_Agregar_Maestros.setText("Agregar");
+        Boton_Agregar_Maestros.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                Boton_Agregar_MaestrosMouseClicked(evt);
+            }
+        });
         Panel_Maestros.add(Boton_Agregar_Maestros);
-        Boton_Agregar_Maestros.setBounds(50, 380, 140, 50);
+        Boton_Agregar_Maestros.setBounds(50, 410, 140, 50);
 
         Boton_Eliminar_Maestros.setBackground(new java.awt.Color(204, 204, 204));
         Boton_Eliminar_Maestros.setForeground(new java.awt.Color(0, 0, 0));
         Boton_Eliminar_Maestros.setText("Eliminar");
+        Boton_Eliminar_Maestros.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                Boton_Eliminar_MaestrosMouseClicked(evt);
+            }
+        });
         Panel_Maestros.add(Boton_Eliminar_Maestros);
-        Boton_Eliminar_Maestros.setBounds(50, 500, 140, 50);
+        Boton_Eliminar_Maestros.setBounds(50, 540, 140, 50);
 
         Boton_Modificar_Maestros.setBackground(new java.awt.Color(204, 204, 204));
         Boton_Modificar_Maestros.setForeground(new java.awt.Color(0, 0, 0));
         Boton_Modificar_Maestros.setText("Modificar");
+        Boton_Modificar_Maestros.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                Boton_Modificar_MaestrosMouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                Boton_Modificar_MaestrosMouseEntered(evt);
+            }
+        });
         Panel_Maestros.add(Boton_Modificar_Maestros);
-        Boton_Modificar_Maestros.setBounds(50, 440, 140, 50);
+        Boton_Modificar_Maestros.setBounds(50, 470, 140, 50);
+
+        G_Apellido1_Profe.setBackground(new java.awt.Color(102, 102, 102));
+        G_Apellido1_Profe.setForeground(new java.awt.Color(255, 255, 255));
+        Panel_Maestros.add(G_Apellido1_Profe);
+        G_Apellido1_Profe.setBounds(20, 250, 190, 30);
+
+        jLabel29.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        jLabel29.setForeground(new java.awt.Color(137, 250, 230));
+        jLabel29.setText("Apellido 1");
+        Panel_Maestros.add(jLabel29);
+        jLabel29.setBounds(20, 220, 100, 30);
 
         Menu_Admin.add(Panel_Maestros);
         Panel_Maestros.setBounds(1230, 0, 1080, 610);
@@ -638,29 +679,29 @@ public class Loggin extends javax.swing.JFrame {
         jLabel23.setForeground(new java.awt.Color(137, 250, 230));
         jLabel23.setText("Año De Compra");
         Panel_Carro.add(jLabel23);
-        jLabel23.setBounds(40, 80, 160, 30);
+        jLabel23.setBounds(10, 70, 160, 30);
 
         jLabel24.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         jLabel24.setForeground(new java.awt.Color(137, 250, 230));
         jLabel24.setText("Modelo");
         Panel_Carro.add(jLabel24);
-        jLabel24.setBounds(40, 220, 130, 30);
+        jLabel24.setBounds(190, 150, 70, 30);
 
         jLabel25.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         jLabel25.setForeground(new java.awt.Color(137, 250, 230));
         jLabel25.setText("Matricula");
         Panel_Carro.add(jLabel25);
-        jLabel25.setBounds(40, 10, 90, 30);
+        jLabel25.setBounds(10, 10, 90, 30);
 
         G_Matricula_Carros.setBackground(new java.awt.Color(102, 102, 102));
         G_Matricula_Carros.setForeground(new java.awt.Color(255, 255, 255));
         Panel_Carro.add(G_Matricula_Carros);
-        G_Matricula_Carros.setBounds(40, 40, 210, 30);
+        G_Matricula_Carros.setBounds(10, 40, 200, 30);
 
         G_Modelo_Carros.setBackground(new java.awt.Color(102, 102, 102));
         G_Modelo_Carros.setForeground(new java.awt.Color(255, 255, 255));
         Panel_Carro.add(G_Modelo_Carros);
-        G_Modelo_Carros.setBounds(40, 250, 210, 30);
+        G_Modelo_Carros.setBounds(150, 180, 160, 30);
 
         Boton_Eliminar_Carros.setBackground(new java.awt.Color(204, 204, 204));
         Boton_Eliminar_Carros.setForeground(new java.awt.Color(0, 0, 0));
@@ -671,7 +712,7 @@ public class Loggin extends javax.swing.JFrame {
             }
         });
         Panel_Carro.add(Boton_Eliminar_Carros);
-        Boton_Eliminar_Carros.setBounds(60, 550, 160, 40);
+        Boton_Eliminar_Carros.setBounds(100, 530, 160, 40);
 
         Boton_Agregar_Carros.setBackground(new java.awt.Color(204, 204, 204));
         Boton_Agregar_Carros.setForeground(new java.awt.Color(0, 0, 0));
@@ -682,7 +723,7 @@ public class Loggin extends javax.swing.JFrame {
             }
         });
         Panel_Carro.add(Boton_Agregar_Carros);
-        Boton_Agregar_Carros.setBounds(60, 450, 160, 40);
+        Boton_Agregar_Carros.setBounds(100, 410, 160, 40);
 
         Boton_Modificar_Carros.setBackground(new java.awt.Color(204, 204, 204));
         Boton_Modificar_Carros.setForeground(new java.awt.Color(0, 0, 0));
@@ -693,61 +734,81 @@ public class Loggin extends javax.swing.JFrame {
             }
         });
         Panel_Carro.add(Boton_Modificar_Carros);
-        Boton_Modificar_Carros.setBounds(60, 500, 160, 40);
+        Boton_Modificar_Carros.setBounds(100, 470, 160, 40);
 
-        table_Clientes.setModel(new javax.swing.table.DefaultTableModel(
+        table_CarrosAdmin.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
-                {null, null, null},
-                {null, null, null},
-                {null, null, null},
-                {null, null, null}
+                {null, null, null, null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null, null, null, null}
             },
             new String [] {
-                "ID Cliente", "Nombre Cliente", "Correo Cliente"
+                "Matricula", "Marca", "Modelo", "Año Compra", "Cilindrada", "Tarifa", "dni_Profesor", "Tipo_Lic", "Tipo Lujo", "Licencia Recomendada"
             }
         ));
-        jScrollPane4.setViewportView(table_Clientes);
+        jScrollPane4.setViewportView(table_CarrosAdmin);
 
         Panel_Carro.add(jScrollPane4);
-        jScrollPane4.setBounds(330, 90, 670, 450);
+        jScrollPane4.setBounds(330, 90, 740, 450);
 
         G_Ano_De_Compra_Carros.setBackground(new java.awt.Color(102, 102, 102));
         G_Ano_De_Compra_Carros.setForeground(new java.awt.Color(255, 255, 255));
         Panel_Carro.add(G_Ano_De_Compra_Carros);
-        G_Ano_De_Compra_Carros.setBounds(40, 110, 210, 30);
+        G_Ano_De_Compra_Carros.setBounds(10, 110, 120, 30);
 
         jLabel41.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         jLabel41.setForeground(new java.awt.Color(137, 250, 230));
         jLabel41.setText("Marca");
         Panel_Carro.add(jLabel41);
-        jLabel41.setBounds(40, 150, 130, 30);
+        jLabel41.setBounds(10, 150, 130, 30);
 
         G_Marca_Carros.setBackground(new java.awt.Color(102, 102, 102));
         G_Marca_Carros.setForeground(new java.awt.Color(255, 255, 255));
         Panel_Carro.add(G_Marca_Carros);
-        G_Marca_Carros.setBounds(40, 180, 210, 30);
+        G_Marca_Carros.setBounds(10, 180, 120, 30);
 
         G_Cilindrada_Carros.setBackground(new java.awt.Color(102, 102, 102));
         G_Cilindrada_Carros.setForeground(new java.awt.Color(255, 255, 255));
         Panel_Carro.add(G_Cilindrada_Carros);
-        G_Cilindrada_Carros.setBounds(40, 320, 210, 30);
+        G_Cilindrada_Carros.setBounds(10, 260, 110, 30);
 
         jLabel42.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         jLabel42.setForeground(new java.awt.Color(137, 250, 230));
-        jLabel42.setText("Cilindrada");
+        jLabel42.setText("Licencia Rec.");
         Panel_Carro.add(jLabel42);
-        jLabel42.setBounds(40, 290, 130, 30);
+        jLabel42.setBounds(180, 300, 120, 30);
 
         G_Tarifa_Carros.setBackground(new java.awt.Color(102, 102, 102));
         G_Tarifa_Carros.setForeground(new java.awt.Color(255, 255, 255));
         Panel_Carro.add(G_Tarifa_Carros);
-        G_Tarifa_Carros.setBounds(40, 390, 210, 30);
+        G_Tarifa_Carros.setBounds(150, 260, 150, 30);
 
         jLabel43.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         jLabel43.setForeground(new java.awt.Color(137, 250, 230));
         jLabel43.setText("Tarifa");
         Panel_Carro.add(jLabel43);
-        jLabel43.setBounds(40, 360, 130, 30);
+        jLabel43.setBounds(170, 220, 130, 30);
+
+        cb_licenciasCarros.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        Panel_Carro.add(cb_licenciasCarros);
+        cb_licenciasCarros.setBounds(170, 340, 140, 30);
+
+        jLabel44.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        jLabel44.setForeground(new java.awt.Color(137, 250, 230));
+        jLabel44.setText("Cilindrada");
+        Panel_Carro.add(jLabel44);
+        jLabel44.setBounds(10, 220, 130, 30);
+
+        jLabel47.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        jLabel47.setForeground(new java.awt.Color(137, 250, 230));
+        jLabel47.setText("Lujo");
+        Panel_Carro.add(jLabel47);
+        jLabel47.setBounds(30, 300, 70, 30);
+
+        cb_lujosCarro.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        Panel_Carro.add(cb_lujosCarro);
+        cb_lujosCarro.setBounds(10, 340, 120, 30);
 
         Menu_Admin.add(Panel_Carro);
         Panel_Carro.setBounds(1230, 0, 1080, 610);
@@ -888,18 +949,18 @@ public class Loggin extends javax.swing.JFrame {
         Panel_Notas.add(jLabel36);
         jLabel36.setBounds(30, 20, 100, 30);
 
-        jTable6.setModel(new javax.swing.table.DefaultTableModel(
+        tableClasesAdmin.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null}
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null}
             },
             new String [] {
-                "Title 1", "Title 2", "Title 3", "Title 4"
+                "# Matricula", "Duracion", "Fecha Examen", "Fecha Tramitado", "Tipo Examen"
             }
         ));
-        jScrollPane8.setViewportView(jTable6);
+        jScrollPane8.setViewportView(tableClasesAdmin);
 
         Panel_Notas.add(jScrollPane8);
         jScrollPane8.setBounds(280, 90, 710, 460);
@@ -992,18 +1053,18 @@ public class Loggin extends javax.swing.JFrame {
         Panel_Financiero.add(jLabel48);
         jLabel48.setBounds(480, 0, 290, 50);
 
-        jTable1.setModel(new javax.swing.table.DefaultTableModel(
+        tablePagos.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null}
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null}
             },
             new String [] {
-                "Title 1", "Title 2", "Title 3", "Title 4"
+                "#Matricula", "# Pago", "Importe"
             }
         ));
-        jScrollPane7.setViewportView(jTable1);
+        jScrollPane7.setViewportView(tablePagos);
 
         Panel_Financiero.add(jScrollPane7);
         jScrollPane7.setBounds(60, 100, 970, 440);
@@ -2049,7 +2110,7 @@ public class Loggin extends javax.swing.JFrame {
 
         Cambio_Menu CM= new Cambio_Menu(Panel_Alumnos,Panel_Maestros,Panel_Carro,Panel_Informes,Panel_Financiero,Panel_Notas,Panel_Clases,false);
         CM.start();
-
+        
 
        
 
@@ -2059,11 +2120,7 @@ public class Loggin extends javax.swing.JFrame {
         if (Icono_Carro.isEnabled()) {
             Cambio_Menu CM= new Cambio_Menu(Panel_Carro,Panel_Maestros,Panel_Alumnos,Panel_Informes,Panel_Financiero,Panel_Notas,Panel_Clases,true);
             CM.start();
-            tf_UPC.setText("");
-            tf_nombreProducto.setText("");
-            tf_tamanoProducto.setText("");
-            tf_marcaProducto.setText("");
-            tf_embalajeProducto.setText("");
+            listarCarrosTable(table_CarrosAdmin);
         }
         
     }//GEN-LAST:event_Icono_CarroMouseClicked
@@ -2074,9 +2131,23 @@ public class Loggin extends javax.swing.JFrame {
             CM.start();
             tf_idVendedor.setText("");
             tf_nombreVendedor.setText("");
-           
-            
-           
+            listarProfesoresTable(tableMaestrosAdmin);
+            ListSelectionModel selectionModel = tableMaestrosAdmin.getSelectionModel();
+            selectionModel.addListSelectionListener(new ListSelectionListener() {
+                public void valueChanged(ListSelectionEvent e) {
+                    if (!e.getValueIsAdjusting()) {
+                        int filaSeleccionada = tableMaestrosAdmin.getSelectedRow();
+                        if (filaSeleccionada >= 0) {
+                            G_Dni_Profe.setText(tableMaestrosAdmin.getValueAt(filaSeleccionada, 0).toString());
+                            G_nombre_Profe.setText(tableMaestrosAdmin.getValueAt(filaSeleccionada, 1).toString());
+                            G_Apellido1_Profe.setText(tableMaestrosAdmin.getValueAt(filaSeleccionada, 2).toString());
+                            G_Apellido2_Profe.setText(tableMaestrosAdmin.getValueAt(filaSeleccionada, 3).toString());
+                            G_direcion_Profe.setText(tableMaestrosAdmin.getValueAt(filaSeleccionada, 4).toString());
+                            G_telefono_Profe.setText(tableMaestrosAdmin.getValueAt(filaSeleccionada, 5).toString());
+                        }
+                    }
+                }
+            });
         }
         
     }//GEN-LAST:event_Icono_MaestraMouseClicked
@@ -2084,6 +2155,7 @@ public class Loggin extends javax.swing.JFrame {
     private void Icono_AlumnoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Icono_AlumnoMouseClicked
         Cambio_Menu CM= new Cambio_Menu(Panel_Alumnos,Panel_Maestros,Panel_Carro,Panel_Informes,Panel_Financiero,Panel_Notas,Panel_Clases,true);
         CM.start();
+        listarNotasExamenes(tableClasesAdmin);
     }//GEN-LAST:event_Icono_AlumnoMouseClicked
 
     private void Icono_NotasMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Icono_NotasMouseClicked
@@ -2098,6 +2170,7 @@ public class Loggin extends javax.swing.JFrame {
     private void Icono_FinancieroMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Icono_FinancieroMouseClicked
         Cambio_Menu CM= new Cambio_Menu(Panel_Financiero  ,Panel_Carro,Panel_Alumnos,Panel_Maestros,Panel_Notas,Panel_Informes,Panel_Clases,true);
         CM.start();
+        listarPagosTable(tablePagos);
     }//GEN-LAST:event_Icono_FinancieroMouseClicked
 
     private void Icono_InformeMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Icono_InformeMouseClicked
@@ -2518,7 +2591,164 @@ public class Loggin extends javax.swing.JFrame {
         Fondo_Login.setVisible(true);
         panel_Registro.setVisible(true);
     }//GEN-LAST:event_jLabel73MouseClicked
-   
+
+    private void Boton_Agregar_MaestrosMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Boton_Agregar_MaestrosMouseClicked
+        // TODO add your handling code here:
+        try (Session session = c.driver.session()) {
+            // Ejecuta la consulta
+            String query = "CREATE (n:Profesor {dni_prof: $dni_prof,nombre: $nombre,apellido_1: $apellido_1,apellido_2: $apellido_2, direccion: $direccion, telefono: $telefono})";
+            session.run(query, parameters("dni_prof", Integer.parseInt(G_Dni_Profe.getText()), 
+                    "nombre", G_nombre_Profe.getText(), "apellido_1", G_Apellido1_Profe.getText(), "apellido_2", G_Apellido2_Profe.getText(), "direccion", G_direcion_Profe.getText(), "telefono", Integer.parseInt(G_telefono_Profe.getText())));
+            JOptionPane.showMessageDialog(null, "Profesor Creado Con Exito");
+            G_Dni_Profe.setText("");
+            G_nombre_Profe.setText("");
+            G_Apellido1_Profe.setText("");
+            G_Apellido2_Profe.setText("");
+            G_direcion_Profe.setText("");
+            G_telefono_Profe.setText("");
+            listarProfesoresTable(tableMaestrosAdmin);
+        }catch(Exception e){
+            e.printStackTrace();
+            JOptionPane.showMessageDialog(null, "Profesor No Fue Creado");
+        }
+    }//GEN-LAST:event_Boton_Agregar_MaestrosMouseClicked
+
+    private void Boton_Modificar_MaestrosMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Boton_Modificar_MaestrosMouseEntered
+        // TODO add your handling code here:
+    }//GEN-LAST:event_Boton_Modificar_MaestrosMouseEntered
+
+    private void Boton_Modificar_MaestrosMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Boton_Modificar_MaestrosMouseClicked
+        // TODO add your handling code here:
+        try (Session session = c.driver.session()) {
+            // Ejecuta la consulta
+            String query = "MATCH (p:Profesor {dni_prof: $dni_prof}) SET p.nombre = $nombre, p.apellido_1 = $apellido_1, p.apellido_2 = $apellido_2, p.direccion = $direccion, p.telefono = $telefono";
+            session.run(query, parameters("dni_prof", Integer.parseInt(G_Dni_Profe.getText()), 
+                    "nombre", G_nombre_Profe.getText(), "apellido_1", G_Apellido1_Profe.getText(), "apellido_2", G_Apellido2_Profe.getText(), "direccion", G_direcion_Profe.getText(), "telefono", Integer.parseInt(G_telefono_Profe.getText())));
+            JOptionPane.showMessageDialog(null, "Profesor Modificado Con Exito");
+            G_Dni_Profe.setText("");
+            G_nombre_Profe.setText("");
+            G_Apellido1_Profe.setText("");
+            G_Apellido2_Profe.setText("");
+            G_direcion_Profe.setText("");
+            G_telefono_Profe.setText("");
+            listarProfesoresTable(tableMaestrosAdmin);
+        }catch(Exception e){
+            e.printStackTrace();
+            JOptionPane.showMessageDialog(null, "Profesor No Fue Modificado");
+        }
+    }//GEN-LAST:event_Boton_Modificar_MaestrosMouseClicked
+
+    private void Boton_Eliminar_MaestrosMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Boton_Eliminar_MaestrosMouseClicked
+        // TODO add your handling code here:
+        try (Session session = c.driver.session()) {
+            // Ejecuta la consulta
+            String query = "MATCH (p:Profesor {dni_prof: $dni_prof}) DELETE p";
+            session.run(query, parameters("dni_prof", Integer.parseInt(G_Dni_Profe.getText())));
+            JOptionPane.showMessageDialog(null, "Profesor Eliminado Con Exito");
+            G_Dni_Profe.setText("");
+            G_nombre_Profe.setText("");
+            G_Apellido1_Profe.setText("");
+            G_Apellido2_Profe.setText("");
+            G_direcion_Profe.setText("");
+            G_telefono_Profe.setText("");
+            listarProfesoresTable(tableMaestrosAdmin);
+        }catch(Exception e){
+            e.printStackTrace();
+            JOptionPane.showMessageDialog(null, "Profesor No Fue Eliminado");
+        }
+    }//GEN-LAST:event_Boton_Eliminar_MaestrosMouseClicked
+    private void listarProfesoresTable(JTable tablaProfesores){
+        DefaultTableModel model = (DefaultTableModel) tablaProfesores.getModel();
+        model.setRowCount(0);
+        try (Session session = c.driver.session()) {
+            // Ejecuta la consulta
+            Result result = session.run("MATCH (n:Profesor) RETURN n");
+
+            while (result.hasNext()) {
+                Record record = result.next();
+
+                // Supongamos que cada nodo tiene propiedades nombre, apellido, etc.
+                int prof_id = record.get("n").get("dni_prof").asInt();
+                String nombre = record.get("n").get("nombre").asString();
+                String apellido1 = record.get("n").get("apellido_1").asString();
+                String apellido2 = record.get("n").get("apellido_2").asString();
+                String direccion = record.get("n").get("direccion").asString();
+                int telefono = record.get("n").get("telefono").asInt();
+                model.addRow(new Object[]{prof_id,nombre, apellido1,apellido2,direccion,telefono}); 
+        }
+        }catch(Exception e){
+            e.printStackTrace();
+        }
+    }
+    private void listarCarrosTable(JTable table_CarrosAdmin){
+        DefaultTableModel model = (DefaultTableModel) table_CarrosAdmin.getModel();
+        model.setRowCount(0);
+        try (Session session = c.driver.session()) {
+            // Ejecuta la consulta
+            Result result = session.run("MATCH (n:Vehiculo) RETURN n");
+
+            while (result.hasNext()) {
+                Record record = result.next();
+
+                // Supongamos que cada nodo tiene propiedades nombre, apellido, etc.
+                String matricula = record.get("n").get("matricula").asString();
+                String marca = record.get("n").get("marca").asString();
+                String modelo = record.get("n").get("modelo").asString();
+                String anioComprada = record.get("n").get("anio_compra").asString();
+                int cilindraje = record.get("n").get("clinidrada").asInt();
+                int tarifa = record.get("n").get("tarifa").asInt();
+                int dniProfesor = record.get("n").get("dni_prof").asInt();
+                String tipoRecomendada = record.get("n").get("tipo_lic").asString();
+                String lujo  = record.get("n").get("lujo").asString();
+                String recomendado  = record.get("n").get("licencia_necesaria").asString();
+                model.addRow(new Object[]{matricula, marca, modelo, anioComprada, cilindraje, tarifa, dniProfesor, tipoRecomendada, lujo,recomendado}); 
+        }
+        }catch(Exception e){
+            e.printStackTrace();
+        }
+    }
+    private void listarPagosTable(JTable tablePagos){
+        DefaultTableModel model = (DefaultTableModel) tablePagos.getModel();
+        model.setRowCount(0);
+        try (Session session = c.driver.session()) {
+            // Ejecuta la consulta
+            Result result = session.run("MATCH (n:Pago) RETURN n");
+
+            while (result.hasNext()) {
+                Record record = result.next();
+
+                // Supongamos que cada nodo tiene propiedades nombre, apellido, etc.
+                int numMatricula = record.get("n").get("N_matricula").asInt();
+                int numPago = record.get("n").get("N_pago").asInt();
+                int importe = record.get("n").get("importe").asInt();
+                model.addRow(new Object[]{numMatricula,numPago, importe}); 
+        }
+        }catch(Exception e){
+            e.printStackTrace();
+        }
+    }
+    private void listarNotasExamenes(JTable tableExamenes){
+        DefaultTableModel model = (DefaultTableModel) tableExamenes.getModel();
+        model.setRowCount(0);
+        try (Session session = c.driver.session()) {
+            // Ejecuta la consulta
+            Result result = session.run("MATCH (n:Examen) RETURN n");
+
+            while (result.hasNext()) {
+                Record record = result.next();
+
+                // Supongamos que cada nodo tiene propiedades nombre, apellido, etc.
+                int numMatricula = record.get("n").get("N_matricula").asInt();
+                int duracion = record.get("n").get("duracion").asInt();
+                LocalDate fechaHecho = record.get("n").get("fecha_examen").asLocalDate();
+                LocalDate fechaTramitado = record.get("n").get("fecha_tramitacion").asLocalDate();
+                String tipoExamen = record.get("n").get("tipo_examen").asString();
+                model.addRow(new Object[]{numMatricula,duracion, fechaHecho, fechaTramitado, tipoExamen}); 
+        }
+        }catch(Exception e){
+            e.printStackTrace();
+        }
+    }
     /**
      * @param args the command line arguments
      */
@@ -2576,14 +2806,15 @@ public class Loggin extends javax.swing.JFrame {
     private javax.swing.JLabel Fondo_Cambio;
     private javax.swing.JLabel Fondo_Login;
     private javax.swing.JTextField G_Ano_De_Compra_Carros;
-    private javax.swing.JTextField G_Apellido_Profe;
+    private javax.swing.JTextField G_Apellido1_Profe;
+    private javax.swing.JTextField G_Apellido2_Profe;
     private javax.swing.JTextField G_Cilindrada_Carros;
     private javax.swing.JTextField G_Dni_Profe;
     private javax.swing.JTextField G_Marca_Carros;
     private javax.swing.JTextField G_Matricula_Carros;
     private javax.swing.JTextField G_Modelo_Carros;
     private javax.swing.JTextField G_Tarifa_Carros;
-    private javax.swing.JTextField G_dirrecion_Profe;
+    private javax.swing.JTextField G_direcion_Profe;
     private javax.swing.JTextField G_nombre_Profe;
     private javax.swing.JFormattedTextField G_telefono_Profe;
     private javax.swing.JLabel Icono_Alumno;
@@ -2643,6 +2874,8 @@ public class Loggin extends javax.swing.JFrame {
     private javax.swing.JButton btn_deleteVendedor;
     private javax.swing.JButton btn_updateProducto;
     private javax.swing.JButton btn_updateVendedor;
+    private javax.swing.JComboBox<String> cb_licenciasCarros;
+    private javax.swing.JComboBox<String> cb_lujosCarro;
     private javax.swing.JComboBox<String> cbox_ListaVendedores;
     private javax.swing.JComboBox<String> cbox_ListaVendedores2;
     private javax.swing.JTextField contra;
@@ -2690,6 +2923,7 @@ public class Loggin extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel26;
     private javax.swing.JLabel jLabel27;
     private javax.swing.JLabel jLabel28;
+    private javax.swing.JLabel jLabel29;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel30;
     private javax.swing.JLabel jLabel31;
@@ -2706,8 +2940,10 @@ public class Loggin extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel41;
     private javax.swing.JLabel jLabel42;
     private javax.swing.JLabel jLabel43;
+    private javax.swing.JLabel jLabel44;
     private javax.swing.JLabel jLabel45;
     private javax.swing.JLabel jLabel46;
+    private javax.swing.JLabel jLabel47;
     private javax.swing.JLabel jLabel48;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel55;
@@ -2762,11 +2998,8 @@ public class Loggin extends javax.swing.JFrame {
     private javax.swing.JScrollPane jScrollPane7;
     private javax.swing.JScrollPane jScrollPane8;
     private javax.swing.JScrollPane jScrollPane9;
-    private javax.swing.JTable jTable1;
     private javax.swing.JTable jTable11;
-    private javax.swing.JTable jTable3;
     private javax.swing.JTable jTable5;
-    private javax.swing.JTable jTable6;
     private javax.swing.JTable jTable7;
     private javax.swing.JTable jTable8;
     private javax.swing.JTextArea jTextArea1;
@@ -2782,9 +3015,12 @@ public class Loggin extends javax.swing.JFrame {
     private javax.swing.JToggleButton jToggleButton18;
     private javax.swing.JPanel panel_Registro;
     private javax.swing.JPanel panel_ingreso;
+    private javax.swing.JTable tableClasesAdmin;
+    private javax.swing.JTable tableMaestrosAdmin;
+    private javax.swing.JTable tablePagos;
     private javax.swing.JTable tableReportes;
     private javax.swing.JTable tableReportes1;
-    private javax.swing.JTable table_Clientes;
+    private javax.swing.JTable table_CarrosAdmin;
     private javax.swing.JTable table_Clientes1;
     private javax.swing.JTable table_Clientes2;
     private javax.swing.JTable table_Productos;
